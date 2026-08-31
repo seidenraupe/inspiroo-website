@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import { CtaBand } from "@/components/cta-band";
 import { about } from "@/lib/content";
+import { withBase } from "@/lib/paths";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -17,7 +18,7 @@ export default function AboutPage() {
       <section className="mx-auto grid max-w-6xl gap-12 px-5 py-16 sm:px-8 lg:grid-cols-[0.9fr_1.1fr] lg:py-20">
         <figure>
           <Image
-            src="/thomas-giger.jpg"
+            src={withBase("/thomas-giger.jpg")}
             alt={site.founder.ageNote}
             width={900}
             height={900}

@@ -12,6 +12,7 @@ import {
   situations,
 } from "@/lib/content";
 import { featuredReferences } from "@/lib/references";
+import { withBase } from "@/lib/paths";
 import { site } from "@/lib/site";
 
 export default function HomePage() {
@@ -52,7 +53,7 @@ export default function HomePage() {
           <figure className="relative mx-auto w-full max-w-md">
             <div className="absolute -inset-6 rounded-[2rem] bg-brand/20 blur-2xl" />
             <Image
-              src="/thomas-giger.jpg"
+              src={withBase("/thomas-giger.jpg")}
               alt={`${site.founder.name}, ${site.founder.role}`}
               width={720}
               height={720}

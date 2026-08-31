@@ -3,6 +3,7 @@ import { Fraunces, Geist } from "next/font/google";
 
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { withBase } from "@/lib/paths";
 import { site } from "@/lib/site";
 
 import "./globals.css";
@@ -36,8 +37,8 @@ export const metadata: Metadata = {
     url: site.url,
   },
   icons: {
-    icon: "/inspiroo-mark.png",
-    apple: "/apple-touch-icon.png",
+    icon: withBase("/inspiroo-mark.png"),
+    apple: withBase("/apple-touch-icon.png"),
   },
 };
 

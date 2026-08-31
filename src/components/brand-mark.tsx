@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { withBase } from "@/lib/paths";
 import { cn } from "@/lib/utils";
 
 type BrandMarkProps = {
@@ -19,7 +20,7 @@ export function BrandMark({ className, inverted = false }: BrandMarkProps) {
       aria-label="inspiroo Startseite"
     >
       <Image
-        src="/inspiroo-mark.png"
+        src={withBase("/inspiroo-mark.png")}
         alt=""
         width={44}
         height={44}
