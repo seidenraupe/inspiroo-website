@@ -1,13 +1,22 @@
 import Link from "next/link";
 
+import { ContentImage } from "@/components/content-image";
 import { Button } from "@/components/ui/button";
 import { cta } from "@/lib/content";
 import { site } from "@/lib/site";
 
 export function CtaBand() {
   return (
-    <section className="bg-brand text-white">
-      <div className="mx-auto flex max-w-6xl flex-col gap-6 px-5 py-16 sm:px-8 md:flex-row md:items-end md:justify-between">
+    <section className="relative overflow-hidden bg-ink text-white">
+      <ContentImage
+        src={cta.image}
+        alt=""
+        width={1456}
+        height={816}
+        className="absolute inset-0 h-full w-full object-cover opacity-40"
+      />
+      <div className="absolute inset-0 bg-brand/78" />
+      <div className="relative mx-auto flex max-w-6xl flex-col gap-6 px-5 py-16 sm:px-8 md:flex-row md:items-end md:justify-between">
         <div className="max-w-2xl">
           <p className="text-xs tracking-[0.2em] uppercase text-white/70">
             Nächster Schritt

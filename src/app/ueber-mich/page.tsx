@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 
+import { ContentImage } from "@/components/content-image";
 import { CtaBand } from "@/components/cta-band";
-import { about } from "@/lib/content";
-import { withBase } from "@/lib/paths";
+import { PhotoBreak } from "@/components/photo-break";
+import { about, photos } from "@/lib/content";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -17,8 +17,8 @@ export default function AboutPage() {
     <>
       <section className="mx-auto grid max-w-6xl gap-12 px-5 py-16 sm:px-8 lg:grid-cols-[0.9fr_1.1fr] lg:py-20">
         <figure>
-          <Image
-            src={withBase("/thomas-giger.jpg")}
+          <ContentImage
+            src="/thomas-giger.jpg"
             alt={site.founder.ageNote}
             width={900}
             height={900}
@@ -53,6 +53,12 @@ export default function AboutPage() {
           <p className="mt-4 leading-relaxed text-ink/75">{about.focus}</p>
         </div>
       </section>
+
+      <PhotoBreak
+        src={photos.collaboration.src}
+        alt={photos.collaboration.alt}
+        caption="Zusammenarbeit, die neue Lösungen entstehen lässt."
+      />
 
       <section className="bg-white">
         <div className="mx-auto grid max-w-6xl gap-12 px-5 py-16 sm:px-8 lg:grid-cols-2">

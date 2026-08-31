@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 
 import { ContactForm } from "@/components/contact-form";
+import { ContentImage } from "@/components/content-image";
+import { photos } from "@/lib/content";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -13,6 +15,16 @@ export default function ContactPage() {
   return (
     <section className="mx-auto grid max-w-6xl gap-12 px-5 py-16 sm:px-8 lg:grid-cols-[0.9fr_1.1fr] lg:py-20">
       <div>
+        <figure className="mb-8 overflow-hidden rounded-[1.6rem]">
+          <ContentImage
+            src={photos.teamSeven.src}
+            alt={photos.teamSeven.alt}
+            width={1456}
+            height={816}
+            className="aspect-[16/10] w-full object-cover"
+            priority
+          />
+        </figure>
         <p className="text-xs tracking-[0.2em] text-violet uppercase">Kontakt</p>
         <h1 className="font-heading mt-3 text-5xl leading-tight text-balance">
           Ich freue mich auf Dein Mail oder Deinen Anruf.

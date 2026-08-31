@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 
+import { ContentImage } from "@/components/content-image";
 import { CtaBand } from "@/components/cta-band";
+import { PhotoBreak } from "@/components/photo-break";
 import { ReferenceCatalog } from "@/components/reference-catalog";
-import { leadershipProjects } from "@/lib/content";
+import { hero, leadershipProjects } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Referenzen",
@@ -31,6 +33,12 @@ export default function ReferencesPage() {
         </div>
       </section>
 
+      <PhotoBreak
+        src={hero.image}
+        alt={hero.imageAlt}
+        caption="Aus der operativen Leitung: Projekte, die den Weg geebnet haben."
+      />
+
       <section className="bg-white">
         <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8">
           <p className="text-xs tracking-[0.2em] text-violet uppercase">
@@ -47,14 +55,25 @@ export default function ReferencesPage() {
             {leadershipProjects.map((project) => (
               <article
                 key={project.title}
-                className="rounded-2xl border border-ink/8 bg-cream p-6"
+                className="overflow-hidden rounded-2xl border border-ink/8 bg-cream"
               >
-                <h3 className="font-heading text-2xl leading-tight">
-                  {project.title}
-                </h3>
-                <p className="mt-4 text-sm leading-relaxed text-ink/70">
-                  {project.body}
-                </p>
+                <div className="bg-white px-5 pt-5">
+                  <ContentImage
+                    src={project.image}
+                    alt={project.imageAlt}
+                    width={1024}
+                    height={1024}
+                    className="mx-auto aspect-[5/3] w-full object-contain"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="font-heading text-2xl leading-tight">
+                    {project.title}
+                  </h3>
+                  <p className="mt-4 text-sm leading-relaxed text-ink/70">
+                    {project.body}
+                  </p>
+                </div>
               </article>
             ))}
           </div>

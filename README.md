@@ -2,7 +2,7 @@
 
 Neue Website für [inspiroo gmbh](https://www.inspiroo.ch) — Unternehmensberatung für Startups und KMUs in der Schweiz.
 
-Die Inhalte (Texte, Portrait, Logo, Impressum-Daten) stammen von der bestehenden Seite. Neu ist ein Referenzen-Katalog mit aktuellen Mandaten.
+Die Inhalte (Texte, Portrait, Logo, Impressum-Daten) und die Fotos bzw. Illustrationen stammen von der bestehenden Seite. Neu ist ein Referenzen-Katalog mit aktuellen Mandaten.
 
 Vorschau auf GitHub Pages: [seidenraupe.github.io/inspiroo-website](https://seidenraupe.github.io/inspiroo-website/)
 

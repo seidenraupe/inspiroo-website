@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 
+import { ContentImage } from "@/components/content-image";
 import { CtaBand } from "@/components/cta-band";
 import { services, servicesIntro } from "@/lib/content";
+import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Services",
@@ -22,22 +24,40 @@ export default function ServicesPage() {
         <p className="mt-6 max-w-3xl leading-relaxed text-ink/70">
           {servicesIntro}
         </p>
-        <div className="mt-14 space-y-5">
-          {services.map((service) => (
+        <div className="mt-14 space-y-8">
+          {services.map((service, index) => (
             <article
               key={service.slug}
               id={service.slug}
-              className="grid gap-6 rounded-[1.6rem] border border-ink/8 bg-white p-7 md:grid-cols-[7rem_1fr] md:p-10"
+              className="overflow-hidden rounded-[1.6rem] border border-ink/8 bg-white"
             >
-              <p className="font-heading text-3xl text-brand">{service.number}</p>
-              <div>
-                <h2 className="font-heading text-3xl">{service.title}</h2>
-                <p className="mt-4 max-w-2xl leading-relaxed text-ink/70">
-                  {service.summary}
-                </p>
-                <p className="mt-3 max-w-2xl leading-relaxed text-ink/80">
-                  {service.body}
-                </p>
+              <div
+                className={cn(
+                  "grid items-stretch md:grid-cols-2",
+                  index % 2 === 1 && "md:[&>figure]:order-2",
+                )}
+              >
+                <figure className="min-h-64 bg-ink/5 md:min-h-[22rem]">
+                  <ContentImage
+                    src={service.image}
+                    alt={service.imageAlt}
+                    width={1024}
+                    height={1024}
+                    className="h-full w-full object-cover"
+                  />
+                </figure>
+                <div className="flex flex-col justify-center p-7 md:p-10">
+                  <p className="font-heading text-3xl text-brand">
+                    {service.number}
+                  </p>
+                  <h2 className="font-heading mt-2 text-3xl">{service.title}</h2>
+                  <p className="mt-4 max-w-xl leading-relaxed text-ink/70">
+                    {service.summary}
+                  </p>
+                  <p className="mt-3 max-w-xl leading-relaxed text-ink/80">
+                    {service.body}
+                  </p>
+                </div>
               </div>
             </article>
           ))}
