@@ -13,10 +13,10 @@ export function CtaBand() {
         alt=""
         width={1456}
         height={816}
-        className="absolute inset-0 h-full w-full object-cover opacity-40"
+        className="absolute inset-0 h-full w-full object-cover object-[50%_28%]"
       />
-      <div className="absolute inset-0 bg-brand/78" />
-      <div className="relative mx-auto flex max-w-6xl flex-col gap-6 px-5 py-16 sm:px-8 md:flex-row md:items-end md:justify-between">
+      <div className="absolute inset-0 bg-gradient-to-r from-brand/90 via-brand/68 to-ink/35" />
+      <div className="relative mx-auto flex min-h-[18rem] max-w-6xl flex-col justify-end gap-6 px-5 py-16 sm:px-8 md:flex-row md:items-end md:justify-between">
         <div className="max-w-2xl">
           <p className="text-xs tracking-[0.2em] uppercase text-white/70">
             Nächster Schritt
