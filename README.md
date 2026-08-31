@@ -4,6 +4,8 @@ Neue Website für [inspiroo gmbh](https://www.inspiroo.ch) — Unternehmensberat
 
 Die Inhalte (Texte, Portrait, Logo, Impressum-Daten) stammen von der bestehenden Seite. Neu ist ein Referenzen-Katalog mit aktuellen Mandaten.
 
+Vorschau auf GitHub Pages: [seidenraupe.github.io/inspiroo-website](https://seidenraupe.github.io/inspiroo-website/)
+
 ## Lokal starten
 
 ```bash
@@ -30,5 +32,6 @@ Next.js, TypeScript, Tailwind CSS, shadcn/ui.
 
 ```bash
 npm run build
-npm start
 ```
+
+Der statische Export liegt in `out/` und wird bei jedem Push auf `main` nach GitHub Pages veröffentlicht.
