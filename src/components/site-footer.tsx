@@ -8,7 +8,7 @@ export function SiteFooter() {
     <footer className="border-t border-ink/8 bg-ink text-cream">
       <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 sm:px-8 md:grid-cols-[1.3fr_1fr_1fr]">
         <div>
-          <BrandMark inverted />
+          <BrandMark />
           <p className="mt-5 max-w-sm text-sm leading-relaxed text-cream/70">
             Unternehmensberatung für Startups und KMUs. Von der Analyse zur
             Aktion — mit kritischer Aussensicht, zielgerichteten
