@@ -2,7 +2,7 @@ export const hero = {
   kicker: "Unternehmensberatung für Startups und KMUs",
   title: "Von der Analyse zur Aktion",
   lead: "Gemeinsam Dein Business auf die Überholspur bringen.",
-  body: "Ich kann Dir mit einer kritischen und fundierten Aussensicht und pragmatischen Steuerungs-Instrumenten helfen, auf der Basis einer ausgewogenen Analyse Deinen Fokus zu schärfen und die Prioritäten richtig zu setzen.",
+  body: "Mit fundiertem Blick von aussen und pragmatischen Werkzeugen schärfen wir Deinen Fokus und setzen die richtigen Prioritäten für nachhaltigen Erfolg.",
   image: "/images/hero-texture.webp",
   imageAlt:
     "Luftaufnahme einer Strasse durch dichten Wald — der Weg durchs Unübersichtliche.",
