@@ -11,8 +11,8 @@ export function SiteFooter() {
           <BrandMark inverted />
           <p className="mt-5 max-w-sm text-sm leading-relaxed text-cream/70">
             Unternehmensberatung für Startups und KMUs. Von der Analyse zur
-            Aktion — mit kritischer Aussensicht und pragmatischen
-            Steuerungs-Instrumenten.
+            Aktion — mit kritischer Aussensicht, zielgerichteten
+            Steuerungs-Instrumenten und pragmatischen Massnahmen.
           </p>
         </div>
         <div>
