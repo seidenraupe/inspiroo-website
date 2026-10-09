@@ -102,14 +102,37 @@
   }
   body {
     @apply bg-cream text-ink antialiased;
+    font-size: 1.0625rem;
+    line-height: 1.65;
   }
   h1,
   h2,
   h3,
   h4 {
     font-family: var(--font-heading);
-    letter-spacing: -0.03em;
+    font-weight: 460;
+    letter-spacing: -0.035em;
+    line-height: 1.08;
   }
+  ::selection {
+    background: #d7f0de;
+    color: var(--ink);
+  }
+}
+
+.eyebrow {
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--violet);
+}
+
+.measure {
+  max-width: 40rem;
+}
+
+.hairline {
+  border-color: color-mix(in srgb, var(--ink) 12%, transparent);
 }
 
 .dash-rule {

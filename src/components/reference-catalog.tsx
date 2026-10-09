@@ -3,7 +3,6 @@
 import { useMemo, useState } from "react";
 import { ArrowUpRight } from "lucide-react";
 
-import { Badge } from "@/components/ui/badge";
 import {
   referenceCategories,
   references,
@@ -38,10 +37,10 @@ export function ReferenceCatalog() {
               aria-selected={active}
               onClick={() => setFilter(category)}
               className={cn(
-                "shrink-0 rounded-full border px-3.5 py-1.5 text-sm transition-colors",
+                "shrink-0 border-b px-1 py-2 text-sm transition-colors",
                 active
-                  ? "border-brand bg-brand text-white"
-                  : "border-ink/12 bg-white text-ink/70 hover:border-ink/30 hover:text-ink",
+                  ? "border-ink text-ink"
+                  : "border-transparent text-ink/45 hover:text-ink",
               )}
             >
               {category}
@@ -55,57 +54,43 @@ export function ReferenceCatalog() {
           In dieser Kategorie sind noch keine Referenzen erfasst.
         </p>
       ) : (
-        <ul className="mt-8 grid gap-5 md:grid-cols-2">
+        <ul className="mt-6 divide-y divide-ink/10 border-y border-ink/10">
           {visible.map((item) => (
-            <li
-              key={item.id}
-              className="flex flex-col rounded-2xl border border-ink/8 bg-white p-6 shadow-[0_12px_40px_-28px_rgba(16,32,22,0.45)]"
-            >
-              <div className="flex items-start justify-between gap-4">
-                <div>
-                  <p className="text-xs tracking-[0.16em] text-violet uppercase">
-                    {item.sector}
-                  </p>
-                  <h3 className="font-heading mt-2 text-2xl leading-tight text-ink">
-                    {item.name}
-                  </h3>
-                </div>
-                <div className="flex flex-wrap justify-end gap-1.5">
+            <li key={item.id} className="grid gap-4 py-8 md:grid-cols-[16rem_1fr]">
+              <div>
+                <h3 className="font-heading text-2xl leading-tight text-ink">
+                  {item.name}
+                </h3>
+                <p className="mt-1 text-sm text-ink/50">{item.sector}</p>
+                <div className="mt-3 flex flex-wrap gap-x-3 gap-y-1">
                   {item.categories.map((category) => (
-                    <Badge
-                      key={category}
-                      variant="secondary"
-                      className="bg-moss text-ink"
-                    >
+                    <span key={category} className="text-xs text-violet">
                       {category}
-                    </Badge>
+                    </span>
                   ))}
                 </div>
               </div>
-              <p className="mt-4 text-sm leading-relaxed text-ink/70">
-                {item.summary}
-              </p>
-              <ul className="mt-5 space-y-2 text-sm text-ink">
-                {item.mandates.map((mandate) => (
-                  <li key={mandate} className="flex gap-2">
-                    <span className="mt-2 size-1.5 shrink-0 rounded-full bg-brand" />
-                    <span>{mandate}</span>
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-6 flex flex-wrap gap-x-4 gap-y-2">
-                {item.links.map((link) => (
-                  <a
-                    key={link.href}
-                    href={link.href}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex items-center gap-1 text-sm font-medium text-brand hover:underline"
-                  >
-                    {link.label}
-                    <ArrowUpRight className="size-3.5" />
-                  </a>
-                ))}
+              <div>
+                <p className="text-sm leading-relaxed text-ink/70">{item.summary}</p>
+                <ul className="mt-4 space-y-1.5 text-sm text-ink">
+                  {item.mandates.map((mandate) => (
+                    <li key={mandate}>{mandate}</li>
+                  ))}
+                </ul>
+                <div className="mt-4 flex flex-wrap gap-x-4 gap-y-2">
+                  {item.links.map((link) => (
+                    <a
+                      key={link.href}
+                      href={link.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-1 text-sm text-brand hover:underline"
+                    >
+                      {link.label}
+                      <ArrowUpRight className="size-3.5" />
+                    </a>
+                  ))}
+                </div>
               </div>
             </li>
           ))}

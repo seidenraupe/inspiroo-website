@@ -23,7 +23,7 @@ export function BrandMark({ className }: BrandMarkProps) {
         alt="inspiroo — advisory services, pragmatisch visionär"
         width={1200}
         height={628}
-        className="h-11 w-auto sm:h-12"
+        className="h-14 w-auto max-w-[12.5rem] object-contain object-left sm:h-16 sm:max-w-[15rem]"
         priority
       />
     </Link>

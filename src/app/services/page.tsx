@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import { ContentImage } from "@/components/content-image";
 import { CtaBand } from "@/components/cta-band";
 import { services, servicesIntro } from "@/lib/content";
-import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Services",
@@ -14,51 +13,34 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   return (
     <>
-      <section className="mx-auto max-w-6xl px-5 py-16 sm:px-8 lg:py-20">
-        <p className="text-xs tracking-[0.2em] text-violet uppercase">
-          Services
-        </p>
-        <h1 className="font-heading mt-3 max-w-3xl text-5xl leading-tight text-balance">
+      <section className="mx-auto max-w-5xl px-5 pt-16 pb-6 sm:px-8 sm:pt-24">
+        <p className="eyebrow">Services</p>
+        <h1 className="font-heading mt-4 max-w-3xl text-5xl text-balance sm:text-6xl">
           Bedarfsorientierte Begleitung statt Standardpaket
         </h1>
-        <p className="mt-6 max-w-3xl leading-relaxed text-ink/70">
-          {servicesIntro}
-        </p>
-        <div className="mt-14 space-y-8">
-          {services.map((service, index) => (
+        <p className="measure mt-6 text-ink/70">{servicesIntro}</p>
+      </section>
+      <section className="mx-auto max-w-5xl px-5 pb-8 sm:px-8">
+        <div className="divide-y divide-ink/10 border-y border-ink/10">
+          {services.map((service) => (
             <article
               key={service.slug}
               id={service.slug}
-              className="overflow-hidden rounded-[1.6rem] border border-ink/8 bg-white"
+              className="grid gap-8 py-14 md:grid-cols-[5rem_1fr_14rem] md:items-start"
             >
-              <div
-                className={cn(
-                  "grid items-stretch md:grid-cols-2",
-                  index % 2 === 1 && "md:[&>figure]:order-2",
-                )}
-              >
-                <figure className="min-h-64 bg-ink/5 md:min-h-[22rem]">
-                  <ContentImage
-                    src={service.image}
-                    alt={service.imageAlt}
-                    width={1024}
-                    height={1024}
-                    className="h-full w-full object-cover"
-                  />
-                </figure>
-                <div className="flex flex-col justify-center p-7 md:p-10">
-                  <p className="font-heading text-3xl text-brand">
-                    {service.number}
-                  </p>
-                  <h2 className="font-heading mt-2 text-3xl">{service.title}</h2>
-                  <p className="mt-4 max-w-xl leading-relaxed text-ink/70">
-                    {service.summary}
-                  </p>
-                  <p className="mt-3 max-w-xl leading-relaxed text-ink/80">
-                    {service.body}
-                  </p>
-                </div>
+              <p className="font-heading text-3xl text-brand">{service.number}</p>
+              <div className="max-w-xl">
+                <h2 className="font-heading text-4xl">{service.title}</h2>
+                <p className="mt-4 text-ink/70">{service.summary}</p>
+                <p className="mt-3 text-ink/85">{service.body}</p>
               </div>
+              <ContentImage
+                src={service.image}
+                alt={service.imageAlt}
+                width={1024}
+                height={1024}
+                className="aspect-square w-full rounded-sm object-cover md:mt-1"
+              />
             </article>
           ))}
         </div>

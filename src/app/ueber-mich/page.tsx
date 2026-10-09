@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 
 import { ContentImage } from "@/components/content-image";
 import { CtaBand } from "@/components/cta-band";
-import { PhotoBreak } from "@/components/photo-break";
-import { about, photos } from "@/lib/content";
+import { about } from "@/lib/content";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -15,86 +14,73 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      <section className="mx-auto grid max-w-6xl gap-12 px-5 py-16 sm:px-8 lg:grid-cols-[0.9fr_1.1fr] lg:py-20">
+      <section className="mx-auto grid max-w-5xl items-end gap-12 px-5 pt-16 pb-8 sm:px-8 sm:pt-24 lg:grid-cols-[0.8fr_1.2fr]">
         <figure>
           <ContentImage
             src="/thomas-giger.jpg"
             alt={site.founder.ageNote}
             width={900}
             height={900}
-            className="aspect-[4/5] w-full rounded-[2rem] object-cover object-[50%_18%] ring-1 ring-ink/10"
+            className="aspect-[4/5] w-full rounded-sm object-cover object-[50%_18%]"
             priority
           />
+          <figcaption className="mt-3 text-sm text-ink/50">
+            {site.founder.name}
+          </figcaption>
         </figure>
         <div>
-          <p className="text-xs tracking-[0.2em] text-violet uppercase">
-            Über mich
-          </p>
-          <h1 className="font-heading mt-3 text-5xl leading-tight text-balance">
+          <p className="eyebrow">Über mich</p>
+          <h1 className="font-heading mt-4 text-4xl text-balance sm:text-5xl">
             {site.founder.ageNote}
           </h1>
-          <blockquote className="mt-8 border-l-2 border-violet pl-5">
-            <p className="font-heading text-2xl leading-snug text-ink/90">
+          <blockquote className="mt-8">
+            <p className="font-heading text-2xl leading-snug sm:text-3xl">
               «{about.quoteOriginal}»
             </p>
-            <footer className="mt-3 text-sm text-ink/55">{about.quoteSource}</footer>
+            <footer className="mt-3 text-sm text-ink/50">{about.quoteSource}</footer>
           </blockquote>
-          <div className="mt-8 flex flex-wrap gap-2">
+          <ul className="mt-8 flex flex-wrap gap-x-5 gap-y-2 text-sm text-ink/60">
             {about.personality.map((trait) => (
-              <span
-                key={trait}
-                className="rounded-full bg-moss px-3 py-1 text-sm text-ink"
-              >
-                {trait}
-              </span>
+              <li key={trait}>{trait}</li>
             ))}
-          </div>
-          <p className="mt-8 leading-relaxed text-ink/75">{about.independent}</p>
-          <p className="mt-4 leading-relaxed text-ink/75">{about.focus}</p>
+          </ul>
         </div>
       </section>
 
-      <PhotoBreak
-        src={photos.collaboration.src}
-        alt={photos.collaboration.alt}
-        caption="Zusammenarbeit, die neue Lösungen entstehen lässt."
-      />
+      <section className="mx-auto max-w-5xl space-y-6 px-5 pb-16 sm:px-8">
+        <p className="measure text-ink/75">{about.independent}</p>
+        <p className="measure text-ink/75">{about.focus}</p>
+      </section>
 
-      <section className="bg-white">
-        <div className="mx-auto grid max-w-6xl gap-12 px-5 py-16 sm:px-8 lg:grid-cols-2">
+      <section className="border-t border-ink/10 bg-white">
+        <div className="mx-auto grid max-w-5xl gap-14 px-5 py-20 sm:px-8 lg:grid-cols-2">
           <div>
-            <p className="text-xs tracking-[0.2em] text-violet uppercase">
-              Ausbildung
-            </p>
+            <p className="eyebrow">Ausbildung</p>
             <h2 className="font-heading mt-3 text-3xl">Fundiert und neugierig</h2>
-            <p className="mt-5 leading-relaxed text-ink/75">{about.education}</p>
+            <p className="mt-5 text-ink/75">{about.education}</p>
           </div>
           <div>
-            <p className="text-xs tracking-[0.2em] text-violet uppercase">
-              Erfahrung
-            </p>
+            <p className="eyebrow">Erfahrung</p>
             <h2 className="font-heading mt-3 text-3xl">Über 30 Jahre C-Level</h2>
-            <p className="mt-5 leading-relaxed text-ink/75">{about.experience}</p>
+            <p className="mt-5 text-ink/75">{about.experience}</p>
           </div>
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-5 py-16 sm:px-8">
-        <p className="text-xs tracking-[0.2em] text-violet uppercase">
-          Stationen
-        </p>
-        <h2 className="font-heading mt-3 text-3xl">Werdegang</h2>
+      <section className="mx-auto max-w-5xl px-5 py-20 sm:px-8">
+        <p className="eyebrow">Stationen</p>
+        <h2 className="font-heading mt-3 text-4xl">Werdegang</h2>
         <ol className="mt-10 divide-y divide-ink/10 border-y border-ink/10">
           {about.timeline.map((item) => (
             <li
               key={`${item.years}-${item.org}`}
-              className="grid gap-2 py-5 sm:grid-cols-[10rem_1fr]"
+              className="grid gap-1 py-5 sm:grid-cols-[9rem_1fr] sm:items-baseline"
             >
-              <p className="text-sm tracking-wide text-brand">{item.years}</p>
-              <div>
-                <p className="font-medium">{item.role}</p>
-                <p className="text-ink/65">{item.org}</p>
-              </div>
+              <p className="text-sm text-brand">{item.years}</p>
+              <p>
+                <span className="font-medium">{item.role}</span>
+                <span className="text-ink/55"> · {item.org}</span>
+              </p>
             </li>
           ))}
         </ol>

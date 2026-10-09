@@ -1,48 +1,30 @@
 import Link from "next/link";
 
-import { ContentImage } from "@/components/content-image";
-import { Button } from "@/components/ui/button";
 import { cta } from "@/lib/content";
 import { site } from "@/lib/site";
 
 export function CtaBand() {
   return (
-    <section className="relative overflow-hidden bg-ink text-white">
-      <ContentImage
-        src={cta.image}
-        alt=""
-        width={1456}
-        height={816}
-        className="absolute inset-0 h-full w-full object-cover object-[50%_28%]"
-      />
-      <div className="absolute inset-0 bg-gradient-to-r from-brand/90 via-brand/68 to-ink/35" />
-      <div className="relative mx-auto flex min-h-[18rem] max-w-6xl flex-col justify-end gap-6 px-5 py-16 sm:px-8 md:flex-row md:items-end md:justify-between">
-        <div className="max-w-2xl">
-          <p className="text-xs tracking-[0.2em] uppercase text-white/70">
-            Nächster Schritt
-          </p>
-          <h2 className="font-heading mt-3 text-3xl leading-tight text-balance sm:text-4xl">
-            {cta.title}
-          </h2>
-          <p className="mt-4 max-w-xl text-white/85">{cta.body}</p>
-        </div>
-        <div className="flex flex-col gap-3 sm:flex-row">
-          <Button
-            render={<Link href="/kontakt" />}
-            variant="secondary"
-            size="lg"
-            className="h-11 bg-white px-5 text-ink hover:bg-cream"
+    <section className="border-t border-ink/10">
+      <div className="mx-auto max-w-5xl px-5 py-20 sm:px-8 sm:py-28">
+        <p className="eyebrow">Nächster Schritt</p>
+        <h2 className="font-heading mt-4 max-w-3xl text-4xl text-balance sm:text-5xl">
+          {cta.title}
+        </h2>
+        <p className="measure mt-5 text-ink/70">{cta.body}</p>
+        <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
+          <Link
+            href="/kontakt"
+            className="inline-flex h-11 items-center justify-center rounded-full bg-ink px-5 text-sm text-cream hover:bg-ink/85"
           >
             Nachricht schreiben
-          </Button>
-          <Button
-            render={<a href={site.phoneHref} />}
-            variant="outline"
-            size="lg"
-            className="h-11 border-white/40 bg-transparent px-5 text-white hover:bg-white/10 hover:text-white"
+          </Link>
+          <a
+            href={site.phoneHref}
+            className="text-lg text-ink underline decoration-brand/50 underline-offset-4 hover:decoration-brand"
           >
             {site.phone}
-          </Button>
+          </a>
         </div>
       </div>
     </section>
