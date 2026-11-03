@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fraunces, Geist } from "next/font/google";
+import { Source_Sans_3 } from "next/font/google";
 
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -8,15 +8,9 @@ import { site } from "@/lib/site";
 
 import "./globals.css";
 
-const geistSans = Geist({
+const sourceSans = Source_Sans_3({
   variable: "--font-sans",
   subsets: ["latin"],
-});
-
-const fraunces = Fraunces({
-  variable: "--font-heading",
-  subsets: ["latin"],
-  axes: ["SOFT", "WONK"],
 });
 
 export const metadata: Metadata = {
@@ -26,8 +20,9 @@ export const metadata: Metadata = {
     template: `%s | ${site.name}`,
   },
   description: site.description,
+  keywords: [...site.keywords],
   applicationName: site.name,
-  authors: [{ name: site.founder.name }],
+  authors: [{ name: site.founder.name, url: site.founder.linkedin }],
   openGraph: {
     title: site.title,
     description: site.description,
@@ -35,6 +30,7 @@ export const metadata: Metadata = {
     type: "website",
     siteName: site.name,
     url: site.url,
+    images: [{ url: "/thomas-giger.jpg", width: 2048, height: 2048 }],
   },
   icons: {
     icon: withBase("/inspiroo-mark.png"),
@@ -42,35 +38,55 @@ export const metadata: Metadata = {
   },
 };
 
+const founder = {
+  "@type": "Person",
+  "@id": `${site.url}/#thomas-giger`,
+  name: site.founder.name,
+  jobTitle: site.founder.headline,
+  image: `${site.url}/thomas-giger.jpg`,
+  sameAs: [site.founder.linkedin],
+  worksFor: { "@id": `${site.url}/#organisation` },
+  alumniOf: { "@type": "CollegeOrUniversity", name: "Universität Zürich" },
+};
+
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  name: site.legalName,
-  url: site.url,
-  email: site.email,
-  telephone: site.phone,
-  image: `${site.url}/inspiroo-mark.png`,
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: site.address.street,
-    postalCode: site.address.zip,
-    addressLocality: site.address.city,
-    addressCountry: "CH",
-  },
-  founder: {
-    "@type": "Person",
-    name: site.founder.name,
-  },
-  areaServed: "CH",
-  description: site.description,
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": `${site.url}/#organisation`,
+      name: site.legalName,
+      url: site.url,
+      email: site.email,
+      telephone: site.phone,
+      image: `${site.url}/inspiroo-logo.png`,
+      logo: `${site.url}/inspiroo-logo.png`,
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: site.address.street,
+        postalCode: site.address.zip,
+        addressLocality: site.address.city,
+        addressCountry: "CH",
+      },
+      founder: { "@id": founder["@id"] },
+      areaServed: { "@type": "Country", name: "Schweiz" },
+      knowsAbout: [
+        "Strategieberatung",
+        "Unternehmensentwicklung",
+        "Sparring für Geschäftsleitungen",
+        "Verwaltungsrat",
+        "Digitale Transformation",
+      ],
+      sameAs: [site.linkedin],
+      description: site.description,
+    },
+    founder,
+  ],
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html
-      lang="de-CH"
-      className={`${geistSans.variable} ${fraunces.variable} h-full antialiased`}
-    >
+    <html lang="de-CH" className={`${sourceSans.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col bg-cream text-ink">
         <script
           type="application/ld+json"
