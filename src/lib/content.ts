@@ -62,9 +62,9 @@ export const audience = {
   ],
   secondary:
     "Auch Start-ups begleite ich gerne – vor allem, wenn aus einer guten Idee ein tragfähiges Unternehmen werden soll.",
-  image: "/images/kmu-werkhalle.webp",
+  image: "/images/werkhalle-inhaberin.webp",
   imageAlt:
-    "Inhaber und Produktionsleiter im Gespräch in einer hellen Werkhalle eines Industriebetriebs.",
+    "Inhaberin und Mitarbeiter begutachten ein Werkstück in einer hellen Werkhalle.",
 } as const;
 
 export const principles = {
@@ -89,9 +89,9 @@ export const principles = {
       body: "Eine Strategie ist erst dann gut, wenn sie im Alltag ankommt. Auf Wunsch begleite ich auch die Umsetzung – mit klaren Meilensteinen und Kennzahlen.",
     },
   ],
-  image: "/images/sparring-ceo.webp",
+  image: "/images/gespraech-sessel.webp",
   imageAlt:
-    "Zwei Unternehmer im ruhigen Gespräch in Sesseln an einem grossen Fenster.",
+    "Zwei Sessel und ein kleiner Tisch mit Wassergläsern an einem Fenster mit Blick über die Altstadt.",
 } as const;
 
 export const process = {
@@ -133,9 +133,9 @@ export const services = [
       "Priorisierte Massnahmenliste mit Verantwortlichkeiten",
     ],
     format: "Kurzmandat, typischerweise einige Wochen",
-    image: "/images/analyse-zahlen.webp",
+    image: "/images/analyse-unterlagen.webp",
     imageAlt:
-      "Hände mit Stift über ausgedruckten Auswertungen und Diagrammen auf einem Holztisch.",
+      "Ausgedruckte Auswertungen mit Diagrammen, Brille, Füllfeder und Kaffee auf einem Holztisch.",
     voice: clientVoices.hvw,
   },
   {
@@ -151,9 +151,9 @@ export const services = [
       "Sicherheit bei Personal-, Investitions- und Strategiefragen",
     ],
     format: "Regelmässige Sparring-Termine oder auf Abruf",
-    image: "/images/sparring-gespraech.webp",
+    image: "/images/unternehmerin-fenster.webp",
     imageAlt:
-      "Ein erfahrener Berater und eine Unternehmerin im konzentrierten Gespräch in einem Büro mit Backsteinwand.",
+      "Eine Unternehmerin steht mit einer Tasse Kaffee nachdenklich am Fenster ihres Büros.",
     voice: clientVoices.danko,
   },
   {
@@ -169,9 +169,9 @@ export const services = [
       "Regelmässige Standortbestimmung mit der Geschäftsleitung",
     ],
     format: "Längerfristige Begleitung, z. B. monatlich",
-    image: "/images/gl-team-sitzung.webp",
+    image: "/images/gl-team-planung.webp",
     imageAlt:
-      "Geschäftsleitungsteam bespricht Prioritäten an einem Whiteboard.",
+      "Geschäftsleitungsteam bespricht einen Meilensteinplan an einem Holztisch.",
     voice: clientVoices.homeOfInnovation,
   },
   {
@@ -187,9 +187,9 @@ export const services = [
       "Umsetzungsplan mit Etappenzielen und Budget",
     ],
     format: "Strategieprojekt mit Workshops, mehrere Monate",
-    image: "/images/strategie-workshop.webp",
+    image: "/images/workshop-karten.webp",
     imageAlt:
-      "Strategie-Workshop: Mehrere Personen ordnen Karten an einer Pinnwand in einem hellen Raum.",
+      "Strategie-Workshop: Karten werden an einer Wand zu Themen geordnet.",
     voice: clientVoices.webling,
   },
 ] as const;
@@ -284,9 +284,9 @@ export const about = {
     { years: "1992", role: "Eintritt", org: "Sony (Schweiz) AG" },
     { years: "1991", role: "Master of Arts", org: "Universität Zürich" },
   ],
-  image: "/images/verwaltungsrat.webp",
+  image: "/images/sitzungszimmer.webp",
   imageAlt:
-    "Verwaltungsratssitzung an einem langen Eichentisch in einem hellen Sitzungszimmer.",
+    "Vorbereitetes Sitzungszimmer mit langem Eichentisch, Unterlagen und Wasserkaraffe.",
 };
 
 export const closing = {
