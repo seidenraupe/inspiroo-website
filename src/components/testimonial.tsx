@@ -1,24 +1,21 @@
 import { ContentImage } from "@/components/content-image";
 import { DraftHint } from "@/components/draft-hint";
+import { site } from "@/lib/site";
+import type { ClientVoice } from "@/lib/testimonials";
 import { cn } from "@/lib/utils";
 
 type TestimonialProps = {
-  quote: string;
-  body?: string;
-  name?: string;
-  role: string;
+  voice: ClientVoice;
   variant?: "card" | "inline";
   className?: string;
 };
 
-export function Testimonial({
-  quote,
-  body,
-  name,
-  role,
-  variant = "card",
-  className,
-}: TestimonialProps) {
+export function Testimonial({ voice, variant = "card", className }: TestimonialProps) {
+  const pending = voice.quote === null;
+  if (pending && !site.showDraftHints) return null;
+
+  const text = voice.quote ?? voice.sample;
+
   return (
     <figure
       className={cn(
@@ -28,33 +25,58 @@ export function Testimonial({
         className,
       )}
     >
+      {variant === "card" ? <CompanyLogo voice={voice} className="mb-7" /> : null}
       <blockquote className="flex-1">
         <p
           className={cn(
-            "font-semibold text-balance text-ink",
-            variant === "card" ? "text-xl leading-snug" : "text-lg leading-snug",
+            "leading-snug font-semibold text-balance",
+            variant === "card" ? "text-xl" : "text-lg",
+            pending ? "text-ink/55" : "text-ink",
           )}
         >
-          «{quote}»
+          «{text}»
         </p>
-        {body ? <p className="mt-4 text-base leading-relaxed text-ink/70">{body}</p> : null}
+        {voice.body ? (
+          <p className="mt-4 text-base leading-relaxed text-ink/70">{voice.body}</p>
+        ) : null}
       </blockquote>
       <figcaption className="mt-6 flex items-center gap-4">
-        <ContentImage
-          src="/images/testimonial-platzhalter.svg"
-          alt="Platzhalter für das Porträt der zitierten Person"
-          width={56}
-          height={56}
-          className="size-12 shrink-0 rounded-full"
-        />
+        {variant === "inline" ? (
+          <CompanyLogo voice={voice} className="w-24" />
+        ) : null}
         <div className="text-sm leading-snug">
-          {name ? <p className="font-semibold text-ink">{name}</p> : null}
-          <p className="text-ink/60">{role}</p>
+          <p className="font-semibold text-ink">{voice.person}</p>
+          <p className="text-ink/60">
+            {voice.role ? `${voice.role}, ` : null}
+            {voice.company}
+          </p>
         </div>
       </figcaption>
-      <DraftHint className="mt-5 self-start">
-        Illustratives Muster – kein echtes Kundenfeedback
-      </DraftHint>
+      {pending ? (
+        <DraftHint className="mt-5 self-start">
+          Statement angefragt – Text ist ein illustratives Muster
+        </DraftHint>
+      ) : null}
     </figure>
+  );
+}
+
+function CompanyLogo({ voice, className }: { voice: ClientVoice; className?: string }) {
+  return (
+    <div
+      className={cn(
+        "flex h-14 shrink-0 items-center",
+        voice.logo.onDark && "self-start rounded-md bg-navy px-3",
+        className,
+      )}
+    >
+      <ContentImage
+        src={voice.logo.src}
+        alt={`Logo ${voice.company}`}
+        width={voice.logo.width}
+        height={voice.logo.height}
+        className="h-auto max-h-10 w-auto max-w-[9.5rem] object-contain"
+      />
+    </div>
   );
 }
