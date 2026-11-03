@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 
 import { ContentImage } from "@/components/content-image";
 import { CtaBand } from "@/components/cta-band";
-import { DraftHint } from "@/components/draft-hint";
 import { Testimonial } from "@/components/testimonial";
-import { about, aboutTestimonial, experienceFacts, principles } from "@/lib/content";
+import { about, experienceFacts, principles } from "@/lib/content";
 import { firstCallHref, site } from "@/lib/site";
+import { clientVoices } from "@/lib/testimonials";
 
 export const metadata: Metadata = {
   title: "Thomas Giger – Unternehmer, Verwaltungsrat und Sparring-Partner für KMU",
@@ -70,13 +70,19 @@ export default function AboutPage() {
           <h2 className="mt-4 text-3xl text-balance sm:text-4xl">
             Vom CEO zum unabhängigen Sparring-Partner
           </h2>
-          <DraftHint className="mt-5">Entwurf – bitte in eigenen Worten bestätigen</DraftHint>
         </div>
-        <div className="mt-12 grid gap-x-16 gap-y-12 md:grid-cols-2">
+        <div className="mt-12 grid gap-x-16 gap-y-14 md:grid-cols-2">
           {about.story.map((item) => (
-            <article key={item.question}>
-              <h3 className="text-xl">{item.question}</h3>
-              <p className="mt-3 text-ink/75">{item.answer}</p>
+            <article key={item.question} className="border-t-2 border-navy pt-6">
+              <h3 className="text-2xl">{item.question}</h3>
+              <dl className="mt-6 space-y-5">
+                {item.points.map((point) => (
+                  <div key={point.title}>
+                    <dt className="font-semibold text-ink">{point.title}</dt>
+                    <dd className="mt-1 text-ink/70">«{point.text}»</dd>
+                  </div>
+                ))}
+              </dl>
             </article>
           ))}
         </div>
@@ -132,10 +138,7 @@ export default function AboutPage() {
             <p className="text-2xl leading-snug font-semibold text-balance">«{about.quote}»</p>
             <footer className="mt-3 text-sm text-ink/55">{about.quoteSource}</footer>
           </blockquote>
-          <Testimonial
-            quote={aboutTestimonial.quote}
-            role={aboutTestimonial.role}
-          />
+          <Testimonial voice={clientVoices.raiffeisen} />
         </div>
       </section>
 

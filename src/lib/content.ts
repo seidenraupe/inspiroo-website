@@ -1,3 +1,5 @@
+import { clientVoices } from "@/lib/testimonials";
+
 export const hero = {
   kicker: "Sparring und Unternehmensentwicklung für KMU",
   title: "Unternehmerisch denken. Klar entscheiden. Wirksam umsetzen.",
@@ -134,11 +136,7 @@ export const services = [
     image: "/images/analyse-zahlen.webp",
     imageAlt:
       "Hände mit Stift über ausgedruckten Auswertungen und Diagrammen auf einem Holztisch.",
-    testimonial: {
-      quote:
-        "In wenigen Wochen hatten wir ein klares Bild, wo wir Geld verdienen und wo nicht. Die drei Prioritäten aus dem Boxen-Stopp setzen wir heute noch um.",
-      role: "Inhaber eines Schweizer Handelsunternehmens",
-    },
+    voice: clientVoices.hvw,
   },
   {
     number: "02",
@@ -156,11 +154,7 @@ export const services = [
     image: "/images/sparring-gespraech.webp",
     imageAlt:
       "Ein erfahrener Berater und eine Unternehmerin im konzentrierten Gespräch in einem Büro mit Backsteinwand.",
-    testimonial: {
-      quote:
-        "Ein Sparring-Partner, der unternehmerisch denkt und auch unbequeme Fragen stellt. Genau das hat mir vor wichtigen Entscheidungen gefehlt.",
-      role: "CEO eines Schweizer KMU",
-    },
+    voice: clientVoices.danko,
   },
   {
     number: "03",
@@ -178,11 +172,7 @@ export const services = [
     image: "/images/gl-team-sitzung.webp",
     imageAlt:
       "Geschäftsleitungsteam bespricht Prioritäten an einem Whiteboard.",
-    testimonial: {
-      quote:
-        "Wir hatten gute Pläne, aber zu wenig Zug in der Umsetzung. Mit klaren Kennzahlen und festen Meilensteinen ziehen heute alle in der Geschäftsleitung am gleichen Strick.",
-      role: "Geschäftsführerin eines Familienunternehmens",
-    },
+    voice: clientVoices.homeOfInnovation,
   },
   {
     number: "04",
@@ -200,40 +190,9 @@ export const services = [
     image: "/images/strategie-workshop.webp",
     imageAlt:
       "Strategie-Workshop: Mehrere Personen ordnen Karten an einer Pinnwand in einem hellen Raum.",
-    testimonial: {
-      quote:
-        "Thomas hat uns durch einen Strategieprozess geführt, der nicht in der Schublade gelandet ist. Wir wissen heute, was wir bewusst nicht mehr tun.",
-      role: "Verwaltungsratspräsident eines Dienstleistungsunternehmens",
-    },
+    voice: clientVoices.webling,
   },
 ] as const;
-
-export const testimonials = [
-  {
-    quote: "Ein Sparring-Partner, der unternehmerisch denkt und auch unbequeme Fragen stellt.",
-    body: "Thomas hat uns geholfen, unsere strategischen Prioritäten zu schärfen und wichtige Entscheidungen aus einer neuen Perspektive zu betrachten. Besonders geschätzt habe ich seine langjährige Führungserfahrung, seine pragmatische Art und seinen klaren Blick für das Wesentliche.",
-    name: "Vorname Nachname",
-    role: "CEO eines Schweizer KMU",
-  },
-  {
-    quote: "Er kennt die Realität eines Unternehmers – nicht nur die Theorie.",
-    body: "Im Gespräch mit Thomas merkt man sofort, dass er selbst Verantwortung getragen hat. Er hört zu, bringt seine Erfahrung ein und hilft, aus vielen Ideen die zwei, drei richtigen auszuwählen.",
-    name: "Vorname Nachname",
-    role: "Inhaber eines Familienunternehmens, 35 Mitarbeitende",
-  },
-  {
-    quote: "Pragmatisch, verbindlich und mit klarem Blick auf die Umsetzung.",
-    body: "Aus dem Strategieprozess sind konkrete Massnahmen mit klaren Verantwortlichkeiten entstanden. Thomas hat uns auch in der Umsetzung begleitet und dafür gesorgt, dass wir dranbleiben.",
-    name: "Vorname Nachname",
-    role: "Verwaltungsratspräsident",
-  },
-] as const;
-
-export const aboutTestimonial = {
-  quote:
-    "Thomas bringt die Ruhe und das Urteilsvermögen von jemandem mit, der schon viele schwierige Situationen gemeistert hat.",
-  role: "Mitglied des Verwaltungsrats",
-} as const;
 
 export const about = {
   title: "Thomas Giger – Unternehmer, Verwaltungsrat und Sparring-Partner für KMU",
@@ -244,23 +203,71 @@ export const about = {
   story: [
     {
       question: "Was ich als CEO gelernt habe",
-      answer:
-        "Strategien scheitern selten an der Idee, sondern an der Umsetzung. Bei Fust haben wir die IT-Landschaft erneuert, den Online-Handel aufgebaut, die Logistik verdoppelt und Firmen integriert – immer im laufenden Betrieb. Dabei habe ich gelernt, dass klare Prioritäten, verlässliche Kennzahlen und Respekt gegenüber den Mitarbeitenden mehr bewirken als jedes Konzept.",
+      points: [
+        {
+          title: "Entscheiden schlägt Perfektion",
+          text: "Eine mutige Entscheidung heute bringt das Unternehmen weiter als monatelanges Abwägen. Fehler lassen sich korrigieren, Stillstand nicht.",
+        },
+        {
+          title: "Strategie entscheidet sich am Boden",
+          text: "Die brillanteste Vision verpufft, wenn das Team sie im Alltag nicht greifen kann. Echte Ergebnisse entstehen nicht auf Slides, sondern durch Klarheit und Mitnahme der Schlüsselpersonen.",
+        },
+        {
+          title: "Verantwortung braucht Resonanz",
+          text: "An der Spitze steht man mit schwierigen Weichenstellungen oft allein da. Ein offener, unabhängiger Sparring-Partner spart Nerven, Zeit und teure Umwege.",
+        },
+      ],
     },
     {
       question: "Warum ich inspiroo gegründet habe",
-      answer:
-        "Nach meiner Zeit als CEO wollte ich meine Erfahrung weitergeben – aber nicht als Teil eines Beratungskonzerns, sondern unabhängig und persönlich. Mit inspiroo kann ich mir die Mandate aussuchen, bei denen ich wirklich etwas bewegen kann.",
+      points: [
+        {
+          title: "Weil PS auf die Strasse gehören",
+          text: "Ich will Unternehmern und Führungskräften den Rücken stärken und dort Wirkung entfalten, wo Ressourcen knapp sind und Tempo zählt.",
+        },
+        {
+          title: "Aus der Praxis für die Praxis",
+          text: "Ich kenne den Druck, die Zielkonflikte und die Hürden des CEO-Alltags aus eigener Erfahrung. Dieses Wissen will ich direkt nutzbar machen – ohne Umwege und Theorieballast.",
+        },
+        {
+          title: "Für echtes Unternehmertum",
+          text: "Weil es mich antreibt zu sehen, wie aus klaren Impulsen spürbare Dynamik und konkretes Wachstum entstehen.",
+        },
+      ],
     },
     {
       question: "Was mich an KMU reizt",
-      answer:
-        "In KMU sind die Wege kurz, Entscheidungen werden schnell spürbar und die Menschen identifizieren sich mit ihrem Unternehmen. Hier kann ein gutes Gespräch zur richtigen Zeit einen echten Unterschied machen.",
+      points: [
+        {
+          title: "Unmittelbare Wirkung",
+          text: "Im KMU sieht man das Resultat einer guten Entscheidung oft schon nach wenigen Wochen. Hier bewegt man echte Hebel statt Gremien.",
+        },
+        {
+          title: "Kurze Wege, klare Kante",
+          text: "Direkter Draht zu den Inhabern, ehrliche Gespräche und der gemeinsame Wille, Dinge einfach anzupacken und umzusetzen.",
+        },
+        {
+          title: "Das Rückgrat der Wirtschaft",
+          text: "Hier wird echte Wertschöpfung betrieben – bodenständig, krisenfest und mit spürbarer Verantwortung für Menschen und Region.",
+        },
+      ],
     },
     {
       question: "Was mich von klassischen Beratern unterscheidet",
-      answer:
-        "Ich bringe keine Standardmethodik und kein Juniorenteam mit. Du arbeitest direkt mit mir – mit jemandem, der selbst unternehmerische Entscheide getroffen und ihre Folgen getragen hat. Ich stelle kritische Fragen, sage offen, was ich denke, und unterstütze Dich auf Wunsch auch bei der Umsetzung.",
+      points: [
+        {
+          title: "Selbst im Sattel gesessen",
+          text: "Ich rede nicht über Führung und Strategie aus der Beobachterrolle. Ich hatte selbst Personal- und Budgetverantwortung und kenne die schlaflosen Nächte.",
+        },
+        {
+          title: "Umsetzer statt Konzept-Produzent",
+          text: "Ich schreibe keine 80-seitigen Berichte für die Schublade. Wir erarbeiten pragmatische Lösungen, die direkt am nächsten Tag funktionieren.",
+        },
+        {
+          title: "Sparring auf Augenhöhe",
+          text: "Keine akademischen Belehrungen, kein Fachchinesisch. Sondern ein partnerschaftlicher, fordernder und ehrlicher Austausch von Macher zu Macher.",
+        },
+      ],
     },
   ],
   quote: "Nur aus Enthusiasmus kann Neugierde entstehen, und nur wer neugierig ist, kann lernen.",

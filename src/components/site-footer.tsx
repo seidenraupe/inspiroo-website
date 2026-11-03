@@ -50,6 +50,16 @@ export function SiteFooter() {
             </li>
             <li>
               <a
+                href={site.founder.linkedin}
+                target="_blank"
+                rel="noreferrer"
+                className="text-brand underline decoration-brand/30 underline-offset-4 hover:decoration-brand"
+              >
+                Thomas Giger auf LinkedIn
+              </a>
+            </li>
+            <li>
+              <a
                 href={site.linkedin}
                 target="_blank"
                 rel="noreferrer"

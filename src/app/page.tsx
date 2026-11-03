@@ -17,9 +17,9 @@ import {
   occasions,
   principles,
   services,
-  testimonials,
 } from "@/lib/content";
 import { caseStudies } from "@/lib/references";
+import { homeVoices } from "@/lib/testimonials";
 import { firstCallHref, site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -190,8 +190,8 @@ export default function HomePage() {
             title="Wie Kundinnen und Kunden die Zusammenarbeit erleben"
           />
           <div className="mt-12 grid gap-6 lg:grid-cols-3">
-            {testimonials.map((item, index) => (
-              <Testimonial key={index} {...item} />
+            {homeVoices.map((voice) => (
+              <Testimonial key={voice.id} voice={voice} />
             ))}
           </div>
         </div>

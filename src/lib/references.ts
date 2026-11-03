@@ -28,6 +28,8 @@ export type CaseStudy = {
   contribution: string;
   result: string;
   link?: { label: string; href: string };
+  /** Ausgangslage oder Ergebnis noch nicht vom Mandanten bestätigt. */
+  draft?: boolean;
 };
 
 export const referenceCategories: Array<ReferenceCategory | "Alle"> = [
@@ -121,9 +123,9 @@ export const references: Reference[] = [
   {
     id: "danko",
     name: "Danko",
-    sector: "Catering und Fleischhandel",
+    sector: "Fleischhandel und Catering",
     summary:
-      "Event-Catering und Fleischhandel mit Fokus auf massgeschneiderte Konzepte und ausgewählte Produzenten.",
+      "Führendes Fleischhandels-Unternehmen für Gastronomie und Heime in der Ostschweiz mit eigenständigem Catering-Bereich.",
     mandates: ["Coaching und Sparring GL"],
     categories: ["Coaching"],
     links: [{ label: "danko.ch", href: "https://www.danko.ch/" }],
@@ -204,32 +206,28 @@ export const references: Reference[] = [
     sector: "Gastronomie",
     summary:
       "Mediterranes Restaurant mit Pizzeria an der Tösstalstrasse in Winterthur, seit 2006 inhabergeführt.",
-    mandates: ["Mandatsbeschreibung folgt"],
-    categories: [],
+    mandates: [
+      "Überarbeitung Website mit automatischem Tisch-Reservationssystem",
+      "Reputations-Management mit aktivem Einholen von Google-Rezensionen",
+    ],
+    categories: ["Strategie", "eCommerce"],
     links: [{ label: "la-panetteria.ch", href: "https://www.la-panetteria.ch/" }],
-    pending: true,
-  },
-  {
-    id: "museum-schaffen",
-    name: "Museum Schaffen",
-    sector: "Kultur / Museum",
-    summary:
-      "Museum der Arbeitswelt auf dem Lagerplatz in Winterthur: Geschichte und Gegenwart der Arbeit, erzählt an einem Industrie-Standort.",
-    mandates: ["Mandatsbeschreibung folgt"],
-    categories: [],
-    links: [{ label: "museumschaffen.ch", href: "https://www.museumschaffen.ch/" }],
-    pending: true,
   },
   {
     id: "hv-winterthur",
-    name: "Historischer Verein Winterthur",
-    sector: "Kultur / Verein",
+    name: "Historischer Verein Winterthur / Museum Schaffen",
+    sector: "Kultur / Verein und Museen",
     summary:
-      "Seit 1874 engagiert für die Geschichte Winterthurs – Träger von drei Museen in der Stadt.",
-    mandates: ["Mandatsbeschreibung folgt"],
-    categories: [],
-    links: [{ label: "hvwinterthur.ch", href: "https://www.hvwinterthur.ch/" }],
-    pending: true,
+      "Seit 1874 engagiert für die Geschichte Winterthurs – Träger von drei Museen, darunter das Museum Schaffen auf dem Lagerplatz.",
+    mandates: [
+      "Kosteneinsparungen dank verbesserter Prozesse im Mitglieder- und Event-Management",
+      "Neukonzeption der Website mit API-Anbindung an Event-/Ticketing-Plattform und Mitglieder-Datenbank",
+    ],
+    categories: ["Innovation"],
+    links: [
+      { label: "hvwinterthur.ch", href: "https://www.hvwinterthur.ch/" },
+      { label: "museumschaffen.ch", href: "https://www.museumschaffen.ch/" },
+    ],
   },
 ];
 
@@ -281,14 +279,28 @@ export const caseStudies: CaseStudy[] = [
   {
     id: "danko",
     client: "Danko",
-    sector: "Catering und Fleischhandel",
+    sector: "Fleischhandel und Catering",
     tags: ["Coaching", "Sparring Geschäftsleitung"],
     situation:
-      "Ein inhabergeführtes Unternehmen mit zwei Geschäftsfeldern und dem Wunsch, die Führung und Weiterentwicklung auf eine breitere Basis zu stellen.",
+      "Ein führendes Fleischhandels-Unternehmen für Gastronomie und Heime in der Ostschweiz mit eigenständigem Catering-Bereich – und dem Wunsch, Führung und Weiterentwicklung auf eine breitere Basis zu stellen.",
     contribution:
       "Regelmässiges Coaching und Sparring der Geschäftsleitung zu Führung, Prioritäten und unternehmerischen Entscheidungen.",
     result:
       "Eine Geschäftsleitung mit klareren Prioritäten und einem unabhängigen Gesprächspartner für anstehende Entscheide.",
     link: { label: "danko.ch", href: "https://www.danko.ch/" },
+  },
+  {
+    id: "hv-winterthur",
+    client: "Historischer Verein Winterthur / Museum Schaffen",
+    sector: "Kultur / Verein und Museen",
+    tags: ["Prozesse", "Digitalisierung", "Website"],
+    situation:
+      "Ein traditionsreicher Verein mit drei Museen, dessen Abläufe rund um Mitglieder und Veranstaltungen viel Aufwand verursachten.",
+    contribution:
+      "Verbesserung der Prozesse im Mitglieder- und Event-Management sowie Neukonzeption der Website mit API-Anbindung an die Event-/Ticketing-Plattform und die Mitglieder-Datenbank.",
+    result:
+      "Kosteneinsparungen dank schlankerer Prozesse und eine Website, die Veranstaltungen, Tickets und Mitgliederdaten verbindet.",
+    link: { label: "hvwinterthur.ch", href: "https://www.hvwinterthur.ch/" },
+    draft: true,
   },
 ];

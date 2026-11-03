@@ -35,8 +35,7 @@ export const site = {
     name: "Thomas Giger",
     role: "Gründer und Inhaber",
     headline: "Unternehmer, Verwaltungsrat und Sparring-Partner für KMU",
-    /** Persönliches LinkedIn-Profil ergänzen, sobald die URL bekannt ist. */
-    linkedin: "https://www.linkedin.com/company/inspiroo-gmbh",
+    linkedin: "https://www.linkedin.com/in/thomas-giger/",
   },
 } as const;
 

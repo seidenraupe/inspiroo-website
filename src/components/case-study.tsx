@@ -39,7 +39,9 @@ export function CaseStudy({ item }: { item: CaseStudyData }) {
             </div>
           ))}
         </dl>
-        <DraftHint className="mt-6">Entwurf – Ergebnis bitte bestätigen oder präzisieren</DraftHint>
+        {item.draft ? (
+          <DraftHint className="mt-6">Entwurf – bitte bestätigen</DraftHint>
+        ) : null}
       </div>
     </article>
   );

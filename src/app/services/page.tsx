@@ -79,11 +79,7 @@ export default function ServicesPage() {
                 height={864}
                 className="aspect-[4/3] w-full rounded-lg object-cover"
               />
-              <Testimonial
-                variant="inline"
-                quote={service.testimonial.quote}
-                role={service.testimonial.role}
-              />
+              <Testimonial variant="inline" voice={service.voice} />
             </div>
           </section>
         ))}
