@@ -1,30 +1,36 @@
 import Link from "next/link";
 
-import { cta } from "@/lib/content";
-import { site } from "@/lib/site";
+import { closing } from "@/lib/content";
+import { firstCallHref, site } from "@/lib/site";
 
 export function CtaBand() {
   return (
-    <section className="border-t border-ink/10">
-      <div className="mx-auto max-w-5xl px-5 py-20 sm:px-8 sm:py-28">
-        <p className="eyebrow">Nächster Schritt</p>
-        <h2 className="font-heading mt-4 max-w-3xl text-4xl text-balance sm:text-5xl">
-          {cta.title}
+    <section className="bg-navy text-cream">
+      <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-28">
+        <h2 className="max-w-3xl text-3xl text-balance sm:text-5xl">
+          {closing.title}{" "}
+          <span className="text-cream/60">{closing.lead}</span>
         </h2>
-        <p className="measure mt-5 text-ink/70">{cta.body}</p>
-        <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
-          <Link
-            href="/kontakt"
-            className="inline-flex h-11 items-center justify-center rounded-full bg-ink px-5 text-sm text-cream hover:bg-ink/85"
+        <p className="measure mt-6 text-cream/75">{closing.body}</p>
+        <div className="mt-10 flex flex-col gap-5 sm:flex-row sm:items-center">
+          <a
+            href={firstCallHref}
+            className="inline-flex h-12 items-center justify-center rounded-md bg-cream px-6 font-semibold text-navy transition-colors hover:bg-white"
           >
-            Nachricht schreiben
-          </Link>
+            Unverbindliches Erstgespräch vereinbaren
+          </a>
           <a
             href={site.phoneHref}
-            className="text-lg text-ink underline decoration-brand/50 underline-offset-4 hover:decoration-brand"
+            className="text-lg text-cream underline decoration-cream/30 underline-offset-4 hover:decoration-cream"
           >
             {site.phone}
           </a>
+          <Link
+            href="/kontakt"
+            className="text-cream/70 underline decoration-cream/20 underline-offset-4 hover:text-cream"
+          >
+            Nachricht schreiben
+          </Link>
         </div>
       </div>
     </section>

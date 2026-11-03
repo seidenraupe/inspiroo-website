@@ -3,9 +3,16 @@ export const site = {
   legalName: "inspiroo gmbh",
   tagline: "pragmatisch visionär",
   claim: "advisory services",
-  title: "inspiroo | Unternehmensberatung für Startups und KMUs | Schweiz",
+  title: "Unternehmensberatung und Sparring für KMU in der Schweiz | inspiroo",
   description:
-    "Kritische Aussensicht, pragmatische Steuerungs-Instrumente und inspirierende Zusammenarbeit: Thomas Giger begleitet Startups und KMUs von der Analyse zur Aktion.",
+    "Thomas Giger, ehemaliger CEO von Dipl. Ing. Fust, begleitet inhabergeführte KMU, Familienunternehmen und Geschäftsleitungen als unabhängiger Sparring-Partner bei Strategie, Entscheidungen und Umsetzung. Sitz in Winterthur.",
+  keywords: [
+    "Unternehmensberatung KMU Schweiz",
+    "Sparring Partner CEO",
+    "Strategieberatung Winterthur",
+    "Verwaltungsrat KMU",
+    "Unternehmensentwicklung",
+  ],
   url: "https://www.inspiroo.ch",
   email: "thomas.giger@inspiroo.ch",
   infoEmail: "info@inspiroo.ch",
@@ -20,17 +27,32 @@ export const site = {
   uid: "CHE-273.046.878",
   vat: "CHE-273.046.878 MWST",
   linkedin: "https://www.linkedin.com/company/inspiroo-gmbh",
+  /** Online-Terminplaner (z. B. Cal.com oder Calendly). Ohne URL führt der CTA zu einer vorbereiteten E-Mail. */
+  bookingUrl: null as string | null,
+  /** Zeigt Hinweise auf Platzhalter und noch zu bestätigende Texte. Vor dem Livegang auf false setzen. */
+  showDraftHints: true,
   founder: {
     name: "Thomas Giger",
     role: "Gründer und Inhaber",
-    ageNote: "Thomas Giger (60), Gründer/Inhaber",
+    headline: "Unternehmer, Verwaltungsrat und Sparring-Partner für KMU",
+    /** Persönliches LinkedIn-Profil ergänzen, sobald die URL bekannt ist. */
+    linkedin: "https://www.linkedin.com/company/inspiroo-gmbh",
   },
 } as const;
 
+const firstCallSubject = encodeURIComponent("Unverbindliches Erstgespräch");
+const firstCallBody = encodeURIComponent(
+  "Hallo Thomas\n\nIch würde gerne ein unverbindliches Erstgespräch vereinbaren.\n\nUnternehmen:\nAktuelle Herausforderung:\nMögliche Termine:\n\nFreundliche Grüsse\n",
+);
+
+export const firstCallHref =
+  site.bookingUrl ??
+  `mailto:${site.email}?subject=${firstCallSubject}&body=${firstCallBody}`;
+
 export const navigation = [
   { href: "/", label: "Home" },
-  { href: "/ueber-mich", label: "Über mich" },
-  { href: "/services", label: "Services" },
+  { href: "/services", label: "Formate" },
   { href: "/referenzen", label: "Referenzen" },
+  { href: "/ueber-mich", label: "Über mich" },
   { href: "/kontakt", label: "Kontakt" },
 ] as const;

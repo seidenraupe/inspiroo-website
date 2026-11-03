@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import { ArrowUpRight } from "lucide-react";
 
+import { DraftHint } from "@/components/draft-hint";
 import {
   referenceCategories,
   references,
@@ -23,7 +24,7 @@ export function ReferenceCatalog() {
   return (
     <div>
       <div
-        className="flex gap-2 overflow-x-auto pb-2"
+        className="flex gap-5 overflow-x-auto border-b border-ink/10"
         role="tablist"
         aria-label="Referenzen filtern"
       >
@@ -37,10 +38,10 @@ export function ReferenceCatalog() {
               aria-selected={active}
               onClick={() => setFilter(category)}
               className={cn(
-                "shrink-0 border-b px-1 py-2 text-sm transition-colors",
+                "-mb-px shrink-0 border-b-2 py-3 text-base transition-colors",
                 active
-                  ? "border-ink text-ink"
-                  : "border-transparent text-ink/45 hover:text-ink",
+                  ? "border-navy font-semibold text-ink"
+                  : "border-transparent text-ink/55 hover:text-ink",
               )}
             >
               {category}
@@ -54,37 +55,33 @@ export function ReferenceCatalog() {
           In dieser Kategorie sind noch keine Referenzen erfasst.
         </p>
       ) : (
-        <ul className="mt-6 divide-y divide-ink/10 border-y border-ink/10">
+        <ul className="divide-y divide-ink/10 border-b border-ink/10">
           {visible.map((item) => (
-            <li key={item.id} className="grid gap-4 py-8 md:grid-cols-[16rem_1fr]">
+            <li key={item.id} className="grid gap-4 py-8 md:grid-cols-[17rem_1fr] md:gap-14">
               <div>
-                <h3 className="font-heading text-2xl leading-tight text-ink">
-                  {item.name}
-                </h3>
-                <p className="mt-1 text-sm text-ink/50">{item.sector}</p>
-                <div className="mt-3 flex flex-wrap gap-x-3 gap-y-1">
-                  {item.categories.map((category) => (
-                    <span key={category} className="text-xs text-violet">
-                      {category}
-                    </span>
-                  ))}
-                </div>
+                <h3 className="text-xl leading-tight text-ink">{item.name}</h3>
+                <p className="mt-1 text-sm text-ink/55">{item.sector}</p>
+                {item.categories.length > 0 ? (
+                  <p className="mt-2 text-sm text-violet">{item.categories.join(" · ")}</p>
+                ) : null}
               </div>
               <div>
-                <p className="text-sm leading-relaxed text-ink/70">{item.summary}</p>
-                <ul className="mt-4 space-y-1.5 text-sm text-ink">
-                  {item.mandates.map((mandate) => (
-                    <li key={mandate}>{mandate}</li>
-                  ))}
-                </ul>
-                <div className="mt-4 flex flex-wrap gap-x-4 gap-y-2">
+                <p className="text-base leading-relaxed text-ink/70">{item.summary}</p>
+                {item.pending ? (
+                  <DraftHint className="mt-4">Mandatsbeschreibung folgt</DraftHint>
+                ) : (
+                  <p className="mt-3 text-base font-semibold text-ink">
+                    {item.mandates.join(" · ")}
+                  </p>
+                )}
+                <div className="mt-3 flex flex-wrap gap-x-4 gap-y-2">
                   {item.links.map((link) => (
                     <a
                       key={link.href}
                       href={link.href}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex items-center gap-1 text-sm text-brand hover:underline"
+                      className="inline-flex items-center gap-1 text-sm text-brand underline decoration-brand/30 underline-offset-4 hover:decoration-brand"
                     >
                       {link.label}
                       <ArrowUpRight className="size-3.5" />

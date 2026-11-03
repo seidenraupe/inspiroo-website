@@ -1,50 +1,95 @@
 import type { Metadata } from "next";
+import { Check } from "lucide-react";
 
 import { ContentImage } from "@/components/content-image";
 import { CtaBand } from "@/components/cta-band";
+import { ProcessSteps } from "@/components/process-steps";
+import { SectionHeading } from "@/components/section-heading";
+import { Testimonial } from "@/components/testimonial";
 import { services, servicesIntro } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "Services",
+  title: "Beratungsformate für KMU: Boxen-Stopp, Co-Pilot, Navigator, Masterplan",
   description:
-    "Boxen-Stopp, Co-Pilot, Navigator und Masterplan: bedarfsorientierte Beratung für Strategie, Führung, Marketing und digitale Transformation.",
+    "Standortbestimmung, Sparring für CEO und Geschäftsleitung, Begleitung der Umsetzung und Strategieentwicklung: vier Beratungsformate für KMU in der Schweiz.",
 };
 
 export default function ServicesPage() {
   return (
     <>
-      <section className="mx-auto max-w-5xl px-5 pt-16 pb-6 sm:px-8 sm:pt-24">
-        <p className="eyebrow">Services</p>
-        <h1 className="font-heading mt-4 max-w-3xl text-5xl text-balance sm:text-6xl">
-          Bedarfsorientierte Begleitung statt Standardpaket
-        </h1>
-        <p className="measure mt-6 text-ink/70">{servicesIntro}</p>
-      </section>
-      <section className="mx-auto max-w-5xl px-5 pb-8 sm:px-8">
-        <div className="divide-y divide-ink/10 border-y border-ink/10">
+      <section className="mx-auto max-w-6xl px-5 pt-14 pb-10 sm:px-8 sm:pt-20">
+        <SectionHeading
+          as="h1"
+          kicker={servicesIntro.kicker}
+          title={servicesIntro.title}
+          body={servicesIntro.body}
+        />
+        <nav aria-label="Formate" className="mt-10 flex flex-wrap gap-2">
           {services.map((service) => (
-            <article
+            <a
               key={service.slug}
-              id={service.slug}
-              className="grid gap-8 py-14 md:grid-cols-[5rem_1fr_14rem] md:items-start"
+              href={`#${service.slug}`}
+              className="rounded-md border border-ink/15 bg-white px-4 py-2 text-base text-ink/80 transition-colors hover:border-ink/40 hover:text-ink"
             >
-              <p className="font-heading text-3xl text-brand">{service.number}</p>
-              <div className="max-w-xl">
-                <h2 className="font-heading text-4xl">{service.title}</h2>
-                <p className="mt-4 text-ink/70">{service.summary}</p>
-                <p className="mt-3 text-ink/85">{service.body}</p>
-              </div>
+              <span className="mr-2 text-violet">{service.number}</span>
+              {service.title}
+            </a>
+          ))}
+        </nav>
+      </section>
+
+      <div className="mx-auto max-w-6xl px-5 sm:px-8">
+        {services.map((service, index) => (
+          <section
+            key={service.slug}
+            id={service.slug}
+            className="grid scroll-mt-28 gap-10 border-t border-ink/10 py-16 sm:py-20 lg:grid-cols-2 lg:gap-16"
+          >
+            <div className={index % 2 === 1 ? "lg:order-2" : undefined}>
+              <p className="text-sm font-semibold text-violet">
+                {service.number} · {service.title}
+              </p>
+              <p className="mt-4 text-xl leading-snug text-ink/60 italic">
+                «{service.problem}»
+              </p>
+              <h2 className="mt-5 text-3xl text-balance sm:text-[2.2rem]">
+                {service.headline}
+              </h2>
+              <p className="mt-5 text-ink/75">{service.body}</p>
+              <h3 className="mt-8 text-sm font-semibold tracking-[0.12em] text-ink/50 uppercase">
+                Was Du bekommst
+              </h3>
+              <ul className="mt-4 space-y-3">
+                {service.outcomes.map((outcome) => (
+                  <li key={outcome} className="flex gap-3 text-ink/85">
+                    <Check className="mt-1 size-4 shrink-0 text-violet" aria-hidden />
+                    {outcome}
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-6 text-sm text-ink/55">
+                <span className="font-semibold text-ink/70">Format:</span> {service.format}
+              </p>
+            </div>
+            <div className="flex flex-col gap-8">
               <ContentImage
                 src={service.image}
                 alt={service.imageAlt}
-                width={1024}
-                height={1024}
-                className="aspect-square w-full rounded-sm object-cover md:mt-1"
+                width={1152}
+                height={864}
+                className="aspect-[4/3] w-full rounded-lg object-cover"
               />
-            </article>
-          ))}
-        </div>
-      </section>
+              <Testimonial
+                variant="inline"
+                quote={service.testimonial.quote}
+                role={service.testimonial.role}
+              />
+            </div>
+          </section>
+        ))}
+      </div>
+
+      <ProcessSteps />
       <CtaBand />
     </>
   );

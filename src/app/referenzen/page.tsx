@@ -1,71 +1,109 @@
 import type { Metadata } from "next";
 
-import { ContentImage } from "@/components/content-image";
+import { CaseStudy } from "@/components/case-study";
 import { CtaBand } from "@/components/cta-band";
 import { ReferenceCatalog } from "@/components/reference-catalog";
-import { leadershipProjects } from "@/lib/content";
+import { SectionHeading } from "@/components/section-heading";
+import { Testimonial } from "@/components/testimonial";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { leadershipProjects, testimonials } from "@/lib/content";
+import { caseStudies } from "@/lib/references";
 
 export const metadata: Metadata = {
-  title: "Referenzen",
+  title: "Referenzen und Fallstudien",
   description:
-    "Referenzen-Katalog von inspiroo: Strategie, Innovation, eCommerce, Coaching, Impuls-Beratung und Praxis-Referate.",
+    "Fallstudien und Mandate von inspiroo: Strategieentwicklung, Verwaltungsrat, Sparring und Umsetzung für KMU in Winterthur und der Schweiz – plus Führungserfahrung als CEO von Dipl. Ing. Fust.",
 };
 
 export default function ReferencesPage() {
   return (
     <>
-      <section className="mx-auto max-w-5xl px-5 pt-16 sm:px-8 sm:pt-24">
-        <p className="eyebrow">Referenzen-Katalog</p>
-        <h1 className="font-heading mt-4 max-w-3xl text-5xl text-balance sm:text-6xl">
-          Mandate, Impulse und Praxis-Referate
-        </h1>
-        <p className="measure mt-6 text-ink/70">
-          Eine Auswahl aktueller Begleitungen — von Strategie- und VR-Mandaten
-          über Product-Market-Fit bis zu Impuls-Beratungen und Lehrbeiträgen.
-          Die Mandate beschreiben die konkrete Zusammenarbeit, nicht erfundene
-          Kennzahlen.
-        </p>
-        <div className="mt-14">
-          <ReferenceCatalog />
+      <section className="mx-auto max-w-6xl px-5 pt-14 sm:px-8 sm:pt-20">
+        <SectionHeading
+          as="h1"
+          kicker="Referenzen"
+          title="Mandate als Berater – Erfahrung als Unternehmer"
+          body="Auf dieser Seite findest Du beides: meine heutigen Beratungsmandate und die Veränderungen, die ich zuvor als CEO selbst verantwortet habe. Beschrieben ist jeweils mein tatsächlicher Beitrag – ohne erfundene Kennzahlen."
+        />
+        <nav aria-label="Abschnitte" className="mt-10 flex flex-wrap gap-2 text-base">
+          {[
+            ["#fallstudien", "Fallstudien"],
+            ["#stimmen", "Kundenstimmen"],
+            ["#mandate", "Alle Mandate"],
+            ["#fuehrungserfahrung", "Führungserfahrung"],
+          ].map(([href, label]) => (
+            <a
+              key={href}
+              href={href}
+              className="rounded-md border border-ink/15 bg-white px-4 py-2 text-ink/80 hover:border-ink/40 hover:text-ink"
+            >
+              {label}
+            </a>
+          ))}
+        </nav>
+      </section>
+
+      <section id="fallstudien" className="mx-auto max-w-6xl scroll-mt-24 px-5 pt-16 pb-12 sm:px-8 sm:pt-20">
+        <p className="eyebrow">Fallstudien</p>
+        <div className="mt-4 divide-y divide-ink/10 border-y border-ink/10">
+          {caseStudies.map((item) => (
+            <CaseStudy key={item.id} item={item} />
+          ))}
         </div>
       </section>
 
-      <section className="mt-8 border-t border-ink/10 bg-white">
-        <div className="mx-auto max-w-5xl px-5 py-20 sm:px-8">
-          <p className="eyebrow">Führungserfahrung</p>
-          <h2 className="font-heading mt-4 max-w-3xl text-4xl text-balance sm:text-5xl">
-            Projekte aus der operativen Leitung
-          </h2>
-          <p className="measure mt-5 text-ink/70">
-            Aus über dreizehn Jahren als CEO von Dipl. Ing. Fust und
-            Verwaltungsratsmandaten in Konsumgüter- und Service-Märkten.
-          </p>
-          <div className="mt-12 divide-y divide-ink/10 border-y border-ink/10">
-            {leadershipProjects.map((project) => (
-              <article
-                key={project.title}
-                className="grid gap-6 py-10 md:grid-cols-[7.5rem_1fr] md:gap-10"
-              >
-                <ContentImage
-                  src={project.image}
-                  alt={project.imageAlt}
-                  width={1024}
-                  height={1024}
-                  className="h-28 w-28 object-contain"
-                />
-                <div className="max-w-2xl">
-                  <h3 className="font-heading text-2xl leading-tight">
-                    {project.title}
-                  </h3>
-                  <p className="mt-3 text-sm leading-relaxed text-ink/70">
-                    {project.body}
-                  </p>
-                </div>
-              </article>
+      <section id="stimmen" className="scroll-mt-24 bg-sand">
+        <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-24">
+          <SectionHeading
+            kicker="Kundenstimmen"
+            title="Wie Mandantinnen und Mandanten die Zusammenarbeit erleben"
+          />
+          <div className="mt-12 grid gap-6 lg:grid-cols-3">
+            {testimonials.map((item, index) => (
+              <Testimonial key={index} {...item} />
             ))}
           </div>
         </div>
       </section>
+
+      <section id="mandate" className="mx-auto max-w-6xl scroll-mt-24 px-5 py-20 sm:px-8 sm:py-24">
+        <SectionHeading
+          kicker="Alle Mandate"
+          title="Strategie, Innovation, Sparring und Lehre"
+          body="Eine Übersicht aktueller und abgeschlossener Begleitungen – vom Verwaltungsratsmandat bis zum Praxis-Referat."
+        />
+        <div className="mt-12">
+          <ReferenceCatalog />
+        </div>
+      </section>
+
+      <section id="fuehrungserfahrung" className="scroll-mt-24 border-t border-ink/10 bg-white">
+        <div className="mx-auto grid max-w-6xl gap-12 px-5 py-20 sm:px-8 sm:py-24 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
+          <SectionHeading
+            kicker="Führungserfahrung"
+            title="Veränderungen, die ich als CEO verantwortet habe"
+            body="Aus 13 Jahren als CEO der Dipl. Ing. Fust AG und Verwaltungsratsmandaten in Handel und Service. Diese Erfahrung fliesst heute in jedes Mandat ein."
+          />
+          <Accordion className="border-t border-ink/10">
+            {leadershipProjects.map((project) => (
+              <AccordionItem key={project.title} value={project.title} className="border-ink/10 border-b">
+                <AccordionTrigger className="py-5 text-lg font-semibold hover:no-underline">
+                  {project.title}
+                </AccordionTrigger>
+                <AccordionContent className="pb-6 text-base leading-relaxed text-ink/75">
+                  <p>{project.body}</p>
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
+      </section>
+
       <CtaBand />
     </>
   );

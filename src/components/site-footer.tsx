@@ -5,19 +5,19 @@ import { navigation, site } from "@/lib/site";
 
 export function SiteFooter() {
   return (
-    <footer className="border-t border-ink/10">
-      <div className="mx-auto grid max-w-5xl gap-12 px-5 py-16 sm:px-8 md:grid-cols-[1.4fr_0.8fr_1fr]">
+    <footer className="border-t border-ink/10 bg-cream">
+      <div className="mx-auto grid max-w-6xl gap-12 px-5 py-16 sm:px-8 md:grid-cols-[1.4fr_0.8fr_1fr]">
         <div>
           <BrandMark />
-          <p className="measure mt-6 text-sm leading-relaxed text-ink/65">
-            Unternehmensberatung für Startups und KMUs. Von der Analyse zur
-            Aktion — mit kritischer Aussensicht, zielgerichteten
-            Steuerungs-Instrumenten und pragmatischen Massnahmen.
+          <p className="measure mt-6 text-base leading-relaxed text-ink/70">
+            Unternehmerisches Sparring und Unternehmensentwicklung für KMU – mit
+            kritischer Aussensicht, zielgerichteten Steuerungs-Instrumenten und
+            pragmatischen Massnahmen.
           </p>
         </div>
         <div>
           <p className="eyebrow">Navigation</p>
-          <ul className="mt-4 space-y-2 text-sm">
+          <ul className="mt-4 space-y-2 text-base">
             {navigation.map((item) => (
               <li key={item.href}>
                 <Link href={item.href} className="text-ink/70 hover:text-ink">
@@ -29,9 +29,11 @@ export function SiteFooter() {
         </div>
         <div>
           <p className="eyebrow">Kontakt</p>
-          <ul className="mt-4 space-y-2 text-sm text-ink/70">
-            <li>{site.legalName}</li>
+          <ul className="mt-4 space-y-2 text-base text-ink/70">
+            <li className="font-semibold text-ink">{site.founder.name}</li>
             <li>
+              {site.legalName}
+              <br />
               {site.address.street}
               <br />
               {site.address.zip} {site.address.city}
@@ -51,16 +53,16 @@ export function SiteFooter() {
                 href={site.linkedin}
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-ink"
+                className="text-brand underline decoration-brand/30 underline-offset-4 hover:decoration-brand"
               >
-                LinkedIn
+                inspiroo auf LinkedIn
               </a>
             </li>
           </ul>
         </div>
       </div>
       <div className="border-t border-ink/10">
-        <div className="mx-auto flex max-w-5xl flex-col gap-3 px-5 py-5 text-xs text-ink/45 sm:flex-row sm:items-center sm:justify-between sm:px-8">
+        <div className="mx-auto flex max-w-6xl flex-col gap-3 px-5 py-5 text-sm text-ink/50 sm:flex-row sm:items-center sm:justify-between sm:px-8">
           <p>
             © {new Date().getFullYear()} {site.legalName}, CH-{site.address.zip}{" "}
             {site.address.city}

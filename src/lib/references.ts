@@ -15,6 +15,19 @@ export type Reference = {
   categories: ReferenceCategory[];
   links: { label: string; href: string }[];
   featured?: boolean;
+  /** Mandatsbeschreibung muss noch geliefert werden. */
+  pending?: boolean;
+};
+
+export type CaseStudy = {
+  id: string;
+  client: string;
+  sector: string;
+  tags: string[];
+  situation: string;
+  contribution: string;
+  result: string;
+  link?: { label: string; href: string };
 };
 
 export const referenceCategories: Array<ReferenceCategory | "Alle"> = [
@@ -185,6 +198,97 @@ export const references: Reference[] = [
     categories: ["Impuls-Beratung", "eCommerce"],
     links: [{ label: "material-shop.ch", href: "https://material-shop.ch/" }],
   },
+  {
+    id: "la-panetteria",
+    name: "Ristorante La Panetteria",
+    sector: "Gastronomie",
+    summary:
+      "Mediterranes Restaurant mit Pizzeria an der Tösstalstrasse in Winterthur, seit 2006 inhabergeführt.",
+    mandates: ["Mandatsbeschreibung folgt"],
+    categories: [],
+    links: [{ label: "la-panetteria.ch", href: "https://www.la-panetteria.ch/" }],
+    pending: true,
+  },
+  {
+    id: "museum-schaffen",
+    name: "Museum Schaffen",
+    sector: "Kultur / Museum",
+    summary:
+      "Museum der Arbeitswelt auf dem Lagerplatz in Winterthur: Geschichte und Gegenwart der Arbeit, erzählt an einem Industrie-Standort.",
+    mandates: ["Mandatsbeschreibung folgt"],
+    categories: [],
+    links: [{ label: "museumschaffen.ch", href: "https://www.museumschaffen.ch/" }],
+    pending: true,
+  },
+  {
+    id: "hv-winterthur",
+    name: "Historischer Verein Winterthur",
+    sector: "Kultur / Verein",
+    summary:
+      "Seit 1874 engagiert für die Geschichte Winterthurs – Träger von drei Museen in der Stadt.",
+    mandates: ["Mandatsbeschreibung folgt"],
+    categories: [],
+    links: [{ label: "hvwinterthur.ch", href: "https://www.hvwinterthur.ch/" }],
+    pending: true,
+  },
 ];
 
 export const featuredReferences = references.filter((item) => item.featured);
+
+export const caseStudies: CaseStudy[] = [
+  {
+    id: "home-of-innovation",
+    client: "Home of Innovation Winterthur",
+    sector: "Innovationsökosystem",
+    tags: ["Strategieentwicklung", "Verwaltungsratspräsidium", "Interims-Management"],
+    situation:
+      "Ein Innovationsökosystem mit unterschiedlichen Anspruchsgruppen und dem Bedarf nach einer klaren strategischen Ausrichtung.",
+    contribution:
+      "Begleitung des Strategieprozesses, Übernahme des Verwaltungsratspräsidiums und Unterstützung bei der operativen Weiterentwicklung.",
+    result:
+      "Konkrete strategische Prioritäten und die Umsetzung ertragssteigernder Massnahmen.",
+    link: { label: "homeofinnovation.ch", href: "https://homeofinnovation.ch/" },
+  },
+  {
+    id: "lavaresi",
+    client: "Lavaresi / Infra Support",
+    sector: "Digitale Infrastruktur für Mehrfamilienhäuser",
+    tags: ["Strategie", "Product-Market-Fit", "Rollout-Planung"],
+    situation:
+      "Eine neue digitale Lösung für die gemeinsame Nutzung von Waschräumen – technisch bereit, aber mit offenen Fragen zu Zielgruppe, Positionierung und Markteinführung.",
+    contribution:
+      "Begleitung der Strategiearbeit, Schärfung des Product-Market-Fit und Erarbeitung einer etappierten Rollout-Planung.",
+    result:
+      "Eine klare Positionierung gegenüber Verwaltungen und Eigentümern sowie ein priorisierter Plan für die Markteinführung.",
+    link: {
+      label: "Lavaresi bei Infra Support",
+      href: "https://infrasupport.ch/resich/lavaresich",
+    },
+  },
+  {
+    id: "webling",
+    client: "Webling",
+    sector: "Software für Vereine und Verbände",
+    tags: ["Strategieprozess", "Budgetprozess"],
+    situation:
+      "Ein etabliertes Winterthurer Software-Unternehmen in einem wachsenden Markt, das Strategie und Budget enger miteinander verknüpfen wollte.",
+    contribution:
+      "Moderation und Begleitung des Strategie- und Budgetprozesses mit der Geschäftsleitung.",
+    result:
+      "Strategische Stossrichtungen, die direkt in Budget und Jahresziele übersetzt wurden.",
+    link: { label: "webling.ch", href: "https://www.webling.ch/" },
+  },
+  {
+    id: "danko",
+    client: "Danko",
+    sector: "Catering und Fleischhandel",
+    tags: ["Coaching", "Sparring Geschäftsleitung"],
+    situation:
+      "Ein inhabergeführtes Unternehmen mit zwei Geschäftsfeldern und dem Wunsch, die Führung und Weiterentwicklung auf eine breitere Basis zu stellen.",
+    contribution:
+      "Regelmässiges Coaching und Sparring der Geschäftsleitung zu Führung, Prioritäten und unternehmerischen Entscheidungen.",
+    result:
+      "Eine Geschäftsleitung mit klareren Prioritäten und einem unabhängigen Gesprächspartner für anstehende Entscheide.",
+    link: { label: "danko.ch", href: "https://www.danko.ch/" },
+  },
+];

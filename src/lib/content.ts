@@ -1,144 +1,272 @@
 export const hero = {
-  kicker: "Unternehmensberatung für Startups und KMUs",
-  title: "Von der Analyse zur Aktion",
-  lead: "Gemeinsam Dein Business auf die Überholspur bringen.",
-  body: "Mit fundiertem Blick von aussen und pragmatischen Werkzeugen schärfen wir Deinen Fokus und setzen die richtigen Prioritäten für nachhaltigen Erfolg.",
-  image: "/images/hero-texture.webp",
+  kicker: "Sparring und Unternehmensentwicklung für KMU",
+  title: "Unternehmerisch denken. Klar entscheiden. Wirksam umsetzen.",
+  lead: "Ich begleite Unternehmerinnen und Unternehmer sowie Geschäftsleitungen bei strategischen Herausforderungen, wichtigen Entscheidungen und Veränderungen.",
+  body: "Mit über 30 Jahren C-Level-Erfahrung – davon 13 Jahre als CEO – verbinde ich die Perspektive eines erfahrenen Unternehmers mit einer unabhängigen Aussensicht und konsequenter Umsetzungsorientierung.",
+};
+
+export const experienceFacts = [
+  { value: "30+", label: "Jahre in Geschäftsleitung und C-Level" },
+  { value: "13", label: "Jahre CEO der Dipl. Ing. Fust AG" },
+  { value: "VR", label: "Verwaltungsrat in Handel, Service und Innovation" },
+  { value: "2023", label: "seit 2023 unabhängig mit inspiroo" },
+] as const;
+
+export const experienceStations = [
+  "Dipl. Ing. Fust",
+  "Sony (Schweiz)",
+  "Service7000",
+  "nettoshop",
+  "Home of Innovation",
+] as const;
+
+export const occasions = {
+  kicker: "Wann ich Unternehmen unterstütze",
+  title: "Wenn viel auf dem Spiel steht und der Weg nicht eindeutig ist",
+  items: [
+    {
+      title: "Wachstum und Profitabilität verbessern",
+      body: "Der Umsatz wächst, die Marge nicht – oder umgekehrt. Wir klären, wo das Geld verdient wird und welche Hebel am meisten bewirken.",
+    },
+    {
+      title: "Strategie überprüfen und neu ausrichten",
+      body: "Der Markt verändert sich, die bisherigen Erfolgsrezepte tragen nicht mehr. Wir prüfen, was bleibt, was sich ändern muss und was als Nächstes kommt.",
+    },
+    {
+      title: "Schwierige Führungsentscheidungen treffen",
+      body: "Als Unternehmer trägst Du die Verantwortung allein. Ich bin der unabhängige Gesprächspartner, mit dem Du Optionen offen durchdenken kannst.",
+    },
+    {
+      title: "Digitale Transformation vorantreiben",
+      body: "Vom Online-Shop über ERP bis zu digitalen Kundenprozessen: Ich habe solche Vorhaben selbst verantwortet und weiss, woran sie scheitern.",
+    },
+    {
+      title: "Organisation und Führung weiterentwickeln",
+      body: "Klare Verantwortungen, eine Kultur der Eigeninitiative und Kennzahlen, die tatsächlich steuern – damit Ziele im Alltag ankommen.",
+    },
+  ],
+} as const;
+
+export const audience = {
+  kicker: "Für wen ich arbeite",
+  title: "Etablierte KMU, die sich weiterentwickeln wollen",
+  body: "Meine Erfahrung ist besonders wertvoll für Unternehmen, die bereits eine gewisse Grösse und Organisation haben – und jemanden suchen, der ihre Herausforderungen aus eigener Führungsverantwortung kennt.",
+  groups: [
+    "Inhabergeführte KMU",
+    "Familienunternehmen",
+    "Unternehmen in einer Wachstums- oder Veränderungsphase",
+    "Unternehmerinnen und Unternehmer, die einen unabhängigen Sparring-Partner suchen",
+    "Geschäftsleitungen mit strategischen oder operativen Herausforderungen",
+  ],
+  secondary:
+    "Auch Start-ups begleite ich gerne – vor allem, wenn aus einer guten Idee ein tragfähiges Unternehmen werden soll.",
+  image: "/images/kmu-werkhalle.webp",
   imageAlt:
-    "Luftaufnahme einer Strasse durch dichten Wald — der Weg durchs Unübersichtliche.",
+    "Inhaber und Produktionsleiter im Gespräch in einer hellen Werkhalle eines Industriebetriebs.",
+} as const;
+
+export const principles = {
+  kicker: "Was meine Zusammenarbeit auszeichnet",
+  title: "Sparring auf Augenhöhe – von jemandem, der selbst geführt hat",
+  body: "Mit fundiertem Blick von aussen und pragmatischen Werkzeugen schärfen wir Deinen Fokus und setzen die richtigen Prioritäten für nachhaltigen Erfolg.",
+  items: [
+    {
+      title: "Unabhängig",
+      body: "Ich verkaufe keine Software, keine Standardmethodik und keine Folgeaufträge. Meine Empfehlungen orientieren sich ausschliesslich an Deinem Unternehmen.",
+    },
+    {
+      title: "Unternehmerisch",
+      body: "Ich habe selbst Budgets verantwortet, Filialnetze entwickelt, Firmen integriert und Transformationen umgesetzt. Ich denke in Ertrag, Liquidität und Risiko.",
+    },
+    {
+      title: "Pragmatisch",
+      body: "Lieber drei richtige Prioritäten als dreissig Folien. Wir arbeiten mit dem, was in Deinem Unternehmen vorhanden ist, und machen es wirksamer.",
+    },
+    {
+      title: "Umsetzungsorientiert",
+      body: "Eine Strategie ist erst dann gut, wenn sie im Alltag ankommt. Auf Wunsch begleite ich auch die Umsetzung – mit klaren Meilensteinen und Kennzahlen.",
+    },
+  ],
+  image: "/images/sparring-ceo.webp",
+  imageAlt:
+    "Zwei Unternehmer im ruhigen Gespräch in Sesseln an einem grossen Fenster.",
+} as const;
+
+export const process = {
+  kicker: "So läuft die Zusammenarbeit",
+  title: "In drei Schritten von der Frage zur Wirkung",
+  steps: [
+    {
+      title: "Erstgespräch",
+      body: "Unverbindlich und vertraulich. Du schilderst Deine Situation, ich stelle Fragen. Danach wissen wir beide, ob und wie ich Dich unterstützen kann.",
+    },
+    {
+      title: "Auftragsklärung",
+      body: "Wir halten Ziel, Vorgehen, Umfang und Kosten in einer kurzen Offerte fest. Transparent und ohne Kleingedrucktes.",
+    },
+    {
+      title: "Zusammenarbeit",
+      body: "Analyse, Sparring oder Begleitung der Umsetzung – im vereinbarten Rhythmus, mit verbindlichen Meilensteinen und regelmässiger Standortbestimmung.",
+    },
+  ],
+} as const;
+
+export const servicesIntro = {
+  kicker: "Vier Beratungsformate",
+  title: "Für jede Ausgangslage das passende Format",
+  body: "Die Formate unterscheiden sich in Dauer und Tiefe – nicht im Anspruch. Im Erstgespräch finden wir heraus, welches zu Deiner Situation passt. Bei Bedarf ziehe ich spezialisierte Partner aus meinem Netzwerk bei.",
 };
-
-export const situations = [
-  {
-    title: "Gute Business-Idee — beschränkte Wirkung",
-    body: "Dein Business läuft soweit. In jedem Quartal hast Du zu kämpfen. Es ist nicht immer sicher, ob genügend Einnahmen die laufenden Kosten decken können. Gleichzeitig hast Du noch viele Ideen, wie Du Dein Produkt noch besser machen könntest.",
-    close:
-      "Als aussenstehender Sparring-Partner mit über 30 Jahren Erfahrung als CEO, VR und GL-Mitglied kann ich Dir zuhören, kritische Fragen stellen und Dich — oder auch Dein ganzes Führungsteam — mit unabhängigen Gedanken und Ideen zielführend bereichern.",
-    image: "/images/situation-idea.webp",
-    imageAlt:
-      "Vier Personen im Gespräch an einem hellen Bürotisch, umgeben von Pflanzen.",
-  },
-  {
-    title: "Feeling lonely at the top",
-    body: "Als Chef trägst Du alleine die Verantwortung für schwierige Entscheidungen. Du kannst oder willst Handlungs-Optionen nicht vorgängig mit Deinem Team diskutieren oder Du suchst out-of-the-box weitere Inspiration.",
-    close:
-      "Je nach Bedarf unterstütze ich Dich mit Analysen zum Markt, der Kunden-Basis und deren Zufriedenheit und helfe Dir im Rahmen eines Innovations-Coachings, Deinen Fokus zu schärfen oder eine neue bzw. angepasste Strategie für Dein Unternehmen zu entwickeln. Auf Wunsch stehe ich Dir auch bei deren Implementierung und Umsetzung zur Verfügung.",
-    image: "/images/situation-lonely.webp",
-    imageAlt:
-      "Mann mit Brille sitzt nachdenklich an einem Schreibtisch unter warmen Lampen.",
-  },
-  {
-    title: "Fit genug für die Zukunft?",
-    body: "In Deinem Markt zeichnen sich Veränderungen ab. Sind Deine Erfolgsrezepte noch gut genug für die neuen Herausforderungen oder braucht es Anpassungen und Innovation? Wie kannst Du die veränderten Kunden-Bedürfnisse auch in Zukunft noch optimal bedienen?",
-    close:
-      "Gemeinsam analysieren wir die Situation, setzen Prioritäten und machen aus Vision konkrete nächste Schritte.",
-    image: "/images/situation-future.webp",
-    imageAlt:
-      "Drei Personen beugen sich gemeinsam über ein Dokument an einem gedämpft beleuchteten Tisch.",
-  },
-] as const;
-
-export const approachIntro = {
-  kicker: "Mein Approach",
-  title: "Wald und Bäume gleichzeitig sehen",
-  body: "Du bist ein Unternehmer oder eine Unternehmerin mit einer Vision. Du hast ein Business, das Du auf den nächsten Level bringen willst. Du brauchst jemanden, der Dir eine klare Perspektive entwickeln hilft, der Dir die richtigen Fragen stellt und der mit Dir die besten Strategien erarbeitet.",
-};
-
-export const approachPillars = [
-  {
-    title: "Visionär",
-    body: "Mein Vorgehen ist gleichermassen analytisch wie visionär, meine Vorschläge durchdacht, pragmatisch und inspirierend. Ich habe langjährige Erfahrung als Unternehmensleiter und Verwaltungsrat im Schweizer Retail- und Dienstleistungs-Sektor. Gerne unterstütze ich Dich, um auch Dein Business auf den nächsten Level zu bringen oder innovative Lösungen zu finden.",
-    image: "/images/approach-vision.webp",
-    imageAlt:
-      "Illustration: ein Auge über einer violetten Berglandschaft — den Blick weiten.",
-  },
-  {
-    title: "Analytisch",
-    body: "Gemeinsam analysieren wir die Situation Deines Business. Strukturiert erkennen wir Stärken und Schwächen. Wir suchen nach Chancen und Potentialen, ohne gleichzeitig Risiken aus den Augen zu verlieren.",
-    image: "/images/approach-analytic.webp",
-    imageAlt:
-      "Illustration: Notizbuch mit violetten Säulendiagrammen und Skizzen.",
-  },
-  {
-    title: "Pragmatisch",
-    body: "Ich unterstütze Dich dabei, Deine Vision zu schärfen und allenfalls neue Umsetzungs-Ideen zu entwickeln. Danach setzen wir Prioritäten und etappierte Ziele, sodass sich Fortschritte und Erfolge einstellen werden.",
-    image: "/images/approach-pragmatic.webp",
-    imageAlt:
-      "Illustration: Handschlag vor einem violetten Kompass — Vereinbarung und Timing.",
-  },
-  {
-    title: "Inspirierend",
-    body: "Mit Enthusiasmus und Deine Vision immer im Blick suchen wir offen und kreativ neue Ideen und Lösungs-Ansätze. Ich fördere in Deinem Team Eigeninitiative und unternehmerisches Denken. Wichtig sind Freiräume, klare Verantwortungen und eine aktive Feedback-Kultur.",
-    image: "/images/approach-inspire.webp",
-    imageAlt:
-      "Illustration: Bergsteigerinnen und Bergsteiger in violetten Jacken auf dem Weg zum Gipfel.",
-  },
-] as const;
-
-export const servicesIntro =
-  "Die aufgeführten Services zeigen die Bandbreite meines Beratungs- und Unterstützungs-Spektrums für KMUs und Startups. Ich bin offen für Fragestellungen rund um die Themen Strategie, Führung, Marketing und digitale Innovation und Transformation. In einem gemeinsamen Gespräch definieren wir Ziele, Vorgehensweise und Umfang entsprechend Deinen individuellen Bedürfnissen. Bei Bedarf kann ich auf ein breites Netzwerk mit spezialisierten Partnern zurückgreifen.";
 
 export const services = [
   {
     number: "01",
     slug: "boxen-stopp",
     title: "Boxen-Stopp",
-    summary:
-      "Kurze gründliche Analyse Deines Businessplans und/oder Deiner aktuellen Business-Performance.",
-    body: "Aufzeigen von kurz- und mittelfristigen Verbesserungs-Potentialen und mögliche Korrektur-Massnahmen für erhöhten Kundenmehrwert.",
-    image: "/images/service-boxenstopp.webp",
+    problem: "Ich möchte wissen, wo mein Unternehmen wirklich steht.",
+    headline: "Klarheit über die wirtschaftliche Situation und die nächsten Hebel.",
+    body: "Wo steht Dein Unternehmen? Wo liegen ungenutzte Potenziale? Welche Massnahmen versprechen die grösste Wirkung? In einem strukturierten Kurzmandat analysieren wir die Ausgangslage und erarbeiten konkrete Handlungsempfehlungen mit klaren Prioritäten.",
+    outcomes: [
+      "Ehrliche Standortbestimmung zu Markt, Kunden, Zahlen und Organisation",
+      "Kurz- und mittelfristige Verbesserungspotenziale",
+      "Priorisierte Massnahmenliste mit Verantwortlichkeiten",
+    ],
+    format: "Kurzmandat, typischerweise einige Wochen",
+    image: "/images/analyse-zahlen.webp",
     imageAlt:
-      "Blick von oben auf einen Formel-Rennwagen im Boxenstopp, umringt vom Team.",
+      "Hände mit Stift über ausgedruckten Auswertungen und Diagrammen auf einem Holztisch.",
+    testimonial: {
+      quote:
+        "In wenigen Wochen hatten wir ein klares Bild, wo wir Geld verdienen und wo nicht. Die drei Prioritäten aus dem Boxen-Stopp setzen wir heute noch um.",
+      role: "Inhaber eines Schweizer Handelsunternehmens",
+    },
   },
   {
     number: "02",
     slug: "co-pilot",
     title: "Co-Pilot",
-    summary:
-      "Sparring und Coaching, wenn Du als Chef mit bestimmten Fragestellungen alleine bist.",
-    body: "Im Rahmen eines Sparrings und/oder Innovations-Coachings übernehme ich die Rolle des kritischen und lösungsorientierten Fragestellers — im 1:1 mit dem CEO oder im VR- oder GL-Gremium.",
-    image: "/images/service-copilot.webp",
+    problem: "Ich brauche einen unabhängigen Gesprächspartner für schwierige Entscheidungen.",
+    headline: "Ein Sparring-Partner, der die Verantwortung eines CEO aus eigener Erfahrung kennt.",
+    body: "Als Unternehmerin oder Unternehmer kannst Du nicht jede Frage mit Deinem Team besprechen. Im vertraulichen Sparring übernehme ich die Rolle des kritischen und lösungsorientierten Fragestellers – im 1:1 oder im Verwaltungsrat und in der Geschäftsleitung.",
+    outcomes: [
+      "Vertraulicher Austausch auf Augenhöhe",
+      "Kritische Fragen und neue Perspektiven vor wichtigen Entscheidungen",
+      "Sicherheit bei Personal-, Investitions- und Strategiefragen",
+    ],
+    format: "Regelmässige Sparring-Termine oder auf Abruf",
+    image: "/images/sparring-gespraech.webp",
     imageAlt:
-      "Zwei Piloten im Cockpit, im Gespräch, vor einem goldenen Horizont.",
+      "Ein erfahrener Berater und eine Unternehmerin im konzentrierten Gespräch in einem Büro mit Backsteinwand.",
+    testimonial: {
+      quote:
+        "Ein Sparring-Partner, der unternehmerisch denkt und auch unbequeme Fragen stellt. Genau das hat mir vor wichtigen Entscheidungen gefehlt.",
+      role: "CEO eines Schweizer KMU",
+    },
   },
   {
     number: "03",
     slug: "navigator",
     title: "Navigator",
-    summary:
-      "Langfristige und strategische Begleitung bei der Entwicklung und Umsetzung von Vision und Zielen.",
-    body: "Entwicklung, Aufbau oder Justierung eines pragmatischen Kennzahlensystems (KPI). Unterstützung bei der Planung, Steuerung und Kontrolle der Projekte und Prozesse.",
-    image: "/images/service-navigator.webp",
+    problem: "Ich habe Ziele, aber die Umsetzung kommt nicht richtig voran.",
+    headline: "Strategie in den Alltag bringen – mit Steuerung, die funktioniert.",
+    body: "Viele Unternehmen wissen, wohin sie wollen. Schwierig wird es im operativen Alltag. Ich begleite Dich über längere Zeit bei der Umsetzung, baue mit Dir ein pragmatisches Kennzahlensystem auf und unterstütze bei Planung, Steuerung und Kontrolle von Projekten und Prozessen.",
+    outcomes: [
+      "Pragmatisches Kennzahlensystem (KPI), das wirklich steuert",
+      "Klare Meilensteine und Verantwortlichkeiten",
+      "Regelmässige Standortbestimmung mit der Geschäftsleitung",
+    ],
+    format: "Längerfristige Begleitung, z. B. monatlich",
+    image: "/images/gl-team-sitzung.webp",
     imageAlt:
-      "Messing-Navigationsinstrumente und Kompass auf einer alten Weltkarte.",
+      "Geschäftsleitungsteam bespricht Prioritäten an einem Whiteboard.",
+    testimonial: {
+      quote:
+        "Wir hatten gute Pläne, aber zu wenig Zug in der Umsetzung. Mit klaren Kennzahlen und festen Meilensteinen ziehen heute alle in der Geschäftsleitung am gleichen Strick.",
+      role: "Geschäftsführerin eines Familienunternehmens",
+    },
   },
   {
     number: "04",
     slug: "masterplan",
     title: "Masterplan",
-    summary:
-      "Von der Markt-Analyse über die tragfähige Strategie bis zur Priorisierung von Etappenzielen.",
-    body: "Ich unterstütze gesamtheitliche Fragestellungen sowohl von jungen Startups wie auch von etablierten Unternehmen in möglicherweise disruptiven Marktsituationen.",
-    image: "/images/service-masterplan.webp",
+    problem: "Ich muss mein Unternehmen strategisch neu ausrichten.",
+    headline: "Von der Marktanalyse zur tragfähigen Strategie mit Etappenzielen.",
+    body: "Wenn sich der Markt grundlegend verändert, reichen Korrekturen nicht. Gemeinsam analysieren wir Markt, Kunden und Wettbewerb, entwickeln eine tragfähige Strategie und übersetzen sie in priorisierte Etappenziele – für etablierte Unternehmen genauso wie für junge Firmen in bewegten Märkten.",
+    outcomes: [
+      "Fundierte Analyse von Markt, Kunden und Wettbewerb",
+      "Strategie, die Geschäftsleitung und Verwaltungsrat mittragen",
+      "Umsetzungsplan mit Etappenzielen und Budget",
+    ],
+    format: "Strategieprojekt mit Workshops, mehrere Monate",
+    image: "/images/strategie-workshop.webp",
     imageAlt:
-      "Mann am Schreibtisch mit Laptop, Notizen und einer Tafel voller Skizzen und Diagramme.",
+      "Strategie-Workshop: Mehrere Personen ordnen Karten an einer Pinnwand in einem hellen Raum.",
+    testimonial: {
+      quote:
+        "Thomas hat uns durch einen Strategieprozess geführt, der nicht in der Schublade gelandet ist. Wir wissen heute, was wir bewusst nicht mehr tun.",
+      role: "Verwaltungsratspräsident eines Dienstleistungsunternehmens",
+    },
   },
 ] as const;
 
+export const testimonials = [
+  {
+    quote: "Ein Sparring-Partner, der unternehmerisch denkt und auch unbequeme Fragen stellt.",
+    body: "Thomas hat uns geholfen, unsere strategischen Prioritäten zu schärfen und wichtige Entscheidungen aus einer neuen Perspektive zu betrachten. Besonders geschätzt habe ich seine langjährige Führungserfahrung, seine pragmatische Art und seinen klaren Blick für das Wesentliche.",
+    name: "Vorname Nachname",
+    role: "CEO eines Schweizer KMU",
+  },
+  {
+    quote: "Er kennt die Realität eines Unternehmers – nicht nur die Theorie.",
+    body: "Im Gespräch mit Thomas merkt man sofort, dass er selbst Verantwortung getragen hat. Er hört zu, bringt seine Erfahrung ein und hilft, aus vielen Ideen die zwei, drei richtigen auszuwählen.",
+    name: "Vorname Nachname",
+    role: "Inhaber eines Familienunternehmens, 35 Mitarbeitende",
+  },
+  {
+    quote: "Pragmatisch, verbindlich und mit klarem Blick auf die Umsetzung.",
+    body: "Aus dem Strategieprozess sind konkrete Massnahmen mit klaren Verantwortlichkeiten entstanden. Thomas hat uns auch in der Umsetzung begleitet und dafür gesorgt, dass wir dranbleiben.",
+    name: "Vorname Nachname",
+    role: "Verwaltungsratspräsident",
+  },
+] as const;
+
+export const aboutTestimonial = {
+  quote:
+    "Thomas bringt die Ruhe und das Urteilsvermögen von jemandem mit, der schon viele schwierige Situationen gemeistert hat.",
+  role: "Mitglied des Verwaltungsrats",
+} as const;
+
 export const about = {
-  quote: "Nur aus Enthusiasmus kann zur Neugierde entstehen, und nur wer neugierig ist, kann lernen.",
+  title: "Thomas Giger – Unternehmer, Verwaltungsrat und Sparring-Partner für KMU",
+  intro:
+    "Während über 30 Jahren habe ich in Geschäftsleitung und Verwaltungsrat Verantwortung getragen, davon 13 Jahre als CEO der Dipl. Ing. Fust AG. Heute stelle ich diese Erfahrung als unabhängiger Sparring-Partner Unternehmerinnen, Unternehmern und Geschäftsleitungen von KMU zur Verfügung.",
+  teaser:
+    "Ich kenne die Herausforderungen eines CEO aus eigener Erfahrung: Entscheidungen unter Unsicherheit, Veränderungen gegen Widerstände, Verantwortung für Mitarbeitende und Ergebnis. Genau diese Perspektive bringe ich in die Zusammenarbeit ein.",
+  story: [
+    {
+      question: "Was ich als CEO gelernt habe",
+      answer:
+        "Strategien scheitern selten an der Idee, sondern an der Umsetzung. Bei Fust haben wir die IT-Landschaft erneuert, den Online-Handel aufgebaut, die Logistik verdoppelt und Firmen integriert – immer im laufenden Betrieb. Dabei habe ich gelernt, dass klare Prioritäten, verlässliche Kennzahlen und Respekt gegenüber den Mitarbeitenden mehr bewirken als jedes Konzept.",
+    },
+    {
+      question: "Warum ich inspiroo gegründet habe",
+      answer:
+        "Nach meiner Zeit als CEO wollte ich meine Erfahrung weitergeben – aber nicht als Teil eines Beratungskonzerns, sondern unabhängig und persönlich. Mit inspiroo kann ich mir die Mandate aussuchen, bei denen ich wirklich etwas bewegen kann.",
+    },
+    {
+      question: "Was mich an KMU reizt",
+      answer:
+        "In KMU sind die Wege kurz, Entscheidungen werden schnell spürbar und die Menschen identifizieren sich mit ihrem Unternehmen. Hier kann ein gutes Gespräch zur richtigen Zeit einen echten Unterschied machen.",
+    },
+    {
+      question: "Was mich von klassischen Beratern unterscheidet",
+      answer:
+        "Ich bringe keine Standardmethodik und kein Juniorenteam mit. Du arbeitest direkt mit mir – mit jemandem, der selbst unternehmerische Entscheide getroffen und ihre Folgen getragen hat. Ich stelle kritische Fragen, sage offen, was ich denke, und unterstütze Dich auf Wunsch auch bei der Umsetzung.",
+    },
+  ],
+  quote: "Nur aus Enthusiasmus kann Neugierde entstehen, und nur wer neugierig ist, kann lernen.",
   quoteSource: "Leonard Bernstein",
-  quoteOriginal:
-    "Nur aus Enthusiasmus kann Neugierde entstehen, und nur wer neugierig ist, kann lernen.",
-  personality: ["Kreativ", "Durchdacht", "Neugierig", "Pragmatisch"],
   education:
-    'Meine Ausbildung schloss ich an der Universität Zürich als Master of Arts ab. In meiner Abschlussarbeit untersuchte ich die Thematik «Manager im Familienunternehmen» am Beispiel der Firma Rieter in Winterthur. Berufsbegleitend bildete ich mich in Management-Seminaren am IMD in Lausanne und autodidaktisch zu allen Aspekten der Digitalen Transformation weiter.',
-  experience:
-    "Während über 30 Jahren in C-Level-Positionen, davon 13 Jahre als Unternehmensleiter/CEO von Dipl. Ing. Fust und Verwaltungsrat in Konsumgüter- und Service-Märkten mit stark wachsendem Online-Handel durfte ich verschiedene grosse Veränderungs-Initiativen anstossen und erfolgreich umsetzen.",
-  independent:
-    "Seit 2023 bin ich als selbständiger Berater tätig. Neugierig und analytisch arbeite ich mich gerne in neue Aufgaben-Stellungen ein. Mit meiner langjährigen und erfolgreichen unternehmerischen Führungs-Erfahrung und meinem pragmatischen Kommunikations-Stil entstehen in der gemeinsamen inspirierenden Zusammenarbeit neue Lösungen.",
-  focus:
-    "Mein Fokus liegt dabei immer auf einer ergebnisreichen und nachhaltigen Umsetzung mit verbindlichen Meilensteinen. Kunden und Mitarbeitende stehen gleichermassen im Zentrum meiner Handlungs-Empfehlungen.",
+    "Mein Studium schloss ich an der Universität Zürich als Master of Arts ab. In meiner Abschlussarbeit untersuchte ich das Thema «Manager im Familienunternehmen» am Beispiel der Firma Rieter in Winterthur. Berufsbegleitend bildete ich mich in Management-Seminaren am IMD in Lausanne und autodidaktisch zu allen Aspekten der digitalen Transformation weiter.",
   timeline: [
     { years: "seit 2023", role: "Gründer und Inhaber", org: "inspiroo gmbh" },
     { years: "2010–2022", role: "CEO", org: "Dipl. Ing. Fust AG" },
@@ -149,75 +277,61 @@ export const about = {
     { years: "1992", role: "Eintritt", org: "Sony (Schweiz) AG" },
     { years: "1991", role: "Master of Arts", org: "Universität Zürich" },
   ],
-};
-
-export const cta = {
-  title: "Ich freue mich auf Dein Mail oder Deinen Anruf.",
-  body: "Wenn mein Approach und meine Erfahrungen zu Dir und Deinen Bedürfnissen zu passen scheinen, dann nimm Kontakt mit mir auf.",
-  image: "/images/team-six.webp",
+  image: "/images/verwaltungsrat.webp",
   imageAlt:
-    "Lächelnde Fachleute an einem Besprechungstisch in einem hellen Büro.",
+    "Verwaltungsratssitzung an einem langen Eichentisch in einem hellen Sitzungszimmer.",
 };
 
-export const photos = {
-  teamSeven: {
-    src: "/images/team-seven.webp",
-    alt: "Vier Personen in einem begrünten Büro, offen und zugewandt in die Kamera.",
-  },
-  collaboration: {
-    src: "/images/situation-idea.webp",
-    alt: "Teamgespräch an einem hellen Holztisch unter Pflanzen und Pendelleuchten.",
-  },
-} as const;
+export const closing = {
+  title: "Was beschäftigt Dich aktuell in Deinem Unternehmen?",
+  lead: "Lass uns darüber sprechen.",
+  body: "In einem unverbindlichen Erstgespräch besprechen wir Deine aktuelle Herausforderung und klären, ob und wie ich Dich unterstützen kann.",
+};
+
+export const firstCall = {
+  title: "Lass uns herausfinden, was Dein Unternehmen weiterbringt.",
+  body: "In einem unverbindlichen Erstgespräch besprechen wir Deine aktuelle Herausforderung und klären, ob und wie ich Dich unterstützen kann.",
+  facts: [
+    "Unverbindlich und ohne Auftragsverpflichtung",
+    "Persönlich in Winterthur oder per Video",
+    "Vertraulich",
+  ],
+  image: "/images/erstgespraech-tisch.webp",
+  imageAlt:
+    "Zwei Kaffeetassen und ein Notizbuch auf einem Holztisch, im Hintergrund die Altstadt.",
+};
 
 export const leadershipProjects = [
   {
     title: "Digitale Innovation und Transformation",
-    body: "In mehreren Etappen lösten wir die über 30 Jahre alte ERP-Eigenentwicklung durch eine moderne Lösung mit SAP-Backbone und rund 30 spezialisierten Umsystemen ab. Dabei digitalisierten wir konsequent sämtliche Kunden-Prozesse im Service und im Verkauf. Im Mittelpunkt standen immer Mehrwerte für Kunden und Mitarbeitende: Als einer der ersten Detailhändler in der Schweiz setzten wir Tablets im Beratungs-Prozess ein. Auch die Arbeit der Aussendienst-Techniker wurde mit Tablets unterstützt und die Administration vereinfacht. Der Kunde kann dank den vernetzten IT-Prozessen seinen Heimliefer-Termin im Online-Shop selber auswählen oder in der Verkaufsstelle mit dem Verkäufer direkt fixieren. Online-Bestellungen, die bis 21 Uhr eingehen, werden seit 2020 bereits am Folgetag zugestellt.",
-    image: "/images/exp-digital.webp",
-    imageAlt:
-      "Illustration vernetzter digitaler Prozesse, Server und Teams.",
+    body: "In mehreren Etappen lösten wir die über 30 Jahre alte ERP-Eigenentwicklung durch eine moderne Lösung mit SAP-Backbone und rund 30 spezialisierten Umsystemen ab. Dabei digitalisierten wir konsequent sämtliche Kundenprozesse im Service und im Verkauf. Im Mittelpunkt standen immer Mehrwerte für Kunden und Mitarbeitende: Als einer der ersten Detailhändler in der Schweiz setzten wir Tablets im Beratungsprozess ein. Auch die Arbeit der Aussendienst-Techniker wurde mit Tablets unterstützt und die Administration vereinfacht. Kundinnen und Kunden können dank vernetzter IT-Prozesse ihren Liefertermin im Online-Shop selbst wählen oder in der Filiale direkt fixieren. Online-Bestellungen, die bis 21 Uhr eingehen, werden seit 2020 bereits am Folgetag zugestellt.",
   },
   {
-    title: "eLearning",
-    body: "Damit alle Mitarbeitenden an über hundert dezentralen Standorten auch laufend über die neusten technologischen Trends und Produkte geschult werden konnten, setzten wir früh auf die Möglichkeiten von eLearning. Ziel war, mit den bestehenden Ressourcen aus der eigenen Organisation die Lern-Inhalte zeitnah und aktuell — natürlich auch mobil auf die Handys der Mitarbeitenden — auszuspielen. Gamification, Zertifikate und ein Belohnungs-Shop verstärkten die Motivation. Vor allem in der Führungs-Ausbildung ergänzten wir Präsenz-Kurse online zu Blended-Learning-Einheiten.",
-    image: "/images/exp-elearning.webp",
-    imageAlt: "Illustration zum Lernen am Bildschirm und mobil.",
+    title: "E-Learning",
+    body: "Damit alle Mitarbeitenden an über hundert dezentralen Standorten laufend über die neusten technologischen Trends und Produkte geschult werden konnten, setzten wir früh auf E-Learning. Ziel war, mit den bestehenden Ressourcen der eigenen Organisation die Lerninhalte zeitnah und aktuell – natürlich auch mobil – auszuspielen. Gamification, Zertifikate und ein Belohnungs-Shop verstärkten die Motivation. Vor allem in der Führungsausbildung ergänzten wir Präsenzkurse online zu Blended-Learning-Einheiten.",
   },
   {
-    title: "Online-Shop mit Zusatz-Nutzen",
-    body: "Anfangs der 2010er Jahre bauten wir den Online-Shop neu auf. Das Angebot dehnten wir von wenigen hundert beworbenen Artikeln auf das mehrere zehntausend Produkte umfassende Gesamt-Sortiment aus. Wir offerierten als einer der ersten Webshops «click & reserve» und wenig später auch «click & collect». Damit waren die wichtigsten 6'000 Produkte des Filial-Sortiments für die Online-Kunden innert Minuten verfügbar und abholbereit. Die integrierte Sparkarten-Funktion für Verbrauchs- und Zubehör-Produkte verstärkte die Kundenbindung und war später sogar Vorbild für die Sammelpass-Funktion des grössten Schweizer Kundenbindungs-Programms.",
-    image: "/images/exp-shop.webp",
-    imageAlt: "Illustration eines Online-Shops und digitaler Bestellprozesse.",
+    title: "Online-Shop mit Zusatznutzen",
+    body: "Anfang der 2010er-Jahre bauten wir den Online-Shop neu auf. Das Angebot dehnten wir von wenigen hundert beworbenen Artikeln auf das mehrere zehntausend Produkte umfassende Gesamtsortiment aus. Wir offerierten als einer der ersten Webshops «click & reserve» und wenig später «click & collect». Damit waren die wichtigsten 6000 Produkte des Filialsortiments für Online-Kunden innert Minuten abholbereit. Die integrierte Sparkarten-Funktion für Verbrauchs- und Zubehörprodukte stärkte die Kundenbindung und war später Vorbild für die Sammelpass-Funktion des grössten Schweizer Kundenbindungsprogramms.",
   },
   {
-    title: "Erweiterung und Automatisierung Logistik-Center",
-    body: "Im Rahmen des kontinuierlichen Wachstums und des stark zunehmenden Online-Handels planten wir bereits 2014 vorausschauend eine umfangreiche Vergrösserung der Logistik-Kapazitäten. Auf einer benachbarten Landreserve verdoppelten wir die bestehenden Kapazitäten während dem laufenden Betrieb. Mit einer Teil-Automatisierung der Kommissionierung konnten wir die massiv gestiegene Nachfrage über die Online-Kanäle weiterhin effizient abwickeln.",
-    image: "/images/exp-logistics.webp",
-    imageAlt: "Illustration eines Logistikzentrums und Warenflüssen.",
+    title: "Erweiterung und Automatisierung des Logistikcenters",
+    body: "Angesichts des kontinuierlichen Wachstums und des stark zunehmenden Online-Handels planten wir bereits 2014 eine umfangreiche Vergrösserung der Logistikkapazitäten. Auf einer benachbarten Landreserve verdoppelten wir die Kapazitäten während des laufenden Betriebs. Mit einer Teilautomatisierung der Kommissionierung konnten wir die massiv gestiegene Nachfrage über die Online-Kanäle weiterhin effizient abwickeln.",
   },
   {
-    title: "Führungs- und Innovations-Kultur",
-    body: "Mit flachen Hierarchien und dem Prinzip «Führung durch Vorbild» sorgten wir für eine dynamische und unternehmerische Kultur, die offen war für neue Ideen und Lösungen. Wir motivierten mit Respekt und Wertschätzung für die Leistungen der Mitarbeitenden. Weiterentwicklung und Lernen förderten wir mit gezieltem Feedback und Möglichkeiten, sich an neuen Herausforderungen zu beweisen.",
-    image: "/images/exp-leadership.webp",
-    imageAlt: "Illustration zu Führung, Zusammenarbeit und Innovation.",
+    title: "Führungs- und Innovationskultur",
+    body: "Mit flachen Hierarchien und dem Prinzip «Führung durch Vorbild» sorgten wir für eine dynamische und unternehmerische Kultur, die offen war für neue Ideen und Lösungen. Wir motivierten mit Respekt und Wertschätzung für die Leistungen der Mitarbeitenden. Weiterentwicklung und Lernen förderten wir mit gezieltem Feedback und der Möglichkeit, sich an neuen Herausforderungen zu beweisen.",
   },
   {
-    title: "Reputations-Management",
-    body: "Was man nicht messen kann, lässt sich auch nicht verbessern. Nach diesem Grundsatz richteten wir an allen Kunden-Kontakt-Punkten Messungen zur Kundenzufriedenheit ein. Parallel erhoben wir auch die Kunden-Rückmeldungen über öffentliche Plattformen und nutzten zwischenzeitlich Mystery-Shopping. Alle Resultate bauten wir konsequent in die Führungs- und Ausbildungs-Arbeit ein.",
-    image: "/images/exp-reputation.webp",
-    imageAlt: "Illustration zu Kundenzufriedenheit und Reputationsmessung.",
+    title: "Reputationsmanagement",
+    body: "Was man nicht messen kann, lässt sich auch nicht verbessern. Nach diesem Grundsatz richteten wir an allen Kontaktpunkten Messungen zur Kundenzufriedenheit ein. Parallel erhoben wir Kundenrückmeldungen auf öffentlichen Plattformen und nutzten zeitweise Mystery-Shopping. Alle Resultate bauten wir konsequent in die Führungs- und Ausbildungsarbeit ein.",
   },
   {
-    title: "Expansions-Strategie und -Umsetzung",
-    body: "Für das Filialnetz starteten wir eine umfassende Modernisierung, die wir investitions-schonend über mehrere Jahre verteilten. Dabei berücksichtigten wir die Ertragslage und -aussichten der Standorte und entwickelten das Netz in allen Schweizer Landesteilen laufend weiter.",
-    image: "/images/exp-expansion.webp",
-    imageAlt: "Illustration zur Expansion und zum Filialnetz.",
+    title: "Expansionsstrategie und Umsetzung",
+    body: "Für das Filialnetz starteten wir eine umfassende Modernisierung, die wir investitionsschonend über mehrere Jahre verteilten. Dabei berücksichtigten wir die Ertragslage und -aussichten der Standorte und entwickelten das Netz in allen Landesteilen laufend weiter.",
   },
   {
     title: "Akquisitionen und Integrationen",
     body: "Wir spielten eine aktive Rolle bei der Konsolidierung der Branche und nutzten laufend die Chancen von Übernahmen. Die akquirierten Firmen wurden jeweils rasch in die bestehenden Strukturen integriert. Dabei achteten wir auf einen respektvollen Umgang mit den übernommenen Mitarbeitenden und konnten so auch den Kundenkreis laufend erweitern.",
-    image: "/images/exp-acquisition.webp",
-    imageAlt: "Illustration zu Übernahmen und Integration von Unternehmen.",
   },
 ] as const;

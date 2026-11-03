@@ -1,223 +1,266 @@
+import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
+import { CaseStudy } from "@/components/case-study";
 import { ContentImage } from "@/components/content-image";
 import { CtaBand } from "@/components/cta-band";
-import { Button } from "@/components/ui/button";
+import { ProcessSteps } from "@/components/process-steps";
+import { SectionHeading } from "@/components/section-heading";
+import { Testimonial } from "@/components/testimonial";
 import {
   about,
-  approachIntro,
-  approachPillars,
+  audience,
+  experienceFacts,
+  experienceStations,
   hero,
+  occasions,
+  principles,
   services,
-  situations,
+  testimonials,
 } from "@/lib/content";
-import { featuredReferences } from "@/lib/references";
-import { site } from "@/lib/site";
+import { caseStudies } from "@/lib/references";
+import { firstCallHref, site } from "@/lib/site";
 
-const facts = [
-  { value: "30+", label: "Jahre in C-Level-Rollen" },
-  { value: "13", label: "Jahre CEO, Dipl. Ing. Fust" },
-  { value: "2023", label: "Start als unabhängiger Berater" },
-];
+export const metadata: Metadata = {
+  title: { absolute: site.title },
+  description: site.description,
+};
 
 export default function HomePage() {
   return (
     <>
-      <section className="mx-auto grid max-w-5xl items-end gap-12 px-5 pt-16 pb-8 sm:px-8 sm:pt-24 lg:grid-cols-[1.15fr_0.85fr] lg:pt-28">
+      <section className="mx-auto grid max-w-6xl items-center gap-12 px-5 pt-14 pb-16 sm:px-8 sm:pt-20 lg:grid-cols-[1.25fr_0.75fr] lg:gap-16 lg:pt-24 lg:pb-24">
         <div>
           <p className="eyebrow">{hero.kicker}</p>
-          <h1 className="font-heading mt-5 text-5xl text-balance sm:text-6xl lg:text-[4.4rem]">
+          <h1 className="mt-5 text-[2.6rem] leading-[1.06] text-balance sm:text-6xl lg:text-[4.1rem]">
             {hero.title}
           </h1>
-          <p className="mt-6 max-w-xl text-2xl leading-snug text-ink/80">
+          <p className="mt-7 max-w-2xl text-xl leading-relaxed text-ink/85 sm:text-[1.35rem]">
             {hero.lead}
           </p>
-          <p className="measure mt-5 text-ink/65">{hero.body}</p>
-          <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
-            <Button
-              render={<Link href="/kontakt" />}
-              size="lg"
-              className="h-11 rounded-full px-5"
+          <p className="measure mt-4 text-ink/65">{hero.body}</p>
+          <div className="mt-9 flex flex-col gap-4 sm:flex-row sm:items-center">
+            <a
+              href={firstCallHref}
+              className="inline-flex h-12 items-center justify-center rounded-md bg-navy px-6 font-semibold text-cream transition-colors hover:bg-brand"
             >
-              Gespräch vereinbaren
-            </Button>
+              Unverbindliches Erstgespräch vereinbaren
+            </a>
             <Link
-              href="/referenzen"
-              className="px-1 text-sm text-ink/70 underline decoration-ink/25 underline-offset-4 hover:text-ink hover:decoration-ink"
+              href="/services"
+              className="inline-flex items-center gap-2 px-1 text-ink/75 underline decoration-ink/25 underline-offset-4 hover:text-ink hover:decoration-ink"
             >
-              Referenzen ansehen
+              Die vier Beratungsformate
             </Link>
           </div>
         </div>
-        <figure className="mx-auto w-full max-w-sm lg:mx-0 lg:justify-self-end">
+        <figure className="mx-auto w-full max-w-sm lg:mx-0 lg:max-w-none">
           <ContentImage
             src="/thomas-giger.jpg"
-            alt={`${site.founder.name}, ${site.founder.role}`}
+            alt={`${site.founder.name}, ${site.founder.headline}`}
             width={720}
-            height={720}
+            height={900}
             priority
-            className="aspect-[4/5] w-full rounded-sm object-cover object-[50%_18%]"
+            className="aspect-[4/5] w-full rounded-lg object-cover object-[50%_18%]"
           />
-          <figcaption className="mt-3 text-sm text-ink/55">
-            {site.founder.name} · {site.founder.role}
+          <figcaption className="mt-3 text-sm text-ink/60">
+            <span className="font-semibold text-ink">{site.founder.name}</span> ·
+            ehemaliger CEO Dipl. Ing. Fust
           </figcaption>
         </figure>
       </section>
 
-      <section className="mx-auto max-w-5xl px-5 py-16 sm:px-8 sm:py-20">
-        <blockquote className="max-w-3xl">
-          <p className="font-heading text-3xl leading-snug text-balance sm:text-4xl">
-            «{about.quoteOriginal}»
-          </p>
-          <footer className="mt-4 text-sm text-ink/50">{about.quoteSource}</footer>
-        </blockquote>
-      </section>
-
-      <section className="border-t border-ink/10">
-        <div className="mx-auto grid max-w-5xl gap-10 px-5 py-8 sm:px-8 sm:grid-cols-3">
-          {facts.map((fact) => (
-            <div key={fact.label} className="py-6">
-              <p className="font-heading text-4xl text-brand">{fact.value}</p>
-              <p className="mt-2 text-sm text-ink/60">{fact.label}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-5xl px-5 py-20 sm:px-8 sm:py-28">
-        <p className="eyebrow">Typische Situationen</p>
-        <h2 className="font-heading mt-4 max-w-xl text-4xl text-balance sm:text-5xl">
-          Wenn der nächste Schritt unklar ist
-        </h2>
-        <div className="mt-14 divide-y divide-ink/10 border-y border-ink/10">
-          {situations.map((item) => (
-            <article
-              key={item.title}
-              className="grid gap-8 py-12 md:grid-cols-[11rem_1fr] md:gap-12"
-            >
-              <ContentImage
-                src={item.image}
-                alt={item.imageAlt}
-                width={816}
-                height={1456}
-                className="aspect-[4/5] w-full rounded-sm object-cover md:aspect-[3/4]"
-              />
-              <div className="max-w-xl">
-                <h3 className="font-heading text-3xl leading-tight">{item.title}</h3>
-                <p className="mt-4 text-ink/70">{item.body}</p>
-                <p className="mt-4 text-ink/85">{item.close}</p>
+      <section className="border-y border-ink/10 bg-white" aria-label="Erfahrung in Zahlen">
+        <div className="mx-auto max-w-6xl px-5 py-12 sm:px-8">
+          <dl className="grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4">
+            {experienceFacts.map((fact) => (
+              <div key={fact.label}>
+                <dt className="sr-only">{fact.label}</dt>
+                <dd>
+                  <span className="block text-4xl font-semibold tracking-tight text-navy sm:text-5xl">
+                    {fact.value}
+                  </span>
+                  <span className="mt-2 block text-base leading-snug text-ink/65">
+                    {fact.label}
+                  </span>
+                </dd>
               </div>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="border-t border-ink/10 bg-white">
-        <div className="mx-auto max-w-5xl px-5 py-20 sm:px-8 sm:py-28">
-          <p className="eyebrow">{approachIntro.kicker}</p>
-          <h2 className="font-heading mt-4 max-w-xl text-4xl text-balance sm:text-5xl">
-            {approachIntro.title}
-          </h2>
-          <p className="measure mt-5 text-ink/70">{approachIntro.body}</p>
-          <div className="mt-14 grid gap-x-12 gap-y-14 sm:grid-cols-2">
-            {approachPillars.map((pillar) => (
-              <article key={pillar.title}>
-                <ContentImage
-                  src={pillar.image}
-                  alt={pillar.imageAlt}
-                  width={1024}
-                  height={1024}
-                  className="h-36 w-36 object-contain"
-                />
-                <h3 className="font-heading mt-5 text-3xl">{pillar.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-ink/70">
-                  {pillar.body}
-                </p>
-              </article>
             ))}
-          </div>
+          </dl>
+          <p className="mt-10 border-t border-ink/10 pt-6 text-sm text-ink/60">
+            <span className="mr-2 font-semibold text-ink">Stationen</span>
+            {experienceStations.join(" · ")}
+          </p>
         </div>
       </section>
 
-      <section className="mx-auto max-w-5xl px-5 py-20 sm:px-8 sm:py-28">
-        <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
-          <div>
-            <p className="eyebrow">Services</p>
-            <h2 className="font-heading mt-4 text-4xl sm:text-5xl">
-              Vier Formate, ein Anspruch
-            </h2>
+      <section className="mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-28">
+        <div className="grid gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
+          <div className="lg:sticky lg:top-28 lg:self-start">
+            <SectionHeading kicker={occasions.kicker} title={occasions.title} />
           </div>
-          <Link
-            href="/services"
-            className="text-sm text-ink/70 underline decoration-ink/25 underline-offset-4 hover:text-ink"
-          >
-            Alle Services
-          </Link>
-        </div>
-        <div className="mt-12 divide-y divide-ink/10 border-y border-ink/10">
-          {services.map((service) => (
-            <article
-              key={service.slug}
-              className="grid items-center gap-6 py-8 md:grid-cols-[4.5rem_1fr_9rem]"
-            >
-              <p className="font-heading text-2xl text-brand">{service.number}</p>
-              <div>
-                <h3 className="font-heading text-3xl">{service.title}</h3>
-                <p className="mt-2 max-w-xl text-sm leading-relaxed text-ink/70">
-                  {service.summary}
-                </p>
-              </div>
-              <ContentImage
-                src={service.image}
-                alt={service.imageAlt}
-                width={1024}
-                height={1024}
-                className="aspect-square w-full rounded-sm object-cover md:h-24 md:w-24"
-              />
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="border-t border-ink/10 bg-white">
-        <div className="mx-auto max-w-5xl px-5 py-20 sm:px-8 sm:py-28">
-          <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
-            <div>
-              <p className="eyebrow">Referenzen</p>
-              <h2 className="font-heading mt-4 max-w-xl text-4xl text-balance sm:text-5xl">
-                Mandate, die den Katalog prägen
-              </h2>
-            </div>
-            <Link
-              href="/referenzen"
-              className="text-sm text-ink/70 underline decoration-ink/25 underline-offset-4 hover:text-ink"
-            >
-              Zum Katalog
-            </Link>
-          </div>
-          <ul className="mt-12 divide-y divide-ink/10 border-y border-ink/10">
-            {featuredReferences.map((item) => (
-              <li key={item.id} className="grid gap-3 py-8 sm:grid-cols-[14rem_1fr]">
+          <ol className="divide-y divide-ink/10 border-y border-ink/10">
+            {occasions.items.map((item, index) => (
+              <li key={item.title} className="grid grid-cols-[2.5rem_1fr] gap-4 py-7">
+                <span className="pt-0.5 text-sm font-semibold text-violet">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
                 <div>
-                  <h3 className="font-heading text-2xl">{item.name}</h3>
-                  <p className="mt-1 text-sm text-ink/50">{item.sector}</p>
-                </div>
-                <div>
-                  <p className="text-ink/75">{item.mandates.join(" · ")}</p>
-                  <a
-                    href={item.links[0]?.href}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="mt-3 inline-flex items-center gap-1 text-sm text-brand hover:underline"
-                  >
-                    {item.links[0]?.label}
-                    <ArrowUpRight className="size-3.5" />
-                  </a>
+                  <h3 className="text-xl">{item.title}</h3>
+                  <p className="mt-2 text-ink/70">{item.body}</p>
                 </div>
               </li>
             ))}
-          </ul>
+          </ol>
+        </div>
+      </section>
+
+      <section className="bg-sand">
+        <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 py-20 sm:px-8 sm:py-24 lg:grid-cols-2 lg:gap-16">
+          <ContentImage
+            src={audience.image}
+            alt={audience.imageAlt}
+            width={1152}
+            height={864}
+            className="aspect-[4/3] w-full rounded-lg object-cover"
+          />
+          <div>
+            <SectionHeading kicker={audience.kicker} title={audience.title} body={audience.body} />
+            <ul className="mt-8 space-y-3">
+              {audience.groups.map((group) => (
+                <li key={group} className="flex gap-3 text-ink/85">
+                  <span className="mt-[0.7rem] h-px w-4 shrink-0 bg-violet" aria-hidden />
+                  {group}
+                </li>
+              ))}
+            </ul>
+            <p className="mt-6 text-base text-ink/60">{audience.secondary}</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-28">
+        <SectionHeading kicker={principles.kicker} title={principles.title} body={principles.body} />
+        <div className="mt-14 grid gap-12 lg:grid-cols-[1fr_0.9fr] lg:gap-16">
+          <div className="grid gap-x-10 gap-y-10 sm:grid-cols-2">
+            {principles.items.map((item) => (
+              <article key={item.title} className="border-t-2 border-navy pt-5">
+                <h3 className="text-xl">{item.title}</h3>
+                <p className="mt-3 text-base leading-relaxed text-ink/70">{item.body}</p>
+              </article>
+            ))}
+          </div>
+          <ContentImage
+            src={principles.image}
+            alt={principles.imageAlt}
+            width={1152}
+            height={864}
+            className="aspect-[4/3] w-full rounded-lg object-cover lg:aspect-auto lg:h-full"
+          />
+        </div>
+      </section>
+
+      <section className="border-t border-ink/10 bg-white">
+        <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-28">
+          <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
+            <SectionHeading
+              kicker="Ausgewählte Referenzen"
+              title="Was sich in den Mandaten bewegt hat"
+            />
+            <Link
+              href="/referenzen"
+              className="inline-flex shrink-0 items-center gap-2 text-brand underline decoration-brand/30 underline-offset-4 hover:decoration-brand"
+            >
+              Alle Referenzen <ArrowRight className="size-4" />
+            </Link>
+          </div>
+          <div className="mt-8 divide-y divide-ink/10 border-b border-ink/10">
+            {caseStudies.slice(0, 3).map((item) => (
+              <CaseStudy key={item.id} item={item} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-sand">
+        <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-28">
+          <SectionHeading
+            kicker="Stimmen aus der Zusammenarbeit"
+            title="Wie Kundinnen und Kunden die Zusammenarbeit erleben"
+          />
+          <div className="mt-12 grid gap-6 lg:grid-cols-3">
+            {testimonials.map((item, index) => (
+              <Testimonial key={index} {...item} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-28">
+        <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
+          <SectionHeading
+            kicker="Vier Beratungsformate"
+            title="Welche Frage beschäftigt Dich?"
+          />
+          <Link
+            href="/services"
+            className="inline-flex shrink-0 items-center gap-2 text-brand underline decoration-brand/30 underline-offset-4 hover:decoration-brand"
+          >
+            Formate im Detail <ArrowRight className="size-4" />
+          </Link>
+        </div>
+        <div className="mt-12 grid gap-px overflow-hidden rounded-lg border border-ink/10 bg-ink/10 sm:grid-cols-2">
+          {services.map((service) => (
+            <Link
+              key={service.slug}
+              href={`/services#${service.slug}`}
+              className="group flex flex-col bg-cream p-7 transition-colors hover:bg-white sm:p-9"
+            >
+              <p className="text-lg leading-snug text-ink/70 italic">«{service.problem}»</p>
+              <div className="mt-8 flex items-end justify-between gap-4">
+                <div>
+                  <p className="text-sm font-semibold text-violet">{service.number}</p>
+                  <h3 className="mt-1 text-2xl">{service.title}</h3>
+                  <p className="mt-2 text-base text-ink/70">{service.headline}</p>
+                </div>
+                <ArrowRight className="size-5 shrink-0 text-ink/40 transition-transform group-hover:translate-x-1 group-hover:text-ink" />
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <ProcessSteps />
+
+      <section className="mx-auto grid max-w-6xl items-center gap-12 px-5 py-20 sm:px-8 sm:py-28 md:grid-cols-[0.6fr_1.4fr] md:gap-16">
+        <ContentImage
+          src="/thomas-giger.jpg"
+          alt={site.founder.name}
+          width={600}
+          height={600}
+          className="aspect-square w-full max-w-xs rounded-lg object-cover object-[50%_20%]"
+        />
+        <div>
+          <p className="eyebrow">Persönlich</p>
+          <h2 className="mt-4 text-3xl text-balance sm:text-4xl">{about.title}</h2>
+          <p className="measure mt-5 text-ink/75">{about.teaser}</p>
+          <div className="mt-7 flex flex-wrap gap-x-6 gap-y-3">
+            <Link
+              href="/ueber-mich"
+              className="inline-flex items-center gap-2 font-semibold text-navy underline decoration-navy/30 underline-offset-4 hover:decoration-navy"
+            >
+              Mehr über mich <ArrowRight className="size-4" />
+            </Link>
+            <a
+              href={site.founder.linkedin}
+              target="_blank"
+              rel="noreferrer"
+              className="text-brand underline decoration-brand/30 underline-offset-4 hover:decoration-brand"
+            >
+              LinkedIn
+            </a>
+          </div>
         </div>
       </section>
 
