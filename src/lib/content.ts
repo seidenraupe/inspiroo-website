@@ -303,9 +303,9 @@ export const firstCall = {
     "Persönlich in Winterthur oder per Video",
     "Vertraulich",
   ],
-  image: "/images/erstgespraech-tisch.webp",
+  image: "/images/erstgespraech-telefon.webp",
   imageAlt:
-    "Zwei Kaffeetassen und ein Notizbuch auf einem Holztisch, im Hintergrund die Altstadt.",
+    "Eine Unternehmerin telefoniert lächelnd an ihrem Schreibtisch und macht sich Notizen.",
 };
 
 export const leadershipProjects = [
