@@ -28,11 +28,11 @@ export const occasions = {
   items: [
     {
       title: "Wachstum und Profitabilität verbessern",
-      body: "Der Umsatz wächst, die Marge nicht – oder umgekehrt. Wir klären, wo das Geld verdient wird und welche Hebel am meisten bewirken.",
+      body: "Der Umsatz wächst, die Marge nicht – oder umgekehrt. Ich helfe Dir herauszufinden, wo Dein Unternehmen Geld verdient und welche Hebel am meisten bewirken.",
     },
     {
       title: "Strategie überprüfen und neu ausrichten",
-      body: "Der Markt verändert sich, die bisherigen Erfolgsrezepte tragen nicht mehr. Wir prüfen, was bleibt, was sich ändern muss und was als Nächstes kommt.",
+      body: "Der Markt verändert sich, die bisherigen Erfolgsrezepte tragen nicht mehr. Ich prüfe mit Dir, was bleibt, was sich ändern muss und was als Nächstes kommt.",
     },
     {
       title: "Schwierige Führungsentscheidungen treffen",
@@ -44,7 +44,7 @@ export const occasions = {
     },
     {
       title: "Organisation und Führung weiterentwickeln",
-      body: "Klare Verantwortungen, eine Kultur der Eigeninitiative und Kennzahlen, die tatsächlich steuern – damit Ziele im Alltag ankommen.",
+      body: "Klare Verantwortungen, eine Kultur der Eigeninitiative und Kennzahlen, die tatsächlich steuern – ich unterstütze Dich dabei, dass Deine Ziele im Alltag ankommen.",
     },
   ],
 } as const;
@@ -70,7 +70,7 @@ export const audience = {
 export const principles = {
   kicker: "Was meine Zusammenarbeit auszeichnet",
   title: "Sparring auf Augenhöhe – von jemandem, der selbst geführt hat",
-  body: "Mit fundiertem Blick von aussen und pragmatischen Werkzeugen schärfen wir Deinen Fokus und setzen die richtigen Prioritäten für nachhaltigen Erfolg.",
+  body: "Mit fundiertem Blick von aussen und pragmatischen Werkzeugen schärfe ich Deinen Fokus und setze mit Dir die richtigen Prioritäten für nachhaltigen Erfolg.",
   items: [
     {
       title: "Unabhängig",
@@ -82,7 +82,7 @@ export const principles = {
     },
     {
       title: "Pragmatisch",
-      body: "Lieber drei richtige Prioritäten als dreissig Folien. Wir arbeiten mit dem, was in Deinem Unternehmen vorhanden ist, und machen es wirksamer.",
+      body: "Lieber drei richtige Prioritäten als dreissig Folien. Ich arbeite mit dem, was in Deinem Unternehmen vorhanden ist, und mache es wirksamer.",
     },
     {
       title: "Umsetzungsorientiert",
@@ -104,7 +104,7 @@ export const process = {
     },
     {
       title: "Auftragsklärung",
-      body: "Wir halten Ziel, Vorgehen, Umfang und Kosten in einer kurzen Offerte fest. Transparent und ohne Kleingedrucktes.",
+      body: "Ich halte Ziel, Vorgehen, Umfang und Kosten in einer kurzen Offerte fest. Transparent und ohne Kleingedrucktes.",
     },
     {
       title: "Zusammenarbeit",
@@ -116,7 +116,7 @@ export const process = {
 export const servicesIntro = {
   kicker: "Vier Beratungsformate",
   title: "Für jede Ausgangslage das passende Format",
-  body: "Die Formate unterscheiden sich in Dauer und Tiefe – nicht im Anspruch. Im Erstgespräch finden wir heraus, welches zu Deiner Situation passt. Bei Bedarf ziehe ich spezialisierte Partner aus meinem Netzwerk bei.",
+  body: "Die Formate unterscheiden sich in Dauer und Tiefe – nicht im Anspruch. Im Erstgespräch klären wir gemeinsam, welches zu Deiner Situation passt. Bei Bedarf ziehe ich spezialisierte Partner aus meinem Netzwerk bei.",
 };
 
 export const services = [
@@ -126,7 +126,7 @@ export const services = [
     title: "Boxen-Stopp",
     problem: "Ich möchte wissen, wo mein Unternehmen wirklich steht.",
     headline: "Klarheit über die wirtschaftliche Situation und die nächsten Hebel.",
-    body: "Wo steht Dein Unternehmen? Wo liegen ungenutzte Potenziale? Welche Massnahmen versprechen die grösste Wirkung? In einem strukturierten Kurzmandat analysieren wir die Ausgangslage und erarbeiten konkrete Handlungsempfehlungen mit klaren Prioritäten.",
+    body: "Wo steht Dein Unternehmen? Wo liegen ungenutzte Potenziale? Welche Massnahmen versprechen die grösste Wirkung? In einem strukturierten Kurzmandat analysiere ich die Ausgangslage und erarbeite mit Dir konkrete Handlungsempfehlungen mit klaren Prioritäten.",
     outcomes: [
       "Ehrliche Standortbestimmung zu Markt, Kunden, Zahlen und Organisation",
       "Kurz- und mittelfristige Verbesserungspotenziale",
@@ -180,7 +180,7 @@ export const services = [
     title: "Masterplan",
     problem: "Ich muss mein Unternehmen strategisch neu ausrichten.",
     headline: "Von der Marktanalyse zur tragfähigen Strategie mit Etappenzielen.",
-    body: "Wenn sich der Markt grundlegend verändert, reichen Korrekturen nicht. Gemeinsam analysieren wir Markt, Kunden und Wettbewerb, entwickeln eine tragfähige Strategie und übersetzen sie in priorisierte Etappenziele – für etablierte Unternehmen genauso wie für junge Firmen in bewegten Märkten.",
+    body: "Wenn sich der Markt grundlegend verändert, reichen Korrekturen nicht. Mit Dir analysiere ich Markt, Kunden und Wettbewerb, entwickle eine tragfähige Strategie und übersetze sie in priorisierte Etappenziele – für etablierte Unternehmen genauso wie für junge Firmen in bewegten Märkten.",
     outcomes: [
       "Fundierte Analyse von Markt, Kunden und Wettbewerb",
       "Strategie, die Geschäftsleitung und Verwaltungsrat mittragen",
