@@ -209,7 +209,7 @@ export const about = {
           text: "Eine mutige Entscheidung heute bringt das Unternehmen weiter als monatelanges Abwägen. Fehler lassen sich korrigieren, Stillstand nicht.",
         },
         {
-          title: "Strategie entscheidet sich am Boden",
+          title: "Strategie entscheidet sich im Alltag",
           text: "Die brillanteste Vision verpufft, wenn das Team sie im Alltag nicht greifen kann. Echte Ergebnisse entstehen nicht auf Slides, sondern durch Klarheit und Mitnahme der Schlüsselpersonen.",
         },
         {
@@ -284,9 +284,9 @@ export const about = {
     { years: "1992", role: "Eintritt", org: "Sony (Schweiz) AG" },
     { years: "1991", role: "Master of Arts", org: "Universität Zürich" },
   ],
-  image: "/images/sitzungszimmer.webp",
+  image: "/images/arbeitsgespraech-hell.webp",
   imageAlt:
-    "Vorbereitetes Sitzungszimmer mit langem Eichentisch, Unterlagen und Wasserkaraffe.",
+    "Geschäftsführerin und Teamleiter lachen gemeinsam bei einer Besprechung an einem sonnigen Bürotisch.",
 };
 
 export const closing = {
