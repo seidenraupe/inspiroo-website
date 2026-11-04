@@ -46,11 +46,11 @@ export const references: Reference[] = [
   {
     id: "home-of-innovation",
     name: "Home of Innovation",
-    sector: "Innovationsökosystem Winterthur",
+    sector: "Innovationsökosystem und Immobilien-Management, Winterthur",
     summary:
       "Winterthurs Innovations-Hub für Gründer:innen, Selbständige und KMU — von der Idee bis zur Finanzierung unter einem Dach.",
     mandates: [
-      "Begleitung Strategie-Prozess",
+      "Entwicklung und Durchführung Strategie-Prozess",
       "Verwaltungsrats-Präsidium",
       "Interims-Management",
       "Umsetzung von ertragssteigernden Massnahmen",
@@ -126,7 +126,7 @@ export const references: Reference[] = [
     sector: "Fleischhandel und Catering",
     summary:
       "Führendes Fleischhandels-Unternehmen für Gastronomie und Heime in der Ostschweiz mit eigenständigem Catering-Bereich.",
-    mandates: ["Coaching und Sparring GL"],
+    mandates: ["Coaching und Sparring GL", "Aufbau Führungs-Cockpit"],
     categories: ["Coaching"],
     links: [{ label: "danko.ch", href: "https://www.danko.ch/" }],
   },
@@ -237,14 +237,14 @@ export const caseStudies: CaseStudy[] = [
   {
     id: "home-of-innovation",
     client: "Home of Innovation Winterthur",
-    sector: "Innovationsökosystem",
+    sector: "Innovationsökosystem und Immobilien-Management",
     tags: ["Strategieentwicklung", "Verwaltungsratspräsidium", "Interims-Management"],
     situation:
       "Ein Innovationsökosystem mit unterschiedlichen Anspruchsgruppen, einer ungenügenden Ertragsentwicklung und dem Bedarf nach einer klaren strategischen Ausrichtung.",
     contribution:
-      "Begleitung des Strategieprozesses, Übernahme des Verwaltungsratspräsidiums und Unterstützung bei der operativen Weiterentwicklung.",
+      "Entwicklung und Durchführung eines neuen Strategieprozesses, Übernahme des Verwaltungsratspräsidiums und Unterstützung bei der operativen Weiterentwicklung.",
     result:
-      "Konkrete strategische Prioritäten und die Umsetzung ertragssteigernder Massnahmen.",
+      "Klare strategische Prioritäten und eine deutlich verbesserte Ertragssituation – dank optimierter Flächennutzung, neuer Angebote und eines neuen Pricing-Modells.",
     link: { label: "homeofinnovation.ch", href: "https://homeofinnovation.ch/" },
   },
   {
@@ -278,13 +278,13 @@ export const caseStudies: CaseStudy[] = [
     id: "danko",
     client: "Danko Group",
     sector: "Fleischhandel und Catering",
-    tags: ["Coaching", "Sparring Geschäftsleitung", "Organisation"],
+    tags: ["Coaching", "Sparring Geschäftsleitung", "Führungs-Cockpit", "Organisation"],
     situation:
       "Ein führendes Fleischhandels-Unternehmen für Gastronomie und Heime in der Ostschweiz mit eigenständigem Catering-Bereich – und dem Wunsch, Führung und Weiterentwicklung auf eine breitere Basis zu stellen.",
     contribution:
-      "Regelmässiges Coaching und Sparring der Geschäftsleitung zu Führung, Prioritäten und unternehmerischen Entscheidungen.",
+      "Regelmässiges Coaching und Sparring der Geschäftsleitung zu Führung, Prioritäten und unternehmerischen Entscheidungen sowie Aufbau eines neuen Führungs-Cockpits.",
     result:
-      "Eine zweite Führungsebene, die im Zuge des Wachstums geschaffen wurde, ein strukturierterer Einbezug der Teamleiter und eine Geschäftsleitung mit klareren Prioritäten.",
+      "Eine zweite Führungsebene, die im Zuge des Wachstums geschaffen wurde, ein strukturierterer Einbezug der Teamleiter und eine Geschäftsleitung, die sich auf strategische Projekte fokussiert und diese konsequent umsetzt.",
     link: { label: "danko.ch", href: "https://www.danko.ch/" },
   },
   {
