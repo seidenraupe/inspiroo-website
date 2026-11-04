@@ -82,9 +82,47 @@ export default function PrivacyPage() {
         <p>
           Wenn Sie uns per Formular, E-Mail oder Telefon kontaktieren, werden
           Ihre Angaben zwecks Bearbeitung der Anfrage und für Anschlussfragen
-          verwendet. Das Kontaktformular auf dieser Website öffnet Ihr
-          E-Mail-Programm; es werden dabei keine Formulardaten auf unserem
-          Server gespeichert.
+          verwendet. Wir geben diese Daten nicht ohne Ihre Einwilligung weiter.
+        </p>
+      </section>
+
+      <section className="mt-10 space-y-3 leading-relaxed text-ink/80">
+        <h2 className="font-heading text-2xl">Kontaktformular (Web3Forms)</h2>
+        <p>
+          Für das Kontaktformular nutzen wir den Dienst Web3Forms, betrieben
+          von Web3Creative mit Sitz in Indien, als Auftragsbearbeiter. Beim
+          Absenden werden die von Ihnen eingegebenen Angaben – Name,
+          E-Mail-Adresse, optional Telefonnummer und Ihre Nachricht – sowie
+          technische Daten wie IP-Adresse und Zeitpunkt an Web3Forms
+          übermittelt und von dort per E-Mail an uns weitergeleitet. Zum Schutz
+          vor Spam können IP-Adresse und E-Mail-Adresse an die Dienste
+          CleanTalk und Akismet weitergegeben werden. Web3Forms speichert die
+          Anfragen höchstens drei Jahre; wir löschen sie dort, sobald sie nicht
+          mehr benötigt werden.
+        </p>
+        <p>
+          Web3Forms nutzt Infrastruktur von Amazon Web Services, Cloudflare
+          und Hetzner. Die Daten können dabei auch in Ländern ausserhalb der
+          Schweiz und des EWR bearbeitet werden, insbesondere in Indien und den
+          USA. Für diese Übermittlungen stützt sich Web3Forms auf die
+          Standardvertragsklauseln der EU-Kommission. Zudem erfolgt die
+          Übermittlung zur Bearbeitung Ihrer Anfrage, die Sie mit dem Absenden
+          des Formulars selbst auslösen (Art. 17 Abs. 1 lit. b DSG bzw. Art. 49
+          Abs. 1 lit. b DSGVO). Weitere Informationen:{" "}
+          <a
+            className="text-brand hover:underline"
+            href="https://web3forms.com/privacy"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Datenschutzerklärung von Web3Forms
+          </a>
+          .
+        </p>
+        <p>
+          Wenn Sie keine Übermittlung an Web3Forms wünschen, erreichen Sie uns
+          jederzeit direkt per E-Mail an {site.email} oder telefonisch unter{" "}
+          {site.phone}.
         </p>
       </section>
 

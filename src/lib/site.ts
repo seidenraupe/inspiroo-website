@@ -29,6 +29,8 @@ export const site = {
   linkedin: "https://www.linkedin.com/company/inspiroo-gmbh",
   /** Online-Terminplaner (z. B. Cal.com oder Calendly). Ohne URL führt der CTA zu einer vorbereiteten E-Mail. */
   bookingUrl: null as string | null,
+  /** Öffentlicher Web3Forms-Zugangsschlüssel – für die Nutzung im Browser vorgesehen. */
+  web3formsKey: "9051f6d5-e686-4912-a320-e137f5a5739c",
   /** Zeigt Hinweise auf Platzhalter und noch zu bestätigende Texte. Vor dem Livegang auf false setzen. */
   showDraftHints: true,
   founder: {

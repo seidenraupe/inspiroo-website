@@ -89,8 +89,8 @@ export default function ContactPage() {
           <div id="nachricht" className="scroll-mt-28">
             <h2 className="text-3xl">Nachricht schreiben</h2>
             <p className="mt-3 text-base text-ink/60">
-              Das Formular öffnet Dein E-Mail-Programm mit vorausgefülltem Text.
-              Es werden keine Daten auf dem Server gespeichert.
+              Schildere Deine Situation in ein paar Sätzen. Die Nachricht kommt
+              direkt bei mir an.
             </p>
             <div className="mt-8">
               <ContactForm />
