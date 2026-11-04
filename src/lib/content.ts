@@ -100,7 +100,7 @@ export const process = {
   steps: [
     {
       title: "Erstgespräch",
-      body: "Unverbindlich und vertraulich. Du schilderst Deine Situation, ich stelle Fragen. Danach wissen wir beide, ob und wie ich Dich unterstützen kann.",
+      body: "30 Minuten, unverbindlich und vertraulich. Du schilderst Deine Situation, ich stelle Fragen. Danach wissen wir beide, ob ich für Deine Fragestellung der richtige Sparring-Partner bin.",
     },
     {
       title: "Auftragsklärung",
@@ -298,8 +298,9 @@ export const closing = {
 
 export const firstCall = {
   title: "Lass uns herausfinden, was Dein Unternehmen weiterbringt.",
-  body: "In einem unverbindlichen Erstgespräch besprechen wir Deine aktuelle Herausforderung und klären, ob und wie ich Dich unterstützen kann.",
+  body: "Nach Deiner Kontaktaufnahme besprechen wir in einem unverbindlichen Erstgespräch von 30 Minuten Deine aktuelle Herausforderung und klären, ob ich für Deine Fragestellung der richtige Sparring-Partner bin.",
   facts: [
+    "30 Minuten",
     "Unverbindlich und ohne Auftragsverpflichtung",
     "Persönlich in Winterthur oder per Video",
     "Vertraulich",
