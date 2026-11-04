@@ -126,7 +126,7 @@ export const services = [
     title: "Boxen-Stopp",
     problem: "Ich möchte wissen, wo mein Unternehmen wirklich steht.",
     headline: "Klarheit über die wirtschaftliche Situation und die nächsten Hebel.",
-    body: "Wo steht Dein Unternehmen? Wo liegen ungenutzte Potenziale? Welche Massnahmen versprechen die grösste Wirkung? In einem strukturierten Kurzmandat analysiere ich die Ausgangslage und erarbeite mit Dir konkrete Handlungsempfehlungen mit klaren Prioritäten.",
+    body: "Wo steht Dein Unternehmen? Wo liegen ungenutzte Potenziale? Wo lassen sich Kosten senken, ohne an Qualität einzubüssen? Wie innovativ ist Dein Angebot im Vergleich zum Markt? Wie nehmen Kundinnen und Kunden Dein Unternehmen wahr – online und offline? Welche Massnahmen versprechen die grösste Wirkung? In einem strukturierten Kurzmandat analysiere ich die Ausgangslage und erarbeite mit Dir konkrete Handlungsempfehlungen mit klaren Prioritäten.",
     outcomes: [
       "Ehrliche Standortbestimmung zu Markt, Kunden, Zahlen und Organisation",
       "Kurz- und mittelfristige Verbesserungspotenziale",

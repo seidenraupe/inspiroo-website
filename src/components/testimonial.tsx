@@ -40,10 +40,13 @@ export function Testimonial({ voice, variant = "card", className }: TestimonialP
           <p className="mt-4 text-base leading-relaxed text-ink/70">{voice.body}</p>
         ) : null}
       </blockquote>
-      <figcaption className="mt-6 flex items-center gap-4">
-        {variant === "inline" ? (
-          <CompanyLogo voice={voice} className="w-24" />
-        ) : null}
+      <figcaption
+        className={cn(
+          "mt-6 flex gap-3",
+          variant === "inline" ? "flex-col items-start" : "items-center gap-4",
+        )}
+      >
+        {variant === "inline" ? <CompanyLogo voice={voice} className="h-10" /> : null}
         <div className="text-sm leading-snug">
           <p className="font-semibold text-ink">{voice.person}</p>
           <p className="text-ink/60">
