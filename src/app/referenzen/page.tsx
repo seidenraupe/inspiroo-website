@@ -28,8 +28,8 @@ export default function ReferencesPage() {
         <SectionHeading
           as="h1"
           kicker="Referenzen"
-          title="Mandate als Berater – Erfahrung als Unternehmer"
-          body="Auf dieser Seite findest Du beides: meine heutigen Beratungsmandate und die Veränderungen, die ich zuvor als CEO selbst verantwortet habe. Beschrieben ist jeweils mein tatsächlicher Beitrag – ohne erfundene Kennzahlen."
+          title="Was ich heute bewirke – was ich als Unternehmer verantwortet habe"
+          body="Auf dieser Seite findest Du beides: meine heutigen Mandate und die Veränderungen, die ich zuvor als CEO selbst verantwortet habe. Beschrieben ist jeweils mein tatsächlicher Beitrag – ohne erfundene Kennzahlen."
         />
         <nav aria-label="Abschnitte" className="mt-10 flex flex-wrap gap-2 text-base">
           {[

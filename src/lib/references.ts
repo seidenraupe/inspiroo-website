@@ -3,7 +3,7 @@ export type ReferenceCategory =
   | "Innovation"
   | "eCommerce"
   | "Coaching"
-  | "Impuls-Beratung"
+  | "Impuls-Sparring"
   | "Lehre";
 
 export type Reference = {
@@ -38,7 +38,7 @@ export const referenceCategories: Array<ReferenceCategory | "Alle"> = [
   "Innovation",
   "eCommerce",
   "Coaching",
-  "Impuls-Beratung",
+  "Impuls-Sparring",
   "Lehre",
 ];
 
@@ -166,8 +166,8 @@ export const references: Reference[] = [
     sector: "Glassanierung",
     summary:
       "Spezialist für Glassanierung, Glasersatz und Oberflächensanierung — Kratzer entfernen statt Scheiben ersetzen.",
-    mandates: ["Impuls-Beratung"],
-    categories: ["Impuls-Beratung"],
+    mandates: ["Impuls-Sparring"],
+    categories: ["Impuls-Sparring"],
     links: [{ label: "wades.ch", href: "https://www.wades.ch/" }],
   },
   {
@@ -176,8 +176,8 @@ export const references: Reference[] = [
     sector: "Webdesign",
     summary:
       "Webdesign-Agentur in Winterthur für Websites, die Unternehmen im Netz sichtbar und bedienbar machen.",
-    mandates: ["Impuls-Beratung"],
-    categories: ["Impuls-Beratung"],
+    mandates: ["Impuls-Sparring"],
+    categories: ["Impuls-Sparring"],
     links: [{ label: "webkoenig.ch", href: "https://webkoenig.ch/" }],
   },
   {
@@ -186,8 +186,8 @@ export const references: Reference[] = [
     sector: "Consumer Product",
     summary:
       "Mobiler Steamer aus Winterthur: Mittagessen mit Wasserdampf aufwärmen — ohne Mikrowelle, mit Akku und App.",
-    mandates: ["Impuls-Beratung"],
-    categories: ["Impuls-Beratung", "Innovation"],
+    mandates: ["Impuls-Sparring"],
+    categories: ["Impuls-Sparring", "Innovation"],
     links: [{ label: "steasy.ch", href: "https://steasy.ch/" }],
   },
   {
@@ -196,8 +196,8 @@ export const references: Reference[] = [
     sector: "eCommerce / Werkstoffe",
     summary:
       "Versandplattform für PLEXIGLAS® und verwandte Werkstoffe — Zuschnitte nach Mass ab Standort Schweiz.",
-    mandates: ["Impuls-Beratung"],
-    categories: ["Impuls-Beratung", "eCommerce"],
+    mandates: ["Impuls-Sparring"],
+    categories: ["Impuls-Sparring", "eCommerce"],
     links: [{ label: "material-shop.ch", href: "https://material-shop.ch/" }],
   },
   {

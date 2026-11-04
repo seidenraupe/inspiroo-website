@@ -7,7 +7,7 @@ import { firstCall, process } from "@/lib/content";
 import { firstCallHref, site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Erstgespräch vereinbaren – Unternehmensberatung in Winterthur",
+  title: "Erstgespräch vereinbaren – Sparring-Partner für KMU in Winterthur",
   description:
     "Unverbindliches Erstgespräch mit Thomas Giger vereinbaren: persönlich in Winterthur oder per Video. Telefon +41 79 608 24 24.",
 };

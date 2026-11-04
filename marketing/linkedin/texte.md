@@ -29,12 +29,12 @@ Kürzere Variante:
 >
 > Was ich daraus gelernt habe:
 > → Entscheiden schlägt Perfektion. Fehler lassen sich korrigieren, Stillstand nicht.
-> → Strategie entscheidet sich am Boden – nicht auf Slides.
+> → Strategie entscheidet sich im Alltag – nicht auf Slides.
 > → An der Spitze steht man oft allein. Ein unabhängiger Sparring-Partner spart Nerven, Zeit und teure Umwege.
 >
 > Seit 2023 stelle ich diese Erfahrung mit inspiroo unabhängig zur Verfügung. Ich schreibe keine 80-seitigen Berichte für die Schublade, sondern erarbeite mit Dir pragmatische Lösungen – im Sparring auf Augenhöhe, von Macher zu Macher.
 >
-> Meine Formate:
+> So arbeiten wir zusammen – keine Standardprodukte, sondern eine Orientierung für Dauer und Tiefe:
 > • Boxen-Stopp – Klarheit über die wirtschaftliche Situation und die nächsten Hebel
 > • Co-Pilot – unabhängiges Sparring für schwierige Entscheidungen
 > • Navigator – Begleitung, wenn die Umsetzung nicht vorankommt
@@ -92,7 +92,7 @@ Kürzere Variante:
 > • Digitale Transformation vorantreiben
 > • Organisation und Führung weiterentwickeln
 >
-> Vier Formate – Boxen-Stopp, Co-Pilot, Navigator und Masterplan – decken alles ab, von der kurzen Standortbestimmung bis zur strategischen Neuausrichtung. Unabhängig, unternehmerisch, pragmatisch und umsetzungsorientiert.
+> Ob kurze Standortbestimmung oder strategische Neuausrichtung: Im Kern bekommen Kundinnen und Kunden immer dasselbe – vielseitige unternehmerische Erfahrung, einen unabhängigen Blick und ein vertrauensvolles, ehrliches Gegenüber für Inhaber, Verwaltungsräte und Geschäftsleitungen.
 >
 > Unverbindliches Erstgespräch: www.inspiroo.ch/kontakt
 

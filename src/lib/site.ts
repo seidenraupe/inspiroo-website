@@ -3,7 +3,7 @@ export const site = {
   legalName: "inspiroo gmbh",
   tagline: "pragmatisch visionär",
   claim: "advisory services",
-  title: "Unternehmensberatung und Sparring für KMU in der Schweiz | inspiroo",
+  title: "Sparring-Partner für KMU – Thomas Giger, ehem. CEO Fust | inspiroo",
   description:
     "Thomas Giger, ehemaliger CEO von Dipl. Ing. Fust, begleitet inhabergeführte KMU, Familienunternehmen und Geschäftsleitungen als unabhängiger Sparring-Partner bei Strategie, Entscheidungen und Umsetzung. Sitz in Winterthur.",
   keywords: [
@@ -52,7 +52,7 @@ export const firstCallHref =
 
 export const navigation = [
   { href: "/", label: "Home" },
-  { href: "/services", label: "Formate" },
+  { href: "/services", label: "Zusammenarbeit" },
   { href: "/referenzen", label: "Referenzen" },
   { href: "/ueber-mich", label: "Über mich" },
   { href: "/kontakt", label: "Kontakt" },

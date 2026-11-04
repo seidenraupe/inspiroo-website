@@ -9,9 +9,9 @@ import { Testimonial } from "@/components/testimonial";
 import { services, servicesIntro } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "Beratungsformate für KMU: Boxen-Stopp, Co-Pilot, Navigator, Masterplan",
+  title: "Zusammenarbeit mit KMU: Boxen-Stopp, Co-Pilot, Navigator, Masterplan",
   description:
-    "Standortbestimmung, Sparring für CEO und Geschäftsleitung, Begleitung der Umsetzung und Strategieentwicklung: vier Beratungsformate für KMU in der Schweiz.",
+    "Standortbestimmung, Sparring für CEO und Geschäftsleitung, Begleitung der Umsetzung und Strategieentwicklung: vier Formen der Zusammenarbeit für KMU in der Schweiz – mit der Erfahrung eines ehemaligen CEO.",
 };
 
 export default function ServicesPage() {

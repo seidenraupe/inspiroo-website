@@ -17,7 +17,7 @@ Die Entwicklungsumgebung läuft auf [http://127.0.0.1:4327](http://127.0.0.1:432
 
 ## Seiten
 
-- `/` – Hero, Erfahrung in Zahlen, Einsatzsituationen, Zielgruppe, Arbeitsweise, Fallstudien, Kundenstimmen, Formate, Ablauf, Profil
+- `/` – Hero, Erfahrung in Zahlen, Einsatzsituationen, Zielgruppe, Arbeitsweise, Fallstudien, Kundenstimmen, Zusammenarbeit (Formate), Ablauf, Profil
 - `/services` – Boxen-Stopp, Co-Pilot, Navigator, Masterplan (aus Kundensicht)
 - `/referenzen` – Fallstudien, Kundenstimmen, filterbarer Mandatskatalog, Führungserfahrung als CEO
 - `/ueber-mich` – Persönliche Geschichte, Arbeitsweise, Werdegang

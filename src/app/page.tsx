@@ -51,7 +51,7 @@ export default function HomePage() {
               href="/services"
               className="inline-flex items-center gap-2 px-1 text-ink/75 underline decoration-ink/25 underline-offset-4 hover:text-ink hover:decoration-ink"
             >
-              Die vier Beratungsformate
+              Wie ich Dich unterstützen kann
             </Link>
           </div>
         </div>
@@ -145,7 +145,7 @@ export default function HomePage() {
         <div className="mt-14 grid gap-12 lg:grid-cols-[1fr_0.9fr] lg:gap-16">
           <div className="grid gap-x-10 gap-y-10 sm:grid-cols-2">
             {principles.items.map((item) => (
-              <article key={item.title} className="border-t-2 border-navy pt-5">
+              <article key={item.title} className="border-t-2 border-navy pt-5 sm:last:odd:col-span-2">
                 <h3 className="text-xl">{item.title}</h3>
                 <p className="mt-3 text-base leading-relaxed text-ink/70">{item.body}</p>
               </article>
@@ -200,14 +200,14 @@ export default function HomePage() {
       <section className="mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-28">
         <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
           <SectionHeading
-            kicker="Vier Beratungsformate"
+            kicker="Wie ich Dich unterstützen kann"
             title="Welche Frage beschäftigt Dich?"
           />
           <Link
             href="/services"
             className="inline-flex shrink-0 items-center gap-2 text-brand underline decoration-brand/30 underline-offset-4 hover:decoration-brand"
           >
-            Formate im Detail <ArrowRight className="size-4" />
+            Zusammenarbeit im Detail <ArrowRight className="size-4" />
           </Link>
         </div>
         <div className="mt-12 grid gap-px overflow-hidden rounded-lg border border-ink/10 bg-ink/10 sm:grid-cols-2">

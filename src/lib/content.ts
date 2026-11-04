@@ -4,7 +4,7 @@ export const hero = {
   kicker: "Sparring und Unternehmensentwicklung für KMU",
   title: "Unternehmerisch denken. Klar entscheiden. Wirksam umsetzen.",
   lead: "Ich begleite Unternehmerinnen und Unternehmer sowie Geschäftsleitungen bei strategischen Herausforderungen, wichtigen Entscheidungen und Veränderungen.",
-  body: "Mit über 30 Jahren C-Level-Erfahrung – davon 13 Jahre als CEO – verbinde ich die Perspektive eines erfahrenen Unternehmers mit einer unabhängigen Aussensicht und konsequenter Umsetzungsorientierung.",
+  body: "Mit über 30 Jahren C-Level-Erfahrung – davon 13 Jahre als CEO – verbinde ich vielseitige unternehmerische Erfahrung mit einem unabhängigen Blick – und arbeite vertrauensvoll und wirksam mit Inhabern, Verwaltungsräten und Geschäftsleitungen.",
 };
 
 export const experienceFacts = [
@@ -52,7 +52,7 @@ export const occasions = {
 export const audience = {
   kicker: "Für wen ich arbeite",
   title: "Etablierte KMU, die sich weiterentwickeln wollen",
-  body: "Meine Erfahrung ist besonders wertvoll für Unternehmen, die bereits eine gewisse Grösse und Organisation haben – und jemanden suchen, der ihre Herausforderungen aus eigener Führungsverantwortung kennt.",
+  body: "Meine Erfahrung ist besonders wertvoll für Unternehmen, die bereits eine gewisse Grösse und Organisation haben – und jemanden suchen, der ihre Herausforderungen aus eigener Führungsverantwortung kennt. Handel, Service und E-Commerce, Industrie und Software, Gastronomie, Kultur und Innovation – ich kenne unterschiedliche Geschäftsmodelle von innen und bringe Erfahrungen aus einer Branche gezielt in eine andere.",
   groups: [
     "Inhabergeführte KMU",
     "Familienunternehmen",
@@ -70,7 +70,7 @@ export const audience = {
 export const principles = {
   kicker: "Was meine Zusammenarbeit auszeichnet",
   title: "Sparring auf Augenhöhe – von jemandem, der selbst geführt hat",
-  body: "Mit fundiertem Blick von aussen und pragmatischen Werkzeugen schärfe ich Deinen Fokus und setze mit Dir die richtigen Prioritäten für nachhaltigen Erfolg.",
+  body: "Mit dem Blick von aussen und der Erfahrung von innen schärfe ich Deinen Fokus und setze mit Dir die richtigen Prioritäten für nachhaltigen Erfolg.",
   items: [
     {
       title: "Unabhängig",
@@ -87,6 +87,10 @@ export const principles = {
     {
       title: "Umsetzungsorientiert",
       body: "Eine Strategie ist erst dann gut, wenn sie im Alltag ankommt. Auf Wunsch begleite ich auch die Umsetzung – mit klaren Meilensteinen und Kennzahlen.",
+    },
+    {
+      title: "Vertrauensvoll",
+      body: "Ich arbeite seit über 30 Jahren mit Inhabern, Verwaltungsräten und Geschäftsleitungen. Was Du mir anvertraust, bleibt bei mir. Ich spreche auch Unbequemes offen an – immer loyal zu Deinem Unternehmen.",
     },
   ],
   image: "/images/sparring-whiteboard.webp",
@@ -114,9 +118,9 @@ export const process = {
 } as const;
 
 export const servicesIntro = {
-  kicker: "Vier Beratungsformate",
-  title: "Für jede Ausgangslage das passende Format",
-  body: "Die Formate unterscheiden sich in Dauer und Tiefe – nicht im Anspruch. Im Erstgespräch klären wir gemeinsam, welches zu Deiner Situation passt. Bei Bedarf ziehe ich spezialisierte Partner aus meinem Netzwerk bei.",
+  kicker: "Wie ich Dich unterstützen kann",
+  title: "Gleiche Erfahrung – unterschiedliche Intensität",
+  body: "Die vier Formate sind keine Standardprodukte, sondern eine Orientierung für Dauer und Tiefe. Was Du bekommst, ist immer dasselbe: meine Erfahrung als Unternehmer, einen unabhängigen Blick und ein ehrliches Gegenüber. Im Erstgespräch klären wir, was Deine Situation braucht – oft ist es eine Mischung. Bei Bedarf ziehe ich spezialisierte Partner aus meinem Netzwerk bei.",
 };
 
 export const services = [
@@ -126,7 +130,7 @@ export const services = [
     title: "Boxen-Stopp",
     problem: "Ich möchte wissen, wo mein Unternehmen wirklich steht.",
     headline: "Klarheit über die wirtschaftliche Situation und die nächsten Hebel.",
-    body: "Wo steht Dein Unternehmen? Wo liegen ungenutzte Potenziale? Wo lassen sich Kosten senken, ohne an Qualität einzubüssen? Wie innovativ ist Dein Angebot im Vergleich zum Markt? Wie nehmen Kundinnen und Kunden Dein Unternehmen wahr – online und offline? Welche Massnahmen versprechen die grösste Wirkung? In einem strukturierten Kurzmandat analysiere ich die Ausgangslage und erarbeite mit Dir konkrete Handlungsempfehlungen mit klaren Prioritäten.",
+    body: "Wo steht Dein Unternehmen? Wo liegen ungenutzte Potenziale? Wo lassen sich Kosten senken, ohne an Qualität einzubüssen? Wie innovativ ist Dein Angebot im Vergleich zum Markt? Wie nehmen Kundinnen und Kunden Dein Unternehmen wahr – online und offline? Welche Massnahmen versprechen die grösste Wirkung? Mit dem Blick eines ehemaligen CEO analysiere ich die Ausgangslage und erarbeite mit Dir konkrete Handlungsempfehlungen mit klaren Prioritäten.",
     outcomes: [
       "Ehrliche Standortbestimmung zu Markt, Kunden, Zahlen und Organisation",
       "Kurz- und mittelfristige Verbesserungspotenziale",
@@ -163,9 +167,9 @@ export const services = [
     title: "Navigator",
     problem: "Ich habe Ziele, aber die Umsetzung kommt nicht richtig voran.",
     headline: "Strategie in den Alltag bringen – mit Steuerung, die funktioniert.",
-    body: "Viele Unternehmen wissen, wohin sie wollen. Schwierig wird es im operativen Alltag. Ich begleite Dich über längere Zeit bei der Umsetzung, baue mit Dir ein pragmatisches Kennzahlensystem auf und unterstütze bei Planung, Steuerung und Kontrolle von Projekten und Prozessen.",
+    body: "Viele Unternehmen wissen, wohin sie wollen. Schwierig wird es im operativen Alltag. Ich begleite Dich über längere Zeit bei der Umsetzung, entwickle mit Dir die wenigen Kennzahlen, mit denen Du Dein Unternehmen wirklich steuerst, und unterstütze bei Planung, Steuerung und Kontrolle von Projekten und Prozessen.",
     outcomes: [
-      "Pragmatisches Kennzahlensystem (KPI), das wirklich steuert",
+      "Wenige, aussagekräftige Kennzahlen (KPI), die wirklich steuern",
       "Klare Meilensteine und Verantwortlichkeiten",
       "Regelmässige Standortbestimmung mit der Geschäftsleitung",
     ],
