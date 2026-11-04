@@ -89,9 +89,9 @@ export const principles = {
       body: "Eine Strategie ist erst dann gut, wenn sie im Alltag ankommt. Auf Wunsch begleite ich auch die Umsetzung – mit klaren Meilensteinen und Kennzahlen.",
     },
   ],
-  image: "/images/gespraech-sessel.webp",
+  image: "/images/sparring-whiteboard.webp",
   imageAlt:
-    "Zwei Sessel und ein kleiner Tisch mit Wassergläsern an einem Fenster mit Blick über die Altstadt.",
+    "Eine Unternehmerin erklärt am Whiteboard drei Prioritäten, ihr Gesprächspartner hört mit einer Kaffeetasse in der Hand aufmerksam zu.",
 } as const;
 
 export const process = {
