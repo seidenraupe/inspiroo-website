@@ -240,7 +240,7 @@ export const caseStudies: CaseStudy[] = [
     sector: "Innovationsökosystem",
     tags: ["Strategieentwicklung", "Verwaltungsratspräsidium", "Interims-Management"],
     situation:
-      "Ein Innovationsökosystem mit unterschiedlichen Anspruchsgruppen und dem Bedarf nach einer klaren strategischen Ausrichtung.",
+      "Ein Innovationsökosystem mit unterschiedlichen Anspruchsgruppen, einer ungenügenden Ertragsentwicklung und dem Bedarf nach einer klaren strategischen Ausrichtung.",
     contribution:
       "Begleitung des Strategieprozesses, Übernahme des Verwaltungsratspräsidiums und Unterstützung bei der operativen Weiterentwicklung.",
     result:
@@ -248,20 +248,44 @@ export const caseStudies: CaseStudy[] = [
     link: { label: "homeofinnovation.ch", href: "https://homeofinnovation.ch/" },
   },
   {
-    id: "lavaresi",
-    client: "Lavaresi / Infra Support",
-    sector: "Digitale Infrastruktur für Mehrfamilienhäuser",
-    tags: ["Strategie", "Product-Market-Fit", "Rollout-Planung"],
+    id: "museum-schaffen",
+    client: "Museum Schaffen / Historischer Verein Winterthur",
+    sector: "Kultur / Verein und Museen",
+    tags: ["Prozesse", "Digitalisierung", "Website"],
     situation:
-      "Eine neue digitale Lösung für die gemeinsame Nutzung von Waschräumen – technisch bereit, aber mit offenen Fragen zu Zielgruppe, Positionierung und Markteinführung.",
+      "Ein traditionsreicher Verein mit drei Museen, dessen Abläufe rund um Mitglieder und Veranstaltungen viel Aufwand verursachten.",
     contribution:
-      "Begleitung der Strategiearbeit, Schärfung des Product-Market-Fit und Erarbeitung einer etappierten Rollout-Planung.",
+      "Verbesserung der Prozesse im Mitglieder- und Event-Management sowie Neukonzeption der Website mit API-Anbindung an die Event-/Ticketing-Plattform und die Mitglieder-Datenbank.",
     result:
-      "Eine klare Positionierung gegenüber Verwaltungen und Eigentümern sowie ein priorisierter Plan für die Markteinführung.",
-    link: {
-      label: "Lavaresi bei Infra Support",
-      href: "https://infrasupport.ch/resich/lavaresich",
-    },
+      "Kosteneinsparungen dank schlankerer Prozesse und eine neue, moderne Website: Veranstaltungen, Tickets und Mitgliederdaten fliessen automatisch ein – so bleibt sie mit wenig Aufwand immer topaktuell.",
+    link: { label: "museumschaffen.ch", href: "https://www.museumschaffen.ch/" },
+  },
+  {
+    id: "la-panetteria",
+    client: "Ristorante La Panetteria",
+    sector: "Gastronomie, Winterthur",
+    tags: ["Website", "Online-Reservation", "Reputations-Management"],
+    situation:
+      "Ein inhabergeführtes mediterranes Restaurant, seit 2006 in Winterthur etabliert, mit einer nicht mehr zeitgemässen Website, telefonischer Tischreservation und einer kaum aktiv gepflegten Online-Reputation.",
+    contribution:
+      "Überarbeitung der Website mit Integration eines automatischen Tisch-Reservationssystems sowie Aufbau eines Reputations-Managements mit aktivem Einholen von Google-Rezensionen.",
+    result:
+      "Gäste reservieren rund um die Uhr selbst online, das Team wird am Telefon entlastet, und laufend neue Google-Rezensionen stärken die Sichtbarkeit des Restaurants.",
+    link: { label: "la-panetteria.ch", href: "https://www.la-panetteria.ch/" },
+    draft: true,
+  },
+  {
+    id: "danko",
+    client: "Danko Group",
+    sector: "Fleischhandel und Catering",
+    tags: ["Coaching", "Sparring Geschäftsleitung", "Organisation"],
+    situation:
+      "Ein führendes Fleischhandels-Unternehmen für Gastronomie und Heime in der Ostschweiz mit eigenständigem Catering-Bereich – und dem Wunsch, Führung und Weiterentwicklung auf eine breitere Basis zu stellen.",
+    contribution:
+      "Regelmässiges Coaching und Sparring der Geschäftsleitung zu Führung, Prioritäten und unternehmerischen Entscheidungen.",
+    result:
+      "Eine zweite Führungsebene, die im Zuge des Wachstums geschaffen wurde, ein strukturierterer Einbezug der Teamleiter und eine Geschäftsleitung mit klareren Prioritäten.",
+    link: { label: "danko.ch", href: "https://www.danko.ch/" },
   },
   {
     id: "webling",
@@ -273,34 +297,23 @@ export const caseStudies: CaseStudy[] = [
     contribution:
       "Moderation und Begleitung des Strategie- und Budgetprozesses mit der Geschäftsleitung.",
     result:
-      "Strategische Stossrichtungen, die direkt in Budget und Jahresziele übersetzt wurden.",
+      "Priorisierte strategische Massnahmen, die direkt in Budget und Jahresziele übersetzt wurden.",
     link: { label: "webling.ch", href: "https://www.webling.ch/" },
   },
   {
-    id: "danko",
-    client: "Danko",
-    sector: "Fleischhandel und Catering",
-    tags: ["Coaching", "Sparring Geschäftsleitung"],
+    id: "lavaresi",
+    client: "Lavaresi / Infra Support",
+    sector: "Digitale Infrastruktur für Mehrfamilienhäuser",
+    tags: ["Strategie", "Product-Market-Fit", "Rollout-Planung"],
     situation:
-      "Ein führendes Fleischhandels-Unternehmen für Gastronomie und Heime in der Ostschweiz mit eigenständigem Catering-Bereich – und dem Wunsch, Führung und Weiterentwicklung auf eine breitere Basis zu stellen.",
+      "Eine neue digitale Lösung für die gemeinsame Nutzung von Waschräumen – technisch bereit, aber mit offenen Fragen zu Zielgruppe, Positionierung und Markteinführung.",
     contribution:
-      "Regelmässiges Coaching und Sparring der Geschäftsleitung zu Führung, Prioritäten und unternehmerischen Entscheidungen.",
+      "Begleitung der Strategiearbeit, Schärfung des Product-Market-Fit und Erarbeitung einer etappierten Rollout-Planung.",
     result:
-      "Eine Geschäftsleitung mit klareren Prioritäten und einem unabhängigen Gesprächspartner für anstehende Entscheide.",
-    link: { label: "danko.ch", href: "https://www.danko.ch/" },
-  },
-  {
-    id: "hv-winterthur",
-    client: "Historischer Verein Winterthur / Museum Schaffen",
-    sector: "Kultur / Verein und Museen",
-    tags: ["Prozesse", "Digitalisierung", "Website"],
-    situation:
-      "Ein traditionsreicher Verein mit drei Museen, dessen Abläufe rund um Mitglieder und Veranstaltungen viel Aufwand verursachten.",
-    contribution:
-      "Verbesserung der Prozesse im Mitglieder- und Event-Management sowie Neukonzeption der Website mit API-Anbindung an die Event-/Ticketing-Plattform und die Mitglieder-Datenbank.",
-    result:
-      "Kosteneinsparungen dank schlankerer Prozesse und eine Website, die Veranstaltungen, Tickets und Mitgliederdaten verbindet.",
-    link: { label: "hvwinterthur.ch", href: "https://www.hvwinterthur.ch/" },
-    draft: true,
+      "Eine umfassende Markt- und Wettbewerbsanalyse, eine klare Positionierung gegenüber Verwaltungen und Eigentümern sowie ein priorisierter Plan für die Markteinführung.",
+    link: {
+      label: "Lavaresi bei Infra Support",
+      href: "https://infrasupport.ch/resich/lavaresich",
+    },
   },
 ];
