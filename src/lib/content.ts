@@ -144,10 +144,11 @@ export const services = [
     title: "Co-Pilot",
     problem: "Ich brauche einen unabhängigen Gesprächspartner für schwierige Entscheidungen.",
     headline: "Ein Sparring-Partner, der die Verantwortung eines CEO aus eigener Erfahrung kennt.",
-    body: "Als Unternehmerin oder Unternehmer kannst Du nicht jede Frage mit Deinem Team besprechen. Im vertraulichen Sparring übernehme ich die Rolle des kritischen und lösungsorientierten Fragestellers – im 1:1 oder im Verwaltungsrat und in der Geschäftsleitung.",
+    body: "Als Unternehmerin oder Unternehmer kannst Du nicht jede Frage mit Deinem Team besprechen. Im vertraulichen Sparring übernehme ich die Rolle des kritischen und lösungsorientierten Fragestellers – im 1:1 oder im Verwaltungsrat und in der Geschäftsleitung. Bei Bedarf recherchiere ich umfassende Analysen oder Benchmark-Studien, die die Diskussion befruchten: So lassen sich Ideen faktenbasiert prüfen und gemeinsam weiterentwickeln.",
     outcomes: [
       "Vertraulicher Austausch auf Augenhöhe",
       "Kritische Fragen und neue Perspektiven vor wichtigen Entscheidungen",
+      "Fundierte Analysen und Benchmarks als Grundlage für die Diskussion",
       "Sicherheit bei Personal-, Investitions- und Strategiefragen",
     ],
     format: "Regelmässige Sparring-Termine oder auf Abruf",
