@@ -39,7 +39,6 @@ export default function HomePage() {
           <p className="mt-7 max-w-2xl text-xl leading-relaxed text-ink/85 sm:text-[1.35rem]">
             {hero.lead}
           </p>
-          <p className="measure mt-4 text-ink/65">{hero.body}</p>
           <div className="mt-9 flex flex-col gap-4 sm:flex-row sm:items-center">
             <a
               href={firstCallHref}
