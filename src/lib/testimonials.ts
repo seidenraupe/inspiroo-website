@@ -26,7 +26,7 @@ export const clientVoices = {
   danko: {
     id: "danko",
     person: "Fabian Danko",
-    role: "Geschäftsführer",
+    role: "Mit-Inhaber",
     company: "Danko Group AG",
     logo: { src: "/logos/danko.png", width: 480, height: 124, onDark: true },
     quote: null,
