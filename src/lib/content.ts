@@ -14,7 +14,7 @@ export const experienceFacts = [
 ] as const;
 
 export const occasions = {
-  kicker: "Wann ich Unternehmen unterstütze",
+  kicker: "Wie und wann ich Unternehmen unterstütze",
   title: "Wenn viel auf dem Spiel steht und der Weg nicht eindeutig ist",
   items: [
     {
