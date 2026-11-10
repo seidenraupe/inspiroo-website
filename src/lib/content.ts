@@ -10,7 +10,7 @@ export const experienceFacts = [
   { value: "30+", label: "Jahre in Geschäftsleitung und C-Level" },
   { value: "13", label: "Jahre CEO der Dipl. Ing. Fust AG" },
   { value: "VR", label: "Verwaltungsrat in Handel, Service und Innovation" },
-  { value: "2023", label: "seit 2023 unabhängig mit inspiroo" },
+  { value: "2023", label: "seit 2023 unabhängig mit inspiroo, mit verschiedenen Beratungs-Mandaten" },
 ] as const;
 
 export const experienceStations = [
