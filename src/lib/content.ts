@@ -269,7 +269,7 @@ export const about = {
   quote: "Nur aus Enthusiasmus kann Neugierde entstehen, und nur wer neugierig ist, kann lernen.",
   quoteSource: "Leonard Bernstein",
   education:
-    "Mein Studium schloss ich an der Universität Zürich als Master of Arts ab. In meiner Abschlussarbeit untersuchte ich das Thema «Manager im Familienunternehmen» am Beispiel der Firma Rieter in Winterthur. Berufsbegleitend bildete ich mich in Management-Seminaren am IMD in Lausanne und autodidaktisch zu allen Aspekten der digitalen Transformation weiter.",
+    "Mein Studium schloss ich an der Universität Zürich als Master of Arts ab. In meiner Abschlussarbeit untersuchte ich das Thema «Manager im Familienunternehmen» am Beispiel der Firma Rieter in Winterthur. Berufsbegleitend bildete ich mich in Management-Seminaren am IMD in Lausanne und autodidaktisch zu allen Aspekten der digitalen Transformation und KI weiter.",
   timeline: [
     { years: "seit 2023", role: "Gründer und Inhaber", org: "inspiroo gmbh" },
     { years: "2010–2022", role: "CEO", org: "Dipl. Ing. Fust AG" },
