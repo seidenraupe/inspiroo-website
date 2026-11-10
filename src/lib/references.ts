@@ -116,14 +116,14 @@ export const references: Reference[] = [
     ],
   },
   {
-    id: "handel-lebensmittel",
-    name: "Inhabergeführtes Handelsunternehmen",
-    sector: "Lebensmittelbranche, Ostschweiz",
+    id: "danko",
+    name: "Danko",
+    sector: "Fleischhandel und Catering",
     summary:
-      "Wachsendes, inhabergeführtes Unternehmen in der Lebensmittelbranche mit mehreren Geschäftsbereichen.",
+      "Führendes Fleischhandels-Unternehmen für Gastronomie und Heime in der Ostschweiz mit eigenständigem Catering-Bereich.",
     mandates: ["Coaching und Sparring GL", "Aufbau Führungs-Cockpit"],
     categories: ["Coaching"],
-    links: [],
+    links: [{ label: "danko.ch", href: "https://www.danko.ch/" }],
   },
   {
     id: "foodward",
@@ -270,16 +270,17 @@ export const caseStudies: CaseStudy[] = [
     draft: true,
   },
   {
-    id: "handel-lebensmittel",
-    client: "Inhabergeführtes Handelsunternehmen",
-    sector: "Lebensmittelbranche, Ostschweiz",
+    id: "danko",
+    client: "Danko Group",
+    sector: "Fleischhandel und Catering",
     tags: ["Coaching", "Sparring Geschäftsleitung", "Führungs-Cockpit", "Organisation"],
     situation:
-      "Ein wachsendes, inhabergeführtes Unternehmen in der Lebensmittelbranche mit mehreren Geschäftsbereichen – und dem Wunsch, Führung und Weiterentwicklung auf eine breitere Basis zu stellen.",
+      "Ein führendes Fleischhandels-Unternehmen für Gastronomie und Heime in der Ostschweiz mit eigenständigem Catering-Bereich – und dem Wunsch, Führung und Weiterentwicklung auf eine breitere Basis zu stellen.",
     contribution:
       "Regelmässiges Coaching und Sparring der Geschäftsleitung zu Führung, Prioritäten und unternehmerischen Entscheidungen sowie Aufbau eines neuen Führungs-Cockpits.",
     result:
       "Eine zweite Führungsebene, die im Zuge des Wachstums geschaffen wurde, ein strukturierterer Einbezug der Teamleiter und eine Geschäftsleitung, die sich auf strategische Projekte fokussiert und diese konsequent umsetzt.",
+    link: { label: "danko.ch", href: "https://www.danko.ch/" },
   },
   {
     id: "webling",

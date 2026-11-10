@@ -150,7 +150,7 @@ export const services = [
     image: "/images/unternehmerin-fenster.webp",
     imageAlt:
       "Eine Unternehmerin steht mit einer Tasse Kaffee nachdenklich am Fenster ihres Büros.",
-    voice: clientVoices.handelLebensmittel,
+    voice: clientVoices.danko,
   },
   {
     number: "03",

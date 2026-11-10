@@ -19,19 +19,21 @@ export const clientVoices = {
     role: "Gründer und VRP",
     company: "Home of Innovation",
     logo: { src: "/logos/home-of-innovation.png", width: 360, height: 168 },
-    quote: null,
-    sample:
+    quote:
       "Thomas hat uns geholfen, aus vielen Ideen klare strategische Prioritäten zu machen. Er hat umgehend und mit viel persönlichem Einsatz die Umsetzung ertragssteigernder Massnahmen gestartet und eine konsequente Kundenorientierung vorgelebt.",
+    sample:
+      "Thomas hat uns geholfen, aus vielen Ideen klare strategische Prioritäten zu machen – und er hat die Umsetzung ertragssteigernder Massnahmen konsequent mitgetragen.",
   },
-  handelLebensmittel: {
-    id: "handel-lebensmittel",
+  danko: {
+    id: "danko",
     person: "Fabian Danko",
     role: "Geschäftsführer",
     company: "Danko Group AG",
     logo: { src: "/logos/danko.png", width: 480, height: 124, onDark: true },
-    quote: null,
-    sample:
+    quote:
       "Ein Sparring-Partner, der unternehmerisch denkt und auch unbequeme Fragen stellt. Das hat zu neuen Perspektiven und besseren Lösungen geführt.",
+    sample:
+      "Ein Sparring-Partner, der unternehmerisch denkt und auch unbequeme Fragen stellt. Genau das hat mir vor wichtigen Entscheidungen gefehlt.",
   },
   raiffeisen: {
     id: "raiffeisen-winterthur",
@@ -60,16 +62,26 @@ export const clientVoices = {
     role: "Gründer",
     company: "Webling",
     logo: { src: "/logos/webling.png", width: 480, height: 126 },
-    quote: null,
-    sample:
+    quote:
       "Thomas hat unseren Strategie- und Budgetprozess so begleitet, dass die strategischen Stossrichtungen direkt in Budget und Jahresziele eingeflossen sind. Zusätzlich gab er uns Instrumente zur Hand, um die Umsetzung der Massnahmen konsequent auf Kurs zu halten.",
+    sample:
+      "Thomas hat unseren Strategie- und Budgetprozess so begleitet, dass die strategischen Stossrichtungen direkt in Budget und Jahresziele eingeflossen sind.",
   },
 } satisfies Record<string, ClientVoice>;
 
 export const homeVoices: ClientVoice[] = [
   clientVoices.homeOfInnovation,
-  clientVoices.handelLebensmittel,
+  clientVoices.danko,
   clientVoices.webling,
 ];
 
-export const allVoices: ClientVoice[] = Object.values(clientVoices);
+/** Reihenfolge wie auf der Referenzen-Seite (Fallstudien und Mandate). */
+export const referenceVoices: ClientVoice[] = [
+  clientVoices.homeOfInnovation,
+  clientVoices.hvw,
+  clientVoices.danko,
+  clientVoices.webling,
+  clientVoices.raiffeisen,
+];
+
+export const allVoices: ClientVoice[] = referenceVoices;
