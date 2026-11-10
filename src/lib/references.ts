@@ -276,16 +276,15 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     id: "danko",
-    client: "Danko Group",
-    sector: "Fleischhandel und Catering",
+    client: "Inhabergeführtes Handelsunternehmen",
+    sector: "Lebensmittelbranche, Ostschweiz",
     tags: ["Coaching", "Sparring Geschäftsleitung", "Führungs-Cockpit", "Organisation"],
     situation:
-      "Ein führendes Fleischhandels-Unternehmen für Gastronomie und Heime in der Ostschweiz mit eigenständigem Catering-Bereich – und dem Wunsch, Führung und Weiterentwicklung auf eine breitere Basis zu stellen.",
+      "Ein wachsendes, inhabergeführtes Unternehmen in der Lebensmittelbranche mit mehreren Geschäftsbereichen – und dem Wunsch, Führung und Weiterentwicklung auf eine breitere Basis zu stellen.",
     contribution:
       "Regelmässiges Coaching und Sparring der Geschäftsleitung zu Führung, Prioritäten und unternehmerischen Entscheidungen sowie Aufbau eines neuen Führungs-Cockpits.",
     result:
       "Eine zweite Führungsebene, die im Zuge des Wachstums geschaffen wurde, ein strukturierterer Einbezug der Teamleiter und eine Geschäftsleitung, die sich auf strategische Projekte fokussiert und diese konsequent umsetzt.",
-    link: { label: "danko.ch", href: "https://www.danko.ch/" },
   },
   {
     id: "webling",
@@ -302,18 +301,14 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     id: "lavaresi",
-    client: "Lavaresi / Infra Support",
-    sector: "Digitale Infrastruktur für Mehrfamilienhäuser",
+    client: "Anbieter digitaler Gebäudelösungen",
+    sector: "PropTech / Immobilienbranche",
     tags: ["Strategie", "Product-Market-Fit", "Rollout-Planung"],
     situation:
-      "Eine neue digitale Lösung für die gemeinsame Nutzung von Waschräumen – technisch bereit, aber mit offenen Fragen zu Zielgruppe, Positionierung und Markteinführung.",
+      "Eine neue digitale Lösung für Mehrfamilienhäuser – technisch bereit, aber mit offenen Fragen zu Zielgruppe, Positionierung und Markteinführung.",
     contribution:
       "Begleitung der Strategiearbeit, Schärfung des Product-Market-Fit und Erarbeitung einer etappierten Rollout-Planung.",
     result:
       "Eine umfassende Markt- und Wettbewerbsanalyse, eine klare Positionierung gegenüber Verwaltungen und Eigentümern sowie ein priorisierter Plan für die Markteinführung.",
-    link: {
-      label: "Lavaresi bei Infra Support",
-      href: "https://infrasupport.ch/resich/lavaresich",
-    },
   },
 ];
