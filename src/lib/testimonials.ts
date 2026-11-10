@@ -65,12 +65,6 @@ export const clientVoices = {
   },
 } satisfies Record<string, ClientVoice>;
 
-export const homeVoices: ClientVoice[] = [
-  clientVoices.homeOfInnovation,
-  clientVoices.danko,
-  clientVoices.webling,
-];
-
 /** Reihenfolge wie auf der Referenzen-Seite (Fallstudien und Mandate). */
 export const referenceVoices: ClientVoice[] = [
   clientVoices.homeOfInnovation,

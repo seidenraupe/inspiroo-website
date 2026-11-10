@@ -7,7 +7,7 @@ import { ContentImage } from "@/components/content-image";
 import { CtaBand } from "@/components/cta-band";
 import { ProcessSteps } from "@/components/process-steps";
 import { SectionHeading } from "@/components/section-heading";
-import { Testimonial } from "@/components/testimonial";
+import { HomeTestimonials } from "@/components/home-testimonials";
 import {
   about,
   audience,
@@ -18,7 +18,6 @@ import {
   services,
 } from "@/lib/content";
 import { caseStudies } from "@/lib/references";
-import { homeVoices } from "@/lib/testimonials";
 import { firstCallHref, site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -183,11 +182,7 @@ export default function HomePage() {
             kicker="Stimmen aus der Zusammenarbeit"
             title="Wie Kundinnen und Kunden die Zusammenarbeit erleben"
           />
-          <div className="mt-12 grid gap-6 lg:grid-cols-3">
-            {homeVoices.map((voice) => (
-              <Testimonial key={voice.id} voice={voice} />
-            ))}
-          </div>
+          <HomeTestimonials />
         </div>
       </section>
 
