@@ -13,14 +13,6 @@ export const experienceFacts = [
   { value: "2023", label: "seit 2023 unabhängig mit inspiroo, mit verschiedenen Beratungs-Mandaten" },
 ] as const;
 
-export const experienceStations = [
-  "Dipl. Ing. Fust",
-  "Sony (Schweiz)",
-  "Service7000",
-  "nettoshop",
-  "Home of Innovation",
-] as const;
-
 export const occasions = {
   kicker: "Wann ich Unternehmen unterstütze",
   title: "Wenn viel auf dem Spiel steht und der Weg nicht eindeutig ist",

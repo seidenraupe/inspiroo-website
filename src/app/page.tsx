@@ -12,7 +12,6 @@ import {
   about,
   audience,
   experienceFacts,
-  experienceStations,
   hero,
   occasions,
   principles,
@@ -87,10 +86,6 @@ export default function HomePage() {
               </div>
             ))}
           </dl>
-          <p className="mt-10 border-t border-ink/10 pt-6 text-sm text-ink/60">
-            <span className="mr-2 font-semibold text-ink">Stationen</span>
-            {experienceStations.join(" · ")}
-          </p>
         </div>
       </section>
 
