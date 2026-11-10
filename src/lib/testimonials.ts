@@ -35,7 +35,8 @@ export const clientVoices = {
     person: "Gregor Knoblauch",
     company: "Raiffeisenbank Winterthur",
     logo: { src: "/logos/raiffeisen.png", width: 348, height: 51 },
-    quote: null,
+    quote:
+      "Die Zusammenarbeit mit Thomas war inspirierend, unkompliziert und auf unsere Bedürfnisse als Bank abgestimmt. Thomas hat es verstanden, sich pragmatisch in unsere Situation zu versetzen und hat unsere Bedürfnisse sofort erkannt. Die Zusammenarbeit war ‹schnörkellos› und praxisorientiert. Thomas hat es verstanden, uns ‹an der Hand zu nehmen› und hat das Ziel nie aus den Augen verloren.",
     sample:
       "Thomas bringt die Erfahrung eines CEO mit, der Innovation nicht nur fordert, sondern selbst umgesetzt hat. Das hat unserem Innovations-Management Struktur und Tempo gegeben.",
   },
