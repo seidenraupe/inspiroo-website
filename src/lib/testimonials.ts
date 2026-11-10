@@ -26,6 +26,7 @@ export const clientVoices = {
     id: "handel-lebensmittel",
     person: "Inhaber und Geschäftsführer",
     company: "Inhabergeführtes Handelsunternehmen, Lebensmittelbranche",
+    logo: { src: "/logos/danko.png", width: 480, height: 124, onDark: true },
     quote: null,
     sample:
       "Ein Sparring-Partner, der unternehmerisch denkt und auch unbequeme Fragen stellt. Das hat zu neuen Perspektiven und besseren Lösungen geführt.",
