@@ -19,10 +19,9 @@ export const clientVoices = {
     role: "Gründer und VRP",
     company: "Home of Innovation",
     logo: { src: "/logos/home-of-innovation.png", width: 360, height: 168 },
-    quote:
-      "Thomas hat uns geholfen, aus vielen Ideen klare strategische Prioritäten zu machen. Er hat umgehend und mit viel persönlichem Einsatz die Umsetzung ertragssteigernder Massnahmen gestartet und eine konsequente Kundenorientierung vorgelebt.",
+    quote: null,
     sample:
-      "Thomas hat uns geholfen, aus vielen Ideen klare strategische Prioritäten zu machen – und er hat die Umsetzung ertragssteigernder Massnahmen konsequent mitgetragen.",
+      "Thomas hat uns geholfen, aus vielen Ideen klare strategische Prioritäten zu machen. Er hat umgehend und mit viel persönlichem Einsatz die Umsetzung ertragssteigernder Massnahmen gestartet und eine konsequente Kundenorientierung vorgelebt.",
   },
   danko: {
     id: "danko",
@@ -30,10 +29,9 @@ export const clientVoices = {
     role: "Geschäftsführer",
     company: "Danko Group AG",
     logo: { src: "/logos/danko.png", width: 480, height: 124, onDark: true },
-    quote:
-      "Ein Sparring-Partner, der unternehmerisch denkt und auch unbequeme Fragen stellt. Das hat zu neuen Perspektiven und besseren Lösungen geführt.",
+    quote: null,
     sample:
-      "Ein Sparring-Partner, der unternehmerisch denkt und auch unbequeme Fragen stellt. Genau das hat mir vor wichtigen Entscheidungen gefehlt.",
+      "Ein Sparring-Partner, der unternehmerisch denkt und auch unbequeme Fragen stellt. Das hat zu neuen Perspektiven und besseren Lösungen geführt.",
   },
   raiffeisen: {
     id: "raiffeisen-winterthur",
@@ -41,10 +39,9 @@ export const clientVoices = {
     role: "Vorsitzender der Bankleitung",
     company: "Raiffeisenbank Winterthur",
     logo: { src: "/logos/raiffeisen.png", width: 348, height: 51 },
-    quote:
-      "Die Zusammenarbeit mit Thomas war inspirierend, unkompliziert und auf unsere Bedürfnisse als Bank abgestimmt. Thomas hat es verstanden, sich pragmatisch in unsere Situation zu versetzen und hat unsere Bedürfnisse sofort erkannt. Die Zusammenarbeit war ‹schnörkellos› und praxisorientiert. Thomas hat es verstanden, uns ‹an der Hand zu nehmen› und hat das Ziel nie aus den Augen verloren.",
+    quote: null,
     sample:
-      "Thomas bringt die Erfahrung eines CEO mit, der Innovation nicht nur fordert, sondern selbst umgesetzt hat. Das hat unserem Innovations-Management Struktur und Tempo gegeben.",
+      "Die Zusammenarbeit mit Thomas war inspirierend, unkompliziert und auf unsere Bedürfnisse als Bank abgestimmt. Thomas hat es verstanden, sich pragmatisch in unsere Situation zu versetzen und hat unsere Bedürfnisse sofort erkannt. Die Zusammenarbeit war ‹schnörkellos› und praxisorientiert. Thomas hat es verstanden, uns ‹an der Hand zu nehmen› und hat das Ziel nie aus den Augen verloren.",
   },
   hvw: {
     id: "historischer-verein-winterthur",
@@ -62,10 +59,9 @@ export const clientVoices = {
     role: "Gründer",
     company: "Webling",
     logo: { src: "/logos/webling.png", width: 480, height: 126 },
-    quote:
-      "Thomas hat unseren Strategie- und Budgetprozess so begleitet, dass die strategischen Stossrichtungen direkt in Budget und Jahresziele eingeflossen sind. Zusätzlich gab er uns Instrumente zur Hand, um die Umsetzung der Massnahmen konsequent auf Kurs zu halten.",
+    quote: null,
     sample:
-      "Thomas hat unseren Strategie- und Budgetprozess so begleitet, dass die strategischen Stossrichtungen direkt in Budget und Jahresziele eingeflossen sind.",
+      "Thomas hat unseren Strategie- und Budgetprozess so begleitet, dass die strategischen Stossrichtungen direkt in Budget und Jahresziele eingeflossen sind. Zusätzlich gab er uns Instrumente zur Hand, um die Umsetzung der Massnahmen konsequent auf Kurs zu halten.",
   },
 } satisfies Record<string, ClientVoice>;
 
