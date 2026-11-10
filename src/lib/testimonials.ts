@@ -28,7 +28,7 @@ export const clientVoices = {
     company: "Inhabergeführtes Handelsunternehmen, Lebensmittelbranche",
     quote: null,
     sample:
-      "Ein Sparring-Partner, der unternehmerisch denkt und auch unbequeme Fragen stellt. Genau das hat mir vor wichtigen Entscheidungen gefehlt.",
+      "Ein Sparring-Partner, der unternehmerisch denkt und auch unbequeme Fragen stellt. Das hat zu neuen Perspektiven und besseren Lösungen geführt.",
   },
   raiffeisen: {
     id: "raiffeisen-winterthur",
