@@ -24,8 +24,9 @@ export const clientVoices = {
   },
   handelLebensmittel: {
     id: "handel-lebensmittel",
-    person: "Inhaber und Geschäftsführer",
-    company: "Inhabergeführtes Handelsunternehmen, Lebensmittelbranche",
+    person: "Fabian Danko",
+    role: "Geschäftsführer",
+    company: "Danko Group AG",
     logo: { src: "/logos/danko.png", width: 480, height: 124, onDark: true },
     quote: null,
     sample:
