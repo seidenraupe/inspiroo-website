@@ -62,7 +62,7 @@ export const clientVoices = {
     logo: { src: "/logos/webling.png", width: 480, height: 126 },
     quote: null,
     sample:
-      "Thomas hat unseren Strategie- und Budgetprozess so begleitet, dass die strategischen Stossrichtungen direkt in Budget und Jahresziele eingeflossen sind.",
+      "Thomas hat unseren Strategie- und Budgetprozess so begleitet, dass die strategischen Stossrichtungen direkt in Budget und Jahresziele eingeflossen sind. Zusätzlich gab er uns Instrumente zur Hand, um die Umsetzung der Massnahmen konsequent auf Kurs zu halten.",
   },
 } satisfies Record<string, ClientVoice>;
 
