@@ -44,6 +44,7 @@ export const clientVoices = {
   hvw: {
     id: "historischer-verein-winterthur",
     person: "Christian Huggenberg",
+    role: "Präsident",
     company: "Historischer Verein Winterthur / Museum Schaffen",
     logo: { src: "/logos/historischer-verein-winterthur.png", width: 480, height: 110 },
     quote: null,
