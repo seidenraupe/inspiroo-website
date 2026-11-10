@@ -31,7 +31,7 @@ export const clientVoices = {
     logo: { src: "/logos/danko.png", width: 480, height: 124, onDark: true },
     quote: null,
     sample:
-      "Ein Sparring-Partner, der unternehmerisch denkt und auch unbequeme Fragen stellt. Das hat zu neuen Perspektiven und besseren Lösungen geführt.",
+      "Ein Sparring-Partner auf Augenhöhe: unternehmerisch denkend, hinterfragend und voller kreativer Lösungsansätze – stets gepaart mit einem feinen Gespür für machbaren Pragmatismus.",
   },
   raiffeisen: {
     id: "raiffeisen-winterthur",
