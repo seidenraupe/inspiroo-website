@@ -33,6 +33,7 @@ export const clientVoices = {
   raiffeisen: {
     id: "raiffeisen-winterthur",
     person: "Gregor Knoblauch",
+    role: "Vorsitzender der Bankleitung",
     company: "Raiffeisenbank Winterthur",
     logo: { src: "/logos/raiffeisen.png", width: 348, height: 51 },
     quote:
