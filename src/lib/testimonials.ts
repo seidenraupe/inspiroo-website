@@ -20,7 +20,7 @@ export const clientVoices = {
     logo: { src: "/logos/home-of-innovation.png", width: 360, height: 168 },
     quote: null,
     sample:
-      "Thomas hat uns geholfen, aus vielen Ideen klare strategische Prioritäten zu machen – und er hat die Umsetzung ertragssteigernder Massnahmen konsequent mitgetragen.",
+      "Thomas hat uns geholfen, aus vielen Ideen klare strategische Prioritäten zu machen. Er hat umgehend und mit viel persönlichem Einsatz die Umsetzung ertragssteigernder Massnahmen gestartet und eine konsequente Kundenorientierung vorgelebt.",
   },
   handelLebensmittel: {
     id: "handel-lebensmittel",
