@@ -218,7 +218,7 @@ export const about = {
       question: "Warum ich inspiroo gegründet habe",
       points: [
         {
-          title: "Weil PS auf die Strasse gehören",
+          title: "Wirkung auch mit knappen Ressourcen",
           text: "Ich will Unternehmern und Führungskräften den Rücken stärken und dort Wirkung entfalten, wo Ressourcen knapp sind und Tempo zählt.",
         },
         {
