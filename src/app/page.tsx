@@ -1,13 +1,19 @@
 import type { Metadata } from "next";
+import dynamic from "next/dynamic";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 import { CaseStudy } from "@/components/case-study";
 import { ContentImage } from "@/components/content-image";
 import { CtaBand } from "@/components/cta-band";
+import { HomeTestimonialsSkeleton } from "@/components/home-testimonials";
 import { ProcessSteps } from "@/components/process-steps";
 import { SectionHeading } from "@/components/section-heading";
-import { HomeTestimonials } from "@/components/home-testimonials";
+
+const HomeTestimonials = dynamic(
+  () => import("@/components/home-testimonials").then((mod) => mod.HomeTestimonials),
+  { ssr: false, loading: () => <HomeTestimonialsSkeleton /> },
+);
 import {
   about,
   audience,
