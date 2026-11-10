@@ -1,19 +1,13 @@
 import type { Metadata } from "next";
-import dynamic from "next/dynamic";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 import { CaseStudy } from "@/components/case-study";
 import { ContentImage } from "@/components/content-image";
 import { CtaBand } from "@/components/cta-band";
-import { HomeTestimonialsSkeleton } from "@/components/home-testimonials";
+import { HomeTestimonialsLazy } from "@/components/home-testimonials-lazy";
 import { ProcessSteps } from "@/components/process-steps";
 import { SectionHeading } from "@/components/section-heading";
-
-const HomeTestimonials = dynamic(
-  () => import("@/components/home-testimonials").then((mod) => mod.HomeTestimonials),
-  { ssr: false, loading: () => <HomeTestimonialsSkeleton /> },
-);
 import {
   about,
   audience,
@@ -188,7 +182,7 @@ export default function HomePage() {
             kicker="Stimmen aus der Zusammenarbeit"
             title="Wie Kundinnen und Kunden die Zusammenarbeit erleben"
           />
-          <HomeTestimonials />
+          <HomeTestimonialsLazy />
         </div>
       </section>
 
