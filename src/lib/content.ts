@@ -1,9 +1,9 @@
 import { clientVoices } from "@/lib/testimonials";
 
 export const hero = {
-  kicker: "Sparring und Unternehmensentwicklung für KMU",
-  title: "Unternehmerisch denken. Klar entscheiden. Wirksam umsetzen.",
-  lead: "Ich begleite Unternehmerinnen und Unternehmer sowie Geschäftsleitungen bei strategischen Herausforderungen, wichtigen Entscheidungen und Veränderungen.",
+  kicker: "Strategisches Sparring · Nachfolge & Transformation · KMU-Governance",
+  title: "Sparring auf Augenhöhe. Aus eigener Führungserfahrung.",
+  lead: "Ich begleite Unternehmerinnen, Unternehmer und Führungsgremien bei strategischen Weichenstellungen und strategischer Neuausrichtung – unabhängig, diskret und mit der Praxis aus über 30 Jahren C-Level.",
   body: "Mit über 30 Jahren C-Level-Erfahrung – davon 13 Jahre als CEO – verbinde ich vielseitige unternehmerische Erfahrung mit einem unabhängigen Blick – und arbeite vertrauensvoll und wirksam mit Inhabern, Verwaltungsräten und Geschäftsleitungen.",
 };
 
