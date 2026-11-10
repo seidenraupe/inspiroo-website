@@ -19,7 +19,7 @@ export const occasions = {
   items: [
     {
       title: "Wachstum und Profitabilität verbessern",
-      body: "Der Umsatz wächst, die Marge nicht – oder umgekehrt. Ich helfe Dir herauszufinden, wo Dein Unternehmen Geld verdient und welche Hebel am meisten bewirken.",
+      body: "Der Umsatz wächst, die Marge nicht – oder umgekehrt. Ich helfe Dir bei der Analyse, wo Dein Unternehmen Geld verdient und welche Hebel am meisten bewirken.",
     },
     {
       title: "Strategie überprüfen und neu ausrichten",
