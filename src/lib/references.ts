@@ -60,23 +60,18 @@ export const references: Reference[] = [
     featured: true,
   },
   {
-    id: "lavaresi",
-    name: "Lavaresi / Infra Support",
-    sector: "Shared Infrastructure",
+    id: "gebaeudeloesungen",
+    name: "Anbieter digitaler Gebäudelösungen",
+    sector: "PropTech / Immobilienbranche",
     summary:
-      "Digitale Waschraum-Infrastruktur für Mehrfamilienhäuser: gemeinsame Nutzung mit mehr Flexibilität, Transparenz und weniger Koordinationsaufwand.",
+      "Neue digitale Lösung für Mehrfamilienhäuser: mehr Flexibilität, Transparenz und weniger Koordinationsaufwand für Bewohnende und Verwaltungen.",
     mandates: [
       "Begleitung Strategie",
       "Product-Market-Fit",
       "Rollout-Planung",
     ],
     categories: ["Strategie", "Innovation"],
-    links: [
-      {
-        label: "Lavaresi bei Infra Support",
-        href: "https://infrasupport.ch/resich/lavaresich",
-      },
-    ],
+    links: [],
     featured: true,
   },
   {
@@ -121,14 +116,14 @@ export const references: Reference[] = [
     ],
   },
   {
-    id: "danko",
-    name: "Danko",
-    sector: "Fleischhandel und Catering",
+    id: "handel-lebensmittel",
+    name: "Inhabergeführtes Handelsunternehmen",
+    sector: "Lebensmittelbranche, Ostschweiz",
     summary:
-      "Führendes Fleischhandels-Unternehmen für Gastronomie und Heime in der Ostschweiz mit eigenständigem Catering-Bereich.",
+      "Wachsendes, inhabergeführtes Unternehmen in der Lebensmittelbranche mit mehreren Geschäftsbereichen.",
     mandates: ["Coaching und Sparring GL", "Aufbau Führungs-Cockpit"],
     categories: ["Coaching"],
-    links: [{ label: "danko.ch", href: "https://www.danko.ch/" }],
+    links: [],
   },
   {
     id: "foodward",
@@ -181,24 +176,24 @@ export const references: Reference[] = [
     links: [{ label: "webkoenig.ch", href: "https://webkoenig.ch/" }],
   },
   {
-    id: "steasy",
-    name: "Steasy",
+    id: "startup-konsumgut",
+    name: "Start-up-Unternehmen",
     sector: "Consumer Product",
     summary:
-      "Mobiler Steamer aus Winterthur: Mittagessen mit Wasserdampf aufwärmen — ohne Mikrowelle, mit Akku und App.",
+      "Junges Unternehmen mit einem innovativen Konsumgüter-Produkt in der Phase der Markteinführung.",
     mandates: ["Impuls-Sparring"],
     categories: ["Impuls-Sparring", "Innovation"],
-    links: [{ label: "steasy.ch", href: "https://steasy.ch/" }],
+    links: [],
   },
   {
-    id: "material-shop",
-    name: "Material-Shop",
+    id: "werkstoff-haendler",
+    name: "Online-Händler für Werkstoffe",
     sector: "eCommerce / Werkstoffe",
     summary:
-      "Versandplattform für PLEXIGLAS® und verwandte Werkstoffe — Zuschnitte nach Mass ab Standort Schweiz.",
+      "Schweizer Versandplattform für Werkstoffe mit Zuschnitten nach Mass.",
     mandates: ["Impuls-Sparring"],
     categories: ["Impuls-Sparring", "eCommerce"],
-    links: [{ label: "material-shop.ch", href: "https://material-shop.ch/" }],
+    links: [],
   },
   {
     id: "la-panetteria",
@@ -275,7 +270,7 @@ export const caseStudies: CaseStudy[] = [
     draft: true,
   },
   {
-    id: "danko",
+    id: "handel-lebensmittel",
     client: "Inhabergeführtes Handelsunternehmen",
     sector: "Lebensmittelbranche, Ostschweiz",
     tags: ["Coaching", "Sparring Geschäftsleitung", "Führungs-Cockpit", "Organisation"],
@@ -300,7 +295,7 @@ export const caseStudies: CaseStudy[] = [
     link: { label: "webling.ch", href: "https://www.webling.ch/" },
   },
   {
-    id: "lavaresi",
+    id: "gebaeudeloesungen",
     client: "Anbieter digitaler Gebäudelösungen",
     sector: "PropTech / Immobilienbranche",
     tags: ["Strategie", "Product-Market-Fit", "Rollout-Planung"],

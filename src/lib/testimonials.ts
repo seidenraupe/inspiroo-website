@@ -3,7 +3,8 @@ export type ClientVoice = {
   person: string;
   role?: string;
   company: string;
-  logo: { src: string; width: number; height: number; onDark?: boolean };
+  /** Ohne Logo gilt die Stimme als anonymisiert. */
+  logo?: { src: string; width: number; height: number; onDark?: boolean };
   /** Freigegebenes Zitat. Solange null, wird `sample` als markiertes Muster gezeigt. */
   quote: string | null;
   body?: string;
@@ -21,11 +22,10 @@ export const clientVoices = {
     sample:
       "Thomas hat uns geholfen, aus vielen Ideen klare strategische Prioritäten zu machen – und er hat die Umsetzung ertragssteigernder Massnahmen konsequent mitgetragen.",
   },
-  danko: {
-    id: "danko",
-    person: "Fabian Danko",
-    company: "Danko Group AG",
-    logo: { src: "/logos/danko.png", width: 480, height: 124, onDark: true },
+  handelLebensmittel: {
+    id: "handel-lebensmittel",
+    person: "Inhaber und Geschäftsführer",
+    company: "Inhabergeführtes Handelsunternehmen, Lebensmittelbranche",
     quote: null,
     sample:
       "Ein Sparring-Partner, der unternehmerisch denkt und auch unbequeme Fragen stellt. Genau das hat mir vor wichtigen Entscheidungen gefehlt.",
@@ -62,7 +62,7 @@ export const clientVoices = {
 
 export const homeVoices: ClientVoice[] = [
   clientVoices.homeOfInnovation,
-  clientVoices.danko,
+  clientVoices.handelLebensmittel,
   clientVoices.webling,
 ];
 

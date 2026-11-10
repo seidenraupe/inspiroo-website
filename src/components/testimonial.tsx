@@ -65,6 +65,16 @@ export function Testimonial({ voice, variant = "card", className }: TestimonialP
 }
 
 function CompanyLogo({ voice, className }: { voice: ClientVoice; className?: string }) {
+  if (!voice.logo) {
+    return (
+      <div className={cn("flex h-14 shrink-0 items-center", className)}>
+        <span className="text-xs font-semibold tracking-[0.12em] text-ink/45 uppercase">
+          Name auf Wunsch anonymisiert
+        </span>
+      </div>
+    );
+  }
+
   return (
     <div
       className={cn(

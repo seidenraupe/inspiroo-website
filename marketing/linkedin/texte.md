@@ -51,7 +51,7 @@ Kürzere Variante:
 **Titel:** Gründer und Inhaber
 **Unternehmen:** inspiroo gmbh · seit 2023 · Winterthur
 
-> Unabhängiger Sparring-Partner und Unternehmensentwickler für KMU. Begleitung von Unternehmerinnen, Unternehmern und Geschäftsleitungen bei Strategie, wichtigen Entscheidungen und Umsetzung. Mandate u. a. Home of Innovation (Verwaltungsratspräsidium, Strategie, Interims-Management), Webling, Lavaresi / Infra Support, Danko Group, Raiffeisenbank Winterthur, Historischer Verein Winterthur / Museum Schaffen.
+> Unabhängiger Sparring-Partner und Unternehmensentwickler für KMU. Begleitung von Unternehmerinnen, Unternehmern und Geschäftsleitungen bei Strategie, wichtigen Entscheidungen und Umsetzung. Mandate u. a. Home of Innovation (Verwaltungsratspräsidium, Strategie, Interims-Management), Webling, ein Anbieter digitaler Gebäudelösungen, ein inhabergeführtes Handelsunternehmen der Lebensmittelbranche, Raiffeisenbank Winterthur, Historischer Verein Winterthur / Museum Schaffen.
 
 ### Im Fokus (Featured)
 
