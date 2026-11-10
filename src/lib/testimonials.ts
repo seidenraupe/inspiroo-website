@@ -16,6 +16,7 @@ export const clientVoices = {
   homeOfInnovation: {
     id: "home-of-innovation",
     person: "Raphael Tobler",
+    role: "Gründer und VRP",
     company: "Home of Innovation",
     logo: { src: "/logos/home-of-innovation.png", width: 360, height: 168 },
     quote: null,
