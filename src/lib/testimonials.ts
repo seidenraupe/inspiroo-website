@@ -25,8 +25,8 @@ export const clientVoices = {
   },
   danko: {
     id: "danko",
-    person: "Fabian Danko",
-    role: "Mit-Inhaber",
+    person: "Nathalie Danko",
+    role: "Geschäftsführerin",
     company: "Danko Group AG",
     logo: { src: "/logos/danko.png", width: 480, height: 124, onDark: true },
     quote: null,
