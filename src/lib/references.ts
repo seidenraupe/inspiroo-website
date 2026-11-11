@@ -75,21 +75,6 @@ export const references: Reference[] = [
     featured: true,
   },
   {
-    id: "scherrer",
-    name: "Schweisstechnik Scherrer AG",
-    sector: "Schweisstechnik und Industriebedarf",
-    summary:
-      "Familienunternehmen für Schweisstechnik und Schweisszubehör in der Ostschweiz — Beratung und Sortiment für Profis.",
-    mandates: ["Evaluation eCommerce-Lösung"],
-    categories: ["eCommerce"],
-    links: [
-      {
-        label: "schweisstechnik-scherrer.ch",
-        href: "https://www.schweisstechnik-scherrer.ch/",
-      },
-    ],
-  },
-  {
     id: "webling",
     name: "Webling",
     sector: "SaaS / Vereinssoftware",
@@ -99,6 +84,45 @@ export const references: Reference[] = [
     categories: ["Strategie"],
     links: [{ label: "webling.ch", href: "https://www.webling.ch/" }],
     featured: true,
+  },
+  {
+    id: "handel-lebensmittel",
+    name: "Inhabergeführtes Handelsunternehmen",
+    sector: "Lebensmittelbranche, Ostschweiz",
+    summary:
+      "Wachsendes, inhabergeführtes Unternehmen in der Lebensmittelbranche mit mehreren Geschäftsbereichen.",
+    mandates: ["Coaching und Sparring GL", "Aufbau Führungs-Cockpit"],
+    categories: ["Coaching"],
+    links: [],
+  },
+  {
+    id: "hv-winterthur",
+    name: "Historischer Verein Winterthur / Museum Schaffen",
+    sector: "Kultur / Verein und Museen",
+    summary:
+      "Seit 1874 engagiert für die Geschichte Winterthurs – Träger von drei Museen, darunter das Museum Schaffen auf dem Lagerplatz.",
+    mandates: [
+      "Kosteneinsparungen dank verbesserter Prozesse im Mitglieder- und Event-Management",
+      "Neukonzeption der Website mit API-Anbindung an Event-/Ticketing-Plattform und Mitglieder-Datenbank",
+    ],
+    categories: ["Innovation"],
+    links: [
+      { label: "hvwinterthur.ch", href: "https://www.hvwinterthur.ch/" },
+      { label: "museumschaffen.ch", href: "https://www.museumschaffen.ch/" },
+    ],
+  },
+  {
+    id: "restaurant",
+    name: "Inhabergeführtes Restaurant",
+    sector: "Gastronomie",
+    summary:
+      "Seit vielen Jahren etabliertes, inhabergeführtes Restaurant mit treuer Stammkundschaft.",
+    mandates: [
+      "Überarbeitung Website mit automatischem Tisch-Reservationssystem",
+      "Reputations-Management mit aktivem Einholen von Google-Rezensionen",
+    ],
+    categories: ["Strategie", "eCommerce"],
+    links: [],
   },
   {
     id: "raiffeisen-winterthur",
@@ -116,14 +140,59 @@ export const references: Reference[] = [
     ],
   },
   {
-    id: "danko",
-    name: "Danko",
-    sector: "Fleischhandel und Catering",
+    id: "startup-konsumgut",
+    name: "Start-up-Unternehmen",
+    sector: "Consumer Product",
     summary:
-      "Führendes Fleischhandels-Unternehmen für Gastronomie und Heime in der Ostschweiz mit eigenständigem Catering-Bereich.",
-    mandates: ["Coaching und Sparring GL", "Aufbau Führungs-Cockpit"],
-    categories: ["Coaching"],
-    links: [{ label: "danko.ch", href: "https://www.danko.ch/" }],
+      "Junges Unternehmen mit einem innovativen Konsumgüter-Produkt in der Phase der Markteinführung.",
+    mandates: ["Impuls-Sparring"],
+    categories: ["Impuls-Sparring", "Innovation"],
+    links: [],
+  },
+  {
+    id: "scherrer",
+    name: "Schweisstechnik Scherrer AG",
+    sector: "Schweisstechnik und Industriebedarf",
+    summary:
+      "Familienunternehmen für Schweisstechnik und Schweisszubehör in der Ostschweiz — Beratung und Sortiment für Profis.",
+    mandates: ["Evaluation eCommerce-Lösung"],
+    categories: ["eCommerce"],
+    links: [
+      {
+        label: "schweisstechnik-scherrer.ch",
+        href: "https://www.schweisstechnik-scherrer.ch/",
+      },
+    ],
+  },
+  {
+    id: "werkstoff-haendler",
+    name: "Online-Händler für Werkstoffe",
+    sector: "eCommerce / Werkstoffe",
+    summary:
+      "Schweizer Versandplattform für Werkstoffe mit Zuschnitten nach Mass.",
+    mandates: ["Impuls-Sparring"],
+    categories: ["Impuls-Sparring", "eCommerce"],
+    links: [],
+  },
+  {
+    id: "wades",
+    name: "Wades AG",
+    sector: "Glassanierung",
+    summary:
+      "Spezialist für Glassanierung, Glasersatz und Oberflächensanierung — Kratzer entfernen statt Scheiben ersetzen.",
+    mandates: ["Impuls-Sparring"],
+    categories: ["Impuls-Sparring"],
+    links: [{ label: "wades.ch", href: "https://www.wades.ch/" }],
+  },
+  {
+    id: "webkoenig",
+    name: "Webkönig AG",
+    sector: "Webdesign",
+    summary:
+      "Webdesign-Agentur in Winterthur für Websites, die Unternehmen im Netz sichtbar und bedienbar machen.",
+    mandates: ["Impuls-Sparring"],
+    categories: ["Impuls-Sparring"],
+    links: [{ label: "webkoenig.ch", href: "https://webkoenig.ch/" }],
   },
   {
     id: "foodward",
@@ -155,75 +224,6 @@ export const references: Reference[] = [
       },
     ],
   },
-  {
-    id: "wades",
-    name: "Wades AG",
-    sector: "Glassanierung",
-    summary:
-      "Spezialist für Glassanierung, Glasersatz und Oberflächensanierung — Kratzer entfernen statt Scheiben ersetzen.",
-    mandates: ["Impuls-Sparring"],
-    categories: ["Impuls-Sparring"],
-    links: [{ label: "wades.ch", href: "https://www.wades.ch/" }],
-  },
-  {
-    id: "webkoenig",
-    name: "Webkönig AG",
-    sector: "Webdesign",
-    summary:
-      "Webdesign-Agentur in Winterthur für Websites, die Unternehmen im Netz sichtbar und bedienbar machen.",
-    mandates: ["Impuls-Sparring"],
-    categories: ["Impuls-Sparring"],
-    links: [{ label: "webkoenig.ch", href: "https://webkoenig.ch/" }],
-  },
-  {
-    id: "startup-konsumgut",
-    name: "Start-up-Unternehmen",
-    sector: "Consumer Product",
-    summary:
-      "Junges Unternehmen mit einem innovativen Konsumgüter-Produkt in der Phase der Markteinführung.",
-    mandates: ["Impuls-Sparring"],
-    categories: ["Impuls-Sparring", "Innovation"],
-    links: [],
-  },
-  {
-    id: "werkstoff-haendler",
-    name: "Online-Händler für Werkstoffe",
-    sector: "eCommerce / Werkstoffe",
-    summary:
-      "Schweizer Versandplattform für Werkstoffe mit Zuschnitten nach Mass.",
-    mandates: ["Impuls-Sparring"],
-    categories: ["Impuls-Sparring", "eCommerce"],
-    links: [],
-  },
-  {
-    id: "la-panetteria",
-    name: "Ristorante La Panetteria",
-    sector: "Gastronomie",
-    summary:
-      "Mediterranes Restaurant mit Pizzeria an der Tösstalstrasse in Winterthur, seit 2006 inhabergeführt.",
-    mandates: [
-      "Überarbeitung Website mit automatischem Tisch-Reservationssystem",
-      "Reputations-Management mit aktivem Einholen von Google-Rezensionen",
-    ],
-    categories: ["Strategie", "eCommerce"],
-    links: [{ label: "la-panetteria.ch", href: "https://www.la-panetteria.ch/" }],
-  },
-  {
-    id: "hv-winterthur",
-    name: "Historischer Verein Winterthur / Museum Schaffen",
-    sector: "Kultur / Verein und Museen",
-    summary:
-      "Seit 1874 engagiert für die Geschichte Winterthurs – Träger von drei Museen, darunter das Museum Schaffen auf dem Lagerplatz.",
-    mandates: [
-      "Kosteneinsparungen dank verbesserter Prozesse im Mitglieder- und Event-Management",
-      "Neukonzeption der Website mit API-Anbindung an Event-/Ticketing-Plattform und Mitglieder-Datenbank",
-    ],
-    categories: ["Innovation"],
-    links: [
-      { label: "hvwinterthur.ch", href: "https://www.hvwinterthur.ch/" },
-      { label: "museumschaffen.ch", href: "https://www.museumschaffen.ch/" },
-    ],
-  },
 ];
 
 export const featuredReferences = references.filter((item) => item.featured);
@@ -243,6 +243,19 @@ export const caseStudies: CaseStudy[] = [
     link: { label: "homeofinnovation.ch", href: "https://homeofinnovation.ch/" },
   },
   {
+    id: "restaurant",
+    client: "Inhabergeführtes Restaurant",
+    sector: "Gastronomie",
+    tags: ["Website", "Online-Reservation", "Reputations-Management"],
+    situation:
+      "Ein inhabergeführtes, seit vielen Jahren etabliertes Restaurant mit einer nicht mehr zeitgemässen Website, telefonischer Tischreservation und einer kaum aktiv gepflegten Online-Reputation.",
+    contribution:
+      "Überarbeitung der Website mit Integration eines automatischen Tisch-Reservationssystems sowie Aufbau eines Reputations-Managements mit aktivem Einholen von Google-Rezensionen.",
+    result:
+      "Gäste reservieren rund um die Uhr selbst online, das Team wird am Telefon entlastet, und laufend neue Google-Rezensionen stärken die Sichtbarkeit des Restaurants.",
+    draft: true,
+  },
+  {
     id: "museum-schaffen",
     client: "Museum Schaffen / Historischer Verein Winterthur",
     sector: "Kultur / Verein und Museen",
@@ -256,31 +269,16 @@ export const caseStudies: CaseStudy[] = [
     link: { label: "museumschaffen.ch", href: "https://www.museumschaffen.ch/" },
   },
   {
-    id: "la-panetteria",
-    client: "Ristorante La Panetteria",
-    sector: "Gastronomie, Winterthur",
-    tags: ["Website", "Online-Reservation", "Reputations-Management"],
-    situation:
-      "Ein inhabergeführtes mediterranes Restaurant, seit 2006 in Winterthur etabliert, mit einer nicht mehr zeitgemässen Website, telefonischer Tischreservation und einer kaum aktiv gepflegten Online-Reputation.",
-    contribution:
-      "Überarbeitung der Website mit Integration eines automatischen Tisch-Reservationssystems sowie Aufbau eines Reputations-Managements mit aktivem Einholen von Google-Rezensionen.",
-    result:
-      "Gäste reservieren rund um die Uhr selbst online, das Team wird am Telefon entlastet, und laufend neue Google-Rezensionen stärken die Sichtbarkeit des Restaurants.",
-    link: { label: "la-panetteria.ch", href: "https://www.la-panetteria.ch/" },
-    draft: true,
-  },
-  {
-    id: "danko",
-    client: "Danko Group",
-    sector: "Fleischhandel und Catering",
+    id: "handel-lebensmittel",
+    client: "Inhabergeführtes Handelsunternehmen",
+    sector: "Lebensmittelbranche, Ostschweiz",
     tags: ["Coaching", "Sparring Geschäftsleitung", "Führungs-Cockpit", "Organisation"],
     situation:
-      "Ein führendes Fleischhandels-Unternehmen für Gastronomie und Heime in der Ostschweiz mit eigenständigem Catering-Bereich – und dem Wunsch, Führung und Weiterentwicklung auf eine breitere Basis zu stellen.",
+      "Ein wachsendes, inhabergeführtes Unternehmen in der Lebensmittelbranche mit mehreren Geschäftsbereichen – und dem Wunsch, Führung und Weiterentwicklung auf eine breitere Basis zu stellen.",
     contribution:
       "Regelmässiges Coaching und Sparring der Geschäftsleitung zu Führung, Prioritäten und unternehmerischen Entscheidungen sowie Aufbau eines neuen Führungs-Cockpits.",
     result:
       "Eine zweite Führungsebene, die im Zuge des Wachstums geschaffen wurde, ein strukturierterer Einbezug der Teamleiter und eine Geschäftsleitung, die sich auf strategische Projekte fokussiert und diese konsequent umsetzt.",
-    link: { label: "danko.ch", href: "https://www.danko.ch/" },
   },
   {
     id: "webling",
