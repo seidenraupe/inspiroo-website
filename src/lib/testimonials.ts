@@ -63,6 +63,16 @@ export const clientVoices = {
     sample:
       "Thomas hat unseren Strategie- und Budgetprozess so begleitet, dass die strategischen Stossrichtungen direkt in Budget und Jahresziele eingeflossen sind. Zusätzlich gab er uns Instrumente zur Hand, um die Umsetzung der Massnahmen konsequent auf Kurs zu halten.",
   },
+  zhaw: {
+    id: "zhaw-sml",
+    person: "Fabian Danko",
+    role: "Dozent",
+    company: "ZHAW School of Management and Law",
+    logo: { src: "/logos/zhaw.svg", width: 256, height: 256 },
+    quote: null,
+    sample:
+      "Mit packenden Einblicken in Führung, digitale Transformation und M&A-Prozesse brachte das Referat echte unternehmerische Praxis direkt in den Hörsaal. Die Begeisterung der Studierenden und die lebhaften Diskussionen zeigten, wie wertvoll ungeschminkter Wissenstransfer aus dem Führungsalltag ist.",
+  },
 } satisfies Record<string, ClientVoice>;
 
 /** Reihenfolge wie auf der Referenzen-Seite (Fallstudien und Mandate). */
@@ -72,6 +82,7 @@ export const referenceVoices: ClientVoice[] = [
   clientVoices.danko,
   clientVoices.webling,
   clientVoices.raiffeisen,
+  clientVoices.zhaw,
 ];
 
 export const allVoices: ClientVoice[] = referenceVoices;
