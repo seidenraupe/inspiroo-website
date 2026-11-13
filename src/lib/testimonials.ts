@@ -31,7 +31,7 @@ export const clientVoices = {
     logo: { src: "/logos/danko.png", width: 480, height: 124, onDark: true },
     quote: null,
     sample:
-      "Die Zusammenarbeit ist für uns als Familienunternehmen eine wertvolle Bereicherung. Besonders schätzen wir den offenen Austausch auf Augenhöhe, das kritische Hinterfragen bestehender Denkweisen und die Fähigkeit, auch komplexe Herausforderungen aus einer neuen Perspektive zu betrachten. Die Beratung hilft uns, unsere Führungsaufgaben bewusster wahrzunehmen, Entscheidungen klarer zu treffen und uns als Unternehmen stetig weiterzuentwickeln. Dabei stehen stets praxisnahe und umsetzbare Lösungen im Vordergrund.",
+      "Die Zusammenarbeit ist für uns als Familienunternehmen eine wertvolle Bereicherung. Wir schätzen den Austausch auf Augenhöhe, das kritische Hinterfragen und frische Perspektiven auf komplexe Herausforderungen. Die Beratung hilft uns, Führungsaufgaben bewusster wahrzunehmen und Entscheidungen klarer zu treffen. Dabei stehen stets praxisnahe und umsetzbare Lösungen im Vordergrund.",
   },
   raiffeisen: {
     id: "raiffeisen-winterthur",
