@@ -50,7 +50,7 @@ export const clientVoices = {
     person: "Christian Huggenberg",
     role: "Präsident",
     company: "Historischer Verein Winterthur / Museum Schaffen",
-    logo: { src: "/logos/historischer-verein-winterthur.png", width: 480, height: 110 },
+    logo: { src: "/logos/museum-schaffen.png", width: 361, height: 50 },
     quote: null,
     sample:
       "Mit schlankeren Prozessen für Mitglieder und Veranstaltungen sparen wir heute Zeit und Geld. Thomas hat das Ganze pragmatisch und mit viel Verständnis für einen Verein umgesetzt.",
