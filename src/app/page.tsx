@@ -18,7 +18,8 @@ import {
   services,
 } from "@/lib/content";
 import { caseStudies } from "@/lib/references";
-import { firstCallHref, site } from "@/lib/site";
+import { FirstCallCta } from "@/components/first-call-cta";
+import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: { absolute: site.title },
@@ -38,12 +39,7 @@ export default function HomePage() {
             {hero.lead}
           </p>
           <div className="mt-9 flex flex-col gap-4 sm:flex-row sm:items-center">
-            <a
-              href={firstCallHref}
-              className="inline-flex w-full min-h-12 items-center justify-center rounded-md bg-navy px-8 py-4 text-center text-[0.95rem] leading-normal font-semibold text-cream transition-colors hover:bg-brand sm:w-auto sm:px-7 sm:py-3.5 sm:text-base sm:leading-snug"
-            >
-              Unverbindliches Erstgespräch vereinbaren
-            </a>
+            <FirstCallCta />
             <Link
               href="/services"
               className="inline-flex items-center gap-2 px-1 text-ink/75 underline decoration-ink/25 underline-offset-4 hover:text-ink hover:decoration-ink"

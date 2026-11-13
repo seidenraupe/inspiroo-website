@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 
 import { ContentImage } from "@/components/content-image";
 import { CtaBand } from "@/components/cta-band";
+import { FirstCallCta } from "@/components/first-call-cta";
 import { Testimonial } from "@/components/testimonial";
 import { about, experienceFacts, principles } from "@/lib/content";
-import { firstCallHref, site } from "@/lib/site";
+import { site } from "@/lib/site";
 import { clientVoices } from "@/lib/testimonials";
 
 export const metadata: Metadata = {
@@ -30,12 +31,7 @@ export default function AboutPage() {
           <h1 className="mt-4 text-4xl text-balance sm:text-5xl">{about.title}</h1>
           <p className="mt-6 text-xl leading-relaxed text-ink/80">{about.intro}</p>
           <div className="mt-8 flex flex-wrap gap-x-6 gap-y-3">
-            <a
-              href={firstCallHref}
-              className="inline-flex h-12 items-center justify-center rounded-md bg-navy px-6 font-semibold text-cream transition-colors hover:bg-brand"
-            >
-              Erstgespräch vereinbaren
-            </a>
+            <FirstCallCta className="w-auto">Erstgespräch vereinbaren</FirstCallCta>
             <a
               href={site.founder.linkedin}
               target="_blank"

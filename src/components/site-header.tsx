@@ -13,6 +13,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { FirstCallCta } from "@/components/first-call-cta";
 import { firstCallHref, navigation, site } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
@@ -74,13 +75,9 @@ export function SiteHeader() {
               ))}
             </nav>
             <div className="mt-8 flex flex-col gap-3 px-4">
-              <a
-                href={firstCallHref}
-                onClick={() => setMenuOpen(false)}
-                className="inline-flex h-12 items-center justify-center rounded-md bg-navy font-semibold text-cream"
-              >
+              <FirstCallCta onClick={() => setMenuOpen(false)}>
                 Erstgespräch vereinbaren
-              </a>
+              </FirstCallCta>
               <a
                 href={site.phoneHref}
                 onClick={() => setMenuOpen(false)}
