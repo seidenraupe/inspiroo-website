@@ -15,7 +15,7 @@ export function CtaBand() {
         <div className="mt-10 flex flex-col gap-5 sm:flex-row sm:items-center">
           <a
             href={firstCallHref}
-            className="inline-flex h-12 items-center justify-center rounded-md bg-cream px-6 font-semibold text-navy transition-colors hover:bg-white"
+            className="inline-flex min-h-12 items-center justify-center rounded-md bg-cream px-7 py-3.5 text-center leading-snug font-semibold text-navy transition-colors hover:bg-white"
           >
             Unverbindliches Erstgespräch vereinbaren
           </a>

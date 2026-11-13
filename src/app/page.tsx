@@ -40,7 +40,7 @@ export default function HomePage() {
           <div className="mt-9 flex flex-col gap-4 sm:flex-row sm:items-center">
             <a
               href={firstCallHref}
-              className="inline-flex h-12 items-center justify-center rounded-md bg-navy px-6 font-semibold text-cream transition-colors hover:bg-brand"
+              className="inline-flex min-h-12 items-center justify-center rounded-md bg-navy px-7 py-3.5 text-center leading-snug font-semibold text-cream transition-colors hover:bg-brand"
             >
               Unverbindliches Erstgespräch vereinbaren
             </a>
