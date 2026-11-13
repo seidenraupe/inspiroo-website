@@ -31,7 +31,7 @@ export const clientVoices = {
     logo: { src: "/logos/danko.png", width: 480, height: 124, onDark: true },
     quote: null,
     sample:
-      "Ein Sparring-Partner auf Augenhöhe: unternehmerisch denkend, hinterfragend und voller kreativer Lösungsansätze – stets gepaart mit einem feinen Gespür für machbaren Pragmatismus.",
+      "Die Zusammenarbeit ist für uns als Familienunternehmen eine wertvolle Bereicherung. Besonders schätzen wir den offenen Austausch auf Augenhöhe, das kritische Hinterfragen bestehender Denkweisen und die Fähigkeit, auch komplexe Herausforderungen aus einer neuen Perspektive zu betrachten. Die Beratung hilft uns, unsere Führungsaufgaben bewusster wahrzunehmen, Entscheidungen klarer zu treffen und uns als Unternehmen stetig weiterzuentwickeln. Dabei stehen stets praxisnahe und umsetzbare Lösungen im Vordergrund.",
   },
   raiffeisen: {
     id: "raiffeisen-winterthur",
