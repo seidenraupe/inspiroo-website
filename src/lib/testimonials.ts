@@ -59,9 +59,10 @@ export const clientVoices = {
     role: "Gründer",
     company: "Webling",
     logo: { src: "/logos/webling.png", width: 480, height: 126 },
-    quote: null,
-    sample:
+    quote:
       "Thomas hat unseren Strategie- und Budgetprozess so begleitet, dass die strategischen Stossrichtungen direkt in Budget und Jahresziele eingeflossen sind. Zusätzlich gab er uns Instrumente zur Hand, um die Umsetzung der Massnahmen konsequent auf Kurs zu halten.",
+    sample:
+      "Thomas hat unseren Strategie- und Budgetprozess so begleitet, dass die strategischen Stossrichtungen direkt in Budget und Jahresziele eingeflossen sind.",
   },
   zhaw: {
     id: "zhaw-sml",
