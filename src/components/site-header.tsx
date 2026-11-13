@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 import { Menu, Phone } from "lucide-react";
 
 import { BrandMark } from "@/components/brand-mark";
@@ -17,6 +18,11 @@ import { cn } from "@/lib/utils";
 
 export function SiteHeader() {
   const pathname = usePathname();
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [pathname]);
 
   return (
     <header className="sticky top-0 z-50 border-b border-ink/8 bg-cream/95 backdrop-blur-md">
@@ -47,7 +53,7 @@ export function SiteHeader() {
             Erstgespräch
           </a>
         </nav>
-        <Sheet>
+        <Sheet open={menuOpen} onOpenChange={setMenuOpen}>
           <SheetTrigger
             className="inline-flex size-10 items-center justify-center rounded-md text-ink lg:hidden"
             aria-label="Menü öffnen"
@@ -64,6 +70,7 @@ export function SiteHeader() {
                 <Link
                   key={item.href}
                   href={item.href}
+                  onClick={() => setMenuOpen(false)}
                   className="border-b border-ink/10 py-4 text-2xl font-semibold text-ink"
                 >
                   {item.label}
@@ -73,12 +80,14 @@ export function SiteHeader() {
             <div className="mt-8 flex flex-col gap-3 px-4">
               <a
                 href={firstCallHref}
+                onClick={() => setMenuOpen(false)}
                 className="inline-flex h-12 items-center justify-center rounded-md bg-navy font-semibold text-cream"
               >
                 Erstgespräch vereinbaren
               </a>
               <a
                 href={site.phoneHref}
+                onClick={() => setMenuOpen(false)}
                 className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-ink/15 text-ink"
               >
                 <Phone className="size-4" />
