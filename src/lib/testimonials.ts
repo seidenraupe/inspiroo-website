@@ -28,8 +28,9 @@ export const clientVoices = {
     person: "Nathalie Danko",
     role: "Geschäftsführerin",
     company: "Danko Group AG",
-    logo: { src: "/logos/danko.png", width: 480, height: 124, onDark: true },
-    quote: null,
+    logo: { src: "/logos/danko.png", width: 758, height: 198 },
+    quote:
+      "Die Zusammenarbeit ist für uns als Familienunternehmen eine wertvolle Bereicherung. Wir schätzen den Austausch auf Augenhöhe, das kritische Hinterfragen und frische Perspektiven auf komplexe Herausforderungen. Die Beratung hilft uns, Führungsaufgaben bewusster wahrzunehmen und Entscheidungen klarer zu treffen. Dabei stehen stets praxisnahe und umsetzbare Lösungen im Vordergrund.",
     sample:
       "Die Zusammenarbeit ist für uns als Familienunternehmen eine wertvolle Bereicherung. Wir schätzen den Austausch auf Augenhöhe, das kritische Hinterfragen und frische Perspektiven auf komplexe Herausforderungen. Die Beratung hilft uns, Führungsaufgaben bewusster wahrzunehmen und Entscheidungen klarer zu treffen. Dabei stehen stets praxisnahe und umsetzbare Lösungen im Vordergrund.",
   },
@@ -39,7 +40,8 @@ export const clientVoices = {
     role: "Vorsitzender der Bankleitung",
     company: "Raiffeisenbank Winterthur",
     logo: { src: "/logos/raiffeisen.png", width: 348, height: 51 },
-    quote: null,
+    quote:
+      "Die Zusammenarbeit mit Thomas war inspirierend, unkompliziert und auf unsere Bedürfnisse als Bank abgestimmt. Thomas hat es verstanden, sich pragmatisch in unsere Situation zu versetzen und hat unsere Bedürfnisse sofort erkannt. Die Zusammenarbeit war ‹schnörkellos› und praxisorientiert. Thomas hat es verstanden, uns ‹an der Hand zu nehmen› und hat das Ziel nie aus den Augen verloren.",
     sample:
       "Die Zusammenarbeit mit Thomas war inspirierend, unkompliziert und auf unsere Bedürfnisse als Bank abgestimmt. Thomas hat es verstanden, sich pragmatisch in unsere Situation zu versetzen und hat unsere Bedürfnisse sofort erkannt. Die Zusammenarbeit war ‹schnörkellos› und praxisorientiert. Thomas hat es verstanden, uns ‹an der Hand zu nehmen› und hat das Ziel nie aus den Augen verloren.",
   },
