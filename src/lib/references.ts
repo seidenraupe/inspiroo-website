@@ -274,11 +274,11 @@ export const caseStudies: CaseStudy[] = [
     sector: "Lebensmittelbranche, Ostschweiz",
     tags: ["Coaching", "Sparring Geschäftsleitung", "Führungs-Cockpit", "Organisation"],
     situation:
-      "Ein wachsendes, inhabergeführtes Unternehmen in der Lebensmittelbranche mit mehreren Geschäftsbereichen – und dem Wunsch, Führung und Weiterentwicklung auf eine breitere Basis zu stellen.",
+      "Ein wachsendes Familienunternehmen mit mehreren Geschäftsbereichen, in dem viele operative und strategische Entscheidungen direkt bei der Geschäftsleitung zusammenliefen. Mit zunehmender Unternehmensgrösse entstand der Wunsch, Verantwortlichkeiten klarer zu definieren, Führungskompetenzen gezielt weiterzuentwickeln und die Organisation nachhaltig auf zukünftige Herausforderungen auszurichten.",
     contribution:
-      "Regelmässiges Coaching und Sparring der Geschäftsleitung zu Führung, Prioritäten und unternehmerischen Entscheidungen sowie Aufbau eines neuen Führungs-Cockpits.",
+      "Begleitung und Coaching der Geschäftsleitung als unabhängiger Sparring-Partner. Durch gezieltes Hinterfragen, neue Perspektiven und praxisnahe Lösungsansätze wurden Entscheidungsprozesse reflektiert, Führungsstrukturen weiterentwickelt und die Eigenverantwortung innerhalb des Unternehmens gestärkt. Ergänzend wurde ein Führungs-Cockpit zur besseren Steuerung und Priorisierung aufgebaut.",
     result:
-      "Eine zweite Führungsebene, die im Zuge des Wachstums geschaffen wurde, ein strukturierterer Einbezug der Teamleiter und eine Geschäftsleitung, die sich auf strategische Projekte fokussiert und diese konsequent umsetzt.",
+      "Eine klarere Aufgaben- und Verantwortungsverteilung, ein bewussterer Umgang mit Führungsaufgaben und eine stärkere Einbindung der Teamleiter. Die Geschäftsleitung gewinnt dadurch mehr Freiraum für strategische Entscheidungen, zukünftige Projekte und die nachhaltige Weiterentwicklung des Unternehmens.",
   },
   {
     id: "webling",
