@@ -103,7 +103,7 @@ export const references: Reference[] = [
       "Seit 1874 engagiert für die Geschichte Winterthurs – Träger von drei Museen, darunter das Museum Schaffen auf dem Lagerplatz.",
     mandates: [
       "Kosteneinsparungen dank verbesserter Prozesse im Mitglieder- und Event-Management",
-      "Neukonzeption der Website mit API-Anbindung an Event-/Ticketing-Plattform und Mitglieder-Datenbank",
+      "Neue Website, mit agentischer KI selbst gebaut: API-Anbindung an Event-Datenbank, Mitglieder-Datenbank und Kommunikationsplattform",
     ],
     categories: ["Innovation"],
     links: [
@@ -259,11 +259,11 @@ export const caseStudies: CaseStudy[] = [
     id: "museum-schaffen",
     client: "Museum Schaffen / Historischer Verein Winterthur",
     sector: "Kultur / Verein und Museen",
-    tags: ["Prozesse", "Digitalisierung", "Website"],
+    tags: ["Prozesse", "Digitalisierung", "Website", "agentische KI"],
     situation:
       "Ein traditionsreicher Verein mit drei Museen, dessen Abläufe rund um Mitglieder und Veranstaltungen viel Aufwand verursachten.",
     contribution:
-      "Verbesserung der Prozesse im Mitglieder- und Event-Management sowie Neukonzeption der Website mit API-Anbindung an die Event-/Ticketing-Plattform und die Mitglieder-Datenbank.",
+      "Verbesserung der Prozesse im Mitglieder- und Event-Management sowie Konzeption, Bau, Test und Auslieferung einer neuen Website – vollständig mit agentischer KI und ohne externe Programmierer. Die Lösung ist per API an eine cloudbasierte Event-Datenbank, eine Mitglieder-Datenbank und eine Kommunikationsplattform angebunden.",
     result:
       "Kosteneinsparungen dank schlankerer Prozesse und eine neue, moderne Website: Veranstaltungen, Tickets und Mitgliederdaten fliessen automatisch ein – so bleibt sie mit wenig Aufwand immer topaktuell.",
     link: { label: "museumschaffen.ch", href: "https://www.museumschaffen.ch/" },

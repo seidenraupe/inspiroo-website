@@ -131,7 +131,11 @@ export default function AboutPage() {
             ))}
           </ol>
           <h3 className="mt-12 text-xl">Ausbildung</h3>
-          <p className="mt-3 text-ink/75">{about.education}</p>
+          {about.education.map((paragraph) => (
+            <p key={paragraph.slice(0, 32)} className="mt-3 text-ink/75">
+              {paragraph}
+            </p>
+          ))}
         </div>
         <div className="flex flex-col gap-12 lg:pt-20">
           <blockquote>

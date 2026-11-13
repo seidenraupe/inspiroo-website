@@ -268,8 +268,10 @@ export const about = {
   ],
   quote: "Nur aus Enthusiasmus kann Neugierde entstehen, und nur wer neugierig ist, kann lernen.",
   quoteSource: "Leonard Bernstein",
-  education:
+  education: [
     "Mein Studium schloss ich an der Universität Zürich als Master of Arts ab. In meiner Abschlussarbeit untersuchte ich das Thema «Manager im Familienunternehmen» am Beispiel der Firma Rieter in Winterthur. Berufsbegleitend bildete ich mich in Management-Seminaren am IMD in Lausanne und autodidaktisch zu allen Aspekten der digitalen Transformation und KI weiter.",
+    "In den letzten drei Jahren habe ich mich intensiv mit dem Aufkommen der KI auseinandergesetzt – nicht nur lesend, sondern bauend. Das erste zählbare Kundenprojekt ist die neue Weblösung für den Historischen Verein Winterthur und das Museum Schaffen: Ich habe sie mit agentischer KI selbst entwickelt, getestet und ausgeliefert, inklusive der API-Anbindungen an Event-Datenbank, Mitglieder-Datenbank und Kommunikationsplattform. Die Website hat einen eigenen Redaktions-Modus, in dem die Verantwortlichen Texte und Bilder selbst ergänzen und anpassen – zum Beispiel ein Journal über vergangene Veranstaltungen.",
+  ],
   timeline: [
     { years: "seit 2023", role: "Gründer und Inhaber", org: "inspiroo gmbh" },
     { years: "2010–2022", role: "CEO", org: "Dipl. Ing. Fust AG" },
