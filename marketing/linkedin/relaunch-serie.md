@@ -248,6 +248,23 @@ Ich freue mich über DMs mit konkreter Fragestellung – je spezifischer, desto 
 
 ---
 
+## Unternehmensseite – Relaunch-Post (einmalig)
+
+**1–2 Tage nach persönlichem Post 1**, sachlicher Ton, kein Link-Duplikat der ganzen Serie.
+
+```text
+Neue Website, klarer Auftrag: Sparring auf Augenhöhe für KMU – aus über 30 Jahren Erfahrung in Geschäftsleitung und Verwaltungsrat.
+
+Strategie, Nachfolge, Transformation und schwierige Führungsentscheidungen: unabhängig, pragmatisch, umsetzungsnah. Geführt von Thomas Giger, Gründer und Inhaber.
+
+Entdecken: www.inspiroo.ch
+Erstgespräch vereinbaren: www.inspiroo.ch/kontakt
+
+Gründer Thomas Giger auf LinkedIn: https://www.linkedin.com/in/thomas-giger/
+```
+
+---
+
 ## Checkliste vor Serie
 
 - [ ] Banner + Headline + Info (`texte.md`)

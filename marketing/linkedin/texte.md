@@ -198,6 +198,27 @@ Wenn viel auf dem Spiel steht und der Weg nicht eindeutig ist, lohnt ein unverbi
 www.inspiroo.ch/kontakt
 ```
 
+### Unternehmensseite – einmaliger Relaunch-Post
+
+**Timing:** 1–2 Tage nach dem persönlichen Launch-Post (Post 1 in `relaunch-serie.md`), nicht am selben Tag.
+
+**Text (als inspiroo gmbh posten):**
+
+```text
+Neue Website, klarer Auftrag: Sparring auf Augenhöhe für KMU – aus über 30 Jahren Erfahrung in Geschäftsleitung und Verwaltungsrat.
+
+Strategie, Nachfolge, Transformation und schwierige Führungsentscheidungen: unabhängig, pragmatisch, umsetzungsnah. Geführt von Thomas Giger, Gründer und Inhaber.
+
+Entdecken: www.inspiroo.ch
+Erstgespräch vereinbaren: www.inspiroo.ch/kontakt
+
+Gründer Thomas Giger auf LinkedIn: https://www.linkedin.com/in/thomas-giger/
+```
+
+**Optionaler erster Kommentar (von Thomas persönlich):** Kurz den persönlichen Launch-Post verlinken, falls bereits live.
+
+**Bild:** Titelbild `linkedin-firmen-banner.png` bereits am Profil; für den Post optional kein extra Bild oder Screenshot der Startseite.
+
 ---
 
 ## Export der Banner-PNGs
