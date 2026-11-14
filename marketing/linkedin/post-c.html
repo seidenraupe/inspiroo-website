@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="banner.css" />
+  <style>
+    .banner {
+      width: 1200px; height: 628px;
+      background: var(--cream);
+      color: var(--navy);
+    }
+    .left {
+      position: absolute;
+      left: 0; top: 0; bottom: 0; width: 420px;
+      background: var(--navy);
+      display: flex; flex-direction: column; justify-content: center;
+      padding: 60px 56px;
+    }
+    .logo { width: 140px; margin-bottom: 48px; filter: none; }
+    .stat { margin-bottom: 28px; }
+    .stat-num { font-size: 60px; font-weight: 700; letter-spacing: -0.04em; line-height: 1; color: var(--cream); }
+    .stat-label { margin-top: 4px; font-size: 16px; color: color-mix(in srgb, var(--cream) 65%, transparent); font-weight: 400; }
+    .accent-bar { width: 48px; height: 3px; background: var(--violet); margin: 32px 0; }
+    .since { font-size: 18px; font-weight: 600; color: var(--violet-light); }
+    .right {
+      position: absolute;
+      left: 420px; top: 0; bottom: 0; right: 0;
+      display: flex; flex-direction: column; justify-content: center;
+      padding: 60px 72px;
+    }
+    .tag {
+      display: inline-block;
+      font-size: 12px; font-weight: 700; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--violet);
+      border: 2px solid var(--violet); padding: 6px 14px; border-radius: 3px;
+      margin-bottom: 36px; align-self: flex-start;
+    }
+    .title { font-size: 48px; font-weight: 700; letter-spacing: -0.025em; line-height: 1.1; color: var(--navy); max-width: 16ch; }
+    .body { margin-top: 24px; font-size: 20px; line-height: 1.5; color: color-mix(in srgb, var(--navy) 72%, transparent); max-width: 34ch; font-weight: 400; }
+    .url { margin-top: 32px; font-size: 18px; font-weight: 700; color: var(--navy); display: flex; align-items: center; gap: 8px; }
+    .url::before { content: ""; width: 32px; height: 3px; background: var(--violet); display: block; }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <div class="left">
+      <img class="logo" src="../../public/inspiroo-logo.png" alt="" width="280" height="146" />
+      <div class="stat">
+        <div class="stat-num">30+</div>
+        <div class="stat-label">Jahre Geschäftsleitung und Verwaltungsrat</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">13</div>
+        <div class="stat-label">Jahre CEO Dipl. Ing. Fust AG</div>
+      </div>
+      <div class="accent-bar"></div>
+      <p class="since">Seit 2023: inspiroo gmbh</p>
+    </div>
+    <div class="right">
+      <span class="tag">Neue Website</span>
+      <h1 class="title">Vier Jahre inspiroo.</h1>
+      <p class="body">Komplexe Situationen gemeinsam entwirren – und Lösungen finden, die im Betrieb Wirkung entfalten.</p>
+      <p class="url">www.inspiroo.ch</p>
+    </div>
+  </div>
+</body>
+</html>

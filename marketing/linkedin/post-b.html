@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="banner.css" />
+  <style>
+    .banner { width: 1200px; height: 628px; }
+    .photo {
+      position: absolute; inset: 0;
+      background-image: url("../../public/images/unternehmerin-fenster.webp");
+      background-size: cover; background-position: center 30%;
+    }
+    .photo::after {
+      content: "";
+      position: absolute; inset: 0;
+      background: linear-gradient(
+        115deg,
+        rgba(19,33,58,0.97) 0%,
+        rgba(19,33,58,0.92) 45%,
+        rgba(19,33,58,0.4) 100%
+      );
+    }
+    .content {
+      position: absolute;
+      left: 80px; top: 0; bottom: 0; width: 640px;
+      display: flex; flex-direction: column; justify-content: center;
+    }
+    .logo { width: 150px; margin-bottom: 48px; }
+    .eyebrow { font-size: 14px; }
+    .title { margin-top: 20px; font-size: 50px; font-weight: 700; letter-spacing: -0.025em; line-height: 1.07; }
+    .title em { font-style: normal; color: var(--violet-light); }
+    .bullets { margin-top: 28px; display: flex; flex-direction: column; gap: 10px; }
+    .bullet { display: flex; align-items: center; gap: 12px; font-size: 20px; font-weight: 400;
+      color: color-mix(in srgb, var(--cream) 82%, transparent); }
+    .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--violet); flex-shrink: 0; }
+    .divider { margin: 32px 0 0; width: 60px; height: 3px; background: var(--violet); }
+    .url { margin-top: 20px; font-size: 20px; font-weight: 600; color: var(--cream); }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <div class="photo"></div>
+    <div class="content">
+      <img class="logo" src="../../public/inspiroo-logo.png" alt="" width="300" height="157" />
+      <p class="eyebrow">Vier Jahre inspiroo – Neue Website</p>
+      <h1 class="title">Was im Betrieb<br />wirklich <em>wirkt.</em></h1>
+      <div class="bullets">
+        <span class="bullet"><span class="dot"></span>Strategie, Nachfolge, Transformation</span>
+        <span class="bullet"><span class="dot"></span>Sparring auf Augenhöhe – kein Hochglanz</span>
+        <span class="bullet"><span class="dot"></span>Ehrliche Einordnung: wo ich Wirkung erziele</span>
+      </div>
+      <div class="divider"></div>
+      <p class="url">www.inspiroo.ch</p>
+    </div>
+  </div>
+</body>
+</html>
