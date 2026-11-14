@@ -270,7 +270,7 @@ export const about = {
   quoteSource: "Leonard Bernstein",
   education: [
     "Mein Studium schloss ich an der Universität Zürich als Master of Arts ab. In meiner Abschlussarbeit untersuchte ich das Thema «Manager im Familienunternehmen» am Beispiel der Firma Rieter in Winterthur. Berufsbegleitend bildete ich mich in Management-Seminaren am IMD in Lausanne und autodidaktisch zu allen Aspekten der digitalen Transformation und KI weiter.",
-    "In den letzten drei Jahren habe ich mich intensiv mit dem Aufkommen der KI auseinandergesetzt – nicht nur lesend, sondern bauend. Das erste zählbare Kundenprojekt ist die neue Weblösung für den Historischen Verein Winterthur und das Museum Schaffen: Ich habe sie mit agentischer KI selbst entwickelt, getestet und ausgeliefert, inklusive der API-Anbindungen an Event-Datenbank, Mitglieder-Datenbank und Kommunikationsplattform. Die Website hat einen eigenen Redaktions-Modus, in dem die Verantwortlichen Texte und Bilder selbst ergänzen und anpassen – zum Beispiel ein Journal über vergangene Veranstaltungen.",
+    "In den letzten drei Jahren habe ich mich intensiv mit dem Aufkommen der KI auseinandergesetzt – nicht nur lesend, sondern bauend. Für mich heisst das: neue Möglichkeiten am konkreten Vorhaben erproben, Kosten und Abhängigkeiten von Anfang an mitdenken und Verantwortlichen eine verständliche Entscheidungsbasis geben – ohne Tech-Deutsch. Diese Haltung fliesst in meine Mandate ein, etwa wenn Verein und Museum Schaffen ihre digitale Präsenz und Abläufe modernisieren wollten, ohne gleich ein schweres IT-Grossprojekt zu starten.",
   ],
   timeline: [
     { years: "seit 2023", role: "Gründer und Inhaber", org: "inspiroo gmbh" },
