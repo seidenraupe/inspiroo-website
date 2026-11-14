@@ -263,7 +263,7 @@ export const caseStudies: CaseStudy[] = [
     situation:
       "Ein traditionsreicher Verein mit drei Museen, dessen Abläufe rund um Mitglieder und Veranstaltungen viel Aufwand verursachten.",
     contribution:
-      "Verbesserung der Prozesse im Mitglieder- und Event-Management sowie Konzeption, Bau, Test und Auslieferung einer neuen Website – vollständig mit agentischer KI und ohne externe Programmierer. Die Lösung ist per API an eine cloudbasierte Event-Datenbank, eine Mitglieder-Datenbank und eine Kommunikationsplattform angebunden. Ein Redaktions-Modus ermöglicht dem Museum-Team, Texte und Bilder selbst zu pflegen – zum Beispiel ein Journal über vergangene Veranstaltungen.",
+      "Verschlankung im Mitglieder- und Event-Management sowie Konzeption, Bau und Auslieferung einer neuen Website – mit agentischer KI in Eigenregie, ohne externe Programmierer.",
     result:
       "Kosteneinsparungen dank schlankerer Prozesse und eine neue, moderne Website: Veranstaltungen, Tickets und Mitgliederdaten fliessen automatisch ein – so bleibt sie mit wenig Aufwand immer topaktuell.",
     link: { label: "museumschaffen.ch", href: "https://www.museumschaffen.ch/" },
