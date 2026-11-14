@@ -270,7 +270,7 @@ export const about = {
   quoteSource: "Leonard Bernstein",
   education: [
     "Mein Studium schloss ich an der Universität Zürich als Master of Arts ab. In meiner Abschlussarbeit untersuchte ich das Thema «Manager im Familienunternehmen» am Beispiel der Firma Rieter in Winterthur. Berufsbegleitend bildete ich mich in Management-Seminaren am IMD in Lausanne und autodidaktisch zu allen Aspekten der digitalen Transformation und KI weiter.",
-    "In den letzten drei Jahren habe ich mich intensiv mit dem Aufkommen der KI auseinandergesetzt – nicht nur lesend, sondern bauend. Für mich heisst das: neue Möglichkeiten am konkreten Vorhaben erproben, Kosten und Abhängigkeiten von Anfang an mitdenken und Verantwortlichen eine verständliche Entscheidungsbasis geben – ohne Tech-Deutsch. Diese Haltung fliesst in meine Mandate ein, etwa wenn Verein und Museum Schaffen ihre digitale Präsenz und Abläufe modernisieren wollten, ohne gleich ein schweres IT-Grossprojekt zu starten.",
+    "In den letzten drei Jahren habe ich mich dem Thema KI aus Sicht von Geschäftsführung und Verwaltungsrat gewidmet: Wo entstehen echte Hebel für Wettbewerbsfähigkeit und Effizienz, wo sind Grenzen – und welche Entscheidungen lohnen sich unter Zeit- und Budgetdruck? In der Beratung übersetze ich das in klare Optionen für Verantwortliche – pragmatisch und ohne Tech-Deutsch.",
   ],
   timeline: [
     { years: "seit 2023", role: "Gründer und Inhaber", org: "inspiroo gmbh" },
