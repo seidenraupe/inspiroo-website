@@ -28,7 +28,7 @@ export const clientVoices = {
     person: "Nathalie Danko",
     role: "Geschäftsführerin",
     company: "Danko Group AG",
-    logo: { src: "/logos/danko.png", width: 758, height: 198 },
+    logo: { src: "/logos/danko.png", width: 1009, height: 263 },
     quote:
       "Die Zusammenarbeit ist für uns als Familienunternehmen eine wertvolle Bereicherung. Wir schätzen den Austausch auf Augenhöhe, das kritische Hinterfragen und frische Perspektiven auf komplexe Herausforderungen. Die Beratung hilft uns, Führungsaufgaben bewusster wahrzunehmen und Entscheidungen klarer zu treffen. Dabei stehen stets praxisnahe und umsetzbare Lösungen im Vordergrund.",
     sample:
