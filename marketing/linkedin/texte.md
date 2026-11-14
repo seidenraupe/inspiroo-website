@@ -217,15 +217,18 @@ Gründer Thomas Giger auf LinkedIn: https://www.linkedin.com/in/thomas-giger/
 
 **Optionaler erster Kommentar (von Thomas persönlich):** Kurz den persönlichen Launch-Post verlinken, falls bereits live.
 
-**Bild:** Titelbild `linkedin-firmen-banner.png` bereits am Profil; für den Post optional kein extra Bild oder Screenshot der Startseite.
+**Bild für den Post:** `linkedin-firmen-relaunch-post.png` (1200×627 px, Foto «Sparring am Whiteboard» + Claim). Quelle/Vorlage: `firmen-relaunch-post.html` (wie bei den Bannern neu exportierbar).
+
+**Titelbild der Firma** (oben am Profil): weiter `linkedin-firmen-banner.png` – nicht mit dem Post-Bild verwechseln.
 
 ---
 
 ## Export der Banner-PNGs
 
-1. `profil-banner-a.html`, `profil-banner-b.html`, `firmen-banner.html` im Browser öffnen (Datei muss `banner.css` und ggf. Bilder unter `public/images/` finden).
+1. `profil-banner-a.html`, `profil-banner-b.html`, `firmen-banner.html`, `firmen-relaunch-post.html` im Browser öffnen (Datei muss `banner.css` und ggf. Bilder unter `public/images/` finden).
 2. Viewport exakt auf Banner-Masse setzen und Screenshot speichern als:
    - `linkedin-profil-banner-a.png` (1584×396)
    - `linkedin-profil-banner-b.png` (1584×396)
    - `linkedin-firmen-banner.png` (1128×191)
+   - `linkedin-firmen-relaunch-post.png` (1200×627)
 3. In LinkedIn unter Profil bzw. Unternehmensseite «Titelbild ändern» hochladen.

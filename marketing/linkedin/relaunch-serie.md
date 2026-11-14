@@ -252,6 +252,8 @@ Ich freue mich über DMs mit konkreter Fragestellung – je spezifischer, desto 
 
 **1–2 Tage nach persönlichem Post 1**, sachlicher Ton, kein Link-Duplikat der ganzen Serie.
 
+**Visual:** `linkedin-firmen-relaunch-post.png` (1200×627) anhängen.
+
 ```text
 Neue Website, klarer Auftrag: Sparring auf Augenhöhe für KMU – aus über 30 Jahren Erfahrung in Geschäftsleitung und Verwaltungsrat.
 

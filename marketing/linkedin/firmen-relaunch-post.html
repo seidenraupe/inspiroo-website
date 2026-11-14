@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="de-CH">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="banner.css" />
+    <style>
+      .banner {
+        width: 1200px;
+        height: 627px;
+        background: var(--navy);
+      }
+      .photo {
+        width: 520px;
+        background-image: url("../../public/images/sparring-whiteboard.webp");
+        background-position: 58% center;
+      }
+      .content {
+        position: absolute;
+        left: 72px;
+        top: 0;
+        bottom: 0;
+        width: 620px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 24px;
+      }
+      .logo {
+        width: 168px;
+        height: auto;
+        margin-bottom: 36px;
+      }
+      .eyebrow {
+        font-size: 15px;
+        letter-spacing: 0.14em;
+      }
+      .title {
+        margin-top: 20px;
+        font-size: 46px;
+        max-width: 18ch;
+      }
+      .lead {
+        margin-top: 22px;
+        font-size: 21px;
+        line-height: 1.45;
+        max-width: 34ch;
+        color: color-mix(in srgb, var(--cream) 82%, transparent);
+        font-weight: 400;
+      }
+      .rule {
+        margin-top: 32px;
+        width: 80px;
+      }
+      .meta {
+        margin-top: 24px;
+        font-size: 22px;
+        font-weight: 600;
+        color: var(--cream);
+      }
+      .badge {
+        position: absolute;
+        top: 48px;
+        right: 548px;
+        background: var(--violet);
+        color: var(--cream);
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        padding: 10px 16px;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="banner">
+      <div class="photo"></div>
+      <span class="badge">Relaunch</span>
+      <div class="content">
+        <img
+          class="logo"
+          src="../../public/inspiroo-logo.png"
+          alt=""
+          width="336"
+          height="176"
+        />
+        <p class="eyebrow">inspiroo gmbh · Winterthur</p>
+        <h1 class="title">Sparring auf Augenhöhe. Neue Website.</h1>
+        <p class="lead">
+          Strategie, Nachfolge und Transformation für KMU – aus über 30 Jahren
+          Erfahrung in Geschäftsleitung und Verwaltungsrat.
+        </p>
+        <div class="rule"></div>
+        <p class="meta">www.inspiroo.ch</p>
+      </div>
+    </div>
+  </body>
+</html>
