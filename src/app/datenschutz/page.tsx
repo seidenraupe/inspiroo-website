@@ -80,9 +80,12 @@ export default function PrivacyPage() {
       <section className="mt-10 space-y-3 leading-relaxed text-ink/80">
         <h2 className="font-heading text-2xl">Kontaktaufnahme</h2>
         <p>
-          Wenn Sie uns per Formular, E-Mail oder Telefon kontaktieren, werden
-          Ihre Angaben zwecks Bearbeitung der Anfrage und für Anschlussfragen
-          verwendet. Wir geben diese Daten nicht ohne Ihre Einwilligung weiter.
+          Wenn Sie uns per Formular, E-Mail, Telefon oder Online-Terminbuchung
+          kontaktieren, werden Ihre Angaben zwecks Bearbeitung der Anfrage,
+          zur Vorbereitung und Durchführung eines Erstgesprächs sowie für
+          Anschlussfragen verwendet. Wir geben diese Daten nicht ohne Ihre
+          Einwilligung an Dritte weiter, ausser es ist in dieser Erklärung
+          beschrieben oder gesetzlich vorgesehen.
         </p>
       </section>
 
@@ -126,18 +129,82 @@ export default function PrivacyPage() {
         </p>
       </section>
 
+      {site.bookingUrl ? (
+        <section className="mt-10 space-y-3 leading-relaxed text-ink/80">
+          <h2 className="font-heading text-2xl">Online-Terminbuchung (Cal.com)</h2>
+          <p>
+            Für ein unverbindliches Erstgespräch können Sie über unsere Website
+            einen externen Buchungsdienst nutzen (Cal.com, Cal.com, Inc., USA).
+            Beim Anklicken von «Erstgespräch vereinbaren» bzw. «Termin buchen»
+            werden Sie auf {site.bookingUrl} weitergeleitet. Dort reservieren
+            Sie den Termin auf den Servern von Cal.com — nicht mehr nur auf
+            unserer Website.
+          </p>
+          <p>
+            Im Buchungsprozess verarbeitet Cal.com die von Ihnen angegebenen
+            Daten (z. B. Name, E-Mail-Adresse, ggf. weitere Buchungsfelder,
+            gewählter Termin und Zeitzone) sowie technische Verbindungsdaten.
+            Cal.com kann diese Daten nutzen, um den Termin zu bestätigen,
+            Erinnerungen zu versenden und — je nach Konfiguration des Termins —
+            mit
+            verbundenen Kalendern oder Videokonferenz-Diensten zu synchronisieren.
+            Wir erhalten die für das Erstgespräch erforderlichen Buchungsangaben,
+            damit wir den Termin wahrnehmen und Sie bei Bedarf kontaktieren können.
+          </p>
+          <p>
+            Rechtsgrundlage ist die Anbahnung und Durchführung eines
+            Beratungskontakts auf Ihre Initiative hin (Art. 17 Abs. 1 lit. b
+            revDSG bzw. Art. 6 Abs. 1 lit. b DSGVO). Die Datenübermittlung in die
+            USA bzw. an andere Drittstaaten kann damit einhergehen, sofern Cal.com
+            dies für den Betrieb des Dienstes erforderlich ist; Cal.com stützt sich
+            insoweit auf geeignete Garantien (u. a. Standardvertragsklauseln).
+            Weitere Informationen:{" "}
+            <a
+              className="text-brand hover:underline"
+              href="https://cal.com/privacy"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Datenschutzerklärung von Cal.com
+            </a>
+            .
+          </p>
+          <p>
+            Möchten Sie keine Daten an Cal.com übermitteln, erreichen Sie uns
+            per Kontaktformular, E-Mail ({site.email}) oder Telefon ({site.phone}),
+            um einen Termin abzustimmen.
+          </p>
+        </section>
+      ) : null}
+
       <section className="mt-10 space-y-3 leading-relaxed text-ink/80">
-        <h2 className="font-heading text-2xl">Cookies und Analyse</h2>
+        <h2 className="font-heading text-2xl">Google Analytics</h2>
         <p>
-          Sofern aktiviert, nutzen wir Google Analytics 4 (Google Ireland
-          Limited / Google LLC) zur anonymisierten Auswertung von
-          Seitenaufrufen und grundlegenden Interaktionen (z. B. Klicks auf
-          Erstgespräch oder erfolgreiches Absenden des Kontaktformulars). Dabei
-          können Cookies oder vergleichbare Technologien eingesetzt werden;
-          Google erhält u. a. gekürzte IP-Adresse, aufgerufene Seite, Zeitpunkt
-          und Gerätetyp. Rechtsgrundlage ist unser berechtigtes Interesse an
-          einer übersichtlichen, datensparsamen Website-Statistik (Art. 31 Abs. 1
-          lit. f revDSG bzw. Art. 6 Abs. 1 lit. f DSGVO). Weitere Informationen:{" "}
+          {site.gaMeasurementId
+            ? "Auf dieser Website setzen wir Google Analytics 4 ein, ein Webanalysedienst der Google Ireland Limited (Gordon House, Barrow Street, Dublin 4, Irland) bzw. Google LLC (USA)."
+            : "Sofern auf der veröffentlichten Website Google Analytics eingebunden ist, gilt Folgendes: Google Analytics 4 ist ein Webanalysedienst der Google Ireland Limited (Gordon House, Barrow Street, Dublin 4, Irland) bzw. Google LLC (USA)."}
+          {" "}
+          Wir nutzen ihn zur Auswertung von Seitenaufrufen und ausgewählten
+          Interaktionen auf dieser Website, etwa dem Klick auf
+          «Erstgespräch vereinbaren» oder dem erfolgreichen Absenden des
+          Kontaktformulars. Dabei können Cookies oder ähnliche Technologien
+          zum Einsatz kommen (z. B. zur Unterscheidung von Sitzungen). Google
+          erhält u. a. Informationen über aufgerufene Seiten, ungefähren
+          Standort, Gerätetyp, Browser, Zeitpunkt und — in IP-Form — Ihre
+          Verbindung; in GA4 werden IP-Adressen standardmässig nicht dauerhaft in
+          Rohform mit vollem Klartext gespeichert.
+        </p>
+        <p>
+          Rechtsgrundlage ist unser berechtigtes Interesse an einer
+          datensparsamen Auswertung der Website-Nutzung zur Verbesserung des
+          Angebots (berechtigte Interessen gemäss revDSG; soweit anwendbar
+          Art. 6 Abs. 1 lit. f DSGVO). Sie können
+          der datenschutzrelevanten Auswertung jederzeit widersprechen, indem Sie
+          uns unter {site.email} kontaktieren oder die unten genannten
+          Opt-out-Möglichkeiten nutzen.
+        </p>
+        <p>
+          Weitere Informationen:{" "}
           <a
             className="text-brand hover:underline"
             href="https://policies.google.com/privacy"
@@ -146,30 +213,40 @@ export default function PrivacyPage() {
           >
             Google Datenschutzerklärung
           </a>
-          ; Opt-out über das{" "}
+          ,{" "}
+          <a
+            className="text-brand hover:underline"
+            href="https://support.google.com/analytics/answer/6004245"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Google Analytics & Daten
+          </a>
+          ; Opt-out u. a. über das{" "}
           <a
             className="text-brand hover:underline"
             href="https://tools.google.com/dlpage/gaoptout"
             target="_blank"
             rel="noreferrer"
           >
-            Google-Analytics-Deaktivierungs-Add-on
+            Browser-Add-on
           </a>{" "}
-          oder die Browsereinstellungen.
+          sowie in den Browsereinstellungen (Cookies einschränken oder löschen).
         </p>
         <p>
-          Unabhängig davon kann der Hosting-Anbieter technische Logs (z. B.
-          IP-Adresse, Zeitpunkt, aufgerufene Seite) zur sicheren Bereitstellung
-          der Website speichern.
+          Unabhängig davon kann der Hosting-Anbieter technische Server-Logs (z.
+          B. IP-Adresse, Zeitpunkt, aufgerufene Seite) zur sicheren Bereitstellung
+          der Website kurzfristig speichern.
         </p>
       </section>
 
       <section className="mt-10 space-y-3 leading-relaxed text-ink/80">
         <h2 className="font-heading text-2xl">Dienste von Drittanbietern</h2>
         <p>
-          Externe Links — etwa zu LinkedIn oder zu Websites von
-          Referenzunternehmen — führen auf Angebote Dritter. Für deren
-          Datenverarbeitung sind die jeweiligen Betreiber verantwortlich.
+          Externe Links — etwa zu LinkedIn, Cal.com, Google-Diensten oder zu
+          Websites von Referenzunternehmen — führen auf Angebote Dritter. Für
+          deren Datenverarbeitung sind die jeweiligen Betreiber verantwortlich;
+          es gelten deren Nutzungs- und Datenschutzbestimmungen.
         </p>
       </section>
 
