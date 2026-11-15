@@ -269,7 +269,7 @@ export const about = {
   quote: "Nur aus Enthusiasmus kann Neugierde entstehen, und nur wer neugierig ist, kann lernen.",
   quoteSource: "Leonard Bernstein",
   education: [
-    "Mein Studium schloss ich an der Universität Zürich als Master of Arts ab. In meiner Abschlussarbeit untersuchte ich das Thema «Manager im Familienunternehmen» am Beispiel der Firma Rieter in Winterthur. Berufsbegleitend bildete ich mich in Management-Seminaren am IMD in Lausanne und autodidaktisch zu allen Aspekten der digitalen Transformation und KI weiter.",
+    "Mein Studium schloss ich an der Universität Zürich als Master of Arts ab. In meiner Abschlussarbeit untersuchte ich das Thema «Manager im Familienunternehmen» am Beispiel der Firma Rieter in Winterthur. Berufsbegleitend bildete ich mich in Management-Seminaren am IMD in Lausanne und autodidaktisch zu allen Aspekten der digitalen Transformation und KI weiter. Als praktisches Beispiel: In meiner Zeit als CEO der Dipl. Ing. Fust AG habe ich die digitale Transformation im Unternehmen aktiv gestaltet – von vernetzten Kundenprozessen bis zur Modernisierung des ERP- und Systemumfelds.",
     "In den letzten drei Jahren habe ich KI aus der Perspektive von Geschäftsführung und Verwaltungsrat vertieft – nicht nur evaluiert, sondern in Mandaten erfolgreich eingesetzt, unter anderem mit agentischer KI, wenn das der schnellste Weg zu belastbaren Ergebnissen ist. Dabei zählen für mich Hebel, Grenzen und Wirtschaftlichkeit unter Zeit- und Budgetdruck. In der Beratung formuliere ich daraus klare Optionen für Verantwortliche – pragmatisch und ohne Tech-Deutsch.",
   ],
   timeline: [
