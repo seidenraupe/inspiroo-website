@@ -77,7 +77,7 @@ Ohne gesetzte Variablen bleibt die Website ohne Tracking-Code (Datenschutztext b
 
 | Secret / Variable | Wo setzen | Status |
 |------------------|-----------|--------|
-| `FTP_HOST` | Cursor → Secrets (App) | noch leer — Formular im Agent |
+| `FTP_HOST` | Cursor → Secrets (App) **und** GitHub Actions Secrets (für SFTP-Test aus dem Agent) | in Cursor gesetzt |
 | `FTP_USER` | Cursor → Secrets | noch leer |
 | `FTP_PASSWORD` | Cursor → Secrets | noch leer |
 | `FTP_REMOTE_DIR` | Cursor → Secrets (Pfad lt. Plesk, z. B. `/httpdocs`) | noch leer |
