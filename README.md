@@ -57,56 +57,26 @@ Ohne gesetzte Variablen bleibt die Website ohne Tracking-Code (Datenschutztext b
 
 ## Live auf KreativMedia (ohne Cloudflare)
 
-1. **Build für Produktion** (kein GitHub-Pages-Unterpfad):
+Gleicher Ablauf wie bei [andrezuraikat](https://github.com/seidenraupe/andrezuraikat): **lokal bauen, SFTP mit `.env`, kein Auto-Deploy von GitHub auf Produktion.**
 
-   ```bash
-   NEXT_PUBLIC_GA_MEASUREMENT_ID=G-… npm run build
-   ```
+| Schritt | Befehl |
+|--------|--------|
+| Produktions-Build (`out/`, kein GitHub-Pfad) | `npm run build:production` |
+| Verbindung testen (kein Upload) | `npm run test:kreativmedia` |
+| Live setzen | `npm run deploy:kreativmedia` (= Build + Upload von `out/`) |
 
-   `NEXT_PUBLIC_BASE_PATH` leer lassen.
+**Einrichtung:** `.env.example` → `.env` kopieren, `KREATIVMEDIA_*` aus Plesk eintragen (Port standard **2121**, Ziel = Dokumentenstamm `www.inspiroo.ch`). `.env` steht in `.gitignore`.
 
-2. **Inhalt von `out/`** per FTP/SFTP in den **Dokumentenstamm** der Domain in Plesk kopieren (dort liegt auch die mitgelieferte `public/.htaccess` als `.htaccess`).
+**Technik:** npm-Paket `ssh2-sftp-client`, rekursiver Upload mit `useFastput` (gesamtes `out/`, kein Delta). Skripte: `scripts/test-kreativmedia-sftp.mjs`, `scripts/deploy-kreativmedia.mjs`.
 
-3. **HTTPS-301:** In Plesk unter *Hosting-Einstellungen → Sicherheit* die SEO-301 auf HTTPS aktivieren ([Anleitung](https://help.kreativmedia.ch/de/weiterleitung-https)) — nicht zusätzlich in `.htaccess` doppeln.
+**Optional GitHub Actions:** Workflow «Verify KreativMedia SFTP» nutzt dieselben Werte als Secrets `FTP_HOST`, `FTP_USER`, `FTP_PASSWORD`, `FTP_REMOTE_DIR` (Map auf `KREATIVMEDIA_*` im CI-Skript).
 
-4. **Wix-Weiterleitungen:** `public/.htaccess` enthält 301 für `/übermich` und `/projekte` → `/ueber-mich/`, `/referenzen/`. Weitere Regeln bei Bedarf ergänzen.
+**Nach dem Upload in Plesk:**
 
-5. **nginx:** Proxymodus **Standard** lassen, damit `.htaccess` greift. Option «Statische Dateien direkt durch nginx» nur aktivieren, wenn du keine Rewrite-Regeln mehr brauchst.
+1. **HTTPS-301:** *Hosting-Einstellungen → Sicherheit* ([Anleitung](https://help.kreativmedia.ch/de/weiterleitung-https)).
+2. **Wix-301:** `public/.htaccess` → liegt als `.htaccess` in `out/`.
+3. **nginx:** Proxymodus **Standard**, damit `.htaccess` greift.
 
-### Vorbereitung Deploy (von Cursor Cloud, ohne Auto-Livegang)
-
-| Secret / Variable | Wo setzen | Status |
-|------------------|-----------|--------|
-| `FTP_HOST` | Cursor → App Secrets (Deploy) **optional zusätzlich** GitHub Actions Secrets | in Cursor gesetzt |
-| `FTP_USER` | wie oben | in Cursor gesetzt |
-| `FTP_PASSWORD` | wie oben | in Cursor gesetzt |
-| `FTP_REMOTE_DIR` | wie oben (Pfad lt. Plesk, z. B. `/httpdocs`) | in Cursor gesetzt |
-| `NEXT_PUBLIC_GA_MEASUREMENT_ID` | GitHub Actions Secrets + lokal beim Produktions-Build | von dir gemeldet auf GitHub |
-| `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` | optional (DNS-GSC) | nicht nötig bei DNS-Verifizierung |
-
-**Skripte (nichts veröffentlichen ohne `--confirm`):**
-
-```bash
-chmod +x scripts/*.sh
-./scripts/build-production.sh          # erzeugt out/
-./scripts/verify-kreativmedia-ftp.sh     # SFTP-Test ohne Upload (siehe unten)
-./scripts/deploy-kreativmedia.sh       # Dry-run
-./scripts/deploy-kreativmedia.sh --confirm   # erst bei Go-live-Freigabe
-```
-
-**SFTP nur prüfen (kein Upload):** Cursor App Secrets werden in der Cloud-Agent-Shell **nicht** ausgegeben — nur beim späteren **Publish** des Deploy-Skripts (falls genutzt). Zum Testen vor Go-live:
-
-1. **Lokal (empfohlen):** Im Projektroot die vier Werte aus Plesk/my.KM setzen und ausführen:
-
-   ```bash
-   export FTP_HOST=… FTP_USER=… FTP_PASSWORD=… FTP_REMOTE_DIR=…
-   ./scripts/verify-kreativmedia-ftp.sh
-   ```
-
-   Bei Erfolg: Verbindung ok, `pwd` im Zielordner, Kurzliste `ls -la` — **kein** Datei-Upload.
-
-2. **GitHub Actions:** Workflow `.github/workflows/verify-kreativmedia-sftp.yml` liegt im Repo; dieselben vier Namen unter **Settings → Secrets and variables → Actions** anlegen, dann **Actions → Verify KreativMedia SFTP → Run workflow**. (Workflow-Datei ggf. im GitHub-Web-Editor pushen, falls sie auf `github.com` noch fehlt.)
-
-**FTP-Zugangsdaten** findest du in Plesk / KreativMedia my.KM (Host oft die Server-Adresse aus der Einrichtungsmail; Remote-Pfad = Dokumentenstamm der Domain `inspiroo.ch`).
+GA4 beim Produktions-Build: `NEXT_PUBLIC_GA_MEASUREMENT_ID=G-… npm run deploy:kreativmedia`.
 
 **GitHub Pages:** In den Repository-Einstellungen unter **Settings → Secrets and variables → Actions** die beiden Secrets anlegen. In `.github/workflows/pages.yml` beim Schritt `npm run build` müssen die Variablen `NEXT_PUBLIC_GA_MEASUREMENT_ID` und `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` aus diesen Secrets gesetzt sein (im Repo dokumentiert; bei Bedarf im GitHub-Web-Editor eintragen, falls der Workflow noch nicht deployed wurde).
