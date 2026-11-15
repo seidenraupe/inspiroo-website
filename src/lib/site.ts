@@ -56,12 +56,17 @@ const firstCallBody = encodeURIComponent(
   "Hallo Thomas\n\nIch würde gerne ein unverbindliches Erstgespräch vereinbaren.\n\nUnternehmen:\nAktuelle Herausforderung:\nMögliche Termine:\n\nFreundliche Grüsse\n",
 );
 
-export const firstCallHref =
+/** Primärer Erstgespräch-CTA: Kontaktseite (Formular / Optionen). */
+export const firstCallHref = "/kontakt";
+
+export const firstCallLinkExternal = false;
+
+/** Kalender oder vorbereitete E-Mail – nur auf der Kontaktseite. */
+export const bookingHref =
   site.bookingUrl ??
   `mailto:${site.email}?subject=${firstCallSubject}&body=${firstCallBody}`;
 
-/** Externer Terminplaner (Cal.com) – Link in neuem Tab öffnen. */
-export const firstCallLinkExternal = Boolean(site.bookingUrl);
+export const bookingLinkExternal = Boolean(site.bookingUrl);
 
 export const navigation = [
   { href: "/", label: "Home" },

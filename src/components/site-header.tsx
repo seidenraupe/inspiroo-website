@@ -14,7 +14,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { FirstCallCta } from "@/components/first-call-cta";
-import { firstCallHref, firstCallLinkExternal, navigation, site } from "@/lib/site";
+import { firstCallHref, navigation, site } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
 export function SiteHeader() {
@@ -43,15 +43,12 @@ export function SiteHeader() {
               </Link>
             );
           })}
-          <a
+          <Link
             href={firstCallHref}
-            {...(firstCallLinkExternal
-              ? { target: "_blank", rel: "noopener noreferrer" }
-              : {})}
             className="inline-flex h-10 items-center rounded-md bg-navy px-4 text-[0.95rem] font-semibold text-cream transition-colors hover:bg-brand"
           >
-            Erstgespräch
-          </a>
+            Erstgespräch anfragen
+          </Link>
         </nav>
         <Sheet open={menuOpen} onOpenChange={setMenuOpen}>
           <SheetTrigger
@@ -78,9 +75,7 @@ export function SiteHeader() {
               ))}
             </nav>
             <div className="mt-8 flex flex-col gap-3 px-4">
-              <FirstCallCta onClick={() => setMenuOpen(false)}>
-                Erstgespräch vereinbaren
-              </FirstCallCta>
+              <FirstCallCta onClick={() => setMenuOpen(false)} />
               <a
                 href={site.phoneHref}
                 onClick={() => setMenuOpen(false)}
