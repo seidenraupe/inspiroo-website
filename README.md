@@ -77,10 +77,10 @@ Ohne gesetzte Variablen bleibt die Website ohne Tracking-Code (Datenschutztext b
 
 | Secret / Variable | Wo setzen | Status |
 |------------------|-----------|--------|
-| `FTP_HOST` | Cursor → Secrets (App) **und** GitHub Actions Secrets (für SFTP-Test aus dem Agent) | in Cursor gesetzt |
-| `FTP_USER` | Cursor → Secrets | noch leer |
-| `FTP_PASSWORD` | Cursor → Secrets | noch leer |
-| `FTP_REMOTE_DIR` | Cursor → Secrets (Pfad lt. Plesk, z. B. `/httpdocs`) | noch leer |
+| `FTP_HOST` | Cursor → App Secrets (Deploy) **optional zusätzlich** GitHub Actions Secrets | in Cursor gesetzt |
+| `FTP_USER` | wie oben | in Cursor gesetzt |
+| `FTP_PASSWORD` | wie oben | in Cursor gesetzt |
+| `FTP_REMOTE_DIR` | wie oben (Pfad lt. Plesk, z. B. `/httpdocs`) | in Cursor gesetzt |
 | `NEXT_PUBLIC_GA_MEASUREMENT_ID` | GitHub Actions Secrets + lokal beim Produktions-Build | von dir gemeldet auf GitHub |
 | `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` | optional (DNS-GSC) | nicht nötig bei DNS-Verifizierung |
 
@@ -89,10 +89,23 @@ Ohne gesetzte Variablen bleibt die Website ohne Tracking-Code (Datenschutztext b
 ```bash
 chmod +x scripts/*.sh
 ./scripts/build-production.sh          # erzeugt out/
-./scripts/verify-kreativmedia-ftp.sh     # nach gesetzten FTP-Secrets
+./scripts/verify-kreativmedia-ftp.sh     # SFTP-Test ohne Upload (siehe unten)
 ./scripts/deploy-kreativmedia.sh       # Dry-run
 ./scripts/deploy-kreativmedia.sh --confirm   # erst bei Go-live-Freigabe
 ```
+
+**SFTP nur prüfen (kein Upload):** Cursor App Secrets werden in der Cloud-Agent-Shell **nicht** ausgegeben — nur beim späteren **Publish** des Deploy-Skripts (falls genutzt). Zum Testen vor Go-live:
+
+1. **Lokal (empfohlen):** Im Projektroot die vier Werte aus Plesk/my.KM setzen und ausführen:
+
+   ```bash
+   export FTP_HOST=… FTP_USER=… FTP_PASSWORD=… FTP_REMOTE_DIR=…
+   ./scripts/verify-kreativmedia-ftp.sh
+   ```
+
+   Bei Erfolg: Verbindung ok, `pwd` im Zielordner, Kurzliste `ls -la` — **kein** Datei-Upload.
+
+2. **GitHub Actions:** Workflow `.github/workflows/verify-kreativmedia-sftp.yml` liegt im Repo; dieselben vier Namen unter **Settings → Secrets and variables → Actions** anlegen, dann **Actions → Verify KreativMedia SFTP → Run workflow**. (Workflow-Datei ggf. im GitHub-Web-Editor pushen, falls sie auf `github.com` noch fehlt.)
 
 **FTP-Zugangsdaten** findest du in Plesk / KreativMedia my.KM (Host oft die Server-Adresse aus der Einrichtungsmail; Remote-Pfad = Dokumentenstamm der Domain `inspiroo.ch`).
 
