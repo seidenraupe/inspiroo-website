@@ -1,0 +1,14 @@
+# inspiroo.ch — Apache (KreativMedia/Plesk, Proxy-Modus Standard)
+# Siehe https://help.kreativmedia.ch/de/nginx-reverseproxy/
+# Bei «Statische Dateien direkt durch nginx» deaktivieren oder Weiterleitungen in Plesk setzen.
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Wix-Vorgänger → neue Struktur
+  RewriteRule ^(übermich|uebermich)/?$ /ueber-mich/ [R=301,L,NC,B]
+  RewriteRule ^projekte/?$ /referenzen/ [R=301,L,NC]
+</IfModule>
+
+# Fallback, falls mod_rewrite UTF-8-Pfade anders behandelt (URL-kodiertes «ü»)
+RedirectMatch 301 ^/%C3%BCbermich/?$ /ueber-mich/

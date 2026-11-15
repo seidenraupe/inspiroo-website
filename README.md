@@ -55,4 +55,22 @@ Der statische Export liegt in `out/` und wird bei jedem Push auf `main` nach Git
 
 Ohne gesetzte Variablen bleibt die Website ohne Tracking-Code (Datenschutztext beschreibt den Fall «sofern aktiviert»).
 
+## Live auf KreativMedia (ohne Cloudflare)
+
+1. **Build für Produktion** (kein GitHub-Pages-Unterpfad):
+
+   ```bash
+   NEXT_PUBLIC_GA_MEASUREMENT_ID=G-… npm run build
+   ```
+
+   `NEXT_PUBLIC_BASE_PATH` leer lassen.
+
+2. **Inhalt von `out/`** per FTP/SFTP in den **Dokumentenstamm** der Domain in Plesk kopieren (dort liegt auch die mitgelieferte `public/.htaccess` als `.htaccess`).
+
+3. **HTTPS-301:** In Plesk unter *Hosting-Einstellungen → Sicherheit* die SEO-301 auf HTTPS aktivieren ([Anleitung](https://help.kreativmedia.ch/de/weiterleitung-https)) — nicht zusätzlich in `.htaccess` doppeln.
+
+4. **Wix-Weiterleitungen:** `public/.htaccess` enthält 301 für `/übermich` und `/projekte` → `/ueber-mich/`, `/referenzen/`. Weitere Regeln bei Bedarf ergänzen.
+
+5. **nginx:** Proxymodus **Standard** lassen, damit `.htaccess` greift. Option «Statische Dateien direkt durch nginx» nur aktivieren, wenn du keine Rewrite-Regeln mehr brauchst.
+
 **GitHub Pages:** In den Repository-Einstellungen unter **Settings → Secrets and variables → Actions** die beiden Secrets anlegen. In `.github/workflows/pages.yml` beim Schritt `npm run build` müssen die Variablen `NEXT_PUBLIC_GA_MEASUREMENT_ID` und `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` aus diesen Secrets gesetzt sein (im Repo dokumentiert; bei Bedarf im GitHub-Web-Editor eintragen, falls der Workflow noch nicht deployed wurde).
