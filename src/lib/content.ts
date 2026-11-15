@@ -280,7 +280,7 @@ export const about = {
     { years: "2014–2021", role: "Verwaltungsrat", org: "nettoshop" },
     { years: "2000–2009", role: "Mitglied der Geschäftsleitung", org: "Dipl. Ing. Fust AG" },
     { years: "1994–2000", role: "Mitglied der Geschäftsleitung", org: "Sony (Schweiz) AG" },
-    { years: "1992", role: "Eintritt", org: "Sony (Schweiz) AG" },
+    { years: "1992", role: "Projektleiter", org: "Sony (Schweiz) AG" },
     { years: "1991", role: "Master of Arts", org: "Universität Zürich" },
   ],
   image: "/images/arbeitsgespraech-hell.webp",
