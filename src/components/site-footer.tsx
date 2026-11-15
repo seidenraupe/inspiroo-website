@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import { BrandMark } from "@/components/brand-mark";
-import { navigation, site } from "@/lib/site";
+import { footerNavigation, site } from "@/lib/site";
 
 export function SiteFooter() {
   return (
@@ -18,7 +18,7 @@ export function SiteFooter() {
         <div>
           <p className="eyebrow">Navigation</p>
           <ul className="mt-4 space-y-2 text-base">
-            {navigation.map((item) => (
+            {footerNavigation.map((item) => (
               <li key={item.href}>
                 <Link href={item.href} className="text-ink/70 hover:text-ink">
                   {item.label}

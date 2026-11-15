@@ -45,9 +45,10 @@ export function SiteHeader() {
           })}
           <Link
             href={firstCallHref}
+            aria-current={pathname.startsWith("/kontakt") ? "page" : undefined}
             className="inline-flex h-10 items-center rounded-md bg-navy px-4 text-[0.95rem] font-semibold text-cream transition-colors hover:bg-brand"
           >
-            Erstgespräch anfragen
+            Kontakt
           </Link>
         </nav>
         <Sheet open={menuOpen} onOpenChange={setMenuOpen}>
