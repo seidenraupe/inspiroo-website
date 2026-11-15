@@ -129,9 +129,38 @@ export default function PrivacyPage() {
       <section className="mt-10 space-y-3 leading-relaxed text-ink/80">
         <h2 className="font-heading text-2xl">Cookies und Analyse</h2>
         <p>
-          Diese Website setzt keine Marketing- oder Analyse-Cookies ein. Der
-          Hosting-Anbieter kann technische Logs (z. B. IP-Adresse, Zeitpunkt,
-          aufgerufene Seite) zur sicheren Bereitstellung der Website speichern.
+          Sofern aktiviert, nutzen wir Google Analytics 4 (Google Ireland
+          Limited / Google LLC) zur anonymisierten Auswertung von
+          Seitenaufrufen und grundlegenden Interaktionen (z. B. Klicks auf
+          Erstgespräch oder erfolgreiches Absenden des Kontaktformulars). Dabei
+          können Cookies oder vergleichbare Technologien eingesetzt werden;
+          Google erhält u. a. gekürzte IP-Adresse, aufgerufene Seite, Zeitpunkt
+          und Gerätetyp. Rechtsgrundlage ist unser berechtigtes Interesse an
+          einer übersichtlichen, datensparsamen Website-Statistik (Art. 31 Abs. 1
+          lit. f revDSG bzw. Art. 6 Abs. 1 lit. f DSGVO). Weitere Informationen:{" "}
+          <a
+            className="text-brand hover:underline"
+            href="https://policies.google.com/privacy"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Google Datenschutzerklärung
+          </a>
+          ; Opt-out über das{" "}
+          <a
+            className="text-brand hover:underline"
+            href="https://tools.google.com/dlpage/gaoptout"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Google-Analytics-Deaktivierungs-Add-on
+          </a>{" "}
+          oder die Browsereinstellungen.
+        </p>
+        <p>
+          Unabhängig davon kann der Hosting-Anbieter technische Logs (z. B.
+          IP-Adresse, Zeitpunkt, aufgerufene Seite) zur sicheren Bereitstellung
+          der Website speichern.
         </p>
       </section>
 

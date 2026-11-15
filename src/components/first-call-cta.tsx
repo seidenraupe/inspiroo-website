@@ -2,6 +2,7 @@
 
 import { useLayoutEffect, useRef, useState, type ReactNode } from "react";
 
+import { trackEvent } from "@/lib/analytics";
 import { firstCallHref, firstCallLinkExternal } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
@@ -55,7 +56,13 @@ export function FirstCallCta({
       {...(firstCallLinkExternal
         ? { target: "_blank", rel: "noopener noreferrer" }
         : {})}
-      onClick={onClick}
+      onClick={() => {
+        trackEvent("cta_first_call", {
+          link_url: firstCallHref,
+          outbound: firstCallLinkExternal,
+        });
+        onClick?.();
+      }}
       className={cn(
         "inline-flex w-full min-h-12 items-center justify-center rounded-md px-7 py-3.5 text-center text-[0.95rem] leading-normal font-semibold sm:w-auto sm:px-7 sm:py-3.5 sm:text-base sm:leading-snug",
         variant === "navy" &&

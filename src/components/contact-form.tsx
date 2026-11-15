@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { trackEvent } from "@/lib/analytics";
 import { site } from "@/lib/site";
 
 type Status = "idle" | "sending" | "sent" | "invalid" | "failed";
@@ -45,6 +46,7 @@ export function ContactForm() {
       });
       const result = (await response.json()) as { success?: boolean };
       if (!response.ok || !result.success) throw new Error("submit failed");
+      trackEvent("contact_form_submit", { method: "web3forms" });
       form.reset();
       setStatus("sent");
     } catch {

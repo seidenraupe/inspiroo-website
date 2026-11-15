@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Source_Sans_3 } from "next/font/google";
+import { Suspense } from "react";
 
+import { SiteAnalytics } from "@/components/site-analytics";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { withBase } from "@/lib/paths";
@@ -36,6 +38,13 @@ export const metadata: Metadata = {
     icon: withBase("/inspiroo-mark.png"),
     apple: withBase("/apple-touch-icon.png"),
   },
+  ...(site.googleSiteVerification
+  ? {
+    verification: {
+      google: site.googleSiteVerification,
+    },
+  }
+  : {}),
 };
 
 const founder = {
@@ -95,6 +104,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <SiteHeader />
         <main className="flex-1">{children}</main>
         <SiteFooter />
+        {site.gaMeasurementId ? (
+          <Suspense fallback={null}>
+            <SiteAnalytics gaId={site.gaMeasurementId} />
+          </Suspense>
+        ) : null}
       </body>
     </html>
   );

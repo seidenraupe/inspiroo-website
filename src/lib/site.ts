@@ -29,6 +29,16 @@ export const site = {
   linkedin: "https://www.linkedin.com/company/inspiroo-gmbh",
   /** Online-Terminplaner (z. B. Cal.com oder Calendly). Ohne URL führt der CTA zu einer vorbereiteten E-Mail. */
   bookingUrl: "https://cal.com/thomas-giger-k52rea",
+  /**
+   * GA4 Measurement ID (z. B. G-XXXXXXXX). Build-Zeit: NEXT_PUBLIC_GA_MEASUREMENT_ID.
+   * Öffentlich sichtbar im Seitenquelltext — kein Geheimnis.
+   */
+  gaMeasurementId: process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID?.trim() || null,
+  /**
+   * Google Search Console: Inhalt des verification-Meta-Tags (nur der Token-String).
+   * Build-Zeit: NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION.
+   */
+  googleSiteVerification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION?.trim() || null,
   /** Öffentlicher Web3Forms-Zugangsschlüssel – für die Nutzung im Browser vorgesehen. */
   web3formsKey: "9051f6d5-e686-4912-a320-e137f5a5739c",
   /** Zeigt Hinweise auf Platzhalter und noch zu bestätigende Texte. Vor dem Livegang auf false setzen. */
