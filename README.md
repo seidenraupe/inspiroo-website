@@ -73,4 +73,27 @@ Ohne gesetzte Variablen bleibt die Website ohne Tracking-Code (Datenschutztext b
 
 5. **nginx:** Proxymodus **Standard** lassen, damit `.htaccess` greift. Option «Statische Dateien direkt durch nginx» nur aktivieren, wenn du keine Rewrite-Regeln mehr brauchst.
 
+### Vorbereitung Deploy (von Cursor Cloud, ohne Auto-Livegang)
+
+| Secret / Variable | Wo setzen | Status |
+|------------------|-----------|--------|
+| `FTP_HOST` | Cursor → Secrets (App) | noch leer — Formular im Agent |
+| `FTP_USER` | Cursor → Secrets | noch leer |
+| `FTP_PASSWORD` | Cursor → Secrets | noch leer |
+| `FTP_REMOTE_DIR` | Cursor → Secrets (Pfad lt. Plesk, z. B. `/httpdocs`) | noch leer |
+| `NEXT_PUBLIC_GA_MEASUREMENT_ID` | GitHub Actions Secrets + lokal beim Produktions-Build | von dir gemeldet auf GitHub |
+| `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` | optional (DNS-GSC) | nicht nötig bei DNS-Verifizierung |
+
+**Skripte (nichts veröffentlichen ohne `--confirm`):**
+
+```bash
+chmod +x scripts/*.sh
+./scripts/build-production.sh          # erzeugt out/
+./scripts/verify-kreativmedia-ftp.sh     # nach gesetzten FTP-Secrets
+./scripts/deploy-kreativmedia.sh       # Dry-run
+./scripts/deploy-kreativmedia.sh --confirm   # erst bei Go-live-Freigabe
+```
+
+**FTP-Zugangsdaten** findest du in Plesk / KreativMedia my.KM (Host oft die Server-Adresse aus der Einrichtungsmail; Remote-Pfad = Dokumentenstamm der Domain `inspiroo.ch`).
+
 **GitHub Pages:** In den Repository-Einstellungen unter **Settings → Secrets and variables → Actions** die beiden Secrets anlegen. In `.github/workflows/pages.yml` beim Schritt `npm run build` müssen die Variablen `NEXT_PUBLIC_GA_MEASUREMENT_ID` und `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` aus diesen Secrets gesetzt sein (im Repo dokumentiert; bei Bedarf im GitHub-Web-Editor eintragen, falls der Workflow noch nicht deployed wurde).
