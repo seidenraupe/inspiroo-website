@@ -14,7 +14,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { FirstCallCta } from "@/components/first-call-cta";
-import { firstCallHref, navigation, site } from "@/lib/site";
+import { firstCallHref, firstCallLinkExternal, navigation, site } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
 export function SiteHeader() {
@@ -45,6 +45,9 @@ export function SiteHeader() {
           })}
           <a
             href={firstCallHref}
+            {...(firstCallLinkExternal
+              ? { target: "_blank", rel: "noopener noreferrer" }
+              : {})}
             className="inline-flex h-10 items-center rounded-md bg-navy px-4 text-[0.95rem] font-semibold text-cream transition-colors hover:bg-brand"
           >
             Erstgespräch

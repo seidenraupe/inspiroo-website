@@ -28,7 +28,7 @@ export const site = {
   vat: "CHE-273.046.878 MWST",
   linkedin: "https://www.linkedin.com/company/inspiroo-gmbh",
   /** Online-Terminplaner (z. B. Cal.com oder Calendly). Ohne URL führt der CTA zu einer vorbereiteten E-Mail. */
-  bookingUrl: null as string | null,
+  bookingUrl: "https://cal.com/thomas-giger-k52rea",
   /** Öffentlicher Web3Forms-Zugangsschlüssel – für die Nutzung im Browser vorgesehen. */
   web3formsKey: "9051f6d5-e686-4912-a320-e137f5a5739c",
   /** Zeigt Hinweise auf Platzhalter und noch zu bestätigende Texte. Vor dem Livegang auf false setzen. */
@@ -49,6 +49,9 @@ const firstCallBody = encodeURIComponent(
 export const firstCallHref =
   site.bookingUrl ??
   `mailto:${site.email}?subject=${firstCallSubject}&body=${firstCallBody}`;
+
+/** Externer Terminplaner (Cal.com) – Link in neuem Tab öffnen. */
+export const firstCallLinkExternal = Boolean(site.bookingUrl);
 
 export const navigation = [
   { href: "/", label: "Home" },

@@ -2,7 +2,7 @@
 
 import { useLayoutEffect, useRef, useState, type ReactNode } from "react";
 
-import { firstCallHref } from "@/lib/site";
+import { firstCallHref, firstCallLinkExternal } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
 type FirstCallCtaProps = {
@@ -52,6 +52,9 @@ export function FirstCallCta({
     <a
       ref={ref}
       href={firstCallHref}
+      {...(firstCallLinkExternal
+        ? { target: "_blank", rel: "noopener noreferrer" }
+        : {})}
       onClick={onClick}
       className={cn(
         "inline-flex w-full min-h-12 items-center justify-center rounded-md px-7 py-3.5 text-center text-[0.95rem] leading-normal font-semibold sm:w-auto sm:px-7 sm:py-3.5 sm:text-base sm:leading-snug",

@@ -43,6 +43,9 @@ export default function ContactPage() {
         <div className="grid gap-4 md:grid-cols-3">
           <a
             href={firstCallHref}
+            {...(site.bookingUrl
+              ? { target: "_blank", rel: "noopener noreferrer" }
+              : {})}
             className="group flex flex-col rounded-lg bg-navy p-7 text-cream transition-colors hover:bg-brand"
           >
             <CalendarCheck className="size-6" aria-hidden />
@@ -53,7 +56,7 @@ export default function ContactPage() {
                 : "Vorbereitete E-Mail mit Deinen Terminvorschlägen – ich melde mich rasch bei Dir."}
             </p>
             <span className="mt-6 font-semibold underline decoration-cream/40 underline-offset-4 group-hover:decoration-cream">
-              Termin anfragen
+              {site.bookingUrl ? "Termin buchen" : "Termin anfragen"}
             </span>
           </a>
           <a
