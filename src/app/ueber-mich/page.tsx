@@ -126,7 +126,7 @@ export default function AboutPage() {
               </li>
             ))}
           </ol>
-          <h3 className="mt-12 text-xl">Ausbildung</h3>
+          <h3 className="mt-12 text-xl">{about.educationTitle}</h3>
           {about.education.map((paragraph) => (
             <p key={paragraph.slice(0, 32)} className="mt-3 text-ink/75">
               {paragraph}

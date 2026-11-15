@@ -268,9 +268,10 @@ export const about = {
   ],
   quote: "Nur aus Enthusiasmus kann Neugierde entstehen, und nur wer neugierig ist, kann lernen.",
   quoteSource: "Leonard Bernstein",
+  educationTitle: "Fundament & Weiterentwicklung",
   education: [
-    "Mein Studium schloss ich an der Universität Zürich als Master of Arts ab. In meiner Abschlussarbeit untersuchte ich das Thema «Manager im Familienunternehmen» am Beispiel der Firma Rieter in Winterthur. Berufsbegleitend bildete ich mich in Management-Seminaren am IMD in Lausanne und autodidaktisch zu digitaler Transformation und KI weiter. Als CEO der Dipl. Ing. Fust AG habe ich die digitale Transformation im Unternehmen aktiv mitgestaltet.",
-    "In den letzten drei Jahren habe ich KI aus der Perspektive von Geschäftsführung und Verwaltungsrat vertieft – nicht nur evaluiert, sondern in Mandaten erfolgreich eingesetzt, unter anderem mit agentischer KI, wenn das der schnellste Weg zu belastbaren Ergebnissen ist. Was ich dabei praktisch gelernt habe, setze ich in der Beratung ein: konkrete Handlungsempfehlungen und Prozess-Optimierungen, die sich im Betrieb bewähren – verständlich formuliert, ohne Tech-Deutsch.",
+    "Mein Studium schloss ich an der Universität Zürich als Master of Arts ab; in meiner Abschlussarbeit untersuchte ich das Thema «Manager im Familienunternehmen» am Beispiel der Firma Rieter in Winterthur. Berufsbegleitend vertiefte ich mein Führungs- und Strategiewissen in Executive-Seminaren am IMD in Lausanne. Als CEO der Dipl. Ing. Fust AG gestaltete ich die digitale Transformation des Unternehmens über viele Jahre aktiv mit.",
+    "In den letzten drei Jahren habe ich mich intensiv mit künstlicher Intelligenz aus der Perspektive von Geschäftsleitung und Verwaltungsrat auseinandergesetzt. Ich bewerte Technologien nicht nur theoretisch, sondern setze sie in Mandaten gezielt ein – einschliesslich agentischer KI-Workflows, wo sie schnellere Analysen und belastbarere Entscheidungsgrundlagen liefern. Was sich in der eigenen Praxis bewährt hat, fliesst direkt in mein Sparring ein: pragmatische Handlungsempfehlungen und Prozess-Verbesserungen, die im Betrieb greifen – klar auf den Punkt gebracht, ohne Tech-Jargon.",
   ],
   timeline: [
     { years: "seit 2023", role: "Gründer und Inhaber", org: "inspiroo gmbh" },
