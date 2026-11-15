@@ -1,0 +1,23 @@
+# SFTP-Verbindung prüfen (kein Upload). Secrets in GitHub: FTP_HOST, FTP_USER, FTP_PASSWORD, FTP_REMOTE_DIR
+name: Verify KreativMedia SFTP
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install lftp
+        run: sudo apt-get update -qq && sudo apt-get install -y lftp
+      - name: Test SFTP connection and remote directory
+        env:
+          FTP_HOST: ${{ secrets.FTP_HOST }}
+          FTP_USER: ${{ secrets.FTP_USER }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          FTP_REMOTE_DIR: ${{ secrets.FTP_REMOTE_DIR }}
+        run: ./scripts/verify-kreativmedia-ftp.sh
