@@ -135,8 +135,8 @@ export default function PrivacyPage() {
           <p>
             Für ein unverbindliches Erstgespräch können Sie über unsere Website
             einen externen Buchungsdienst nutzen (Cal.com, Cal.com, Inc., USA).
-            Beim Anklicken von «Erstgespräch vereinbaren» bzw. «Termin buchen»
-            werden Sie auf {site.bookingUrl} weitergeleitet. Dort reservieren
+            Beim Anklicken von «Termin direkt wählen» bzw. «Kalender öffnen» auf
+            der Kontaktseite werden Sie auf {site.bookingUrl} weitergeleitet. Dort reservieren
             Sie den Termin auf den Servern von Cal.com — nicht mehr nur auf
             unserer Website.
           </p>
@@ -186,7 +186,7 @@ export default function PrivacyPage() {
           {" "}
           Wir nutzen ihn zur Auswertung von Seitenaufrufen und ausgewählten
           Interaktionen auf dieser Website, etwa dem Klick auf
-          «Erstgespräch vereinbaren» oder dem erfolgreichen Absenden des
+          «Erstgespräch anfragen», «Termin direkt wählen» oder dem erfolgreichen Absenden des
           Kontaktformulars. Dabei können Cookies oder ähnliche Technologien
           zum Einsatz kommen (z. B. zur Unterscheidung von Sitzungen). Google
           erhält u. a. Informationen über aufgerufene Seiten, ungefähren

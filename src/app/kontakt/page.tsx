@@ -4,12 +4,12 @@ import { CalendarCheck, Mail, Phone } from "lucide-react";
 import { ContactForm } from "@/components/contact-form";
 import { ContentImage } from "@/components/content-image";
 import { firstCall, process } from "@/lib/content";
-import { firstCallHref, site } from "@/lib/site";
+import { bookingHref, bookingLinkExternal, site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Erstgespräch vereinbaren – Sparring-Partner für KMU in Winterthur",
+  title: "Erstgespräch anfragen – Sparring-Partner für KMU in Winterthur",
   description:
-    "Unverbindliches Erstgespräch mit Thomas Giger vereinbaren: persönlich in Winterthur oder per Video. Telefon +41 79 608 24 24.",
+    "Unverbindliches Erstgespräch mit Thomas Giger anfragen: Formular, E-Mail oder optional Termin online. Telefon +41 79 608 24 24.",
 };
 
 export default function ContactPage() {
@@ -42,23 +42,51 @@ export default function ContactPage() {
       <section className="mx-auto max-w-6xl px-5 pb-20 sm:px-8">
         <div className="grid gap-4 md:grid-cols-3">
           <a
-            href={firstCallHref}
-            {...(site.bookingUrl
-              ? { target: "_blank", rel: "noopener noreferrer" }
-              : {})}
+            href="#nachricht"
             className="group flex flex-col rounded-lg bg-navy p-7 text-cream transition-colors hover:bg-brand"
           >
-            <CalendarCheck className="size-6" aria-hidden />
-            <h2 className="mt-6 text-xl">Erstgespräch vereinbaren</h2>
+            <Mail className="size-6" aria-hidden />
+            <h2 className="mt-6 text-xl">Erstgespräch anfragen</h2>
             <p className="mt-2 flex-1 text-base text-cream/75">
-              {site.bookingUrl
-                ? "Wähle direkt einen freien Termin im Kalender."
-                : "Vorbereitete E-Mail mit Deinen Terminvorschlägen – ich melde mich rasch bei Dir."}
+              Schildere Deine Situation in ein paar Sätzen – ich melde mich rasch
+              bei Dir und schlage einen Termin vor.
             </p>
             <span className="mt-6 font-semibold underline decoration-cream/40 underline-offset-4 group-hover:decoration-cream">
-              {site.bookingUrl ? "Termin buchen" : "Termin anfragen"}
+              Zum Formular
             </span>
           </a>
+          {site.bookingUrl ? (
+            <a
+              href={bookingHref}
+              {...(bookingLinkExternal
+                ? { target: "_blank", rel: "noopener noreferrer" }
+                : {})}
+              className="group flex flex-col rounded-lg border border-ink/15 bg-white p-7 transition-colors hover:border-ink/40"
+            >
+              <CalendarCheck className="size-6 text-navy" aria-hidden />
+              <h2 className="mt-6 text-xl">Termin direkt wählen</h2>
+              <p className="mt-2 flex-1 text-base text-ink/65">
+                Wenn Du bereits einen freien Termin im Kalender buchen möchtest.
+              </p>
+              <span className="mt-6 font-semibold text-navy underline decoration-navy/30 underline-offset-4">
+                Kalender öffnen
+              </span>
+            </a>
+          ) : (
+            <a
+              href={bookingHref}
+              className="group flex flex-col rounded-lg border border-ink/15 bg-white p-7 transition-colors hover:border-ink/40"
+            >
+              <CalendarCheck className="size-6 text-navy" aria-hidden />
+              <h2 className="mt-6 text-xl">Termin per E-Mail</h2>
+              <p className="mt-2 flex-1 text-base text-ink/65">
+                Vorbereitete E-Mail mit Deinen Terminvorschlägen.
+              </p>
+              <span className="mt-6 font-semibold text-navy underline decoration-navy/30 underline-offset-4">
+                Termin anfragen
+              </span>
+            </a>
+          )}
           <a
             href={site.phoneHref}
             className="group flex flex-col rounded-lg border border-ink/15 bg-white p-7 transition-colors hover:border-ink/40"
@@ -69,20 +97,6 @@ export default function ContactPage() {
               Am schnellsten klären wir Deine Frage am Telefon.
             </p>
             <span className="mt-6 text-lg font-semibold text-navy">{site.phone}</span>
-          </a>
-          <a
-            href="#nachricht"
-            className="group flex flex-col rounded-lg border border-ink/15 bg-white p-7 transition-colors hover:border-ink/40"
-          >
-            <Mail className="size-6 text-navy" aria-hidden />
-            <h2 className="mt-6 text-xl">Nachricht schreiben</h2>
-            <p className="mt-2 flex-1 text-base text-ink/65">
-              Schildere Deine Situation in ein paar Sätzen – per Formular oder an{" "}
-              {site.email}.
-            </p>
-            <span className="mt-6 font-semibold text-navy underline decoration-navy/30 underline-offset-4">
-              Zum Formular
-            </span>
           </a>
         </div>
       </section>

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useLayoutEffect, useRef, useState, type ReactNode } from "react";
 
 import { trackEvent } from "@/lib/analytics";
@@ -15,7 +16,7 @@ type FirstCallCtaProps = {
 
 export function FirstCallCta({
   variant = "navy",
-  children = "Unverbindliches Erstgespräch vereinbaren",
+  children = "Unverbindliches Erstgespräch anfragen",
   className,
   onClick,
 }: FirstCallCtaProps) {
@@ -49,31 +50,47 @@ export function FirstCallCta({
     };
   }, [children]);
 
+  const classNameMerged = cn(
+    "inline-flex w-full min-h-12 items-center justify-center rounded-md px-7 py-3.5 text-center text-[0.95rem] leading-normal font-semibold sm:w-auto sm:px-7 sm:py-3.5 sm:text-base sm:leading-snug",
+    variant === "navy" &&
+      "bg-navy text-cream transition-colors hover:bg-brand",
+    variant === "cream" &&
+      "bg-cream text-navy transition-colors hover:bg-white",
+    mobileWrapped && "max-sm:px-10 max-sm:py-5",
+    className,
+  );
+
+  const track = () => {
+    trackEvent("cta_first_call", {
+      link_url: firstCallHref,
+      outbound: firstCallLinkExternal,
+    });
+    onClick?.();
+  };
+
+  if (firstCallLinkExternal) {
+    return (
+      <a
+        ref={ref}
+        href={firstCallHref}
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={track}
+        className={classNameMerged}
+      >
+        {children}
+      </a>
+    );
+  }
+
   return (
-    <a
-      ref={ref}
+    <Link
+      ref={ref as React.RefObject<HTMLAnchorElement>}
       href={firstCallHref}
-      {...(firstCallLinkExternal
-        ? { target: "_blank", rel: "noopener noreferrer" }
-        : {})}
-      onClick={() => {
-        trackEvent("cta_first_call", {
-          link_url: firstCallHref,
-          outbound: firstCallLinkExternal,
-        });
-        onClick?.();
-      }}
-      className={cn(
-        "inline-flex w-full min-h-12 items-center justify-center rounded-md px-7 py-3.5 text-center text-[0.95rem] leading-normal font-semibold sm:w-auto sm:px-7 sm:py-3.5 sm:text-base sm:leading-snug",
-        variant === "navy" &&
-          "bg-navy text-cream transition-colors hover:bg-brand",
-        variant === "cream" &&
-          "bg-cream text-navy transition-colors hover:bg-white",
-        mobileWrapped && "max-sm:px-10 max-sm:py-5",
-        className,
-      )}
+      onClick={track}
+      className={classNameMerged}
     >
       {children}
-    </a>
+    </Link>
   );
 }
