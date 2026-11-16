@@ -13,7 +13,7 @@ import {
   audience,
   experienceFacts,
   hero,
-  occasions,
+  homeFormats,
   principles,
   services,
 } from "@/lib/content";
@@ -40,7 +40,7 @@ export default function HomePage() {
           <div className="mt-9 flex flex-col gap-4 sm:flex-row sm:items-center">
             <FirstCallCta />
             <Link
-              href="/services"
+              href="#formate"
               className="inline-flex items-center gap-2 px-1 text-ink/75 underline decoration-ink/25 underline-offset-4 hover:text-ink hover:decoration-ink"
             >
               Wie ich Dich unterstützen kann
@@ -83,24 +83,31 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-28">
-        <div className="grid gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
-          <div className="lg:sticky lg:top-28 lg:self-start">
-            <SectionHeading kicker={occasions.kicker} title={occasions.title} />
-          </div>
-          <ol className="divide-y divide-ink/10 border-y border-ink/10">
-            {occasions.items.map((item, index) => (
-              <li key={item.title} className="grid grid-cols-[2.5rem_1fr] gap-4 py-7">
-                <span className="pt-0.5 text-sm font-semibold text-violet">
-                  {String(index + 1).padStart(2, "0")}
-                </span>
-                <div>
-                  <h3 className="text-xl">{item.title}</h3>
-                  <p className="mt-2 text-ink/70">{item.body}</p>
-                </div>
-              </li>
-            ))}
-          </ol>
+      <section id="formate" className="mx-auto max-w-6xl scroll-mt-24 px-5 py-20 sm:px-8 sm:py-28">
+        <SectionHeading
+          kicker={homeFormats.kicker}
+          title={homeFormats.title}
+          body={homeFormats.lead}
+        />
+        <div className="mt-12 grid gap-px overflow-hidden rounded-lg border border-ink/10 bg-ink/10 sm:grid-cols-2">
+          {services.map((service) => (
+            <article key={service.slug} className="flex flex-col bg-cream p-7 sm:p-9">
+              <p className="text-sm font-semibold tracking-wide text-violet">
+                {service.number} · {service.title}
+              </p>
+              <h3 className="mt-4 text-xl leading-snug font-semibold text-balance">
+                «{service.problem}»
+              </h3>
+              <p className="mt-4 flex-1 text-base leading-relaxed text-ink/75">{service.situation}</p>
+              <Link
+                href={`/services#${service.slug}`}
+                className="mt-6 inline-flex items-center gap-2 font-semibold text-navy underline decoration-navy/30 underline-offset-4 hover:decoration-navy"
+              >
+                Zum Format {service.title}
+                <ArrowRight className="size-4" />
+              </Link>
+            </article>
+          ))}
         </div>
       </section>
 
@@ -174,40 +181,6 @@ export default function HomePage() {
             title="Wie Kundinnen und Kunden die Zusammenarbeit erleben"
           />
           <HomeTestimonialsLazy />
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-28">
-        <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
-          <SectionHeading
-            kicker="Wie ich Dich unterstützen kann"
-            title="Welche Frage beschäftigt Dich?"
-          />
-          <Link
-            href="/services"
-            className="inline-flex shrink-0 items-center gap-2 text-brand underline decoration-brand/30 underline-offset-4 hover:decoration-brand"
-          >
-            Zusammenarbeit im Detail <ArrowRight className="size-4" />
-          </Link>
-        </div>
-        <div className="mt-12 grid gap-px overflow-hidden rounded-lg border border-ink/10 bg-ink/10 sm:grid-cols-2">
-          {services.map((service) => (
-            <Link
-              key={service.slug}
-              href={`/services#${service.slug}`}
-              className="group flex flex-col bg-cream p-7 transition-colors hover:bg-white sm:p-9"
-            >
-              <p className="text-lg leading-snug text-ink/70 italic">«{service.problem}»</p>
-              <div className="mt-8 flex items-end justify-between gap-4">
-                <div>
-                  <p className="text-sm font-semibold text-violet">{service.number}</p>
-                  <h3 className="mt-1 text-2xl">{service.title}</h3>
-                  <p className="mt-2 text-base text-ink/70">{service.headline}</p>
-                </div>
-                <ArrowRight className="size-5 shrink-0 text-ink/40 transition-transform group-hover:translate-x-1 group-hover:text-ink" />
-              </div>
-            </Link>
-          ))}
         </div>
       </section>
 

@@ -13,31 +13,10 @@ export const experienceFacts = [
   { value: "2023", label: "seit 2023 unabhängig mit inspiroo, mit verschiedenen Beratungs-Mandaten" },
 ] as const;
 
-export const occasions = {
+export const homeFormats = {
   kicker: "Wie und wann ich Unternehmen unterstütze",
-  title: "Wenn viel auf dem Spiel steht und der Weg nicht eindeutig ist",
-  items: [
-    {
-      title: "Wachstum und Profitabilität verbessern",
-      body: "Der Umsatz wächst, die Marge nicht – oder umgekehrt. Ich helfe Dir bei der Analyse, wo Dein Unternehmen Geld verdient und welche Hebel am meisten bewirken.",
-    },
-    {
-      title: "Strategie überprüfen und neu ausrichten",
-      body: "Der Markt verändert sich, die bisherigen Erfolgsrezepte tragen nicht mehr. Ich prüfe mit Dir, was bleibt, was sich ändern muss und was als Nächstes kommt.",
-    },
-    {
-      title: "Schwierige Führungsentscheidungen treffen",
-      body: "Als Unternehmer trägst Du die Verantwortung allein. Ich bin der unabhängige Gesprächspartner, mit dem Du Optionen offen durchdenken kannst.",
-    },
-    {
-      title: "Digitale Transformation vorantreiben",
-      body: "Vom Online-Shop über ERP bis zu digitalen Kundenprozessen: Ich habe solche Vorhaben selbst verantwortet und weiss, woran sie scheitern.",
-    },
-    {
-      title: "Organisation und Führung weiterentwickeln",
-      body: "Klare Verantwortungen, eine Kultur der Eigeninitiative und Kennzahlen, die tatsächlich steuern – ich unterstütze Dich dabei, dass Deine Ziele im Alltag ankommen.",
-    },
-  ],
+  title: "Wenn viel auf dem Spiel steht – und der Weg nicht eindeutig ist",
+  lead: "Ob Standortbestimmung, schwierige Führungsentscheidung oder Neuausrichtung: Je nach Situation arbeiten wir in einem von vier klar geschnittenen Formaten zusammen.",
 } as const;
 
 export const audience = {
@@ -120,6 +99,8 @@ export const services = [
     slug: "boxen-stopp",
     title: "Boxen-Stopp",
     problem: "Ich möchte wissen, wo mein Unternehmen wirklich steht.",
+    situation:
+      "Der Umsatz wächst, die Marge nicht – oder umgekehrt. Gemeinsam analysieren wir, wo Dein Unternehmen heute Geld verdient, welche Hebel am meisten bewirken und wie Du Profitabilität und Liquidität gezielt stärkst.",
     headline: "Klarheit über die wirtschaftliche Situation und die nächsten Hebel.",
     body: "Wo steht Dein Unternehmen? Wo liegen ungenutzte Potenziale? Wo lassen sich Kosten senken, ohne an Qualität einzubüssen? Wie innovativ ist Dein Angebot im Vergleich zum Markt? Wie nehmen Kundinnen und Kunden Dein Unternehmen wahr – online und offline? Welche Massnahmen versprechen die grösste Wirkung? Mit dem Blick eines ehemaligen CEO analysiere ich die Ausgangslage und erarbeite mit Dir konkrete Handlungsempfehlungen mit klaren Prioritäten.",
     outcomes: [
@@ -138,6 +119,8 @@ export const services = [
     slug: "co-pilot",
     title: "Co-Pilot",
     problem: "Ich brauche einen unabhängigen Gesprächspartner für schwierige Entscheidungen.",
+    situation:
+      "Als Unternehmer trägst Du die letzte Verantwortung allein. Ich bin der diskrete Sparring-Partner auf Augenhöhe, mit dem Du strategische Optionen, Nachfolgefragen oder heikle Weichenstellungen offen durchdenken kannst.",
     headline: "Ein Sparring-Partner, der die Verantwortung eines CEO aus eigener Erfahrung kennt.",
     body: "Als Unternehmerin oder Unternehmer kannst Du nicht jede Frage mit Deinem Team besprechen. Im vertraulichen Sparring übernehme ich die Rolle des kritischen und lösungsorientierten Fragestellers – im 1:1 oder im Verwaltungsrat und in der Geschäftsleitung. Bei Bedarf recherchiere ich umfassende Analysen oder Benchmark-Studien, die die Diskussion befruchten: So lassen sich Ideen faktenbasiert prüfen und gemeinsam weiterentwickeln.",
     outcomes: [
@@ -156,7 +139,9 @@ export const services = [
     number: "03",
     slug: "navigator",
     title: "Navigator",
-    problem: "Ich habe Ziele, aber die Umsetzung kommt nicht richtig voran.",
+    problem: "Ich habe Ziele, aber die Umsetzung kommt im Alltag nicht voran.",
+    situation:
+      "Ob digitale Transformation, klarere Verantwortlichkeiten oder wirksame Steuerungs-Kennzahlen: Ich unterstütze Dich dabei, Strategie, Organisation und Kultur so weiterzuentwickeln, dass Deine Ziele im Alltag greifen.",
     headline: "Strategie in den Alltag bringen – mit Steuerung, die funktioniert.",
     body: "Viele Unternehmen wissen, wohin sie wollen. Schwierig wird es im operativen Alltag. Ich begleite Dich über längere Zeit bei der Umsetzung, entwickle mit Dir die wenigen Kennzahlen, mit denen Du Dein Unternehmen wirklich steuerst, und unterstütze bei Planung, Steuerung und Kontrolle von Projekten und Prozessen.",
     outcomes: [
@@ -175,6 +160,8 @@ export const services = [
     slug: "masterplan",
     title: "Masterplan",
     problem: "Ich muss mein Unternehmen strategisch neu ausrichten.",
+    situation:
+      "Der Markt verändert sich und die bisherigen Erfolgsrezepte tragen nicht mehr. Von der nüchternen Marktanalyse bis zu verbindlichen Etappenzielen entwickeln wir eine tragfähige Strategie, die Dein Unternehmen zukunftsfähig macht.",
     headline: "Von der Marktanalyse zur tragfähigen Strategie mit Etappenzielen.",
     body: "Wenn sich der Markt grundlegend verändert, reichen Korrekturen nicht. Mit Dir analysiere ich Markt, Kunden und Wettbewerb, entwickle eine tragfähige Strategie und übersetze sie in priorisierte Etappenziele – für etablierte Unternehmen genauso wie für junge Firmen in bewegten Märkten.",
     outcomes: [
