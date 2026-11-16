@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Check } from "lucide-react";
 
 import { ContentImage } from "@/components/content-image";
@@ -36,6 +37,15 @@ export default function ZusammenarbeitPage() {
             </a>
           ))}
         </nav>
+        <p className="mt-6 text-base text-ink/65">
+          Unsicher, welches Format passt?{" "}
+          <Link
+            href="/#kurz-check"
+            className="font-semibold text-navy underline decoration-navy/30 underline-offset-4 hover:decoration-navy"
+          >
+            Kurz-Check in 2 Minuten
+          </Link>
+        </p>
       </section>
 
       <div className="mx-auto max-w-6xl px-5 sm:px-8">

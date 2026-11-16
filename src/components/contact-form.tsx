@@ -1,18 +1,28 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
+import { useEffect, useState, type FormEvent } from "react";
 import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { trackEvent } from "@/lib/analytics";
+import { CHECK_CONTACT_MESSAGES, isFormatKey } from "@/lib/standortcheck";
 import { site } from "@/lib/site";
 
 type Status = "idle" | "sending" | "sent" | "invalid" | "failed";
 
 export function ContactForm() {
   const [status, setStatus] = useState<Status>("idle");
+  const [message, setMessage] = useState("");
+  const [fromCheck, setFromCheck] = useState(false);
+
+  useEffect(() => {
+    const thema = new URLSearchParams(window.location.search).get("thema");
+    if (!isFormatKey(thema)) return;
+    setMessage(CHECK_CONTACT_MESSAGES[thema]);
+    setFromCheck(true);
+  }, []);
 
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -21,9 +31,9 @@ export function ContactForm() {
     const name = String(data.get("name") ?? "").trim();
     const email = String(data.get("email") ?? "").trim();
     const phone = String(data.get("phone") ?? "").trim();
-    const message = String(data.get("message") ?? "").trim();
+    const messageText = message.trim();
 
-    if (!name || !email || !message || !form.checkValidity()) {
+    if (!name || !email || !messageText || !form.checkValidity()) {
       setStatus("invalid");
       return;
     }
@@ -40,7 +50,7 @@ export function ContactForm() {
           name,
           email,
           phone: phone || "—",
-          message,
+          message: messageText,
           botcheck: data.get("botcheck") === "on",
         }),
       });
@@ -48,6 +58,8 @@ export function ContactForm() {
       if (!response.ok || !result.success) throw new Error("submit failed");
       trackEvent("contact_form_submit", { method: "web3forms" });
       form.reset();
+      setMessage("");
+      setFromCheck(false);
       setStatus("sent");
     } catch {
       setStatus("failed");
@@ -108,8 +120,15 @@ export function ContactForm() {
           name="message"
           required
           rows={6}
+          value={message}
+          onChange={(event) => setMessage(event.target.value)}
           placeholder="Kurz Deine Situation, die offene Frage und was Du Dir als nächsten Schritt vorstellst."
         />
+        {fromCheck ? (
+          <span className="mt-2 block text-xs leading-relaxed text-ink/55">
+            Vorschlag aus dem Kurz-Check – Du kannst den Text vor dem Senden anpassen.
+          </span>
+        ) : null}
       </label>
       <p className="text-xs leading-relaxed text-ink/55">
         Mit dem Absenden werden Deine Angaben zur Bearbeitung der Anfrage

@@ -6,6 +6,7 @@ import { HomeFeaturedCaseStudies } from "@/components/home-featured-case-studies
 import { ContentImage } from "@/components/content-image";
 import { CtaBand } from "@/components/cta-band";
 import { HomeTestimonials } from "@/components/home-testimonials";
+import { Standortcheck } from "@/components/standortcheck";
 import { ProcessSteps } from "@/components/process-steps";
 import { SectionHeading } from "@/components/section-heading";
 import {
@@ -44,6 +45,12 @@ export default function HomePage() {
               className="inline-flex items-center gap-2 px-1 text-ink/75 underline decoration-ink/25 underline-offset-4 hover:text-ink hover:decoration-ink"
             >
               Wie ich Dich unterstützen kann
+            </Link>
+            <Link
+              href="#kurz-check"
+              className="inline-flex items-center gap-2 px-1 text-ink/75 underline decoration-ink/25 underline-offset-4 hover:text-ink hover:decoration-ink"
+            >
+              Kurz-Check in 2 Minuten
             </Link>
           </div>
         </div>
@@ -108,6 +115,12 @@ export default function HomePage() {
               </Link>
             </article>
           ))}
+        </div>
+      </section>
+
+      <section className="border-t border-ink/10">
+        <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-28">
+          <Standortcheck />
         </div>
       </section>
 
