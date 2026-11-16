@@ -1,3 +1,5 @@
+import { shuffle } from "@/lib/shuffle";
+
 export type ReferenceCategory =
   | "Strategie"
   | "Innovation"
@@ -327,3 +329,14 @@ export const caseStudies: CaseStudy[] = [
       "Eine umfassende Markt- und Wettbewerbsanalyse, eine klare Positionierung gegenüber Verwaltungen und Eigentümern sowie ein priorisierter Plan für die Markteinführung.",
   },
 ];
+
+/** Zwei Blöcke: mit «Aufgabe und Ergebnis», dann ohne – jeweils per Besuch gemischt. */
+export function shuffledMandateList(items: readonly Reference[]): Reference[] {
+  const withStudy: Reference[] = [];
+  const withoutStudy: Reference[] = [];
+  for (const item of items) {
+    if (caseStudyForReference(item.id)) withStudy.push(item);
+    else withoutStudy.push(item);
+  }
+  return [...shuffle(withStudy), ...shuffle(withoutStudy)];
+}
