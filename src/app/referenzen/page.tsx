@@ -37,7 +37,7 @@ export default function ReferencesPage() {
 
       <section id="mandate" className="mx-auto max-w-6xl scroll-mt-24 px-5 py-20 sm:px-8 sm:py-24">
         <SectionHeading
-          kicker="Alle Mandate"
+          kicker="ausgewählte Mandate"
           title="Strategie, Innovation, Sparring und Lehre"
           body="Eine Auswahl aktueller und abgeschlossener Begleitungen – vom Verwaltungsratsmandat bis zum Praxis-Referat. Wo ich die Aufgabe beschrieben habe, lässt sie sich in der Zeile aufklappen."
         />
