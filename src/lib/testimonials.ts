@@ -91,7 +91,7 @@ export const clientVoices = {
     logo: { src: "/logos/zhaw.png", width: 256, height: 256 },
     quote: null,
     sample:
-      "Mit packenden Einblicken in Führung, digitale Transformation und M&A-Prozesse brachte das Referat echte unternehmerische Praxis direkt in den Hörsaal. Die lebhaften Diskussionen zeigten, wie wertvoll ungeschminkter Wissenstransfer aus dem Führungsalltag ist.",
+      "Mit packenden Einblicken in Führung, digitale Transformation und M&A-Prozesse brachte Thomas mit seinem Referat echte unternehmerische Praxis direkt in den Hörsaal. Die lebhaften Diskussionen zeigten, wie wertvoll ungeschminkter Wissenstransfer aus dem Führungsalltag ist.",
   },
 } satisfies Record<string, ClientVoice>;
 
