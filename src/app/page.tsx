@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 import { HomeFeaturedCaseStudies } from "@/components/home-featured-case-studies";
 import { ContentImage } from "@/components/content-image";
 import { CtaBand } from "@/components/cta-band";
-import { HomeTestimonialsLazy } from "@/components/home-testimonials-lazy";
+import { HomeTestimonials } from "@/components/home-testimonials";
 import { ProcessSteps } from "@/components/process-steps";
 import { SectionHeading } from "@/components/section-heading";
 import {
@@ -180,7 +180,7 @@ export default function HomePage() {
             kicker="Stimmen aus der Zusammenarbeit"
             title="Wie Kundinnen und Kunden die Zusammenarbeit erleben"
           />
-          <HomeTestimonialsLazy />
+          <HomeTestimonials />
         </div>
       </section>
 

@@ -106,3 +106,8 @@ export const referenceVoices: ClientVoice[] = [
 ];
 
 export const allVoices: ClientVoice[] = referenceVoices;
+
+/** Erste drei Stimmen für die Startseite (build-time SSR, indexierbar). */
+export function homePageVoices(showDrafts: boolean): ClientVoice[] {
+  return referenceVoices.filter((v) => showDrafts || v.quote !== null).slice(0, 3);
+}
