@@ -88,7 +88,10 @@ function CompanyLogo({ voice, className }: { voice: ClientVoice; className?: str
         alt={`Logo ${voice.company}`}
         width={voice.logo.width}
         height={voice.logo.height}
-        className="h-auto max-h-10 w-auto max-w-[9.5rem] object-contain"
+        className={cn(
+          "h-auto max-h-10 w-auto max-w-[9.5rem] object-contain",
+          voice.logo.imageClassName,
+        )}
       />
     </div>
   );

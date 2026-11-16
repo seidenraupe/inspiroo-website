@@ -4,7 +4,14 @@ export type ClientVoice = {
   role?: string;
   company: string;
   /** Ohne Logo gilt die Stimme als anonymisiert. */
-  logo?: { src: string; width: number; height: number; onDark?: boolean };
+  logo?: {
+    src: string;
+    width: number;
+    height: number;
+    onDark?: boolean;
+    /** Abweichung von der Standard-Logo-Skalierung in Testimonial-Karten. */
+    imageClassName?: string;
+  };
   /** Freigegebenes Zitat. Solange null, wird `sample` als markiertes Muster gezeigt. */
   quote: string | null;
   body?: string;
@@ -50,7 +57,12 @@ export const clientVoices = {
     person: "Christian Huggenberg",
     role: "Präsident",
     company: "Historischer Verein Winterthur / Museum Schaffen",
-    logo: { src: "/logos/museum-schaffen.png", width: 300, height: 189 },
+    logo: {
+      src: "/logos/museum-schaffen.png",
+      width: 272,
+      height: 92,
+      imageClassName: "max-h-12 sm:max-h-[3.25rem]",
+    },
     quote:
       "Mit schlankeren, durchgängig digitalen Prozessen für unsere Mitgliederverwaltung und Veranstaltungen sparen wir im Vorstand heute spürbar Zeit und Geld. Gleichzeitig sind diese Verbesserungen auch für unsere Mitglieder dank einer neuen, modernen Website direkt und unkompliziert erlebbar – etwa bei der Veranstaltungsanmeldung. Thomas hat das Ganze äusserst pragmatisch, strukturiert und mit viel Verständnis für die spezifischen Bedürfnisse eines Vereins umgesetzt.",
     sample:
