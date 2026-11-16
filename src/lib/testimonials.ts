@@ -64,9 +64,9 @@ export const clientVoices = {
       imageClassName: "max-h-12 sm:max-h-[3.25rem]",
     },
     quote:
-      "Mit schlankeren, durchgängig digitalen Prozessen für unsere Mitgliederverwaltung und Veranstaltungen sparen wir im Vorstand heute spürbar Zeit und Geld. Gleichzeitig sind diese Verbesserungen auch für unsere Mitglieder dank einer neuen, modernen Website direkt und unkompliziert erlebbar – etwa bei der Veranstaltungsanmeldung. Thomas hat das Ganze äusserst pragmatisch, strukturiert und mit viel Verständnis für die spezifischen Bedürfnisse eines Kulturbetriebs umgesetzt.",
+      "Mit schlankeren, durchgängig digitalen Prozessen für unsere Mitgliederverwaltung und Veranstaltungen sparen wir im Vorstand heute spürbar Zeit und Geld. Gleichzeitig sind diese Verbesserungen auch für unsere Mitglieder dank einer neuen, modernen Website direkt und einladend erlebbar. Thomas hat das Ganze äusserst pragmatisch, strukturiert und mit viel Verständnis für die spezifischen Bedürfnisse eines Kulturbetriebs umgesetzt.",
     sample:
-      "Mit schlankeren, durchgängig digitalen Prozessen für unsere Mitgliederverwaltung und Veranstaltungen sparen wir im Vorstand heute spürbar Zeit und Geld. Gleichzeitig sind diese Verbesserungen auch für unsere Mitglieder dank einer neuen, modernen Website direkt und unkompliziert erlebbar – etwa bei der Veranstaltungsanmeldung. Thomas hat das Ganze äusserst pragmatisch, strukturiert und mit viel Verständnis für die spezifischen Bedürfnisse eines Kulturbetriebs umgesetzt.",
+      "Mit schlankeren, durchgängig digitalen Prozessen für unsere Mitgliederverwaltung und Veranstaltungen sparen wir im Vorstand heute spürbar Zeit und Geld. Gleichzeitig sind diese Verbesserungen auch für unsere Mitglieder dank einer neuen, modernen Website direkt und einladend erlebbar. Thomas hat das Ganze äusserst pragmatisch, strukturiert und mit viel Verständnis für die spezifischen Bedürfnisse eines Kulturbetriebs umgesetzt.",
   },
   webling: {
     id: "webling",
