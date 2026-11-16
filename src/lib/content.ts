@@ -326,16 +326,16 @@ export const leadershipProjects = [
     body: "Angesichts des kontinuierlichen Wachstums und des stark zunehmenden Online-Handels planten wir bereits 2014 eine umfangreiche Vergrösserung der Logistikkapazitäten. Auf einer benachbarten Landreserve verdoppelten wir die Kapazitäten während des laufenden Betriebs. Mit einer Teilautomatisierung der Kommissionierung konnten wir die massiv gestiegene Nachfrage über die Online-Kanäle weiterhin effizient abwickeln.",
   },
   {
-    title: "Führungs- und Innovationskultur",
-    body: "Mit flachen Hierarchien und dem Prinzip «Führung durch Vorbild» sorgten wir für eine dynamische und unternehmerische Kultur, die offen war für neue Ideen und Lösungen. Wir motivierten mit Respekt und Wertschätzung für die Leistungen der Mitarbeitenden. Weiterentwicklung und Lernen förderten wir mit gezieltem Feedback und der Möglichkeit, sich an neuen Herausforderungen zu beweisen.",
-  },
-  {
     title: "Reputationsmanagement",
     body: "Was man nicht messen kann, lässt sich auch nicht verbessern. Nach diesem Grundsatz richteten wir an allen Kontaktpunkten Messungen zur Kundenzufriedenheit ein. Parallel erhoben wir Kundenrückmeldungen auf öffentlichen Plattformen und nutzten zeitweise Mystery-Shopping. Alle Resultate bauten wir konsequent in die Führungs- und Ausbildungsarbeit ein.",
   },
   {
     title: "Expansion",
     body: "Für das Filialnetz starteten wir eine umfassende Modernisierung, die wir investitionsschonend über mehrere Jahre verteilten. Dabei berücksichtigten wir die Ertragslage und -aussichten der Standorte und entwickelten das Netz in allen Landesteilen laufend weiter.",
+  },
+  {
+    title: "Führungs- und Innovationskultur",
+    body: "Mit flachen Hierarchien und dem Prinzip «Führung durch Vorbild» sorgten wir für eine dynamische und unternehmerische Kultur, die offen war für neue Ideen und Lösungen. Wir motivierten mit Respekt und Wertschätzung für die Leistungen der Mitarbeitenden. Weiterentwicklung und Lernen förderten wir mit gezieltem Feedback und der Möglichkeit, sich an neuen Herausforderungen zu beweisen.",
   },
   {
     title: "E-Learning",
