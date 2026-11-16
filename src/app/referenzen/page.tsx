@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 export default function ReferencesPage() {
   return (
     <>
-      <section className="mx-auto max-w-6xl px-5 pt-14 sm:px-8 sm:pt-20">
+      <section className="mx-auto max-w-6xl px-5 pt-14 pb-14 sm:px-8 sm:pt-20 sm:pb-20">
         <SectionHeading
           as="h1"
           kicker="Referenzen"
