@@ -1,8 +1,8 @@
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, ChevronDown } from "lucide-react";
 
 import { DraftHint } from "@/components/draft-hint";
 import { gaTrackAttrs } from "@/lib/ga-track";
-import { referenceCategories, references } from "@/lib/references";
+import { caseStudyForReference, referenceCategories, references } from "@/lib/references";
 
 function filterDomId(category: string) {
   return `referenz-filter-${category
@@ -59,11 +59,14 @@ export function ReferenceCatalog() {
       </div>
 
       <ul className="divide-y divide-ink/10 border-b border-ink/10">
-        {references.map((item) => (
+        {references.map((item) => {
+          const study = caseStudyForReference(item.id);
+          return (
           <li
             key={item.id}
+            id={item.id}
             data-categories={item.categories.join(" ")}
-            className="reference-card grid gap-4 py-8 lg:grid-cols-[minmax(0,17rem)_minmax(0,1fr)] lg:gap-14"
+            className="reference-card scroll-mt-24 grid gap-4 py-8 lg:grid-cols-[minmax(0,17rem)_minmax(0,1fr)] lg:gap-14"
           >
             <div className="min-w-0">
               <h3 className="text-xl leading-tight text-ink">{item.name}</h3>
@@ -104,9 +107,39 @@ export function ReferenceCatalog() {
                   </a>
                 ))}
               </div>
+              {study ? (
+                <details className="group mt-5 border-t border-ink/10 pt-4">
+                  <summary className="flex cursor-pointer list-none items-center gap-2 text-base font-semibold text-navy [&::-webkit-details-marker]:hidden">
+                    <ChevronDown className="size-4 shrink-0 transition-transform group-open:rotate-180" />
+                    Aufgabe und Ergebnis
+                  </summary>
+                  <dl className="mt-4 grid gap-4 sm:grid-cols-3 sm:gap-6">
+                    {(
+                      [
+                        ["Ausgangslage", study.situation],
+                        ["Mein Beitrag", study.contribution],
+                        ["Ergebnis", study.result],
+                      ] as const
+                    ).map(([label, text]) => (
+                      <div key={label} className="min-w-0">
+                        <dt className="text-xs font-semibold tracking-[0.12em] text-ink/50 uppercase">
+                          {label}
+                        </dt>
+                        <dd className="mt-2 text-base leading-relaxed hyphens-auto text-pretty text-ink/80">
+                          {text}
+                        </dd>
+                      </div>
+                    ))}
+                  </dl>
+                  {study.draft ? (
+                    <DraftHint className="mt-4">Entwurf – bitte bestätigen</DraftHint>
+                  ) : null}
+                </details>
+              ) : null}
             </div>
           </li>
-        ))}
+          );
+        })}
       </ul>
     </div>
   );

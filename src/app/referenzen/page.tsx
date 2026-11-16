@@ -1,19 +1,17 @@
 import type { Metadata } from "next";
 
-import { CaseStudy } from "@/components/case-study";
 import { CtaBand } from "@/components/cta-band";
 import { ReferenceCatalog } from "@/components/reference-catalog";
 import { ReferenceCatalogAnalytics } from "@/components/reference-catalog-analytics";
 import { SectionHeading } from "@/components/section-heading";
 import { Testimonial } from "@/components/testimonial";
 import { leadershipProjects } from "@/lib/content";
-import { caseStudies } from "@/lib/references";
 import { allVoices } from "@/lib/testimonials";
 
 export const metadata: Metadata = {
-  title: "Referenzen und Fallstudien",
+  title: "Referenzen",
   description:
-    "Fallstudien und Mandate von inspiroo: Strategieentwicklung, Verwaltungsrat, Sparring und Umsetzung für KMU in Winterthur und der Schweiz – plus Führungserfahrung als CEO von Dipl. Ing. Fust.",
+    "Mandate von inspiroo: Strategie, Verwaltungsrat, Sparring und Umsetzung für KMU in Winterthur und der Schweiz – plus Führungserfahrung als CEO von Dipl. Ing. Fust.",
 };
 
 export default function ReferencesPage() {
@@ -24,11 +22,10 @@ export default function ReferencesPage() {
           as="h1"
           kicker="Referenzen"
           title="Was ich heute bewirke – was ich als Unternehmensleiter verantwortet habe"
-          body="Auf dieser Seite finden Sie beides: meine heutigen Mandate und die Veränderungen, die ich zuvor als CEO selbst verantwortet habe. Beschrieben ist jeweils mein tatsächlicher Beitrag – ohne erfundene Kennzahlen."
+          body="Auf dieser Seite finden Sie beides: meine heutigen Mandate und die Veränderungen, die ich zuvor als CEO selbst verantwortet habe. Wo eine Aufgabe beschrieben ist, steht sie beim jeweiligen Mandat – ohne erfundene Kennzahlen."
         />
         <nav aria-label="Abschnitte" className="mt-10 flex flex-wrap gap-2 text-base">
           {[
-            ["#fallstudien", "Fallstudien"],
             ["#stimmen", "Kundenstimmen"],
             ["#mandate", "Mandate"],
             ["#fuehrungserfahrung", "Führungserfahrung"],
@@ -42,15 +39,6 @@ export default function ReferencesPage() {
             </a>
           ))}
         </nav>
-      </section>
-
-      <section id="fallstudien" className="mx-auto max-w-6xl scroll-mt-24 px-5 pt-16 pb-12 sm:px-8 sm:pt-20">
-        <p className="eyebrow">Fallstudien</p>
-        <div className="mt-4 divide-y divide-ink/10 border-y border-ink/10">
-          {caseStudies.map((item) => (
-            <CaseStudy key={item.id} item={item} />
-          ))}
-        </div>
       </section>
 
       <section id="stimmen" className="scroll-mt-24 bg-sand">
@@ -71,7 +59,7 @@ export default function ReferencesPage() {
         <SectionHeading
           kicker="Alle Mandate"
           title="Strategie, Innovation, Sparring und Lehre"
-          body="Eine Auswahl aktueller und abgeschlossener Begleitungen – vom Verwaltungsratsmandat bis zum Praxis-Referat."
+          body="Eine Auswahl aktueller und abgeschlossener Begleitungen – vom Verwaltungsratsmandat bis zum Praxis-Referat. Wo ich die Aufgabe beschrieben habe, lässt sie sich in der Zeile aufklappen."
         />
         <div className="mt-12">
           <ReferenceCatalog />

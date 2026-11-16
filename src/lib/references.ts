@@ -230,6 +230,22 @@ export const references: Reference[] = [
 
 export const featuredReferences = references.filter((item) => item.featured);
 
+/** Fallstudie-ID, wenn sie nicht mit der Mandats-ID übereinstimmt. */
+const caseStudyIdByReferenceId: Record<string, string> = {
+  "hv-winterthur": "museum-schaffen",
+};
+
+export function caseStudyForReference(referenceId: string): CaseStudy | undefined {
+  const studyId = caseStudyIdByReferenceId[referenceId] ?? referenceId;
+  return caseStudies.find((item) => item.id === studyId);
+}
+
+/** Anker der Mandatszeile auf `/referenzen/` für eine Fallstudie. */
+export function referenceAnchorForCaseStudy(studyId: string): string {
+  const match = Object.entries(caseStudyIdByReferenceId).find(([, id]) => id === studyId);
+  return match?.[0] ?? studyId;
+}
+
 export const caseStudies: CaseStudy[] = [
   {
     id: "home-of-innovation",
