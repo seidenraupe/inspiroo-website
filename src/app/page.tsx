@@ -41,16 +41,10 @@ export default function HomePage() {
           <div className="mt-9 flex flex-col gap-4 sm:flex-row sm:items-center">
             <FirstCallCta />
             <Link
-              href="#formate"
-              className="inline-flex items-center gap-2 px-1 text-ink/75 underline decoration-ink/25 underline-offset-4 hover:text-ink hover:decoration-ink"
-            >
-              Wie ich Dich unterstützen kann
-            </Link>
-            <Link
               href="#kurz-check"
-              className="inline-flex items-center gap-2 px-1 text-ink/75 underline decoration-ink/25 underline-offset-4 hover:text-ink hover:decoration-ink"
+              className="inline-flex items-center gap-2 px-1 text-ink underline decoration-ink/30 underline-offset-4 hover:decoration-ink"
             >
-              Kurz-Check in 2 Minuten
+              Standortbestimmung: Wo steht Dein KMU?
             </Link>
           </div>
         </div>
@@ -115,12 +109,6 @@ export default function HomePage() {
               </Link>
             </article>
           ))}
-        </div>
-      </section>
-
-      <section className="border-t border-ink/10">
-        <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-28">
-          <Standortcheck />
         </div>
       </section>
 
@@ -227,6 +215,12 @@ export default function HomePage() {
               LinkedIn
             </a>
           </div>
+        </div>
+      </section>
+
+      <section className="border-t border-ink/10 bg-sand">
+        <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-28">
+          <Standortcheck />
         </div>
       </section>
 

@@ -43,7 +43,7 @@ export default function ZusammenarbeitPage() {
             href="/#kurz-check"
             className="font-semibold text-navy underline decoration-navy/30 underline-offset-4 hover:decoration-navy"
           >
-            Kurz-Check in 2 Minuten
+            Standortbestimmung: Wo steht Dein KMU?
           </Link>
         </p>
       </section>

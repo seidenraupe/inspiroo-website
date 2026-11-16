@@ -22,10 +22,10 @@ export function CtaBand() {
             {site.phone}
           </a>
           <Link
-            href="/kontakt/#nachricht"
-            className="text-cream/70 underline decoration-cream/20 underline-offset-4 hover:text-cream"
+            href="/#kurz-check"
+            className="text-lg text-cream underline decoration-cream/30 underline-offset-4 hover:decoration-cream"
           >
-            Direkt zum Kontakt-Formular
+            Standortbestimmung: Wo steht Dein KMU?
           </Link>
         </div>
       </div>
