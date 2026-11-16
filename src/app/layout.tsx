@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Source_Sans_3 } from "next/font/google";
 import { Suspense } from "react";
 
+import { GaInteractionTracker } from "@/components/ga-interaction-tracker";
 import { HashScroll } from "@/components/hash-scroll";
 import { SiteAnalytics } from "@/components/site-analytics";
 import { SiteFooter } from "@/components/site-footer";
@@ -109,6 +110,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         {site.gaMeasurementId ? (
           <Suspense fallback={null}>
             <SiteAnalytics gaId={site.gaMeasurementId} />
+            <GaInteractionTracker />
           </Suspense>
         ) : null}
       </body>

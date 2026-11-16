@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { CaseStudy } from "@/components/case-study";
 import { CtaBand } from "@/components/cta-band";
 import { ReferenceCatalog } from "@/components/reference-catalog";
+import { ReferenceCatalogAnalytics } from "@/components/reference-catalog-analytics";
 import { SectionHeading } from "@/components/section-heading";
 import { Testimonial } from "@/components/testimonial";
 import { leadershipProjects } from "@/lib/content";
@@ -74,6 +75,7 @@ export default function ReferencesPage() {
         />
         <div className="mt-12">
           <ReferenceCatalog />
+          <ReferenceCatalogAnalytics />
         </div>
       </section>
 

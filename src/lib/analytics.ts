@@ -1,4 +1,11 @@
-/** GA4-Events – nur aktiv, wenn `gtag` geladen ist (siehe SiteAnalytics). */
+/**
+ * GA4-Events – nur aktiv, wenn `gtag` geladen ist (siehe SiteAnalytics).
+ *
+ * Erfasst u. a.:
+ * - Seitenaufrufe (gtag config + Client-Navigation)
+ * - `cta_first_call`, `contact_channel`, `contact_form_submit`
+ * - `standortcheck_result`, `standortcheck_cta`, `cta_kurz_check`, `reference_filter`
+ */
 
 declare global {
   interface Window {

@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { ContactFormEnhance } from "@/components/contact-form-enhance";
+import { gaTrackAttrs } from "@/lib/ga-track";
 import { site } from "@/lib/site";
 
 const fieldClassName =
@@ -38,7 +39,7 @@ export function ContactForm() {
         <input
           type="hidden"
           name="redirect"
-          value={`${site.url}/kontakt/danke/`}
+          value={`${site.url}/kontakt/danke/?sent=1`}
         />
         <input
           type="checkbox"
@@ -104,11 +105,19 @@ export function ContactForm() {
         </p>
         <p id="nachricht-fehler" hidden className="text-sm text-destructive" role="alert">
           Die Nachricht konnte nicht gesendet werden. Bitte schreiben Sie direkt an{" "}
-          <a href={`mailto:${site.email}`} className="underline">
+          <a
+            href={`mailto:${site.email}`}
+            className="underline"
+            {...gaTrackAttrs("contact_channel", { channel: "email", placement: "form_error" })}
+          >
             {site.email}
           </a>{" "}
           oder rufen Sie an:{" "}
-          <a href={site.phoneHref} className="underline">
+          <a
+            href={site.phoneHref}
+            className="underline"
+            {...gaTrackAttrs("contact_channel", { channel: "phone", placement: "form_error" })}
+          >
             {site.phone}
           </a>
           .

@@ -4,6 +4,7 @@ import { CalendarCheck, Mail, Phone } from "lucide-react";
 import { ContactForm } from "@/components/contact-form";
 import { ContentImage } from "@/components/content-image";
 import { firstCall, process } from "@/lib/content";
+import { gaTrackAttrs } from "@/lib/ga-track";
 import { bookingHref, bookingLinkExternal, site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -44,6 +45,7 @@ export default function ContactPage() {
           <a
             href="#nachricht"
             className="group flex flex-col rounded-lg bg-navy p-7 text-cream transition-colors hover:bg-brand"
+            {...gaTrackAttrs("contact_channel", { channel: "form", placement: "kontakt_card" })}
           >
             <Mail className="size-6" aria-hidden />
             <h2 className="mt-6 text-xl">Erstgespräch anfragen</h2>
@@ -62,6 +64,7 @@ export default function ContactPage() {
                 ? { target: "_blank", rel: "noopener noreferrer" }
                 : {})}
               className="group flex flex-col rounded-lg border border-ink/15 bg-white p-7 transition-colors hover:border-ink/40"
+              {...gaTrackAttrs("contact_channel", { channel: "booking", placement: "kontakt_card" })}
             >
               <CalendarCheck className="size-6 text-navy" aria-hidden />
               <h2 className="mt-6 text-xl">Termin direkt wählen</h2>
@@ -77,6 +80,7 @@ export default function ContactPage() {
             <a
               href={bookingHref}
               className="group flex flex-col rounded-lg border border-ink/15 bg-white p-7 transition-colors hover:border-ink/40"
+              {...gaTrackAttrs("contact_channel", { channel: "booking_email", placement: "kontakt_card" })}
             >
               <CalendarCheck className="size-6 text-navy" aria-hidden />
               <h2 className="mt-6 text-xl">Termin per E-Mail</h2>
@@ -91,6 +95,7 @@ export default function ContactPage() {
           <a
             href={site.phoneHref}
             className="group flex flex-col rounded-lg border border-ink/15 bg-white p-7 transition-colors hover:border-ink/40"
+            {...gaTrackAttrs("contact_channel", { channel: "phone", placement: "kontakt_card" })}
           >
             <Phone className="size-6 text-navy" aria-hidden />
             <h2 className="mt-6 text-xl">Direkt anrufen</h2>
@@ -143,7 +148,11 @@ export default function ContactPage() {
               <div>
                 <dt className="text-sm text-ink/50">E-Mail</dt>
                 <dd className="mt-1">
-                  <a href={`mailto:${site.email}`} className="text-brand hover:underline">
+                  <a
+                    href={`mailto:${site.email}`}
+                    className="text-brand hover:underline"
+                    {...gaTrackAttrs("contact_channel", { channel: "email", placement: "kontakt_sidebar" })}
+                  >
                     {site.email}
                   </a>
                 </dd>

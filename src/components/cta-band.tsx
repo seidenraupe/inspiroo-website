@@ -2,6 +2,7 @@ import Link from "next/link";
 
 import { FirstCallCta } from "@/components/first-call-cta";
 import { closing } from "@/lib/content";
+import { gaTrackAttrs } from "@/lib/ga-track";
 import { site } from "@/lib/site";
 
 export function CtaBand() {
@@ -14,16 +15,18 @@ export function CtaBand() {
         </h2>
         <p className="measure mt-6 text-cream/75">{closing.body}</p>
         <div className="mt-10 flex flex-col gap-5 sm:flex-row sm:items-center">
-          <FirstCallCta variant="cream" />
+          <FirstCallCta variant="cream" placement="cta_band" />
           <a
             href={site.phoneHref}
             className="text-lg text-cream underline decoration-cream/30 underline-offset-4 hover:decoration-cream"
+            {...gaTrackAttrs("contact_channel", { channel: "phone", placement: "cta_band" })}
           >
             {site.phone}
           </a>
           <Link
             href="/#kurz-check"
             className="text-lg text-cream underline decoration-cream/30 underline-offset-4 hover:decoration-cream"
+            {...gaTrackAttrs("cta_kurz_check", { placement: "cta_band" })}
           >
             Standortbestimmung: Wo steht Ihr KMU?
           </Link>

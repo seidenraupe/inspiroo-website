@@ -8,6 +8,7 @@ import { ProcessSteps } from "@/components/process-steps";
 import { SectionHeading } from "@/components/section-heading";
 import { Testimonial } from "@/components/testimonial";
 import { services, servicesIntro } from "@/lib/content";
+import { gaTrackAttrs } from "@/lib/ga-track";
 
 export const metadata: Metadata = {
   title: "Zusammenarbeit mit KMU: Boxen-Stopp, Co-Pilot, Navigator, Masterplan",
@@ -42,6 +43,7 @@ export default function ZusammenarbeitPage() {
           <Link
             href="/#kurz-check"
             className="font-semibold text-navy underline decoration-navy/30 underline-offset-4 hover:decoration-navy"
+            {...gaTrackAttrs("cta_kurz_check", { placement: "zusammenarbeit" })}
           >
             Standortbestimmung: Wo steht Ihr KMU?
           </Link>

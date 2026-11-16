@@ -19,6 +19,7 @@ import {
   services,
 } from "@/lib/content";
 import { FirstCallCta } from "@/components/first-call-cta";
+import { gaTrackAttrs } from "@/lib/ga-track";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -39,10 +40,11 @@ export default function HomePage() {
             {hero.lead}
           </p>
           <div className="mt-9 flex flex-col gap-4 sm:flex-row sm:items-center">
-            <FirstCallCta />
+            <FirstCallCta placement="hero" />
             <Link
               href="#kurz-check"
               className="inline-flex items-center gap-2 px-1 text-ink underline decoration-ink/30 underline-offset-4 hover:decoration-ink"
+              {...gaTrackAttrs("cta_kurz_check", { placement: "hero" })}
             >
               Standortbestimmung: Wo steht Ihr KMU?
             </Link>

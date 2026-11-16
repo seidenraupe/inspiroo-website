@@ -12,6 +12,8 @@ type FirstCallCtaProps = {
   children?: ReactNode;
   className?: string;
   onClick?: () => void;
+  /** Zur Unterscheidung in GA4 (z. B. hero, header_mobile, cta_band). */
+  placement?: string;
 };
 
 export function FirstCallCta({
@@ -19,6 +21,7 @@ export function FirstCallCta({
   children = "Unverbindliches Erstgespräch anfragen",
   className,
   onClick,
+  placement = "default",
 }: FirstCallCtaProps) {
   const ref = useRef<HTMLAnchorElement>(null);
   const [mobileWrapped, setMobileWrapped] = useState(false);
@@ -64,6 +67,7 @@ export function FirstCallCta({
     trackEvent("cta_first_call", {
       link_url: firstCallHref,
       outbound: firstCallLinkExternal,
+      placement,
     });
     onClick?.();
   };

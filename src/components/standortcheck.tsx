@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 import { trackEvent } from "@/lib/analytics";
+import { gaTrackAttrs } from "@/lib/ga-track";
 import {
   CHECK_QUESTIONS,
   CHECK_RESULTS,
@@ -205,12 +206,20 @@ export function Standortcheck() {
               <Link
                 href={`/kontakt/?thema=${evaluation.primary.key}#nachricht`}
                 className="inline-flex items-center justify-center rounded-md bg-navy px-5 py-3 text-sm font-semibold text-cream transition-colors hover:bg-brand"
+                {...gaTrackAttrs("standortcheck_cta", {
+                  action: "discuss",
+                  format: evaluation.primary.key,
+                })}
               >
                 15 Min. unverbindlich besprechen
               </Link>
               <Link
                 href={`/zusammenarbeit/#${evaluation.primary.key}`}
                 className="inline-flex items-center justify-center rounded-md border border-ink/15 bg-white px-5 py-3 text-sm font-semibold text-ink transition-colors hover:border-ink/40"
+                {...gaTrackAttrs("standortcheck_cta", {
+                  action: "format_detail",
+                  format: evaluation.primary.key,
+                })}
               >
                 Format «{evaluation.primary.title}» im Detail
               </Link>

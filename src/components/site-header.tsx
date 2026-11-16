@@ -14,7 +14,8 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { FirstCallCta } from "@/components/first-call-cta";
-import { firstCallHref, navigation, site } from "@/lib/site";
+import { gaTrackAttrs } from "@/lib/ga-track";
+import { firstCallHref, firstCallLinkExternal, navigation, site } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
 export function SiteHeader() {
@@ -47,6 +48,11 @@ export function SiteHeader() {
             href={firstCallHref}
             aria-current={pathname.startsWith("/kontakt") ? "page" : undefined}
             className="inline-flex h-10 items-center rounded-md bg-navy px-4 text-[0.95rem] font-semibold text-cream transition-colors hover:bg-brand"
+            {...gaTrackAttrs("cta_first_call", {
+              placement: "header_desktop",
+              link_url: firstCallHref,
+              outbound: firstCallLinkExternal,
+            })}
           >
             Kontakt
           </Link>
@@ -76,11 +82,12 @@ export function SiteHeader() {
               ))}
             </nav>
             <div className="mt-8 flex flex-col gap-3 px-4">
-              <FirstCallCta onClick={() => setMenuOpen(false)} />
+              <FirstCallCta placement="header_mobile" onClick={() => setMenuOpen(false)} />
               <a
                 href={site.phoneHref}
                 onClick={() => setMenuOpen(false)}
                 className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-ink/15 text-ink"
+                {...gaTrackAttrs("contact_channel", { channel: "phone", placement: "header_mobile" })}
               >
                 <Phone className="size-4" />
                 {site.phone}

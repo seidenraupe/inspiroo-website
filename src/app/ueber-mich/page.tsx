@@ -29,7 +29,7 @@ export default function AboutPage() {
           <h1 className="mt-4 text-4xl text-balance sm:text-5xl">{about.title}</h1>
           <p className="mt-6 text-xl leading-relaxed text-ink/80">{about.intro}</p>
           <div className="mt-8 flex flex-wrap gap-x-6 gap-y-3">
-            <FirstCallCta className="w-auto" />
+            <FirstCallCta className="w-auto" placement="about" />
             <a
               href={site.founder.linkedin}
               target="_blank"

@@ -64,7 +64,7 @@ export function ContactFormEnhance() {
         });
         const result = (await response.json()) as { success?: boolean };
         if (!response.ok || !result.success) throw new Error("submit failed");
-        trackEvent("contact_form_submit", { method: "web3forms" });
+        trackEvent("contact_form_submit", { method: "web3forms", placement: "contact_form" });
         form.reset();
         hint?.setAttribute("hidden", "");
         form.setAttribute("hidden", "");

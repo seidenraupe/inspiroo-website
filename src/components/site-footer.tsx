@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { BrandMark } from "@/components/brand-mark";
+import { gaTrackAttrs } from "@/lib/ga-track";
 import { footerNavigation, site } from "@/lib/site";
 
 export function SiteFooter() {
@@ -39,12 +40,20 @@ export function SiteFooter() {
               {site.address.zip} {site.address.city}
             </li>
             <li>
-              <a href={site.phoneHref} className="hover:text-ink">
+              <a
+                href={site.phoneHref}
+                className="hover:text-ink"
+                {...gaTrackAttrs("contact_channel", { channel: "phone", placement: "footer" })}
+              >
                 {site.phone}
               </a>
             </li>
             <li>
-              <a href={`mailto:${site.email}`} className="hover:text-ink">
+              <a
+                href={`mailto:${site.email}`}
+                className="hover:text-ink"
+                {...gaTrackAttrs("contact_channel", { channel: "email", placement: "footer" })}
+              >
                 {site.email}
               </a>
             </li>
@@ -54,6 +63,10 @@ export function SiteFooter() {
                 target="_blank"
                 rel="noreferrer"
                 className="text-brand underline decoration-brand/30 underline-offset-4 hover:decoration-brand"
+                {...gaTrackAttrs("contact_channel", {
+                  channel: "linkedin_personal",
+                  placement: "footer",
+                })}
               >
                 Thomas Giger auf LinkedIn
               </a>
@@ -64,6 +77,10 @@ export function SiteFooter() {
                 target="_blank"
                 rel="noreferrer"
                 className="text-brand underline decoration-brand/30 underline-offset-4 hover:decoration-brand"
+                {...gaTrackAttrs("contact_channel", {
+                  channel: "linkedin_company",
+                  placement: "footer",
+                })}
               >
                 inspiroo auf LinkedIn
               </a>
