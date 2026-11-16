@@ -5,6 +5,7 @@
  * - Seitenaufrufe (gtag config + Client-Navigation)
  * - `cta_first_call`, `contact_channel`, `contact_form_submit`
  * - `standortcheck_result`, `standortcheck_cta`, `cta_kurz_check`, `reference_filter`
+ * - `cta_format`, `reference_outbound`
  */
 
 declare global {

@@ -1,6 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
 
 import { DraftHint } from "@/components/draft-hint";
+import { gaTrackAttrs } from "@/lib/ga-track";
 import type { CaseStudy as CaseStudyData } from "@/lib/references";
 
 const rows = [
@@ -9,7 +10,13 @@ const rows = [
   { key: "result", label: "Ergebnis" },
 ] as const;
 
-export function CaseStudy({ item }: { item: CaseStudyData }) {
+type CaseStudyProps = {
+  item: CaseStudyData;
+  /** Kontext für `reference_outbound` in GA4. */
+  outboundPlacement?: "referenzen_case_study" | "home_featured";
+};
+
+export function CaseStudy({ item, outboundPlacement = "referenzen_case_study" }: CaseStudyProps) {
   return (
     <article className="grid gap-8 py-12 lg:grid-cols-[minmax(0,17rem)_minmax(0,1fr)] lg:gap-14">
       <div className="min-w-0">
@@ -22,6 +29,13 @@ export function CaseStudy({ item }: { item: CaseStudyData }) {
             target="_blank"
             rel="noreferrer"
             className="mt-4 inline-flex items-center gap-1 text-sm text-brand underline decoration-brand/30 underline-offset-4 hover:decoration-brand"
+            {...gaTrackAttrs("reference_outbound", {
+              placement: outboundPlacement,
+              reference_id: item.id,
+              link_url: item.link.href,
+              link_label: item.link.label,
+              outbound: true,
+            })}
           >
             {item.link.label}
             <ArrowUpRight className="size-3.5" />

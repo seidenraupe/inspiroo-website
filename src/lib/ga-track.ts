@@ -16,6 +16,8 @@ export function gaTrackAttrs(
     link_url: "data-ga-link-url",
     outbound: "data-ga-outbound",
     category: "data-ga-category",
+    reference_id: "data-ga-reference-id",
+    link_label: "data-ga-link-label",
   };
 
   for (const [key, value] of Object.entries(params)) {

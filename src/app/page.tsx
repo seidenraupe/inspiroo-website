@@ -105,6 +105,10 @@ export default function HomePage() {
               <Link
                 href={`/zusammenarbeit/#${service.slug}`}
                 className="mt-6 inline-flex items-center gap-2 font-semibold text-navy underline decoration-navy/30 underline-offset-4 hover:decoration-navy"
+                {...gaTrackAttrs("cta_format", {
+                  format: service.slug,
+                  placement: "home_formats",
+                })}
               >
                 Zum Format {service.title}
                 <ArrowRight className="size-4" />

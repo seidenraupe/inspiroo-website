@@ -13,6 +13,8 @@ const DATASET_TO_PARAM: Record<string, string> = {
   gaLinkUrl: "link_url",
   gaOutbound: "outbound",
   gaCategory: "category",
+  gaReferenceId: "reference_id",
+  gaLinkLabel: "link_label",
 };
 
 /** Liest `data-ga-*`-Attribute von geklickten Links und Buttons. */

@@ -1,6 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
 
 import { DraftHint } from "@/components/draft-hint";
+import { gaTrackAttrs } from "@/lib/ga-track";
 import { referenceCategories, references } from "@/lib/references";
 
 function filterDomId(category: string) {
@@ -90,6 +91,13 @@ export function ReferenceCatalog() {
                     target="_blank"
                     rel="noreferrer"
                     className="inline-flex items-center gap-1 text-sm text-brand underline decoration-brand/30 underline-offset-4 hover:decoration-brand"
+                    {...gaTrackAttrs("reference_outbound", {
+                      placement: "reference_catalog",
+                      reference_id: item.id,
+                      link_url: link.href,
+                      link_label: link.label,
+                      outbound: true,
+                    })}
                   >
                     {link.label}
                     <ArrowUpRight className="size-3.5" />

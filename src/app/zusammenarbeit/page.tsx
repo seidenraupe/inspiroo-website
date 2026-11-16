@@ -32,6 +32,10 @@ export default function ZusammenarbeitPage() {
               key={service.slug}
               href={`#${service.slug}`}
               className="rounded-md border border-ink/15 bg-white px-4 py-2 text-base text-ink/80 transition-colors hover:border-ink/40 hover:text-ink"
+              {...gaTrackAttrs("cta_format", {
+                format: service.slug,
+                placement: "zusammenarbeit_nav",
+              })}
             >
               <span className="mr-2 text-violet">{service.number}</span>
               {service.title}
