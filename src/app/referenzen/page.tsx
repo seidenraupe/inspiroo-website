@@ -76,7 +76,7 @@ export default function ReferencesPage() {
         <SectionHeading
           kicker="Alle Mandate"
           title="Strategie, Innovation, Sparring und Lehre"
-          body="Eine Übersicht aktueller und abgeschlossener Begleitungen – vom Verwaltungsratsmandat bis zum Praxis-Referat."
+          body="Eine Auswahl aktueller und abgeschlossener Begleitungen – vom Verwaltungsratsmandat bis zum Praxis-Referat."
         />
         <div className="mt-12">
           <ReferenceCatalog />
