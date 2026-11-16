@@ -86,7 +86,7 @@ export const clientVoices = {
   zhaw: {
     id: "zhaw-sml",
     person: "Fabian Danko",
-    role: "Dozent",
+    role: "Deputy Head Team Corporate Finance & Corporate Banking",
     company: "ZHAW School of Management and Law",
     logo: { src: "/logos/zhaw.png", width: 256, height: 256 },
     quote: null,
