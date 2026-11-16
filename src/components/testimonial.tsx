@@ -79,6 +79,7 @@ function CompanyLogo({ voice, className }: { voice: ClientVoice; className?: str
     <div
       className={cn(
         "flex h-14 shrink-0 items-center",
+        voice.logo.slotClassName,
         voice.logo.onDark && "self-start rounded-md bg-navy px-3",
         className,
       )}

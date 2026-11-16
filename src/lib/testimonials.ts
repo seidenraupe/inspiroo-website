@@ -11,6 +11,8 @@ export type ClientVoice = {
     onDark?: boolean;
     /** Abweichung von der Standard-Logo-Skalierung in Testimonial-Karten. */
     imageClassName?: string;
+    /** Höhere Logo-Zeile, falls das Motiv feine Linien hat. */
+    slotClassName?: string;
   };
   /** Freigegebenes Zitat. Solange null, wird `sample` als markiertes Muster gezeigt. */
   quote: string | null;
@@ -58,10 +60,12 @@ export const clientVoices = {
     role: "Präsident",
     company: "Historischer Verein Winterthur / Museum Schaffen",
     logo: {
-      src: "/logos/museum-schaffen.png",
-      width: 272,
-      height: 92,
-      imageClassName: "max-h-12 sm:max-h-[3.25rem]",
+      src: "/logos/museum-schaffen.svg",
+      width: 268,
+      height: 86,
+      slotClassName: "h-16 sm:h-[4.25rem]",
+      imageClassName:
+        "max-h-14 w-[13.25rem] max-w-none sm:max-h-16 sm:w-[14.75rem]",
     },
     quote:
       "Mit schlankeren, durchgängig digitalen Prozessen für unsere Mitgliederverwaltung und Veranstaltungen sparen wir im Vorstand heute spürbar Zeit und Geld. Gleichzeitig sind diese Verbesserungen auch für unsere Mitglieder dank einer neuen, modernen Website direkt und einladend erlebbar. Thomas hat das Ganze äusserst pragmatisch, strukturiert und mit viel Verständnis für die spezifischen Bedürfnisse eines Kulturbetriebs umgesetzt.",

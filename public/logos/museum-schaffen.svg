@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268 86" role="img" aria-label="Museum Schaffen Winterthur">
+  <g fill="#111" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15.5" font-weight="500" letter-spacing="0.04em">
+    <text x="0" y="20">MUSEUM SCHAFFEN</text>
+    <text x="0" y="52">WINTERTHUR</text>
+  </g>
+  <g stroke="#111" stroke-width="1.15" shape-rendering="crispEdges">
+    <line x1="0" y1="28.5" x2="268" y2="28.5" />
+    <line x1="0" y1="60.5" x2="268" y2="60.5" />
+    <line x1="0" y1="84.5" x2="268" y2="84.5" />
+  </g>
+</svg>
