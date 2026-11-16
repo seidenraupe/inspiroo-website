@@ -136,7 +136,7 @@ Es heisst: gemeinsam die wirtschaftliche Realität sortieren, die **2–3 Hebel*
 
 Für Inhaber und GL, die unter Zeitdruck Klarheit wollen, nicht noch ein Strategieprojekt.
 
-Format & Ablauf auf **[Link /services]**
+Format & Ablauf auf **[Link /zusammenarbeit]**
 
 ---
 

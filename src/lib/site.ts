@@ -71,7 +71,7 @@ export const bookingLinkExternal = Boolean(site.bookingUrl);
 /** Inhaltsseiten – Erstgespräch/Kontakt nur über den Header-CTA oder Footer. */
 export const navigation = [
   { href: "/", label: "Home" },
-  { href: "/services", label: "Zusammenarbeit" },
+  { href: "/zusammenarbeit", label: "Zusammenarbeit" },
   { href: "/referenzen", label: "Referenzen" },
   { href: "/ueber-mich", label: "Über mich" },
 ] as const;

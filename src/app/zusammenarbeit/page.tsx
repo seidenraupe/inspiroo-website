@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "Standortbestimmung, Sparring für CEO und Geschäftsleitung, Begleitung der Umsetzung und Strategieentwicklung: vier Formen der Zusammenarbeit für KMU in der Schweiz – mit der Erfahrung eines ehemaligen CEO.",
 };
 
-export default function ServicesPage() {
+export default function ZusammenarbeitPage() {
   return (
     <>
       <section className="mx-auto max-w-6xl px-5 pt-14 pb-10 sm:px-8 sm:pt-20">

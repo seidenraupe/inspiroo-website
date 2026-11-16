@@ -100,7 +100,7 @@ export default function HomePage() {
               </h3>
               <p className="mt-4 flex-1 text-base leading-relaxed text-ink/75">{service.situation}</p>
               <Link
-                href={`/services#${service.slug}`}
+                href={`/zusammenarbeit#${service.slug}`}
                 className="mt-6 inline-flex items-center gap-2 font-semibold text-navy underline decoration-navy/30 underline-offset-4 hover:decoration-navy"
               >
                 Zum Format {service.title}
