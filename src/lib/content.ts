@@ -334,7 +334,7 @@ export const leadershipProjects = [
     body: "Was man nicht messen kann, lässt sich auch nicht verbessern. Nach diesem Grundsatz richteten wir an allen Kontaktpunkten Messungen zur Kundenzufriedenheit ein. Parallel erhoben wir Kundenrückmeldungen auf öffentlichen Plattformen und nutzten zeitweise Mystery-Shopping. Alle Resultate bauten wir konsequent in die Führungs- und Ausbildungsarbeit ein.",
   },
   {
-    title: "Expansionsstrategie und Umsetzung",
+    title: "Expansion",
     body: "Für das Filialnetz starteten wir eine umfassende Modernisierung, die wir investitionsschonend über mehrere Jahre verteilten. Dabei berücksichtigten wir die Ertragslage und -aussichten der Standorte und entwickelten das Netz in allen Landesteilen laufend weiter.",
   },
   {
