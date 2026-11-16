@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
-import { CaseStudy } from "@/components/case-study";
+import { HomeFeaturedCaseStudies } from "@/components/home-featured-case-studies";
 import { ContentImage } from "@/components/content-image";
 import { CtaBand } from "@/components/cta-band";
 import { HomeTestimonialsLazy } from "@/components/home-testimonials-lazy";
@@ -17,7 +17,6 @@ import {
   principles,
   services,
 } from "@/lib/content";
-import { caseStudies } from "@/lib/references";
 import { FirstCallCta } from "@/components/first-call-cta";
 import { site } from "@/lib/site";
 
@@ -164,11 +163,7 @@ export default function HomePage() {
               Alle Referenzen <ArrowRight className="size-4" />
             </Link>
           </div>
-          <div className="mt-8 divide-y divide-ink/10 border-b border-ink/10">
-            {caseStudies.slice(0, 3).map((item) => (
-              <CaseStudy key={item.id} item={item} />
-            ))}
-          </div>
+          <HomeFeaturedCaseStudies />
         </div>
       </section>
 

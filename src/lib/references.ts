@@ -30,6 +30,8 @@ export type CaseStudy = {
   link?: { label: string; href: string };
   /** Ausgangslage oder Ergebnis noch nicht vom Mandanten bestätigt. */
   draft?: boolean;
+  /** Anonymisierte Mandatsdarstellung (kein Firmenname auf der Startseite). */
+  anonymized?: boolean;
 };
 
 export const referenceCategories: Array<ReferenceCategory | "Alle"> = [
@@ -244,6 +246,7 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     id: "restaurant",
+    anonymized: true,
     client: "Inhabergeführtes Restaurant",
     sector: "Gastronomie",
     tags: ["Website", "Online-Reservation", "Reputations-Management"],
@@ -270,6 +273,7 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     id: "handel-lebensmittel",
+    anonymized: true,
     client: "Inhabergeführtes Handelsunternehmen",
     sector: "Lebensmittelbranche, Ostschweiz",
     tags: ["Coaching", "Sparring Geschäftsleitung", "Führungs-Cockpit", "Organisation"],
@@ -295,6 +299,7 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     id: "gebaeudeloesungen",
+    anonymized: true,
     client: "Anbieter digitaler Gebäudelösungen",
     sector: "PropTech / Immobilienbranche",
     tags: ["Strategie", "Product-Market-Fit", "Rollout-Planung"],
