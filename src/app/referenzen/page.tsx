@@ -29,7 +29,7 @@ export default function ReferencesPage() {
           as="h1"
           kicker="Referenzen"
           title="Was ich heute bewirke – was ich als Unternehmensleiter verantwortet habe"
-          body="Auf dieser Seite findest Du beides: meine heutigen Mandate und die Veränderungen, die ich zuvor als CEO selbst verantwortet habe. Beschrieben ist jeweils mein tatsächlicher Beitrag – ohne erfundene Kennzahlen."
+          body="Auf dieser Seite finden Sie beides: meine heutigen Mandate und die Veränderungen, die ich zuvor als CEO selbst verantwortet habe. Beschrieben ist jeweils mein tatsächlicher Beitrag – ohne erfundene Kennzahlen."
         />
         <nav aria-label="Abschnitte" className="mt-10 flex flex-wrap gap-2 text-base">
           {[

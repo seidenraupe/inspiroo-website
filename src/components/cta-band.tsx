@@ -25,7 +25,7 @@ export function CtaBand() {
             href="/#kurz-check"
             className="text-lg text-cream underline decoration-cream/30 underline-offset-4 hover:decoration-cream"
           >
-            Standortbestimmung: Wo steht Dein KMU?
+            Standortbestimmung: Wo steht Ihr KMU?
           </Link>
         </div>
       </div>

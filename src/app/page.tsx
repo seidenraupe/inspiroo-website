@@ -44,7 +44,7 @@ export default function HomePage() {
               href="#kurz-check"
               className="inline-flex items-center gap-2 px-1 text-ink underline decoration-ink/30 underline-offset-4 hover:decoration-ink"
             >
-              Standortbestimmung: Wo steht Dein KMU?
+              Standortbestimmung: Wo steht Ihr KMU?
             </Link>
           </div>
         </div>

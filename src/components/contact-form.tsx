@@ -69,9 +69,9 @@ export function ContactForm() {
   if (status === "sent") {
     return (
       <div className="rounded-lg border border-navy/15 bg-cream p-7" role="status">
-        <p className="text-xl font-semibold">Herzlichen Dank für Deine Nachricht.</p>
+        <p className="text-xl font-semibold">Herzlichen Dank für Ihre Nachricht.</p>
         <p className="mt-2 text-ink/70">
-          Ich habe sie erhalten und melde mich rasch persönlich bei Dir.
+          Ich habe sie erhalten und melde mich rasch persönlich bei Ihnen.
         </p>
         <button
           type="button"
@@ -106,7 +106,7 @@ export function ContactForm() {
             type="email"
             required
             autoComplete="email"
-            placeholder="du@firma.ch"
+            placeholder="name@firma.ch"
           />
         </label>
       </div>
@@ -115,23 +115,23 @@ export function ContactForm() {
         <Input name="phone" type="tel" autoComplete="tel" placeholder="+41 …" />
       </label>
       <label className="block text-sm">
-        <span className="mb-1.5 block text-ink/70">Worüber möchtest Du sprechen?</span>
+        <span className="mb-1.5 block text-ink/70">Worüber möchten Sie sprechen?</span>
         <Textarea
           name="message"
           required
           rows={6}
           value={message}
           onChange={(event) => setMessage(event.target.value)}
-          placeholder="Kurz Deine Situation, die offene Frage und was Du Dir als nächsten Schritt vorstellst."
+          placeholder="Kurz Ihre Situation, die offene Frage und was Sie sich als nächsten Schritt vorstellen."
         />
         {fromCheck ? (
           <span className="mt-2 block text-xs leading-relaxed text-ink/55">
-            Vorschlag aus dem Kurz-Check – Du kannst den Text vor dem Senden anpassen.
+            Vorschlag aus dem Kurz-Check – Sie können den Text vor dem Senden anpassen.
           </span>
         ) : null}
       </label>
       <p className="text-xs leading-relaxed text-ink/55">
-        Mit dem Absenden werden Deine Angaben zur Bearbeitung der Anfrage
+        Mit dem Absenden werden Ihre Angaben zur Bearbeitung der Anfrage
         übermittelt. Details in der{" "}
         <Link href="/datenschutz" className="underline underline-offset-2 hover:text-ink">
           Datenschutzerklärung
@@ -140,7 +140,7 @@ export function ContactForm() {
       </p>
       {status === "invalid" ? (
         <p className="text-sm text-destructive" role="alert">
-          Bitte Name, eine gültige E-Mail-Adresse und Deine Nachricht ausfüllen.
+          Bitte Name, eine gültige E-Mail-Adresse und Ihre Nachricht ausfüllen.
         </p>
       ) : null}
       {status === "failed" ? (

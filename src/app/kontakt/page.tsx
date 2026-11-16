@@ -48,8 +48,8 @@ export default function ContactPage() {
             <Mail className="size-6" aria-hidden />
             <h2 className="mt-6 text-xl">Erstgespräch anfragen</h2>
             <p className="mt-2 flex-1 text-base text-cream/75">
-              Schildere Deine Situation in ein paar Sätzen – ich melde mich rasch
-              bei Dir und schlage einen Termin vor.
+              Schildern Sie Ihre Situation in ein paar Sätzen – ich melde mich rasch
+              bei Ihnen und schlage einen Termin vor.
             </p>
             <span className="mt-6 font-semibold underline decoration-cream/40 underline-offset-4 group-hover:decoration-cream">
               Zum Formular
@@ -66,7 +66,7 @@ export default function ContactPage() {
               <CalendarCheck className="size-6 text-navy" aria-hidden />
               <h2 className="mt-6 text-xl">Termin direkt wählen</h2>
               <p className="mt-2 flex-1 text-base text-ink/65">
-                Wenn Du bereits einen freien Termin im Kalender buchen möchtest.
+                Wenn Sie bereits einen freien Termin im Kalender buchen möchten.
               </p>
               <span className="mt-6 font-semibold text-navy underline decoration-navy/30 underline-offset-4">
                 Kalender öffnen
@@ -80,7 +80,7 @@ export default function ContactPage() {
               <CalendarCheck className="size-6 text-navy" aria-hidden />
               <h2 className="mt-6 text-xl">Termin per E-Mail</h2>
               <p className="mt-2 flex-1 text-base text-ink/65">
-                Vorbereitete E-Mail mit Deinen Terminvorschlägen.
+                Vorbereitete E-Mail mit Ihren Terminvorschlägen.
               </p>
               <span className="mt-6 font-semibold text-navy underline decoration-navy/30 underline-offset-4">
                 Termin anfragen
@@ -94,7 +94,7 @@ export default function ContactPage() {
             <Phone className="size-6 text-navy" aria-hidden />
             <h2 className="mt-6 text-xl">Direkt anrufen</h2>
             <p className="mt-2 flex-1 text-base text-ink/65">
-              Am schnellsten klären wir Deine Frage am Telefon.
+              Am schnellsten klären wir Ihre Frage am Telefon.
             </p>
             <span className="mt-6 text-lg font-semibold text-navy">{site.phone}</span>
           </a>
@@ -106,7 +106,7 @@ export default function ContactPage() {
           <div id="nachricht" className="scroll-mt-24">
             <h2 className="text-3xl">Nachricht schreiben</h2>
             <p className="mt-3 text-base text-ink/60">
-              Schildere Deine Situation in ein paar Sätzen. Die Nachricht kommt
+              Schildern Sie Ihre Situation in ein paar Sätzen. Die Nachricht kommt
               direkt bei mir an.
             </p>
             <div className="mt-8">

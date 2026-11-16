@@ -40,11 +40,11 @@ export const audience = {
 export const principles = {
   kicker: "Was meine Zusammenarbeit auszeichnet",
   title: "Sparring auf Augenhöhe – von jemandem, der selbst geführt hat",
-  body: "Mit dem Blick von aussen und der Erfahrung von innen schärfe ich Deinen Fokus und setze mit Dir die richtigen Prioritäten für nachhaltigen Erfolg.",
+  body: "Mit dem Blick von aussen und der Erfahrung von innen schärfe ich Ihren Fokus und setze mit Ihnen die richtigen Prioritäten für nachhaltigen Erfolg.",
   items: [
     {
       title: "Unabhängig",
-      body: "Ich verkaufe keine Software, keine Standardmethodik und keine Folgeaufträge. Meine Empfehlungen orientieren sich ausschliesslich an Deinem Unternehmen.",
+      body: "Ich verkaufe keine Software, keine Standardmethodik und keine Folgeaufträge. Meine Empfehlungen orientieren sich ausschliesslich an Ihrem Unternehmen.",
     },
     {
       title: "Unternehmerisch",
@@ -52,7 +52,7 @@ export const principles = {
     },
     {
       title: "Pragmatisch",
-      body: "Lieber drei richtige Prioritäten als dreissig Folien. Ich arbeite mit dem, was in Deinem Unternehmen vorhanden ist, und mache es wirksamer.",
+      body: "Lieber drei richtige Prioritäten als dreissig Folien. Ich arbeite mit dem, was in Ihrem Unternehmen vorhanden ist, und mache es wirksamer.",
     },
     {
       title: "Umsetzungsorientiert",
@@ -60,7 +60,7 @@ export const principles = {
     },
     {
       title: "Vertrauensvoll",
-      body: "Ich arbeite seit über 30 Jahren mit Inhabern, Verwaltungsräten und Geschäftsleitungen. Was Du mir anvertraust, bleibt bei mir. Ich spreche auch Unbequemes offen an – immer loyal zu Deinem Unternehmen.",
+      body: "Ich arbeite seit über 30 Jahren mit Inhabern, Verwaltungsräten und Geschäftsleitungen. Was Sie mir anvertrauen, bleibt bei mir. Ich spreche auch Unbequemes offen an – immer loyal zu Ihrem Unternehmen.",
     },
   ],
   image: "/images/sparring-whiteboard.webp",
@@ -74,7 +74,7 @@ export const process = {
   steps: [
     {
       title: "Erstgespräch",
-      body: "30 Minuten, unverbindlich und vertraulich. Du schilderst Deine Situation, ich stelle Fragen. Danach wissen wir beide, ob ich für Deine Fragestellung der richtige Sparring-Partner bin.",
+      body: "30 Minuten, unverbindlich und vertraulich. Sie schildern Ihre Situation, ich stelle Fragen. Danach wissen wir beide, ob ich für Ihre Fragestellung der richtige Sparring-Partner bin.",
     },
     {
       title: "Auftragsklärung",
@@ -88,9 +88,9 @@ export const process = {
 } as const;
 
 export const servicesIntro = {
-  kicker: "Wie ich Dich unterstützen kann",
+  kicker: "Wie ich Sie unterstützen kann",
   title: "Gleiche Erfahrung – unterschiedliche Intensität",
-  body: "Die vier Formate sind keine Standardprodukte, sondern eine Orientierung für Dauer und Tiefe der Zusammenarbeit. Was Du bekommst, ist immer dasselbe: meine Erfahrung als Unternehmer, einen unabhängigen Blick und ein ehrliches Gegenüber. Im Erstgespräch klären wir, was Deine Situation braucht – oft ist es eine Mischung der vier Formate. Bei Bedarf ziehe ich spezialisierte Partner aus meinem Netzwerk bei.",
+  body: "Die vier Formate sind keine Standardprodukte, sondern eine Orientierung für Dauer und Tiefe der Zusammenarbeit. Was Sie bekommen, ist immer dasselbe: meine Erfahrung als Unternehmer, einen unabhängigen Blick und ein ehrliches Gegenüber. Im Erstgespräch klären wir, was Ihre Situation braucht – oft ist es eine Mischung der vier Formate. Bei Bedarf ziehe ich spezialisierte Partner aus meinem Netzwerk bei.",
 };
 
 export const services = [
@@ -100,9 +100,9 @@ export const services = [
     title: "Boxen-Stopp",
     problem: "Ich möchte wissen, wo mein Unternehmen wirklich steht.",
     situation:
-      "Der Umsatz wächst, die Marge nicht – oder umgekehrt. Gemeinsam analysieren wir, wo Dein Unternehmen heute Geld verdient, welche Hebel am meisten bewirken und wie Du Profitabilität und Liquidität gezielt stärkst.",
+      "Der Umsatz wächst, die Marge nicht – oder umgekehrt. Gemeinsam analysieren wir, wo Ihr Unternehmen heute Geld verdient, welche Hebel am meisten bewirken und wie Sie Profitabilität und Liquidität gezielt stärken.",
     headline: "Klarheit über die wirtschaftliche Situation und die nächsten Hebel.",
-    body: "Wo steht Dein Unternehmen? Wo liegen ungenutzte Potenziale? Wo lassen sich Kosten senken, ohne an Qualität einzubüssen? Wie innovativ ist Dein Angebot im Vergleich zum Markt? Wie nehmen Kundinnen und Kunden Dein Unternehmen wahr – online und offline? Welche Massnahmen versprechen die grösste Wirkung? Mit dem Blick eines ehemaligen CEO analysiere ich die Ausgangslage und erarbeite mit Dir konkrete Handlungsempfehlungen mit klaren Prioritäten.",
+    body: "Wo steht Ihr Unternehmen? Wo liegen ungenutzte Potenziale? Wo lassen sich Kosten senken, ohne an Qualität einzubüssen? Wie innovativ ist Ihr Angebot im Vergleich zum Markt? Wie nehmen Kundinnen und Kunden Ihr Unternehmen wahr – online und offline? Welche Massnahmen versprechen die grösste Wirkung? Mit dem Blick eines ehemaligen CEO analysiere ich die Ausgangslage und erarbeite mit Ihnen konkrete Handlungsempfehlungen mit klaren Prioritäten.",
     outcomes: [
       "Ehrliche Standortbestimmung zu Markt, Kunden, Zahlen und Organisation",
       "Kurz- und mittelfristige Verbesserungspotenziale",
@@ -120,9 +120,9 @@ export const services = [
     title: "Co-Pilot",
     problem: "Ich brauche einen unabhängigen Gesprächspartner für schwierige Entscheidungen.",
     situation:
-      "Als Unternehmer trägst Du die letzte Verantwortung allein. Ich bin der diskrete Sparring-Partner auf Augenhöhe, mit dem Du strategische Optionen, Nachfolgefragen oder heikle Weichenstellungen offen durchdenken kannst.",
+      "Als Unternehmer tragen Sie die letzte Verantwortung allein. Ich bin der diskrete Sparring-Partner auf Augenhöhe, mit dem Sie strategische Optionen, Nachfolgefragen oder heikle Weichenstellungen offen durchdenken können.",
     headline: "Ein Sparring-Partner, der die Verantwortung eines CEO aus eigener Erfahrung kennt.",
-    body: "Als Unternehmerin oder Unternehmer kannst Du nicht jede Frage mit Deinem Team besprechen. Im vertraulichen Sparring übernehme ich die Rolle des kritischen und lösungsorientierten Fragestellers – im 1:1 oder im Verwaltungsrat und in der Geschäftsleitung. Bei Bedarf recherchiere ich umfassende Analysen oder Benchmark-Studien, die die Diskussion befruchten: So lassen sich Ideen faktenbasiert prüfen und gemeinsam weiterentwickeln.",
+    body: "Als Unternehmerin oder Unternehmer können Sie nicht jede Frage mit Ihrem Team besprechen. Im vertraulichen Sparring übernehme ich die Rolle des kritischen und lösungsorientierten Fragestellers – im 1:1 oder im Verwaltungsrat und in der Geschäftsleitung. Bei Bedarf recherchiere ich umfassende Analysen oder Benchmark-Studien, die die Diskussion befruchten: So lassen sich Ideen faktenbasiert prüfen und gemeinsam weiterentwickeln.",
     outcomes: [
       "Vertraulicher Austausch auf Augenhöhe",
       "Kritische Fragen und neue Perspektiven vor wichtigen Entscheidungen",
@@ -141,9 +141,9 @@ export const services = [
     title: "Navigator",
     problem: "Ich habe Ziele, aber die Umsetzung kommt im Alltag nicht voran.",
     situation:
-      "Ob digitale Transformation, klarere Verantwortlichkeiten oder wirksame Steuerungs-Kennzahlen: Ich unterstütze Dich dabei, Strategie, Organisation und Kultur so weiterzuentwickeln, dass Deine Ziele im Alltag greifen.",
+      "Ob digitale Transformation, klarere Verantwortlichkeiten oder wirksame Steuerungs-Kennzahlen: Ich unterstütze Sie dabei, Strategie, Organisation und Kultur so weiterzuentwickeln, dass Ihre Ziele im Alltag greifen.",
     headline: "Strategie in den Alltag bringen – mit Steuerung, die funktioniert.",
-    body: "Viele Unternehmen wissen, wohin sie wollen. Schwierig wird es im operativen Alltag. Ich begleite Dich über längere Zeit bei der Umsetzung, entwickle mit Dir die wenigen Kennzahlen, mit denen Du Dein Unternehmen wirklich steuerst, und unterstütze bei Planung, Steuerung und Kontrolle von Projekten und Prozessen.",
+    body: "Viele Unternehmen wissen, wohin sie wollen. Schwierig wird es im operativen Alltag. Ich begleite Sie über längere Zeit bei der Umsetzung, entwickle mit Ihnen die wenigen Kennzahlen, mit denen Sie Ihr Unternehmen wirklich steuern, und unterstütze bei Planung, Steuerung und Kontrolle von Projekten und Prozessen.",
     outcomes: [
       "Wenige, aussagekräftige Kennzahlen (KPI), die wirklich steuern",
       "Klare Meilensteine und Verantwortlichkeiten",
@@ -161,9 +161,9 @@ export const services = [
     title: "Masterplan",
     problem: "Ich muss mein Unternehmen strategisch neu ausrichten.",
     situation:
-      "Der Markt verändert sich und die bisherigen Erfolgsrezepte tragen nicht mehr. Von der nüchternen Marktanalyse bis zu verbindlichen Etappenzielen entwickeln wir eine tragfähige Strategie, die Dein Unternehmen zukunftsfähig macht.",
+      "Der Markt verändert sich und die bisherigen Erfolgsrezepte tragen nicht mehr. Von der nüchternen Marktanalyse bis zu verbindlichen Etappenzielen entwickeln wir eine tragfähige Strategie, die Ihr Unternehmen zukunftsfähig macht.",
     headline: "Von der Marktanalyse zur tragfähigen Strategie mit Etappenzielen.",
-    body: "Wenn sich der Markt grundlegend verändert, reichen Korrekturen nicht. Mit Dir analysiere ich Markt, Kunden und Wettbewerb, entwickle eine tragfähige Strategie und übersetze sie in priorisierte Etappenziele – für etablierte Unternehmen genauso wie für junge Firmen in bewegten Märkten.",
+    body: "Wenn sich der Markt grundlegend verändert, reichen Korrekturen nicht. Mit Ihnen analysiere ich Markt, Kunden und Wettbewerb, entwickle eine tragfähige Strategie und übersetze sie in priorisierte Etappenziele – für etablierte Unternehmen genauso wie für junge Firmen in bewegten Märkten.",
     outcomes: [
       "Fundierte Analyse von Markt, Kunden und Wettbewerb",
       "Strategie, die Geschäftsleitung und Verwaltungsrat mittragen",
@@ -276,14 +276,14 @@ export const about = {
 };
 
 export const closing = {
-  title: "Was beschäftigt Dich aktuell in Deinem Unternehmen?",
-  lead: "Lass uns darüber sprechen.",
-  body: "In einem unverbindlichen Erstgespräch besprechen wir Deine aktuelle Herausforderung und klären, ob und wie ich Dich unterstützen kann.",
+  title: "Was beschäftigt Sie aktuell in Ihrem Unternehmen?",
+  lead: "Lassen Sie uns darüber sprechen.",
+  body: "In einem unverbindlichen Erstgespräch besprechen wir Ihre aktuelle Herausforderung und klären, ob und wie ich Sie unterstützen kann.",
 };
 
 export const firstCall = {
-  title: "Lass uns herausfinden, was Dein Unternehmen weiterbringt.",
-  body: "Nach Deiner Kontaktaufnahme besprechen wir in einem unverbindlichen Erstgespräch von 30 Minuten Deine aktuelle Herausforderung und klären, ob ich für Deine Fragestellung der richtige Sparring-Partner bin.",
+  title: "Finden wir heraus, was Ihr Unternehmen weiterbringt.",
+  body: "Nach Ihrer Kontaktaufnahme besprechen wir in einem unverbindlichen Erstgespräch von 30 Minuten Ihre aktuelle Herausforderung und klären, ob ich für Ihre Fragestellung der richtige Sparring-Partner bin.",
   facts: [
     "30 Minuten",
     "Unverbindlich und ohne Auftragsverpflichtung",

@@ -43,7 +43,7 @@ export default function ZusammenarbeitPage() {
             href="/#kurz-check"
             className="font-semibold text-navy underline decoration-navy/30 underline-offset-4 hover:decoration-navy"
           >
-            Standortbestimmung: Wo steht Dein KMU?
+            Standortbestimmung: Wo steht Ihr KMU?
           </Link>
         </p>
       </section>
@@ -67,7 +67,7 @@ export default function ZusammenarbeitPage() {
               </h2>
               <p className="mt-5 text-ink/75">{service.body}</p>
               <h3 className="mt-8 text-sm font-semibold tracking-[0.12em] text-ink/50 uppercase">
-                Was Du bekommst
+                Was Sie bekommen
               </h3>
               <ul className="mt-4 space-y-3">
                 {service.outcomes.map((outcome) => (

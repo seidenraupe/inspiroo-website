@@ -92,11 +92,11 @@ export function Standortcheck() {
           id="standortcheck-heading"
           className="mt-3 text-3xl text-balance sm:text-4xl"
         >
-          Wo steht Dein Unternehmen aktuell – und wo liegt der grösste Hebel?
+          Wo steht Ihr Unternehmen aktuell – und wo liegt der grösste Hebel?
         </h2>
         <p className="mt-4 text-base leading-relaxed text-ink/70">
-          Sechs kurze Fragen aus der Führungspraxis. Keine E-Mail-Adresse nötig – Du
-          siehst Deine Auswertung direkt im Anschluss. Die Antworten bleiben in Deinem
+          Sechs kurze Fragen aus der Führungspraxis. Keine E-Mail-Adresse nötig – Sie
+          sehen Ihre Auswertung direkt im Anschluss. Die Antworten bleiben in Ihrem
           Browser und werden nicht gespeichert.
         </p>
       </div>

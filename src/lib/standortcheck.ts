@@ -24,7 +24,7 @@ export const CHECK_QUESTIONS: CheckQuestion[] = [
   {
     id: 1,
     question:
-      "Wenn Du auf die letzten 12 Monate blickst: Was beschäftigt Dich unternehmerisch am meisten?",
+      "Wenn Sie auf die letzten 12 Monate blicken: Was beschäftigt Sie unternehmerisch am meisten?",
     options: [
       {
         key: "boxen-stopp",
@@ -46,7 +46,7 @@ export const CHECK_QUESTIONS: CheckQuestion[] = [
   },
   {
     id: 2,
-    question: "Wie laufen zentrale Entscheidungen in Deiner Geschäftsleitung aktuell ab?",
+    question: "Wie laufen zentrale Entscheidungen in Ihrer Geschäftsleitung aktuell ab?",
     options: [
       {
         key: "boxen-stopp",
@@ -68,7 +68,7 @@ export const CHECK_QUESTIONS: CheckQuestion[] = [
   },
   {
     id: 3,
-    question: "Was passiert, wenn Du Dir zwei Wochen Auszeit nimmst?",
+    question: "Was passiert, wenn Sie sich zwei Wochen Auszeit nehmen?",
     options: [
       {
         key: "boxen-stopp",
@@ -90,7 +90,7 @@ export const CHECK_QUESTIONS: CheckQuestion[] = [
   },
   {
     id: 4,
-    question: "Wie steht es um Eure Strategie und Ziele?",
+    question: "Wie steht es um Ihre Strategie und Ziele?",
     options: [
       {
         key: "boxen-stopp",
@@ -112,7 +112,7 @@ export const CHECK_QUESTIONS: CheckQuestion[] = [
   },
   {
     id: 5,
-    question: "Wo siehst Du aktuell den grössten Reibungsverlust in der Organisation?",
+    question: "Wo sehen Sie aktuell den grössten Reibungsverlust in der Organisation?",
     options: [
       {
         key: "boxen-stopp",
@@ -135,7 +135,7 @@ export const CHECK_QUESTIONS: CheckQuestion[] = [
   {
     id: 6,
     question:
-      "Wenn Du Dir für die nächsten 90 Tage eine spürbare Entlastung wünschen dürftest: Was wäre das?",
+      "Wenn Sie sich für die nächsten 90 Tage eine spürbare Entlastung wünschen dürften: Was wäre das?",
     options: [
       {
         key: "boxen-stopp",
@@ -163,9 +163,9 @@ export const CHECK_RESULTS: Record<FormatKey, FormatResult> = {
     title: "Boxen-Stopp",
     headline: "Zeit für einen Boxen-Stopp",
     summary:
-      "Deine Antworten deuten darauf hin, dass Dein Unternehmen grundsätzlich auf einem soliden Fundament steht, aber aktuell an Marge, Transparenz oder Fokus verliert. Bevor neue Projekte gestartet werden, lohnt sich ein nüchterner Blick auf Zahlen, Kostenstruktur und Ertragshebel.",
+      "Ihre Antworten deuten darauf hin, dass Ihr Unternehmen grundsätzlich auf einem soliden Fundament steht, aber aktuell an Marge, Transparenz oder Fokus verliert. Bevor neue Projekte gestartet werden, lohnt sich ein nüchterner Blick auf Zahlen, Kostenstruktur und Ertragshebel.",
     action:
-      "In einem kompakten Boxen-Stopp analysieren wir gemeinsam, wo Dein Unternehmen heute wirklich Geld verdient – und welche drei Hebel am schnellsten wirken.",
+      "In einem kompakten Boxen-Stopp analysieren wir gemeinsam, wo Ihr Unternehmen heute wirklich Geld verdient – und welche drei Hebel am schnellsten wirken.",
     secondaryHint:
       "Zudem zeigt sich Handlungsbedarf bei Transparenz und Ertragskraft – hier setzt der Boxen-Stopp an.",
   },
@@ -174,20 +174,20 @@ export const CHECK_RESULTS: Record<FormatKey, FormatResult> = {
     title: "Co-Pilot",
     headline: "Ein unabhängiger Co-Pilot bringt jetzt am meisten",
     summary:
-      "An der Spitze eines KMU trägt man viele Fragen allein. Deine Antworten zeigen, dass nicht ein Konzeptpapier fehlt, sondern ein vertrauliches Gegenüber mit eigener Führungserfahrung, um Optionen durchzudenken und Entscheidungen abzusichern.",
+      "An der Spitze eines KMU trägt man viele Fragen allein. Ihre Antworten zeigen, dass nicht ein Konzeptpapier fehlt, sondern ein vertrauliches Gegenüber mit eigener Führungserfahrung, um Optionen durchzudenken und Entscheidungen abzusichern.",
     action:
-      "Als Dein unabhängiger Co-Pilot begleite ich Dich im vereinbarten Rhythmus – diskret, direkt und ohne eigene Agenda.",
+      "Als Ihr unabhängiger Co-Pilot begleite ich Sie im vereinbarten Rhythmus – diskret, direkt und ohne eigene Agenda.",
     secondaryHint:
       "Gleichzeitig stehen wichtige Führungsentscheidungen im Raum – genau dafür ist der Co-Pilot gedacht.",
   },
   navigator: {
     key: "navigator",
     title: "Navigator",
-    headline: "Mit dem Navigator kommt Eure Strategie auf die Strasse",
+    headline: "Mit dem Navigator kommt Ihre Strategie auf die Strasse",
     summary:
       "Die Richtung stimmt grundsätzlich – aber im Alltag geht zu viel Energie zwischen Zielen, Prozessen und Verantwortlichkeiten verloren. Hier braucht es keine neue Strategie, sondern wirksame Steuerung, klare Rollen und konsequente Umsetzung.",
     action:
-      "Gemeinsam schärfen wir Verantwortlichkeiten, etablieren ein schlankes Führungs-Cockpit und sorgen dafür, dass Eure Prioritäten im Alltag greifen.",
+      "Gemeinsam schärfen wir Verantwortlichkeiten, etablieren ein schlankes Führungs-Cockpit und sorgen dafür, dass Ihre Prioritäten im Alltag greifen.",
     secondaryHint:
       "Ebenso zeigt sich Potenzial bei der Umsetzung im Alltag – dabei unterstützt der Navigator.",
   },
@@ -196,9 +196,9 @@ export const CHECK_RESULTS: Record<FormatKey, FormatResult> = {
     title: "Masterplan",
     headline: "Zeit für einen Masterplan",
     summary:
-      "Dein Umfeld bewegt sich – und die bisherigen Erfolgsrezepte reichen für die nächsten Jahre nicht mehr aus. Jetzt geht es darum, rechtzeitig vom Reagieren ins Gestalten zu kommen und das Unternehmen strategisch neu auszurichten.",
+      "Ihr Umfeld bewegt sich – und die bisherigen Erfolgsrezepte reichen für die nächsten Jahre nicht mehr aus. Jetzt geht es darum, rechtzeitig vom Reagieren ins Gestalten zu kommen und das Unternehmen strategisch neu auszurichten.",
     action:
-      "Von der nüchternen Standort- und Marktanalyse bis zu verbindlichen Etappenzielen entwickeln wir gemeinsam eine Strategie, die zu Deinem Unternehmen passt.",
+      "Von der nüchternen Standort- und Marktanalyse bis zu verbindlichen Etappenzielen entwickeln wir gemeinsam eine Strategie, die zu Ihrem Unternehmen passt.",
     secondaryHint:
       "Darüber hinaus lohnt sich ein Blick auf die langfristige Neuausrichtung im Rahmen eines Masterplans.",
   },
@@ -206,13 +206,13 @@ export const CHECK_RESULTS: Record<FormatKey, FormatResult> = {
 
 export const CHECK_CONTACT_MESSAGES: Record<FormatKey, string> = {
   "boxen-stopp":
-    "Hallo Thomas,\n\nich habe den Standortcheck auf Deiner Website gemacht (Ergebnis: Boxen-Stopp) und möchte mich gern in einem kurzen, unverbindlichen Gespräch über unsere aktuelle Situation austauschen.",
+    "Hallo Thomas,\n\nich habe den Standortcheck auf Ihrer Website gemacht (Ergebnis: Boxen-Stopp) und möchte mich gern in einem kurzen, unverbindlichen Gespräch über unsere aktuelle Situation austauschen.",
   "co-pilot":
-    "Hallo Thomas,\n\nich habe den Standortcheck auf Deiner Website gemacht (Ergebnis: Co-Pilot) und suche ein unabhängiges Sparring für anstehende Entscheidungen.",
+    "Hallo Thomas,\n\nich habe den Standortcheck auf Ihrer Website gemacht (Ergebnis: Co-Pilot) und suche ein unabhängiges Sparring für anstehende Entscheidungen.",
   navigator:
-    "Hallo Thomas,\n\nich habe den Standortcheck auf Deiner Website gemacht (Ergebnis: Navigator) und möchte besprechen, wie wir unsere Ziele im Alltag wirksamer umsetzen.",
+    "Hallo Thomas,\n\nich habe den Standortcheck auf Ihrer Website gemacht (Ergebnis: Navigator) und möchte besprechen, wie wir unsere Ziele im Alltag wirksamer umsetzen.",
   masterplan:
-    "Hallo Thomas,\n\nich habe den Standortcheck auf Deiner Website gemacht (Ergebnis: Masterplan) und möchte unsere strategische Neuausrichtung mit Dir besprechen.",
+    "Hallo Thomas,\n\nich habe den Standortcheck auf Ihrer Website gemacht (Ergebnis: Masterplan) und möchte unsere strategische Neuausrichtung mit Ihnen besprechen.",
 };
 
 export function isFormatKey(value: string | null): value is FormatKey {
