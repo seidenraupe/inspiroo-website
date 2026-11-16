@@ -193,7 +193,7 @@ export default function HomePage() {
           alt={site.founder.name}
           width={1600}
           height={1067}
-          className="aspect-[3/2] w-full max-w-sm rounded-lg object-cover object-[72%_40%]"
+          className="aspect-[3/2] w-full max-w-sm -scale-x-100 rounded-lg object-cover object-[72%_40%]"
         />
         <div>
           <p className="eyebrow">Persönlich</p>
