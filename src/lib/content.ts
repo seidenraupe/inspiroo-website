@@ -3,7 +3,7 @@ import { clientVoices } from "@/lib/testimonials";
 export const hero = {
   kicker: "Strategisches Sparring · Nachfolge & Transformation · KMU-Governance",
   title: "Sparring auf Augenhöhe. Aus eigener Führungserfahrung.",
-  lead: "Ich begleite Unternehmerinnen, Unternehmer und Führungsgremien bei strategischen Weichenstellungen und strategischer Neuausrichtung – unabhängig, diskret und mit der Praxis aus über 30 Jahren C-Level.",
+  lead: "Ich begleite Unternehmerinnen, Unternehmer und Führungsgremien bei unternehmerischen Weichenstellungen und der strategischen Neuausrichtung – unabhängig, diskret und mit der Praxis aus über 30 Jahren C-Level.",
 };
 
 export const experienceFacts = [
