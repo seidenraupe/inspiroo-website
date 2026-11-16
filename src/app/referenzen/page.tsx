@@ -35,7 +35,7 @@ export default function ReferencesPage() {
           {[
             ["#fallstudien", "Fallstudien"],
             ["#stimmen", "Kundenstimmen"],
-            ["#mandate", "Alle Mandate"],
+            ["#mandate", "Mandate"],
             ["#fuehrungserfahrung", "Führungserfahrung"],
           ].map(([href, label]) => (
             <a
