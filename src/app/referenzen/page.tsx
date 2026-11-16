@@ -21,24 +21,9 @@ export default function ReferencesPage() {
         <SectionHeading
           as="h1"
           kicker="Referenzen"
-          title="Was ich heute bewirke – was ich als Unternehmensleiter verantwortet habe"
-          body="Auf dieser Seite finden Sie beides: meine heutigen Mandate und die Veränderungen, die ich zuvor als CEO selbst verantwortet habe. Wo eine Aufgabe beschrieben ist, steht sie beim jeweiligen Mandat – ohne erfundene Kennzahlen."
+          title="Resultate aus der Praxis – im Sparring wie in der eigenen Führung"
+          body="Ob strategische Neuausrichtung, digitale Transformation oder Sparring auf Geschäftsleitungsebene: Hier finden Sie Stimmen meiner Kundinnen und Kunden, ausgewählte Mandate sowie Meilensteine aus meiner Zeit als CEO."
         />
-        <nav aria-label="Abschnitte" className="mt-10 flex flex-wrap gap-2 text-base">
-          {[
-            ["#stimmen", "Kundenstimmen"],
-            ["#mandate", "Mandate"],
-            ["#fuehrungserfahrung", "Führungserfahrung"],
-          ].map(([href, label]) => (
-            <a
-              key={href}
-              href={href}
-              className="rounded-md border border-ink/15 bg-white px-4 py-2 text-ink/80 hover:border-ink/40 hover:text-ink"
-            >
-              {label}
-            </a>
-          ))}
-        </nav>
       </section>
 
       <section id="stimmen" className="scroll-mt-24 bg-sand">

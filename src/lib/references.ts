@@ -105,7 +105,7 @@ export const references: Reference[] = [
       "Seit 1874 engagiert für die Geschichte Winterthurs – Träger von drei Museen, darunter das Museum Schaffen auf dem Lagerplatz.",
     mandates: [
       "Kosteneinsparungen dank verbesserter Prozesse im Mitglieder- und Event-Management",
-      "Neue Website, mit agentischer KI selbst gebaut: API-Anbindung an Event-Datenbank, Mitglieder-Datenbank und Kommunikationsplattform",
+      "Neue Website mit API-Anbindung an Event-, Mitglieder- und Kommunikationsplattform – mit modernen KI-gestützten Workflows schlank und kosteneffizient umgesetzt",
     ],
     categories: ["Innovation"],
     links: [
