@@ -235,11 +235,11 @@ export const caseStudies: CaseStudy[] = [
     id: "home-of-innovation",
     client: "Home of Innovation Winterthur",
     sector: "Innovationsökosystem und Immobilien-Management",
-    tags: ["Strategieentwicklung", "Verwaltungsratspräsidium", "Interims-Management"],
+    tags: ["Strategieentwicklung", "Verwaltungsrats-Präsidium", "Interims-Management"],
     situation:
       "Ein Innovationsökosystem mit unterschiedlichen Anspruchsgruppen, einer ungenügenden Ertragsentwicklung und dem Bedarf nach einer klaren strategischen Ausrichtung.",
     contribution:
-      "Entwicklung und Durchführung eines neuen Strategieprozesses, Übernahme des Verwaltungsratspräsidiums und Unterstützung bei der operativen Weiterentwicklung.",
+      "Entwicklung und Durchführung eines neuen Strategieprozesses, Übernahme des Verwaltungsrats-Präsidiums und Unterstützung bei der operativen Weiterentwicklung.",
     result:
       "Klare strategische Prioritäten und eine deutlich verbesserte Ertragssituation – dank optimierter Flächennutzung, neuer Angebote und eines neuen Pricing-Modells.",
     link: { label: "homeofinnovation.ch", href: "https://homeofinnovation.ch/" },
