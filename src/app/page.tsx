@@ -189,11 +189,11 @@ export default function HomePage() {
 
       <section className="mx-auto grid max-w-6xl items-center gap-12 px-5 py-20 sm:px-8 sm:py-28 md:grid-cols-[0.6fr_1.4fr] md:gap-16">
         <ContentImage
-          src="/thomas-giger.jpg"
+          src="/thomas-giger-home.jpg"
           alt={site.founder.name}
-          width={600}
-          height={600}
-          className="aspect-square w-full max-w-xs rounded-lg object-cover object-[50%_20%]"
+          width={1600}
+          height={1067}
+          className="aspect-[3/2] w-full max-w-sm rounded-lg object-cover object-[72%_40%]"
         />
         <div>
           <p className="eyebrow">Persönlich</p>
