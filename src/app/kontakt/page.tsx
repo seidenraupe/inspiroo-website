@@ -66,7 +66,8 @@ export default function ContactPage() {
               <CalendarCheck className="size-6 text-navy" aria-hidden />
               <h2 className="mt-6 text-xl">Termin direkt wählen</h2>
               <p className="mt-2 flex-1 text-base text-ink/65">
-                Wenn Sie bereits einen freien Termin im Kalender buchen möchten.
+                Im Kalender buchen Sie direkt einen unverbindlichen 30-Minuten-Termin –
+                persönlich in Winterthur oder per Video.
               </p>
               <span className="mt-6 font-semibold text-navy underline decoration-navy/30 underline-offset-4">
                 Kalender öffnen
