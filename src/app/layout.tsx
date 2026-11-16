@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Source_Sans_3 } from "next/font/google";
 import { Suspense } from "react";
 
+import { HashScroll } from "@/components/hash-scroll";
 import { SiteAnalytics } from "@/components/site-analytics";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -102,6 +103,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <SiteHeader />
+        <HashScroll />
         <main className="flex-1">{children}</main>
         <SiteFooter />
         {site.gaMeasurementId ? (

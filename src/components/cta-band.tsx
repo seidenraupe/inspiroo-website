@@ -22,7 +22,7 @@ export function CtaBand() {
             {site.phone}
           </a>
           <Link
-            href="/kontakt#nachricht"
+            href="/kontakt/#nachricht"
             className="text-cream/70 underline decoration-cream/20 underline-offset-4 hover:text-cream"
           >
             Direkt zum Kontakt-Formular
