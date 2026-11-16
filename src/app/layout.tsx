@@ -68,7 +68,7 @@ const jsonLd = {
       name: site.legalName,
       url: site.url,
       email: site.email,
-      telephone: site.phone,
+      telephone: site.phoneE164,
       image: `${site.url}/inspiroo-logo.png`,
       logo: `${site.url}/inspiroo-logo.png`,
       address: {

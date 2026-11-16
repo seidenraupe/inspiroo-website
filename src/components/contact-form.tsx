@@ -1,165 +1,125 @@
-"use client";
-
-import { useEffect, useState, type FormEvent } from "react";
 import Link from "next/link";
 
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { trackEvent } from "@/lib/analytics";
-import { CHECK_CONTACT_MESSAGES, isFormatKey } from "@/lib/standortcheck";
+import { ContactFormEnhance } from "@/components/contact-form-enhance";
 import { site } from "@/lib/site";
 
-type Status = "idle" | "sending" | "sent" | "invalid" | "failed";
+const fieldClassName =
+  "h-11 w-full min-w-0 rounded-lg border border-input bg-transparent px-3 py-2 text-base text-ink transition-colors outline-none placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50";
 
+/**
+ * Server Component. Das `<form>` steht im statischen HTML und funktioniert
+ * auch ohne JavaScript (POST an Web3Forms). Mit JavaScript übernimmt
+ * `ContactFormEnhance` das Absenden, ohne das Formular aus dem HTML zu nehmen.
+ */
 export function ContactForm() {
-  const [status, setStatus] = useState<Status>("idle");
-  const [message, setMessage] = useState("");
-  const [fromCheck, setFromCheck] = useState(false);
-
-  useEffect(() => {
-    const thema = new URLSearchParams(window.location.search).get("thema");
-    if (!isFormatKey(thema)) return;
-    setMessage(CHECK_CONTACT_MESSAGES[thema]);
-    setFromCheck(true);
-  }, []);
-
-  async function onSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    const form = event.currentTarget;
-    const data = new FormData(form);
-    const name = String(data.get("name") ?? "").trim();
-    const email = String(data.get("email") ?? "").trim();
-    const phone = String(data.get("phone") ?? "").trim();
-    const messageText = message.trim();
-
-    if (!name || !email || !messageText || !form.checkValidity()) {
-      setStatus("invalid");
-      return;
-    }
-
-    setStatus("sending");
-    try {
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: { "Content-Type": "application/json", Accept: "application/json" },
-        body: JSON.stringify({
-          access_key: site.web3formsKey,
-          subject: `Kontakt über inspiroo.ch – ${name}`,
-          from_name: "inspiroo.ch",
-          name,
-          email,
-          phone: phone || "—",
-          message: messageText,
-          botcheck: data.get("botcheck") === "on",
-        }),
-      });
-      const result = (await response.json()) as { success?: boolean };
-      if (!response.ok || !result.success) throw new Error("submit failed");
-      trackEvent("contact_form_submit", { method: "web3forms" });
-      form.reset();
-      setMessage("");
-      setFromCheck(false);
-      setStatus("sent");
-    } catch {
-      setStatus("failed");
-    }
-  }
-
-  if (status === "sent") {
-    return (
-      <div className="rounded-lg border border-navy/15 bg-cream p-7" role="status">
+  return (
+    <div>
+      <ContactFormEnhance />
+      <div
+        id="nachricht-erfolg"
+        hidden
+        className="rounded-lg border border-navy/15 bg-cream p-7"
+        role="status"
+      >
         <p className="text-xl font-semibold">Herzlichen Dank für Ihre Nachricht.</p>
         <p className="mt-2 text-ink/70">
           Ich habe sie erhalten und melde mich rasch persönlich bei Ihnen.
         </p>
-        <button
-          type="button"
-          onClick={() => setStatus("idle")}
-          className="mt-5 text-sm text-brand underline decoration-brand/30 underline-offset-4 hover:decoration-brand"
-        >
-          Weitere Nachricht schreiben
-        </button>
       </div>
-    );
-  }
-
-  return (
-    <form onSubmit={onSubmit} className="space-y-4" noValidate>
-      <input
-        type="checkbox"
-        name="botcheck"
-        className="hidden"
-        tabIndex={-1}
-        autoComplete="off"
-        aria-hidden
-      />
-      <div className="grid gap-4 sm:grid-cols-2">
+      <form
+        id="nachricht-form"
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        className="space-y-4"
+      >
+        <input type="hidden" name="access_key" value={site.web3formsKey} />
+        <input type="hidden" name="subject" value="Kontakt über inspiroo.ch" />
+        <input type="hidden" name="from_name" value="inspiroo.ch" />
+        <input
+          type="hidden"
+          name="redirect"
+          value={`${site.url}/kontakt/danke/`}
+        />
+        <input
+          type="checkbox"
+          name="botcheck"
+          className="hidden"
+          tabIndex={-1}
+          autoComplete="off"
+          aria-hidden
+        />
+        <div className="grid gap-4 sm:grid-cols-2">
+          <label className="block text-sm">
+            <span className="mb-1.5 block text-ink/70">Name</span>
+            <input
+              name="name"
+              required
+              autoComplete="name"
+              placeholder="Vor- und Nachname"
+              className={fieldClassName}
+            />
+          </label>
+          <label className="block text-sm">
+            <span className="mb-1.5 block text-ink/70">E-Mail</span>
+            <input
+              name="email"
+              type="email"
+              required
+              autoComplete="email"
+              placeholder="name@firma.ch"
+              className={fieldClassName}
+            />
+          </label>
+        </div>
         <label className="block text-sm">
-          <span className="mb-1.5 block text-ink/70">Name</span>
-          <Input name="name" required autoComplete="name" placeholder="Vor- und Nachname" />
-        </label>
-        <label className="block text-sm">
-          <span className="mb-1.5 block text-ink/70">E-Mail</span>
-          <Input
-            name="email"
-            type="email"
-            required
-            autoComplete="email"
-            placeholder="name@firma.ch"
+          <span className="mb-1.5 block text-ink/70">Telefon (optional)</span>
+          <input
+            name="phone"
+            type="tel"
+            autoComplete="tel"
+            placeholder="+41 …"
+            className={fieldClassName}
           />
         </label>
-      </div>
-      <label className="block text-sm">
-        <span className="mb-1.5 block text-ink/70">Telefon (optional)</span>
-        <Input name="phone" type="tel" autoComplete="tel" placeholder="+41 …" />
-      </label>
-      <label className="block text-sm">
-        <span className="mb-1.5 block text-ink/70">Worüber möchten Sie sprechen?</span>
-        <Textarea
-          name="message"
-          required
-          rows={6}
-          value={message}
-          onChange={(event) => setMessage(event.target.value)}
-          placeholder="Kurz Ihre Situation, die offene Frage und was Sie sich als nächsten Schritt vorstellen."
-        />
-        {fromCheck ? (
-          <span className="mt-2 block text-xs leading-relaxed text-ink/55">
+        <label className="block text-sm">
+          <span className="mb-1.5 block text-ink/70">Worüber möchten Sie sprechen?</span>
+          <textarea
+            name="message"
+            required
+            rows={6}
+            placeholder="Kurz Ihre Situation, die offene Frage und was Sie sich als nächsten Schritt vorstellen."
+            className="flex min-h-40 w-full rounded-lg border border-input bg-transparent px-3 py-2 text-base text-ink transition-colors outline-none placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50"
+          />
+          <span id="nachricht-check-hint" hidden className="mt-2 block text-xs leading-relaxed text-ink/55">
             Vorschlag aus dem Kurz-Check – Sie können den Text vor dem Senden anpassen.
           </span>
-        ) : null}
-      </label>
-      <p className="text-xs leading-relaxed text-ink/55">
-        Mit dem Absenden werden Ihre Angaben zur Bearbeitung der Anfrage
-        übermittelt. Details in der{" "}
-        <Link href="/datenschutz" className="underline underline-offset-2 hover:text-ink">
-          Datenschutzerklärung
-        </Link>
-        .
-      </p>
-      {status === "invalid" ? (
-        <p className="text-sm text-destructive" role="alert">
-          Bitte Name, eine gültige E-Mail-Adresse und Ihre Nachricht ausfüllen.
+        </label>
+        <p className="text-xs leading-relaxed text-ink/55">
+          Mit dem Absenden werden Ihre Angaben zur Bearbeitung der Anfrage
+          übermittelt. Details in der{" "}
+          <Link href="/datenschutz" className="underline underline-offset-2 hover:text-ink">
+            Datenschutzerklärung
+          </Link>
+          .
         </p>
-      ) : null}
-      {status === "failed" ? (
-        <p className="text-sm text-destructive" role="alert">
-          Die Nachricht konnte nicht gesendet werden. Bitte schreib direkt an{" "}
+        <p id="nachricht-fehler" hidden className="text-sm text-destructive" role="alert">
+          Die Nachricht konnte nicht gesendet werden. Bitte schreiben Sie direkt an{" "}
           <a href={`mailto:${site.email}`} className="underline">
             {site.email}
           </a>{" "}
-          oder ruf an: {site.phone}.
+          oder rufen Sie an:{" "}
+          <a href={site.phoneHref} className="underline">
+            {site.phone}
+          </a>
+          .
         </p>
-      ) : null}
-      <Button
-        type="submit"
-        size="lg"
-        disabled={status === "sending"}
-        className="h-11 px-5"
-      >
-        {status === "sending" ? "Wird gesendet …" : "Nachricht senden"}
-      </Button>
-    </form>
+        <button
+          type="submit"
+          className="inline-flex h-11 items-center rounded-md bg-navy px-5 text-sm font-semibold text-cream transition-colors hover:bg-brand disabled:opacity-50"
+        >
+          Nachricht senden
+        </button>
+      </form>
+    </div>
   );
 }

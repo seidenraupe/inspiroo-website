@@ -5,12 +5,6 @@ import { CtaBand } from "@/components/cta-band";
 import { ReferenceCatalog } from "@/components/reference-catalog";
 import { SectionHeading } from "@/components/section-heading";
 import { Testimonial } from "@/components/testimonial";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { leadershipProjects } from "@/lib/content";
 import { caseStudies } from "@/lib/references";
 import { allVoices } from "@/lib/testimonials";
@@ -90,18 +84,14 @@ export default function ReferencesPage() {
             title="Veränderungen, die ich als CEO verantwortet habe"
             body="Aus 13 Jahren als CEO der Dipl. Ing. Fust AG und Verwaltungsratsmandaten in Handel und Service. Diese Erfahrung fliesst heute in jedes Mandat ein."
           />
-          <Accordion className="border-t border-ink/10">
+          <div className="border-t border-ink/10">
             {leadershipProjects.map((project) => (
-              <AccordionItem key={project.title} value={project.title} className="border-ink/10 border-b">
-                <AccordionTrigger className="py-5 text-lg font-semibold hover:no-underline">
-                  {project.title}
-                </AccordionTrigger>
-                <AccordionContent className="pb-6 text-base leading-relaxed text-ink/75">
-                  <p>{project.body}</p>
-                </AccordionContent>
-              </AccordionItem>
+              <article key={project.title} className="border-b border-ink/10 py-6">
+                <h3 className="text-lg font-semibold text-ink">{project.title}</h3>
+                <p className="mt-3 text-base leading-relaxed text-ink/75">{project.body}</p>
+              </article>
             ))}
-          </Accordion>
+          </div>
         </div>
       </section>
 

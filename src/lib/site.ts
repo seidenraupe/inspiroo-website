@@ -1,3 +1,8 @@
+/** Anzeige mit Leerzeichen. Daraus wird die kanonische E.164-Nummer abgeleitet. */
+const phoneDisplay = "+41 79 608 24 24";
+/** Ohne Leerzeichen. Leerzeichen in einem tel:-URI werden von Browsern zu about:invalid. */
+const phoneE164 = phoneDisplay.replace(/[^\d+]/g, "");
+
 export const site = {
   name: "inspiroo",
   legalName: "inspiroo gmbh",
@@ -16,8 +21,9 @@ export const site = {
   url: "https://www.inspiroo.ch",
   email: "thomas.giger@inspiroo.ch",
   infoEmail: "info@inspiroo.ch",
-  phone: "+41 79 608 24 24",
-  phoneHref: "tel:+41796082424",
+  phone: phoneDisplay,
+  phoneE164,
+  phoneHref: `tel:${phoneE164}`,
   address: {
     street: "Seidenstrasse 47",
     zip: "8400",
