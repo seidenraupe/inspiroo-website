@@ -3,10 +3,8 @@ import type { Metadata } from "next";
 import { ContentImage } from "@/components/content-image";
 import { CtaBand } from "@/components/cta-band";
 import { FirstCallCta } from "@/components/first-call-cta";
-import { Testimonial } from "@/components/testimonial";
-import { about, experienceFacts, principles } from "@/lib/content";
+import { about, experienceFacts } from "@/lib/content";
 import { site } from "@/lib/site";
-import { clientVoices } from "@/lib/testimonials";
 
 export const metadata: Metadata = {
   title: "Thomas Giger – Unternehmer, Verwaltungsrat und Sparring-Partner für KMU",
@@ -95,9 +93,10 @@ export default function AboutPage() {
           />
           <div>
             <p className="eyebrow">Arbeitsweise</p>
-            <h2 className="mt-4 text-3xl text-balance">{principles.title}</h2>
+            <h2 className="mt-4 text-3xl text-balance">{about.approach.title}</h2>
+            <p className="mt-4 text-ink/75">{about.approach.lead}</p>
             <dl className="mt-8 space-y-5">
-              {principles.items.map((item) => (
+              {about.approach.items.map((item) => (
                 <div key={item.title}>
                   <dt className="font-semibold">{item.title}</dt>
                   <dd className="mt-1 text-base text-ink/70">{item.body}</dd>
@@ -138,7 +137,6 @@ export default function AboutPage() {
             <p className="text-2xl leading-snug font-semibold text-balance">«{about.quote}»</p>
             <footer className="mt-3 text-sm text-ink/55">{about.quoteSource}</footer>
           </blockquote>
-          <Testimonial voice={clientVoices.raiffeisen} />
         </div>
       </section>
 

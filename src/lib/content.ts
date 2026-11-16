@@ -255,6 +255,32 @@ export const about = {
   ],
   quote: "Nur aus Enthusiasmus kann Neugierde entstehen, und nur wer neugierig ist, kann lernen.",
   quoteSource: "Leonard Bernstein",
+  approach: {
+    title: "So arbeite ich mit Ihnen",
+    lead: "Nicht als Berater mit einem Modellkoffer, sondern als jemand, der selbst entschieden, getragen und manchmal auch korrigiert hat.",
+    items: [
+      {
+        title: "Unabhängig",
+        body: "Ich habe keine Lizenz zu verkaufen und keine Methode, die ich durchsetzen muss. Ich rate so, wie ich es an Ihrer Stelle hören wollte.",
+      },
+      {
+        title: "Unternehmerisch",
+        body: "Ertrag, Liquidität und Risiko kenne ich aus eigener Verantwortung – nicht aus einem Lehrbuch.",
+      },
+      {
+        title: "Pragmatisch",
+        body: "Ich frage zuerst, was bei Ihnen schon da ist, und mache daraus den nächsten sinnvollen Schritt.",
+      },
+      {
+        title: "Umsetzungsorientiert",
+        body: "Eine gute Entscheidung erkennt man daran, dass das Team sie am Montag umsetzen kann.",
+      },
+      {
+        title: "Vertrauensvoll",
+        body: "Sie können offen sprechen. Was Sie mir sagen, bleibt unter uns – auch wenn ich widerspreche.",
+      },
+    ],
+  },
   educationTitle: "Fundament & Weiterentwicklung",
   education: [
     "Mein Studium schloss ich an der Universität Zürich als Master of Arts ab; in meiner Abschlussarbeit untersuchte ich das Thema «Manager im Familienunternehmen» am Beispiel der Firma Rieter in Winterthur. Berufsbegleitend vertiefte ich mein Führungs- und Strategiewissen in Executive-Seminaren am IMD in Lausanne. Als CEO der Dipl. Ing. Fust AG gestaltete ich die digitale Transformation des Unternehmens über viele Jahre aktiv mit.",
