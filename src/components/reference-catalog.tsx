@@ -57,20 +57,25 @@ export function ReferenceCatalog() {
       ) : (
         <ul className="divide-y divide-ink/10 border-b border-ink/10">
           {visible.map((item) => (
-            <li key={item.id} className="grid gap-4 py-8 md:grid-cols-[17rem_1fr] md:gap-14">
-              <div>
+            <li
+              key={item.id}
+              className="grid gap-4 py-8 lg:grid-cols-[minmax(0,17rem)_minmax(0,1fr)] lg:gap-14"
+            >
+              <div className="min-w-0">
                 <h3 className="text-xl leading-tight text-ink">{item.name}</h3>
                 <p className="mt-1 text-sm text-ink/55">{item.sector}</p>
                 {item.categories.length > 0 ? (
                   <p className="mt-2 text-sm text-violet">{item.categories.join(" · ")}</p>
                 ) : null}
               </div>
-              <div>
-                <p className="text-base leading-relaxed text-ink/70">{item.summary}</p>
+              <div className="min-w-0">
+                <p className="text-base leading-relaxed hyphens-auto text-pretty text-ink/70">
+                  {item.summary}
+                </p>
                 {item.pending ? (
                   <DraftHint className="mt-4">Mandatsbeschreibung folgt</DraftHint>
                 ) : (
-                  <p className="mt-3 text-base font-semibold text-ink">
+                  <p className="mt-3 text-base font-semibold hyphens-auto text-pretty text-ink">
                     {item.mandates.join(" · ")}
                   </p>
                 )}

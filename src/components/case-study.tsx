@@ -11,8 +11,8 @@ const rows = [
 
 export function CaseStudy({ item }: { item: CaseStudyData }) {
   return (
-    <article className="grid gap-8 py-12 md:grid-cols-[17rem_1fr] md:gap-14">
-      <div>
+    <article className="grid gap-8 py-12 lg:grid-cols-[minmax(0,17rem)_minmax(0,1fr)] lg:gap-14">
+      <div className="min-w-0">
         <p className="text-sm text-ink/55">{item.sector}</p>
         <h3 className="mt-1 text-2xl">{item.client}</h3>
         <p className="mt-3 text-sm leading-relaxed text-violet">{item.tags.join(" · ")}</p>
@@ -28,14 +28,16 @@ export function CaseStudy({ item }: { item: CaseStudyData }) {
           </a>
         ) : null}
       </div>
-      <div>
-        <dl className="grid gap-6 sm:grid-cols-3 sm:gap-8">
+      <div className="min-w-0">
+        <dl className="grid grid-cols-1 gap-8 xl:grid-cols-3 xl:gap-10">
           {rows.map((row) => (
-            <div key={row.key}>
+            <div key={row.key} className="min-w-0">
               <dt className="text-xs font-semibold tracking-[0.12em] text-ink/50 uppercase">
                 {row.label}
               </dt>
-              <dd className="mt-2 text-base leading-relaxed text-ink/80">{item[row.key]}</dd>
+              <dd className="mt-2 max-w-prose text-base leading-relaxed hyphens-auto text-pretty text-ink/80">
+                {item[row.key]}
+              </dd>
             </div>
           ))}
         </dl>
