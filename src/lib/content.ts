@@ -90,7 +90,7 @@ export const process = {
 export const servicesIntro = {
   kicker: "Wie ich Sie unterstützen kann",
   title: "Gleiche Erfahrung – unterschiedliche Intensität",
-  body: "Die vier Formate sind keine Standardprodukte, sondern eine Orientierung für Dauer und Tiefe der Zusammenarbeit. Was Sie bekommen, ist immer dasselbe: meine Erfahrung als Unternehmer, einen unabhängigen Blick und ein ehrliches Gegenüber. Im Erstgespräch klären wir, was Ihre Situation braucht – oft ist es eine Mischung der vier Formate. Bei Bedarf ziehe ich spezialisierte Partner aus meinem Netzwerk bei.",
+  body: "Die vier Formate sind keine Standardprodukte, sondern eine Orientierung für Dauer und Tiefe der Zusammenarbeit. Was Sie bekommen, ist immer dasselbe: meine Erfahrung als Unternehmer, einen unabhängigen Blick und ein ehrliches Gegenüber. Im Erstgespräch kläre ich mit Ihnen, was Ihre Situation braucht – oft ist es eine Mischung der vier Formate. Bei Bedarf ziehe ich spezialisierte Partner aus meinem Netzwerk bei.",
 };
 
 export const services = [
@@ -100,7 +100,7 @@ export const services = [
     title: "Boxen-Stopp",
     problem: "Ich möchte wissen, wo mein Unternehmen wirklich steht.",
     situation:
-      "Der Umsatz wächst, die Marge nicht – oder umgekehrt. Gemeinsam analysieren wir, wo Ihr Unternehmen heute Geld verdient, welche Hebel am meisten bewirken und wie Sie Profitabilität und Liquidität gezielt stärken.",
+      "Der Umsatz wächst, die Marge nicht – oder umgekehrt. Gemeinsam analysiere ich mit Ihnen, wo Ihr Unternehmen heute Geld verdient, welche Hebel am meisten bewirken und wie Sie Profitabilität und Liquidität gezielt stärken.",
     headline: "Klarheit über die wirtschaftliche Situation und die nächsten Hebel.",
     body: "Wo steht Ihr Unternehmen? Wo liegen ungenutzte Potenziale? Wo lassen sich Kosten senken, ohne an Qualität einzubüssen? Wie innovativ ist Ihr Angebot im Vergleich zum Markt? Wie nehmen Kundinnen und Kunden Ihr Unternehmen wahr – online und offline? Welche Massnahmen versprechen die grösste Wirkung? Mit dem Blick eines ehemaligen CEO analysiere ich die Ausgangslage und erarbeite mit Ihnen konkrete Handlungsempfehlungen mit klaren Prioritäten.",
     outcomes: [
@@ -122,11 +122,11 @@ export const services = [
     situation:
       "Als Unternehmer tragen Sie die letzte Verantwortung allein. Ich bin der diskrete Sparring-Partner auf Augenhöhe, mit dem Sie strategische Optionen, Nachfolgefragen oder heikle Weichenstellungen offen durchdenken können.",
     headline: "Ein Sparring-Partner, der die Verantwortung eines CEO aus eigener Erfahrung kennt.",
-    body: "Als Unternehmerin oder Unternehmer können Sie nicht jede Frage mit Ihrem Team besprechen. Im vertraulichen Sparring übernehme ich die Rolle des kritischen und lösungsorientierten Fragestellers – im 1:1 oder im Verwaltungsrat und in der Geschäftsleitung. Bei Bedarf recherchiere ich umfassende Analysen oder Benchmark-Studien, die die Diskussion befruchten: So lassen sich Ideen faktenbasiert prüfen und gemeinsam weiterentwickeln.",
+    body: "Als Unternehmerin oder Unternehmer können Sie nicht jede Frage mit Ihrem Team besprechen. Im vertraulichen Sparring übernehme ich die Rolle des kritischen und lösungsorientierten Fragestellers – im 1:1 oder im Verwaltungsrat und in der Geschäftsleitung. Ich denke mit Ihnen Optionen und Konsequenzen durch, bevor Sie entscheiden.",
     outcomes: [
       "Vertraulicher Austausch auf Augenhöhe",
       "Kritische Fragen und neue Perspektiven vor wichtigen Entscheidungen",
-      "Fundierte Analysen und Benchmarks als Grundlage für die Diskussion",
+      "Klärung der Frage, bevor sie in Verwaltungsrat oder Geschäftsleitung kommt",
       "Sicherheit bei Personal-, Investitions- und Strategiefragen",
     ],
     format: "Regelmässige Sparring-Termine oder auf Abruf",
@@ -141,13 +141,14 @@ export const services = [
     title: "Navigator",
     problem: "Ich habe Ziele, aber die Umsetzung kommt im Alltag nicht voran.",
     situation:
-      "Ob digitale Transformation, klarere Verantwortlichkeiten oder wirksame Steuerungs-Kennzahlen: Ich unterstütze Sie dabei, Strategie, Organisation und Kultur so weiterzuentwickeln, dass Ihre Ziele im Alltag greifen.",
+      "Ob digitale Transformation und KI, klarere Verantwortlichkeiten oder wirksame Steuerungs-Kennzahlen: Ich unterstütze Sie dabei, Strategie, Organisation und Kultur so weiterzuentwickeln, dass Ihre Ziele im Alltag greifen.",
     headline: "Strategie in den Alltag bringen – mit Steuerung, die funktioniert.",
     body: "Viele Unternehmen wissen, wohin sie wollen. Schwierig wird es im operativen Alltag. Ich begleite Sie über längere Zeit bei der Umsetzung, entwickle mit Ihnen die wenigen Kennzahlen, mit denen Sie Ihr Unternehmen wirklich steuern, und unterstütze bei Planung, Steuerung und Kontrolle von Projekten und Prozessen.",
     outcomes: [
       "Wenige, aussagekräftige Kennzahlen (KPI), die wirklich steuern",
       "Klare Meilensteine und Verantwortlichkeiten",
       "Regelmässige Standortbestimmung mit der Geschäftsleitung",
+      "Pragmatische Nutzung digitaler Werkzeuge und KI in Prozessen",
     ],
     format: "Längerfristige Begleitung, z. B. monatlich",
     image: "/images/gl-team-planung.webp",
@@ -161,9 +162,9 @@ export const services = [
     title: "Masterplan",
     problem: "Ich muss mein Unternehmen strategisch neu ausrichten.",
     situation:
-      "Der Markt verändert sich und die bisherigen Erfolgsrezepte tragen nicht mehr. Von der nüchternen Marktanalyse bis zu verbindlichen Etappenzielen entwickeln wir eine tragfähige Strategie, die Ihr Unternehmen zukunftsfähig macht.",
+      "Der Markt verändert sich und die bisherigen Erfolgsrezepte tragen nicht mehr. Von der nüchternen Marktanalyse bis zu verbindlichen Etappenzielen entwickle ich mit Ihnen eine tragfähige Strategie, die Ihr Unternehmen zukunftsfähig macht.",
     headline: "Von der Marktanalyse zur tragfähigen Strategie mit Etappenzielen.",
-    body: "Wenn sich der Markt grundlegend verändert, reichen Korrekturen nicht. Mit Ihnen analysiere ich Markt, Kunden und Wettbewerb, entwickle eine tragfähige Strategie und übersetze sie in priorisierte Etappenziele – für etablierte Unternehmen genauso wie für junge Firmen in bewegten Märkten.",
+    body: "Wenn sich der Markt grundlegend verändert, reichen Korrekturen nicht. Mit Ihnen analysiere ich Markt, Kunden und Wettbewerb, entwickle eine tragfähige Strategie und übersetze sie in priorisierte Etappenziele – für etablierte Unternehmen genauso wie für junge Firmen in bewegten Märkten. Dabei kläre ich mit Ihnen, wo Digitalisierung und KI das Geschäftsmodell verändern – und wo nicht.",
     outcomes: [
       "Fundierte Analyse von Markt, Kunden und Wettbewerb",
       "Strategie, die Geschäftsleitung und Verwaltungsrat mittragen",
