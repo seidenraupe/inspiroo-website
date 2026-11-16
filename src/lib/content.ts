@@ -314,10 +314,6 @@ export const leadershipProjects = [
     body: "In mehreren Etappen lösten wir die über 30 Jahre alte ERP-Eigenentwicklung durch eine moderne Lösung mit SAP-Backbone und rund 30 spezialisierten Umsystemen ab. Dabei digitalisierten wir konsequent sämtliche Kundenprozesse im Service und im Verkauf. Im Mittelpunkt standen immer Mehrwerte für Kunden und Mitarbeitende: Als einer der ersten Detailhändler in der Schweiz setzten wir Tablets im Beratungsprozess ein. Auch die Arbeit der Aussendienst-Techniker wurde mit Tablets unterstützt und die Administration vereinfacht. Kundinnen und Kunden können dank vernetzter IT-Prozesse ihren Liefertermin im Online-Shop selbst wählen oder in der Filiale direkt fixieren. Online-Bestellungen, die bis 21 Uhr eingehen, werden seit 2020 bereits am Folgetag zugestellt.",
   },
   {
-    title: "E-Learning",
-    body: "Damit alle Mitarbeitenden an über hundert dezentralen Standorten laufend über die neusten technologischen Trends und Produkte geschult werden konnten, setzten wir früh auf E-Learning. Ziel war, mit den bestehenden Ressourcen der eigenen Organisation die Lerninhalte zeitnah und aktuell – natürlich auch mobil – auszuspielen. Gamification, Zertifikate und ein Belohnungs-Shop verstärkten die Motivation. Vor allem in der Führungsausbildung ergänzten wir Präsenzkurse online zu Blended-Learning-Einheiten.",
-  },
-  {
     title: "Online-Shop mit Zusatznutzen",
     body: "Anfang der 2010er-Jahre bauten wir den Online-Shop neu auf. Das Angebot dehnten wir von wenigen hundert beworbenen Artikeln auf das mehrere zehntausend Produkte umfassende Gesamtsortiment aus. Wir offerierten als einer der ersten Webshops «click & reserve» und wenig später «click & collect». Damit waren die wichtigsten 6000 Produkte des Filialsortiments für Online-Kunden innert Minuten abholbereit. Die integrierte Sparkarten-Funktion für Verbrauchs- und Zubehörprodukte stärkte die Kundenbindung und war später Vorbild für die Sammelpass-Funktion des grössten Schweizer Kundenbindungsprogramms.",
   },
@@ -340,5 +336,9 @@ export const leadershipProjects = [
   {
     title: "Akquisitionen und Integrationen",
     body: "Wir spielten eine aktive Rolle bei der Konsolidierung der Branche und nutzten laufend die Chancen von Übernahmen. Die akquirierten Firmen wurden jeweils rasch in die bestehenden Strukturen integriert. Dabei achteten wir auf einen respektvollen Umgang mit den übernommenen Mitarbeitenden und konnten so auch den Kundenkreis laufend erweitern.",
+  },
+  {
+    title: "E-Learning",
+    body: "Damit alle Mitarbeitenden an über hundert dezentralen Standorten laufend über die neusten technologischen Trends und Produkte geschult werden konnten, setzten wir früh auf E-Learning. Ziel war, mit den bestehenden Ressourcen der eigenen Organisation die Lerninhalte zeitnah und aktuell – natürlich auch mobil – auszuspielen. Gamification, Zertifikate und ein Belohnungs-Shop verstärkten die Motivation. Vor allem in der Führungsausbildung ergänzten wir Präsenzkurse online zu Blended-Learning-Einheiten.",
   },
 ] as const;
