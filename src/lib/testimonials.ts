@@ -95,7 +95,7 @@ export const clientVoices = {
   },
 } satisfies Record<string, ClientVoice>;
 
-/** Reihenfolge wie auf der Referenzen-Seite (Fallstudien und Mandate). */
+/** Alle Kundenstimmen (Reihenfolge im Markup; Anzeige clientseitig gemischt). */
 export const referenceVoices: ClientVoice[] = [
   clientVoices.homeOfInnovation,
   clientVoices.hvw,
@@ -107,7 +107,3 @@ export const referenceVoices: ClientVoice[] = [
 
 export const allVoices: ClientVoice[] = referenceVoices;
 
-/** Erste drei Stimmen für die Startseite (build-time SSR, indexierbar). */
-export function homePageVoices(showDrafts: boolean): ClientVoice[] {
-  return referenceVoices.filter((v) => showDrafts || v.quote !== null).slice(0, 3);
-}

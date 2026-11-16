@@ -4,9 +4,8 @@ import { CtaBand } from "@/components/cta-band";
 import { ReferenceCatalog } from "@/components/reference-catalog";
 import { ReferenceCatalogAnalytics } from "@/components/reference-catalog-analytics";
 import { SectionHeading } from "@/components/section-heading";
-import { Testimonial } from "@/components/testimonial";
+import { ReferenceTestimonials } from "@/components/reference-testimonials";
 import { leadershipProjects } from "@/lib/content";
-import { allVoices } from "@/lib/testimonials";
 
 export const metadata: Metadata = {
   title: "Referenzen",
@@ -32,11 +31,7 @@ export default function ReferencesPage() {
             kicker="Kundenstimmen"
             title="Wie Mandantinnen und Mandanten die Zusammenarbeit erleben"
           />
-          <div className="mt-12 grid gap-6 lg:grid-cols-3">
-            {allVoices.map((voice) => (
-              <Testimonial key={voice.id} voice={voice} />
-            ))}
-          </div>
+          <ReferenceTestimonials />
         </div>
       </section>
 
