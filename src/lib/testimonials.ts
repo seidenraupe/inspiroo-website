@@ -50,10 +50,11 @@ export const clientVoices = {
     person: "Christian Huggenberg",
     role: "Präsident",
     company: "Historischer Verein Winterthur / Museum Schaffen",
-    logo: { src: "/logos/museum-schaffen.png", width: 361, height: 50 },
-    quote: null,
+    logo: { src: "/logos/museum-schaffen.png", width: 300, height: 189 },
+    quote:
+      "Mit schlankeren, durchgängig digitalen Prozessen für unsere Mitgliederverwaltung und Veranstaltungen sparen wir im Vorstand heute spürbar Zeit und Geld. Gleichzeitig sind diese Verbesserungen auch für unsere Mitglieder dank einer neuen, modernen Website direkt und unkompliziert erlebbar – etwa bei der Veranstaltungsanmeldung. Thomas hat das Ganze äusserst pragmatisch, strukturiert und mit viel Verständnis für die spezifischen Bedürfnisse eines Vereins umgesetzt.",
     sample:
-      "Mit schlankeren Prozessen für Mitglieder und Veranstaltungen sparen wir heute Zeit und Geld. Thomas hat das Ganze pragmatisch und mit viel Verständnis für einen Verein umgesetzt.",
+      "Mit schlankeren, durchgängig digitalen Prozessen für unsere Mitgliederverwaltung und Veranstaltungen sparen wir im Vorstand heute spürbar Zeit und Geld. Gleichzeitig sind diese Verbesserungen auch für unsere Mitglieder dank einer neuen, modernen Website direkt und unkompliziert erlebbar – etwa bei der Veranstaltungsanmeldung. Thomas hat das Ganze äusserst pragmatisch, strukturiert und mit viel Verständnis für die spezifischen Bedürfnisse eines Vereins umgesetzt.",
   },
   webling: {
     id: "webling",
