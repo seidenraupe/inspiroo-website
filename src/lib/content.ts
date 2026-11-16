@@ -111,7 +111,7 @@ export const process = {
 export const servicesIntro = {
   kicker: "Wie ich Dich unterstützen kann",
   title: "Gleiche Erfahrung – unterschiedliche Intensität",
-  body: "Die vier Formate sind keine Standardprodukte, sondern eine Orientierung für Dauer und Tiefe der Zusammenarbeit. Was Du bekommst, ist immer dasselbe: meine Erfahrung als Unternehmer, einen unabhängigen Blick und ein ehrliches Gegenüber. Im Erstgespräch klären wir, was Deine Situation braucht – oft ist es eine Mischung. Bei Bedarf ziehe ich spezialisierte Partner aus meinem Netzwerk bei.",
+  body: "Die vier Formate sind keine Standardprodukte, sondern eine Orientierung für Dauer und Tiefe der Zusammenarbeit. Was Du bekommst, ist immer dasselbe: meine Erfahrung als Unternehmer, einen unabhängigen Blick und ein ehrliches Gegenüber. Im Erstgespräch klären wir, was Deine Situation braucht – oft ist es eine Mischung der vier Formate. Bei Bedarf ziehe ich spezialisierte Partner aus meinem Netzwerk bei.",
 };
 
 export const services = [
