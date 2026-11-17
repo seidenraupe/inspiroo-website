@@ -132,6 +132,21 @@ Unabhängiger Sparring-Partner für KMU. Begleitung von Unternehmerinnen, Untern
 
 ---
 
+### Im Fokus (Featured) – Unternehmensseite
+
+LinkedIn zeigt auf der Firmenseite denselben Bereich wie im Personenprofil (Links, Beiträge, Dokumente). Bisher war nur die Schaltfläche «Website besuchen» dokumentiert; die Fokus-Inhalte analog zum persönlichen Profil:
+
+1. **Website:** «Sparring auf Augenhöhe – aus eigener Führungserfahrung» → https://www.inspiroo.ch
+2. **Zusammenarbeit:** «Boxen-Stopp, Co-Pilot, Navigator, Masterplan» → https://www.inspiroo.ch/zusammenarbeit
+3. **Referenzen:** «Resultate aus der Praxis» → https://www.inspiroo.ch/referenzen
+4. **Standortbestimmung:** «Wo steht Ihr KMU?» → https://www.inspiroo.ch/#kurz-check
+
+Nach dem Relaunch-Post: diesen Beitrag **anheften** (erscheint dann ebenfalls unter «Im Fokus»). Den persönlichen Launch-Post von Thomas nicht hier duplizieren.
+
+Reihenfolge: Website zuerst, dann Formate, dann Beweis (Referenzen), dann Einstieg ohne Gesprächszwang (Standortbestimmung).
+
+---
+
 ### Slogan (max. 120 Zeichen)
 
 ```text

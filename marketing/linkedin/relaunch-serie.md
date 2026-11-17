@@ -274,7 +274,8 @@ Gründer Thomas Giger auf LinkedIn: https://www.linkedin.com/in/thomas-giger/
 ## Checkliste vor Serie
 
 - [ ] Banner + Headline + Info (`texte.md`)
-- [ ] Featured: Website, Referenzen, Kontakt, Standortbestimmung
+- [ ] Featured Person: Website, Referenzen, Kontakt, Standortbestimmung
+- [ ] Featured Firma: Website, Zusammenarbeit, Referenzen, Standortbestimmung (`texte.md`)
 - [ ] Erstgespräch-Link in Profil
 - [ ] Post 1 am Tag X **festhalten** (pin optional, max. 7 Tage sinnvoll)
 - [ ] Kalender-Einträge für Di/Do 8:00 mit fertigem Text (dieses Dokument)
