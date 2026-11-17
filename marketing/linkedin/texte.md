@@ -102,10 +102,23 @@ Unabhängiger Sparring-Partner für KMU. Begleitung von Unternehmerinnen, Untern
 
 ### Im Fokus (Featured)
 
-1. **Website:** «Sparring auf Augenhöhe – aus eigener Führungserfahrung» → https://www.inspiroo.ch (bzw. Vorschau-URL bis Go-live)
-2. **Referenzen / Fallstudien:** https://www.inspiroo.ch/referenzen
-3. **Kontakt:** «Unverbindliches Erstgespräch» → https://www.inspiroo.ch/kontakt
-4. **Standortbestimmung:** «Wo steht Ihr KMU?» → https://www.inspiroo.ch/#kurz-check
+LinkedIn liest beim Einfügen einer URL den SEO-Titel der Seite – den nach dem Hinzufügen **überschreiben**. Titel kurz halten (eine Zeile), Text 1–2 Sätze.
+
+**1. Website** → https://www.inspiroo.ch  
+- **Titel:** Sparring auf Augenhöhe  
+- **Text:** Aus eigener Führungserfahrung. Für Unternehmer und Führungsgremien, wenn viel auf dem Spiel steht – und der Weg nicht eindeutig ist.
+
+**2. Referenzen** → https://www.inspiroo.ch/referenzen  
+- **Titel:** Resultate aus der Praxis  
+- **Text:** Stimmen von Mandantinnen und Mandanten, ausgewählte Mandate und Meilensteine aus 13 Jahren als CEO – im Sparring wie in der eigenen Führung.
+
+**3. Erstgespräch** → https://www.inspiroo.ch/kontakt  
+- **Titel:** Unverbindliches Erstgespräch  
+- **Text:** 30 Minuten, vertraulich, ohne Auftragszwang. Persönlich in Winterthur oder per Video – danach ist klar, ob und wie ich unterstützen kann.
+
+**4. Standortbestimmung** → https://www.inspiroo.ch/#kurz-check  
+- **Titel:** Wo steht Ihr KMU?  
+- **Text:** Kurze Standortbestimmung: vier Fragen, ein Vorschlag für die passende Intensität – Boxen-Stopp, Co-Pilot, Navigator oder Masterplan. Ohne Anmeldung.
 
 ---
 
@@ -134,12 +147,23 @@ Unabhängiger Sparring-Partner für KMU. Begleitung von Unternehmerinnen, Untern
 
 ### Im Fokus (Featured) – Unternehmensseite
 
-LinkedIn zeigt auf der Firmenseite denselben Bereich wie im Personenprofil (Links, Beiträge, Dokumente). Bisher war nur die Schaltfläche «Website besuchen» dokumentiert; die Fokus-Inhalte analog zum persönlichen Profil:
+Wie beim Personenprofil: URL einfügen, dann **Titel und Text überschreiben** (nicht den SEO-Titel stehen lassen). Die Schaltfläche «Website besuchen» bleibt separat → `/kontakt`.
 
-1. **Website:** «Sparring auf Augenhöhe – aus eigener Führungserfahrung» → https://www.inspiroo.ch
-2. **Zusammenarbeit:** «Boxen-Stopp, Co-Pilot, Navigator, Masterplan» → https://www.inspiroo.ch/zusammenarbeit
-3. **Referenzen:** «Resultate aus der Praxis» → https://www.inspiroo.ch/referenzen
-4. **Standortbestimmung:** «Wo steht Ihr KMU?» → https://www.inspiroo.ch/#kurz-check
+**1. Website** → https://www.inspiroo.ch  
+- **Titel:** Sparring auf Augenhöhe  
+- **Text:** Unabhängige Begleitung für KMU – mit über 30 Jahren Erfahrung in Geschäftsleitung und Verwaltungsrat. Winterthur.
+
+**2. Zusammenarbeit** → https://www.inspiroo.ch/zusammenarbeit  
+- **Titel:** Vier Formate, eine Haltung  
+- **Text:** Boxen-Stopp, Co-Pilot, Navigator, Masterplan: Orientierung für Dauer und Tiefe – oft als Mischung, immer auf Augenhöhe.
+
+**3. Referenzen** → https://www.inspiroo.ch/referenzen  
+- **Titel:** Resultate aus der Praxis  
+- **Text:** Ausgewählte Mandate und Kundenstimmen: Strategie, Innovation, Sparring und Lehre – plus Führungserfahrung als CEO von Dipl. Ing. Fust.
+
+**4. Standortbestimmung** → https://www.inspiroo.ch/#kurz-check  
+- **Titel:** Wo steht Ihr KMU?  
+- **Text:** In wenigen Fragen zur passenden Intensität. Unverbindlich, ohne Anmeldung – danach Erstgespräch, wenn es passt.
 
 Nach dem Relaunch-Post: diesen Beitrag **anheften** (erscheint dann ebenfalls unter «Im Fokus»). Den persönlichen Launch-Post von Thomas nicht hier duplizieren.
 
