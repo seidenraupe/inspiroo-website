@@ -24,8 +24,8 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-ink/8 bg-cream/95 backdrop-blur-md">
-      <div className="mx-auto flex h-[4.75rem] max-w-6xl items-center justify-between gap-6 px-5 sm:px-8">
-        <BrandMark />
+      <div className="mx-auto flex h-[5.75rem] max-w-6xl items-center justify-between gap-4 px-5 sm:h-28 sm:gap-6 sm:px-8">
+        <BrandMark variant="header" />
         <nav className="hidden items-center gap-7 lg:flex" aria-label="Hauptnavigation">
           {navigation.map((item) => {
             const active =
@@ -67,7 +67,7 @@ export function SiteHeader() {
           <SheetContent side="right" className="bg-cream">
             <SheetHeader>
               <SheetTitle className="sr-only">Navigation</SheetTitle>
-              <BrandMark />
+              <BrandMark variant="header" />
             </SheetHeader>
             <nav className="mt-8 flex flex-col px-4" aria-label="Mobilnavigation">
               {navigation.map((item) => (

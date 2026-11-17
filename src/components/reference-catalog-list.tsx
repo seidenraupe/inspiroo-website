@@ -33,7 +33,7 @@ export function ReferenceCatalogList({ items }: ReferenceCatalogListProps) {
             key={item.id}
             id={item.id}
             data-categories={item.categories.join(" ")}
-            className="reference-card scroll-mt-24 grid gap-4 py-8 lg:grid-cols-[minmax(0,17rem)_minmax(0,1fr)] lg:gap-14"
+            className="reference-card scroll-mt-32 grid gap-4 py-8 lg:grid-cols-[minmax(0,17rem)_minmax(0,1fr)] lg:gap-14"
           >
             <div className="min-w-0">
               <h3 className="text-xl leading-tight text-ink">{item.name}</h3>

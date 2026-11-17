@@ -59,7 +59,7 @@ export default function ZusammenarbeitPage() {
           <section
             key={service.slug}
             id={service.slug}
-            className="grid scroll-mt-24 gap-10 border-t border-ink/10 py-16 sm:py-20 lg:grid-cols-2 lg:gap-16"
+            className="grid scroll-mt-32 gap-10 border-t border-ink/10 py-16 sm:py-20 lg:grid-cols-2 lg:gap-16"
           >
             <div className={index % 2 === 1 ? "lg:order-2" : undefined}>
               <p className="text-sm font-semibold text-violet">

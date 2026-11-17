@@ -109,7 +109,7 @@ export default function ContactPage() {
 
       <section className="border-t border-ink/10 bg-white">
         <div className="mx-auto grid max-w-6xl gap-16 px-5 py-20 sm:px-8 sm:py-24 lg:grid-cols-[1.1fr_0.9fr]">
-          <div id="nachricht" className="scroll-mt-24">
+          <div id="nachricht" className="scroll-mt-32">
             <h2 className="text-3xl">Nachricht schreiben</h2>
             <p className="mt-3 text-base text-ink/60">
               Schildern Sie Ihre Situation in ein paar Sätzen. Die Nachricht kommt

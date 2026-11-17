@@ -25,7 +25,7 @@ export default function ReferencesPage() {
         />
       </section>
 
-      <section id="stimmen" className="scroll-mt-24 bg-sand">
+      <section id="stimmen" className="scroll-mt-32 bg-sand">
         <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-24">
           <SectionHeading
             kicker="Kundenstimmen"
@@ -35,7 +35,7 @@ export default function ReferencesPage() {
         </div>
       </section>
 
-      <section id="mandate" className="mx-auto max-w-6xl scroll-mt-24 px-5 py-20 sm:px-8 sm:py-24">
+      <section id="mandate" className="mx-auto max-w-6xl scroll-mt-32 px-5 py-20 sm:px-8 sm:py-24">
         <SectionHeading
           kicker="ausgewählte Mandate"
           title="Strategie, Innovation, Sparring und Lehre"
@@ -47,7 +47,7 @@ export default function ReferencesPage() {
         </div>
       </section>
 
-      <section id="fuehrungserfahrung" className="scroll-mt-24 border-t border-ink/10 bg-white">
+      <section id="fuehrungserfahrung" className="scroll-mt-32 border-t border-ink/10 bg-white">
         <div className="mx-auto grid max-w-6xl gap-12 px-5 py-20 sm:px-8 sm:py-24 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
           <SectionHeading
             kicker="Führungserfahrung"

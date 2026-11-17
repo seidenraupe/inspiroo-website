@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <>
-      <section className="mx-auto grid max-w-6xl items-center gap-12 px-5 pt-14 pb-16 sm:px-8 sm:pt-20 lg:grid-cols-[1.25fr_0.75fr] lg:gap-16 lg:pt-24 lg:pb-24">
+      <section className="mx-auto grid max-w-6xl items-center gap-12 px-5 pt-14 pb-16 sm:px-8 sm:pt-20 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,0.72fr)] lg:gap-12 lg:pt-24 lg:pb-24">
         <div>
           <p className="eyebrow">{hero.kicker}</p>
           <h1 className="mt-5 text-[2.6rem] leading-[1.06] text-balance sm:text-6xl lg:text-[4.1rem]">
@@ -39,14 +39,14 @@ export default function HomePage() {
           <p className="mt-7 max-w-2xl text-xl leading-relaxed text-ink/85 sm:text-[1.35rem]">
             {hero.lead}
           </p>
-          <div className="mt-9 flex flex-col gap-4 sm:flex-row sm:items-center">
-            <FirstCallCta placement="hero" />
+          <div className="mt-9 flex flex-col items-start gap-3 sm:flex-row sm:flex-wrap sm:items-center">
+            <FirstCallCta placement="hero" className="sm:px-5" />
             <Link
               href="#kurz-check"
-              className="inline-flex items-center gap-2 px-1 text-ink underline decoration-ink/30 underline-offset-4 hover:decoration-ink"
+              className="inline-flex max-w-full items-center px-1 text-[0.95rem] text-ink underline decoration-ink/30 underline-offset-4 hover:decoration-ink sm:shrink-0 sm:text-[1.05rem] sm:whitespace-nowrap"
               {...gaTrackAttrs("cta_kurz_check", { placement: "hero" })}
             >
-              Standortbestimmung: Wo steht Ihr KMU?
+              Standortbestimmung: Wo steht Ihr&nbsp;KMU?
             </Link>
           </div>
         </div>
@@ -86,7 +86,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="formate" className="mx-auto max-w-6xl scroll-mt-24 px-5 py-20 sm:px-8 sm:py-28">
+      <section id="formate" className="mx-auto max-w-6xl scroll-mt-32 px-5 py-20 sm:px-8 sm:py-28">
         <SectionHeading
           kicker={homeFormats.kicker}
           title={homeFormats.title}

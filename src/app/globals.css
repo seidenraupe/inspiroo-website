@@ -56,8 +56,8 @@
 }
 
 :root {
-  /** Fixierter Header (4.75rem) + Abstand für Sprungmarken */
-  --scroll-anchor-offset: 6rem;
+  /** Fixierter Header (mobil 5.75rem, ab sm 7rem) + Abstand für Sprungmarken */
+  --scroll-anchor-offset: 8rem;
   --cream: #f7f5f1;
   --sand: #ece7de;
   --navy: #13213a;

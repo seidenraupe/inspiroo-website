@@ -85,7 +85,7 @@ export function Standortcheck() {
       id="kurz-check"
       ref={containerRef}
       aria-labelledby="standortcheck-heading"
-      className="mx-auto max-w-3xl scroll-mt-24 rounded-lg border border-ink/10 bg-white p-6 sm:p-10"
+      className="mx-auto max-w-3xl scroll-mt-32 rounded-lg border border-ink/10 bg-white p-6 sm:p-10"
     >
       <div>
         <p className="eyebrow">Standortbestimmung · 2 Minuten</p>
