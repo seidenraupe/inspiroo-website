@@ -23,8 +23,8 @@ Follower allein sind kein KPI – sie sind ein Nebenprodukt von nützlichen Beit
 
 ## Roter Faden der Serie (10 Posts)
 
-Jeder Post: **1 These → 1 Mini-Beispiel/Erfahrung → 1 CTA** (meist Erstgespräch oder Website).  
-Links: bis `www.inspiroo.ch` live ist GitHub-Pages-Vorschau oder `/kontakt` auf der jeweiligen Domain.
+Jeder Post: **1 These → 1 Mini-Beispiel/Erfahrung → 1 CTA** (meist Erstgespräch, Standortbestimmung oder Website).  
+Links: bis `www.inspiroo.ch` live ist GitHub-Pages-Vorschau oder `/kontakt` bzw. `/#kurz-check` auf der jeweiligen Domain.
 
 | # | Woche | Typ | Ziel |
 | --- | --- | --- | --- |
@@ -60,6 +60,7 @@ Was sich geändert hat: weniger Angebots-Katalog, mehr ehrliche Einordnung, wann
 
 Schau rein und sag mir, was fehlt oder trifft: **[Link Website]**
 
+Zuerst einordnen: Standortbestimmung → **[Link /#kurz-check]**  
 Oder direkt: unverbindliches Erstgespräch (30 Min., vertraulich) → **[Link /kontakt]**
 
 **Interaktion:** Frage am Ende: *«Was reisst Dich aktuell mehr: Strategie, Organisation oder Digitales?»*
@@ -82,7 +83,7 @@ Weniger mein Terrain: reine IT-Projektleitung, Interim ohne Strategiebezug, oder
 
 Wenn Du jemanden suchst, der **selbst im Sattel gesessen** hat und mit Dir **Macher zu Macher** spricht: Website / Kontakt in der Bio.
 
-**CTA:** Featured-Link «Für wen ich arbeite» – keine Hard-Sell-URL im Fliesstext nötig.
+**CTA:** Featured-Link «Für wen ich arbeite» – keine Hard-Sell-URL im Fliesstext nötig. Optional: Standortbestimmung → **[Link /#kurz-check]**
 
 ---
 
@@ -101,6 +102,8 @@ Typische Ursachen:
 3. Niemand, der beim Inhaber ehrlich nachfragt: *Was lasst ihr bewusst liegen?*
 
 Genau dort setze ich an: Boxen-Stopp, Co-Pilot, Navigator oder Masterplan – je nachdem, was Du brauchst, oft als Mischung.
+
+Welche Intensität passt? Standortbestimmung → **[Link /#kurz-check]**
 
 **Frage:** *Woran merkst Du, dass Deine Strategie im Alltag verpufft?* (1 Satz reicht)
 
@@ -136,7 +139,8 @@ Es heisst: gemeinsam die wirtschaftliche Realität sortieren, die **2–3 Hebel*
 
 Für Inhaber und GL, die unter Zeitdruck Klarheit wollen, nicht noch ein Strategieprojekt.
 
-Format & Ablauf auf **[Link /zusammenarbeit]**
+Format & Ablauf auf **[Link /zusammenarbeit]**  
+Oder zuerst einordnen: Standortbestimmung → **[Link /#kurz-check]**
 
 ---
 
@@ -162,17 +166,15 @@ Wenn das gerade passt: **[Link /kontakt]** – 30 Minuten, unverbindlich.
 
 **Text:**
 
-In den letzten Jahren habe ich KI nicht nur «bewertet», sondern **in Mandaten erprobt** – inklusive agentischer Werkzeuge, wenn sie Zeit und Budget sparen.
-
-Meine Fragen für VR und GL bleiben gleich:
+Ich bewerte Tools nicht als Selbstzweck, sondern mit der Brille von GL und Verwaltungsrat:
 
 • Welcher Hebel?  
 • Welches Risiko / welche Abhängigkeit?  
 • Was lohnt sich unter Budget- und Zeitdruck?
 
-In der Beratung: klare Optionen, kein Tech-Deutsch.
+In Mandaten erprobt – in der Beratung als klare Optionen, ohne Tech-Deutsch.
 
-**Kein** Programmierer-Post. **Kein** Tool-Namen-Stapel.
+**Kein** Programmierer-Post. **Kein** Tool-Namen-Stapel. **Kein** «agentische KI».
 
 ---
 
@@ -184,7 +186,7 @@ In der Beratung: klare Optionen, kein Tech-Deutsch.
 
 Ein Verein mit Museumsbetrieb wollte Prozesse verschlanken und digital sichtbar werden – **ohne** schweres IT-Grossprojekt.
 
-Ergebnis: schlankere Abläufe, moderne Website, weniger manuelle Arbeit – in Eigenregie und mit klaren Verantwortlichkeiten.
+Ergebnis: schlankere Abläufe, moderne Website, weniger manuelle Arbeit – mit modernen KI-gestützten Workflows schlank und kosteneffizient umgesetzt.
 
 Details (inkl. Grenzen des Vorgehens) → Fallstudie auf **[Link /referenzen]**
 
@@ -201,11 +203,12 @@ Details (inkl. Grenzen des Vorgehens) → Fallstudie auf **[Link /referenzen]**
 Nicht gross, nicht endlos – aber mit Tiefe:
 
 → Strategische Weiche oder Nachfolge-Thema  
-→ GL/Inhaber, die einen **ehrlichen** Gegenüber suchern  
+→ GL/Inhaber, die einen **ehrlichen** Gegenüber suchen  
 → Winterthur, Ostschweiz, Schweizweit (Video)
 
 Erstgespräch: 30 Minuten, vertraulich, ohne Verpflichtung.
 
+Zuerst einordnen: Standortbestimmung → **[Link /#kurz-check]**  
 **DM mit «Sparring»** oder **[Link /kontakt]**
 
 *(Kapazitätsangabe nur posten, wenn wirklich zutreffend – sonst Formulierung «begrenzte Kapazität» oder streichen.)*
@@ -222,7 +225,7 @@ Sparring auf Augenhöhe aus über 30 Jahren C-Level – für Unternehmer und Fü
 
 Danke für eure Rückmeldungen zum Relaunch. Wer den Einstieg verpasst hat:
 
-**[Link Website]** · **[Link /kontakt]**
+**[Link Website]** · **[Link /#kurz-check]** · **[Link /kontakt]**
 
 Ich freue mich über DMs mit konkreter Fragestellung – je spezifischer, desto besser kann ich vorab einordnen.
 
@@ -260,6 +263,7 @@ Neue Website, klarer Auftrag: Sparring auf Augenhöhe für KMU – aus über 30 
 Strategie, Nachfolge, Transformation und schwierige Führungsentscheidungen: unabhängig, pragmatisch, umsetzungsnah. Geführt von Thomas Giger, Gründer und Inhaber.
 
 Entdecken: www.inspiroo.ch
+Standortbestimmung: www.inspiroo.ch/#kurz-check
 Erstgespräch vereinbaren: www.inspiroo.ch/kontakt
 
 Gründer Thomas Giger auf LinkedIn: https://www.linkedin.com/in/thomas-giger/
@@ -270,7 +274,7 @@ Gründer Thomas Giger auf LinkedIn: https://www.linkedin.com/in/thomas-giger/
 ## Checkliste vor Serie
 
 - [ ] Banner + Headline + Info (`texte.md`)
-- [ ] Featured: Website, Referenzen, Kontakt
+- [ ] Featured: Website, Referenzen, Kontakt, Standortbestimmung
 - [ ] Erstgespräch-Link in Profil
 - [ ] Post 1 am Tag X **festhalten** (pin optional, max. 7 Tage sinnvoll)
 - [ ] Kalender-Einträge für Di/Do 8:00 mit fertigem Text (dieses Dokument)

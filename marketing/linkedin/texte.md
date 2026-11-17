@@ -55,7 +55,7 @@ Sparring-Partner für Unternehmer und Führungsgremien | 13 Jahre CEO Fust | Str
 ```text
 Sparring auf Augenhöhe – aus über 30 Jahren Führungserfahrung.
 
-Ich begleite Unternehmerinnen, Unternehmer und Führungsgremien bei strategischen Weichenstellungen und strategischer Neuausrichtung – unabhängig, diskret und mit der Praxis aus Geschäftsleitung und Verwaltungsrat.
+Ich begleite Unternehmerinnen, Unternehmer und Führungsgremien bei unternehmerischen Weichenstellungen und der strategischen Neuausrichtung – unabhängig, diskret und mit der Praxis aus Geschäftsleitung und Verwaltungsrat.
 
 Über 30 Jahre C-Level, davon 13 Jahre als CEO der Dipl. Ing. Fust AG, zuvor Geschäftsleitung Sony (Schweiz), Verwaltungsräte bei Service7000 und nettoshop. Ich habe IT-Landschaften erneuert, Online-Handel und Logistik ausgebaut und Firmen integriert – immer im laufenden Betrieb.
 
@@ -72,13 +72,15 @@ Seit 2023 stelle ich diese Erfahrung mit inspiroo unabhängig zur Verfügung. Ke
 Zusammenarbeit – Orientierung für Dauer und Tiefe, oft als Mischung:
 
 • Boxen-Stopp – Klarheit über die wirtschaftliche Situation und die nächsten Hebel
-• Co-Pilot – unabhängiges Sparring für schwierige Entscheidungen
-• Navigator – Begleitung, wenn die Umsetzung nicht vorankommt
-• Masterplan – strategische Neuausrichtung mit Etappenzielen
+• Co-Pilot – unabhängiges Sparring: Optionen durchdenken, bevor Du entscheidest
+• Navigator – Umsetzung im Alltag, inkl. digitaler Werkzeuge und KI
+• Masterplan – strategische Neuausrichtung; wo Digitalisierung und KI das Geschäftsmodell verändern – und wo nicht
 
 Für inhabergeführte KMU, Familienunternehmen und Geschäftsleitungen in Wachstums- oder Veränderungsphasen.
 
 Was beschäftigt Dich aktuell in Deinem Unternehmen? Lass uns darüber sprechen – unverbindlich, persönlich in Winterthur oder per Video.
+
+Oder zuerst einordnen: Standortbestimmung auf www.inspiroo.ch/#kurz-check
 
 www.inspiroo.ch · thomas.giger@inspiroo.ch · +41 79 608 24 24
 ```
@@ -93,7 +95,7 @@ www.inspiroo.ch · thomas.giger@inspiroo.ch · +41 79 608 24 24
 **Unternehmen:** inspiroo gmbh · seit 2023 · Winterthur
 
 ```text
-Unabhängiger Sparring-Partner für KMU. Begleitung von Unternehmerinnen, Unternehmern und Führungsgremien bei Strategie, wichtigen Entscheidungen und Umsetzung. Mandate u. a. Home of Innovation (Verwaltungsratspräsidium, Strategie, Interims-Management), Webling, Raiffeisenbank Winterthur, Historischer Verein Winterthur / Museum Schaffen, digitaler B2B-Anbieter, inhabergeführtes Handelsunternehmen in der Lebensmittelbranche; Dozententätigkeit ZHAW School of Management and Law.
+Unabhängiger Sparring-Partner für KMU. Begleitung von Unternehmerinnen, Unternehmern und Führungsgremien bei Strategie, wichtigen Entscheidungen und Umsetzung. Mandate u. a. Home of Innovation (Verwaltungsratspräsidium, Strategie, Interims-Management), Webling, Raiffeisenbank Winterthur, Historischer Verein Winterthur / Museum Schaffen, Anbieter digitaler Gebäudelösungen, inhabergeführtes Handelsunternehmen in der Lebensmittelbranche; Dozententätigkeit ZHAW School of Management and Law.
 ```
 
 ---
@@ -103,6 +105,7 @@ Unabhängiger Sparring-Partner für KMU. Begleitung von Unternehmerinnen, Untern
 1. **Website:** «Sparring auf Augenhöhe – aus eigener Führungserfahrung» → https://www.inspiroo.ch (bzw. Vorschau-URL bis Go-live)
 2. **Referenzen / Fallstudien:** https://www.inspiroo.ch/referenzen
 3. **Kontakt:** «Unverbindliches Erstgespräch» → https://www.inspiroo.ch/kontakt
+4. **Standortbestimmung:** «Wo steht Ihr KMU?» → https://www.inspiroo.ch/#kurz-check
 
 ---
 
@@ -160,6 +163,7 @@ Thomas Giger, Gründer und Inhaber: über 30 Jahre C-Level, davon 13 Jahre CEO d
 
 Im Kern immer dasselbe: unternehmerische Erfahrung, unabhängiger Blick, vertrauensvolles und ehrliches Gegenüber – ohne Verkauf von Software oder Standardmethodik.
 
+Standortbestimmung: www.inspiroo.ch/#kurz-check
 Unverbindliches Erstgespräch: www.inspiroo.ch/kontakt
 ```
 
@@ -187,6 +191,7 @@ Neue Website, klarer Auftrag: Sparring auf Augenhöhe für KMU – aus über 30 
 
 Strategie, Nachfolge, Transformation, schwierige Entscheidungen: unabhängig, pragmatisch, umsetzungsnah.
 
+Standortbestimmung: www.inspiroo.ch/#kurz-check
 www.inspiroo.ch/kontakt – unverbindliches Erstgespräch, Winterthur oder Video.
 ```
 
@@ -195,7 +200,8 @@ www.inspiroo.ch/kontakt – unverbindliches Erstgespräch, Winterthur oder Video
 ```text
 Wenn viel auf dem Spiel steht und der Weg nicht eindeutig ist, lohnt ein unverbindliches Erstgespräch: 30 Minuten, vertraulich, ohne Auftragszwang.
 
-www.inspiroo.ch/kontakt
+Zuerst einordnen: www.inspiroo.ch/#kurz-check
+Oder direkt: www.inspiroo.ch/kontakt
 ```
 
 ### Unternehmensseite – einmaliger Relaunch-Post
@@ -210,6 +216,7 @@ Neue Website, klarer Auftrag: Sparring auf Augenhöhe für KMU – aus über 30 
 Strategie, Nachfolge, Transformation und schwierige Führungsentscheidungen: unabhängig, pragmatisch, umsetzungsnah. Geführt von Thomas Giger, Gründer und Inhaber.
 
 Entdecken: www.inspiroo.ch
+Standortbestimmung: www.inspiroo.ch/#kurz-check
 Erstgespräch vereinbaren: www.inspiroo.ch/kontakt
 
 Gründer Thomas Giger auf LinkedIn: https://www.linkedin.com/in/thomas-giger/
