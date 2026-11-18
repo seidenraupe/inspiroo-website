@@ -1,3 +1,7 @@
+import { mkdtemp, rm } from "node:fs/promises";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
+
 import { Client as FtpClient } from "basic-ftp";
 import SftpClient from "ssh2-sftp-client";
 
@@ -185,11 +189,27 @@ async function promoteSftp(env, args) {
   }
 }
 
-/** FTPS-Fallback (gleiche Logik, weniger Komfort bei verschachtelten Ordnern). */
+async function resolveNestedFtps(client, explicitFrom) {
+  if (explicitFrom) return explicitFrom.replace(/^\/+/, "");
+  for (const candidate of ["inspiroo.ch/inspiroo.ch", "inspiroo.ch"]) {
+    try {
+      const items = await client.list(candidate);
+      if (items.some((item) => item.name === "index.html")) {
+        return candidate;
+      }
+    } catch {
+      /* */
+    }
+  }
+  return null;
+}
+
+/** FTPS: Download aus Unterordner, Upload ins FTP-Root (wie SFTP promote). */
 async function promoteFtps(env, args) {
   const { remotePath } = requireKreativmediaEnv(env);
   const ftpsPort = Number(env.KREATIVMEDIA_FTPS_PORT || 21);
   const client = new FtpClient(120_000, FTPS_CLIENT_OPTIONS);
+  const tmpDir = await mkdtemp(join(tmpdir(), "inspiroo-promote-"));
   try {
     await client.access({
       host: env.KREATIVMEDIA_SFTP_HOST,
@@ -203,19 +223,42 @@ async function promoteFtps(env, args) {
       await client.cd(remotePath);
     }
     const pwd = await client.pwd();
-    console.log(
-      JSON.stringify({
-        ok: false,
+    const nested = await resolveNestedFtps(client, args.from);
+    if (!nested) {
+      return {
+        ok: true,
         mode: "ftps",
-        message:
-          "FTPS-Verschieben ist eingeschränkt — bitte promote per SFTP (Port 2121) oder Plesk-Dateimanager.",
+        action: "noop",
+        message: "Keine verschachtelte Site — nichts zu verschieben.",
         pwd,
-        hint: "npm run promote:kreativmedia nutzt zuerst SFTP",
-      }),
-    );
-    process.exit(1);
+      };
+    }
+
+    if (args.dryRun) {
+      return {
+        ok: true,
+        mode: "ftps",
+        action: "promote",
+        pwd,
+        from: nested,
+        to: pwd,
+        dryRun: true,
+      };
+    }
+
+    await client.downloadToDir(tmpDir, nested);
+    await client.uploadFromDir(tmpDir);
+
+    return {
+      ok: true,
+      mode: "ftps",
+      from: nested,
+      to: pwd,
+      note: "Alte Unterordner ggf. in Plesk löschen (inspiroo.ch/…).",
+    };
   } finally {
     client.close();
+    await rm(tmpDir, { recursive: true, force: true });
   }
 }
 
@@ -230,5 +273,6 @@ try {
   const message =
     sftpError instanceof Error ? sftpError.message : String(sftpError);
   console.error(`SFTP: ${message}`);
-  await promoteFtps(env, args);
+  const result = await promoteFtps(env, args);
+  console.log(JSON.stringify(result));
 }
