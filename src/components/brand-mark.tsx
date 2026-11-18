@@ -29,7 +29,7 @@ export function BrandMark({ className, variant = "default" }: BrandMarkProps) {
         height={header ? 410 : 628}
         className={
           header
-            ? "h-[4.75rem] w-auto max-w-none sm:h-[5.75rem]"
+            ? "h-[3.325rem] w-auto max-w-none sm:h-[4.025rem]"
             : "h-14 w-auto max-w-[12.5rem] object-contain object-left sm:h-16 sm:max-w-[15rem]"
         }
         priority={header}
