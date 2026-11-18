@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useLayoutEffect } from "react";
 import { usePathname } from "next/navigation";
 
 function scrollToCurrentHash() {
@@ -13,16 +13,27 @@ function scrollToCurrentHash() {
   requestAnimationFrame(() => requestAnimationFrame(run));
 }
 
-/** Client-Navigation scrollt in Next.js nicht zuverlässig zu #anker – dieser Effekt ergänzt das. */
+function scrollToTop() {
+  window.scrollTo(0, 0);
+}
+
+/** Scroll bei Client-Navigation: ohne Hash nach oben, mit Hash zum Anker (Next.js-Export unzuverlässig). */
 export function HashScroll() {
   const pathname = usePathname();
+
+  useLayoutEffect(() => {
+    const { hash } = window.location;
+    if (!hash || hash === "#") scrollToTop();
+  }, [pathname]);
 
   useEffect(() => {
     scrollToCurrentHash();
   }, [pathname]);
 
   useEffect(() => {
-    const onHashChange = () => scrollToCurrentHash();
+    const onHashChange = () => {
+      scrollToCurrentHash();
+    };
     window.addEventListener("hashchange", onHashChange);
     return () => window.removeEventListener("hashchange", onHashChange);
   }, []);
