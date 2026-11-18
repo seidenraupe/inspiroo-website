@@ -67,7 +67,27 @@ Ohne gesetzte Variablen bleibt die Website ohne Tracking-Code (Datenschutztext b
 
 **Voraussetzung:** Workflow **«Verify KreativMedia SFTP»** muss von GitHub-Runnern aus grün sein (SFTP Port **2121** beim Hoster erreichbar). Sonst Self-hosted Runner oder KreativMedia-Support kontaktieren.
 
-Workflows: `deploy-kreativmedia.yml` (Build + Upload), `verify-kreativmedia-sftp.yml` (nur Test). CI schreibt `.env` über `scripts/ci-kreativmedia-env.sh` (`KREATIVMEDIA_PROTOCOL=sftp`).
+Workflows: `deploy-kreativmedia.yml` (Build + Upload), `verify-kreativmedia-sftp.yml` (nur Test). CI schreibt `.env` aus den `FTP_*`-Secrets (`KREATIVMEDIA_PROTOCOL=auto`).
+
+### Drei Kopien synchron halten
+
+| Kopie | Rolle |
+|-------|--------|
+| **Cursor Origin** `inspiroo-web` | Kanonischer Stand nach Agent-Arbeit |
+| **GitHub** `seidenraupe/inspiroo-website` | Pages + Actions (Deploy) |
+| **Lokal** (Windows) | Entwicklung, `npm run deploy:kreativmedia` |
+
+**GitHub & Lokal auf Origin-Stand bringen** (PAT mit **Contents** + **Workflows** Schreibrecht):
+
+```bash
+git remote add cursor https://origin.cursor.com/thomas-giger/inspiroo-web.git
+git fetch cursor
+git checkout main
+git merge cursor/main
+git push origin main    # wenn origin = GitHub
+```
+
+Prüfen: `git log -1 --oneline` soll auf allen drei gleich sein (z. B. nach Merge inkl. Deploy-Workflow). Enthält `main` die Datei `.github/workflows/deploy-kreativmedia.yml`.
 
 ### Lokal (wie andrezuraikat)
 
