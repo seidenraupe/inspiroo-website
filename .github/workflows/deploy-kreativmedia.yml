@@ -1,0 +1,62 @@
+# Produktion www.inspiroo.ch: Build + SFTP-Upload nach KreativMedia.
+# Secrets: FTP_HOST, FTP_USER, FTP_PASSWORD, FTP_REMOTE_DIR; optional GA/Search Console wie Pages.
+name: Deploy KreativMedia (production)
+
+on:
+  workflow_dispatch:
+    inputs:
+      skip_verify:
+        description: SFTP-Test überspringen (nur wenn Verify separat grün war)
+        required: false
+        type: boolean
+        default: false
+
+concurrency:
+  group: kreativmedia-production
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: KreativMedia-Zugang aus Secrets
+        env:
+          FTP_HOST: ${{ secrets.FTP_HOST }}
+          FTP_USER: ${{ secrets.FTP_USER }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          FTP_REMOTE_DIR: ${{ secrets.FTP_REMOTE_DIR }}
+        run: |
+          cat > .env <<EOF
+          KREATIVMEDIA_SFTP_HOST=${FTP_HOST}
+          KREATIVMEDIA_SFTP_PORT=2121
+          KREATIVMEDIA_SFTP_USER=${FTP_USER}
+          KREATIVMEDIA_SFTP_PASSWORD=${FTP_PASSWORD}
+          KREATIVMEDIA_REMOTE_PATH=${FTP_REMOTE_DIR}
+          KREATIVMEDIA_PROTOCOL=auto
+          EOF
+
+      - name: SFTP-Verbindung prüfen
+        if: ${{ inputs.skip_verify != true }}
+        run: npm run test:kreativmedia
+
+      - name: Produktions-Build (out/, kein GitHub-Pfad)
+        run: npm run build:production
+        env:
+          NEXT_PUBLIC_GA_MEASUREMENT_ID: ${{ secrets.NEXT_PUBLIC_GA_MEASUREMENT_ID }}
+          NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION: ${{ secrets.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION }}
+
+      - name: Auf KreativMedia hochladen
+        run: node scripts/deploy-kreativmedia.mjs
