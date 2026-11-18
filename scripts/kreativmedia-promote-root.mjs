@@ -208,7 +208,7 @@ async function resolveNestedFtps(client, explicitFrom) {
 async function promoteFtps(env, args) {
   const { remotePath } = requireKreativmediaEnv(env);
   const ftpsPort = Number(env.KREATIVMEDIA_FTPS_PORT || 21);
-  const client = new FtpClient(120_000, FTPS_CLIENT_OPTIONS);
+  const client = new FtpClient(600_000, FTPS_CLIENT_OPTIONS);
   const tmpDir = await mkdtemp(join(tmpdir(), "inspiroo-promote-"));
   try {
     await client.access({
