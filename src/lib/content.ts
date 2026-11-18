@@ -183,7 +183,7 @@ export const about = {
   intro:
     "Heute begleite ich KMU als unabhängiger Sparring-Partner. Die Grundlage dafür ist über 30 Jahre Verantwortung als Unternehmensleiter und im Verwaltungsrat, darunter 13 Jahre als CEO der Dipl. Ing. Fust AG – mit einem unternehmerischen Führungsverständnis, das ich in die Zusammenarbeit einbringe.",
   teaser:
-    "Heute begleite ich KMU als Sparring-Partner. Die Grundlage ist die Erfahrung eines Unternehmensleiters und Verwaltungsrats: Entscheidungen unter Unsicherheit, Veränderungen gegen Widerstände, Verantwortung für Mitarbeitende und Ergebnis.",
+    "Heute begleite ich KMU als Sparring-Partner. Die Grundlage ist die langjährige Erfahrung eines Unternehmensleiters und Verwaltungsrats: Entscheidungen unter Unsicherheit, Veränderungen gegen Widerstände, Verantwortung für Mitarbeitende und Ergebnis.",
   story: [
     {
       question: "Was ich als CEO gelernt habe",
