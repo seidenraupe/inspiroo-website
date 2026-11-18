@@ -115,7 +115,6 @@ export default function ContactPage() {
             <h2 className="text-3xl">Termin direkt wählen</h2>
             <p className="measure mt-3 text-base text-ink/65">
               Unverbindlich 30 Minuten – persönlich in Winterthur oder per Video.
-              Der Kalender ist Teil dieser Website und erscheint in denselben Farben.
             </p>
             <div className="mt-8 overflow-hidden rounded-lg border border-ink/10 bg-white">
               <CalBooking calLink={bookingCalLink} />
