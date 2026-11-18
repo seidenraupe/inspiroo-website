@@ -28,7 +28,8 @@ export const clientVoices = {
     role: "Gründer und VRP",
     company: "Home of Innovation",
     logo: { src: "/logos/home-of-innovation.png", width: 360, height: 168 },
-    quote: null,
+    quote:
+      "Thomas hat uns geholfen, aus vielen Ideen klare strategische Prioritäten zu machen. Er hat umgehend und mit viel persönlichem Einsatz die Umsetzung ertragssteigernder Massnahmen gestartet und eine konsequente Kundenorientierung vorgelebt.",
     sample:
       "Thomas hat uns geholfen, aus vielen Ideen klare strategische Prioritäten zu machen. Er hat umgehend und mit viel persönlichem Einsatz die Umsetzung ertragssteigernder Massnahmen gestartet und eine konsequente Kundenorientierung vorgelebt.",
   },
@@ -89,7 +90,8 @@ export const clientVoices = {
     role: "Deputy Head Team Corporate Finance & Corporate Banking",
     company: "ZHAW School of Management and Law",
     logo: { src: "/logos/zhaw.png", width: 256, height: 256 },
-    quote: null,
+    quote:
+      "Mit packenden Einblicken in Führung, digitale Transformation und M&A-Prozesse brachte Thomas mit seinem Referat echte unternehmerische Praxis direkt in den Hörsaal. Die lebhaften Diskussionen zeigten, wie wertvoll ungeschminkter Wissenstransfer aus dem Führungsalltag ist.",
     sample:
       "Mit packenden Einblicken in Führung, digitale Transformation und M&A-Prozesse brachte Thomas mit seinem Referat echte unternehmerische Praxis direkt in den Hörsaal. Die lebhaften Diskussionen zeigten, wie wertvoll ungeschminkter Wissenstransfer aus dem Führungsalltag ist.",
   },
