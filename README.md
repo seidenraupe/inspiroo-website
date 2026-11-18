@@ -73,21 +73,51 @@ Workflows: `deploy-kreativmedia.yml` (Build + Upload), `verify-kreativmedia-sftp
 
 | Kopie | Rolle |
 |-------|--------|
-| **Cursor Origin** `inspiroo-web` | Kanonischer Stand nach Agent-Arbeit |
+| **Cursor Origin** `inspiroo-web` | Kanonischer Stand nach **Cloud-Agent**-Arbeit |
 | **GitHub** `seidenraupe/inspiroo-website` | Pages + Actions (Deploy) |
-| **Lokal** (Windows) | Entwicklung, `npm run deploy:kreativmedia` |
+| **Lokal** (Windows) | Brücke: Origin → GitHub, `npm run deploy:kreativmedia` |
 
-**GitHub & Lokal auf Origin-Stand bringen** (PAT mit **Contents** + **Workflows** Schreibrecht):
+### Warum der Agent nicht direkt nach GitHub pusht
 
-```bash
-git remote add cursor https://origin.cursor.com/thomas-giger/inspiroo-web.git
-git fetch cursor
-git checkout main
-git merge cursor/main
-git push origin main    # wenn origin = GitHub
+Der Cloud-Agent committet nach **Cursor Origin** (`origin.cursor.com`).  
+`git push` nach **GitHub** aus der VM nutzt ein **eingeschränktes Token** (Lesen oft ok, **Schreiben** fehlgeschlagen).  
+Ihr **Fine-grained PAT** in Cursor gilt für **Desktop/Git Credential Manager**, nicht automatisch für die Remote-VM.
+
+**Praktisch:** einmal nach Agent-Arbeit lokal (oder in Cursor Desktop mit GitHub als Remote) **Origin holen → GitHub pushen**.
+
+### Sync Origin → GitHub (Windows, einmalig einrichten)
+
+Im Projektordner (PowerShell), PAT mit **Contents: Read and write** + **Workflows: Read and write**:
+
+```powershell
+git remote add cursor https://origin.cursor.com/git/thomas-giger/inspiroo-web.git
+# falls schon vorhanden: git remote set-url cursor https://origin.cursor.com/git/thomas-giger/inspiroo-web.git
+git remote -v
+# origin soll auf github.com/seidenraupe/inspiroo-website zeigen
 ```
 
-Prüfen: `git log -1 --oneline` soll auf allen drei gleich sein (z. B. nach Merge inkl. Deploy-Workflow). Enthält `main` die Datei `.github/workflows/deploy-kreativmedia.yml`.
+**Nach jeder Agent-Session** (oder vor Deploy auf KreativMedia):
+
+```powershell
+git fetch cursor
+git checkout main
+git pull origin main
+git merge cursor/main
+# Konflikte in IDE lösen, dann:
+git push origin main
+```
+
+Kurz-Check:
+
+```powershell
+git log -1 --oneline
+git ls-remote cursor main
+git ls-remote origin main
+```
+
+Die beiden SHA am Ende sollten **gleich** sein. Danach: [Actions → Deploy KreativMedia](https://github.com/seidenraupe/inspiroo-website/actions/workflows/deploy-kreativmedia.yml).
+
+**Optional GitHub-Secret** `FTP_PORT` = `21` (FTPS; zusätzlich zu `FTP_HOST`, `FTP_USER`, …). CI setzt `KREATIVMEDIA_PROTOCOL=ftps` über `scripts/ci-kreativmedia-env.sh`.
 
 ### Lokal (wie andrezuraikat)
 
