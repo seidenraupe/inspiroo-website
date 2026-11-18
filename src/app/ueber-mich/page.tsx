@@ -7,9 +7,9 @@ import { about, experienceFacts } from "@/lib/content";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Thomas Giger – Verwaltungsrat, ehem. Unternehmensleiter und Sparring-Partner für KMU",
+  title: "Sparring-Partner für KMU – mit der Erfahrung eines Unternehmensleiters und Verwaltungsrats",
   description:
-    "Über 30 Jahre als Unternehmensleiter und im Verwaltungsrat, 13 Jahre CEO der Dipl. Ing. Fust AG: Thomas Giger begleitet heute KMU als unabhängiger Sparring-Partner aus Winterthur.",
+    "Thomas Giger begleitet KMU als unabhängiger Sparring-Partner – mit der Erfahrung eines Unternehmensleiters und Verwaltungsrats, darunter 13 Jahre CEO der Dipl. Ing. Fust AG. Sitz in Winterthur.",
 };
 
 export default function AboutPage() {
@@ -62,7 +62,7 @@ export default function AboutPage() {
         <div className="max-w-3xl">
           <p className="eyebrow">Meine Geschichte</p>
           <h2 className="mt-4 text-3xl text-balance sm:text-4xl">
-            Vom CEO zum unabhängigen Sparring-Partner
+            Vom Unternehmensleiter zum Sparring-Partner
           </h2>
         </div>
         <div className="mt-12 grid gap-x-16 gap-y-14 md:grid-cols-2">

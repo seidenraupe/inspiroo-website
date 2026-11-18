@@ -90,7 +90,7 @@ export const process = {
 export const servicesIntro = {
   kicker: "Wie ich Sie unterstützen kann",
   title: "Gleiche Erfahrung – unterschiedliche Intensität",
-  body: "Die vier Formate sind keine Standardprodukte, sondern eine Orientierung für Dauer und Tiefe der Zusammenarbeit. Was Sie bekommen, ist immer dasselbe: meine Erfahrung als Unternehmensleiter mit unternehmerischem Führungsverständnis, einen unabhängigen Blick und ein ehrliches Gegenüber. Im Erstgespräch kläre ich mit Ihnen, was Ihre Situation braucht – oft ist es eine Mischung der vier Formate. Bei Bedarf ziehe ich spezialisierte Partner aus meinem Netzwerk bei.",
+  body: "Die vier Formate sind keine Standardprodukte, sondern eine Orientierung für Dauer und Tiefe der Zusammenarbeit. Was Sie bekommen, ist immer dasselbe: einen Sparring-Partner mit der Erfahrung eines Unternehmensleiters und Verwaltungsrats, einen unabhängigen Blick und ein ehrliches Gegenüber. Im Erstgespräch kläre ich mit Ihnen, was Ihre Situation braucht – oft ist es eine Mischung der vier Formate. Bei Bedarf ziehe ich spezialisierte Partner aus meinem Netzwerk bei.",
 };
 
 export const services = [
@@ -121,7 +121,7 @@ export const services = [
     problem: "Ich brauche einen unabhängigen Gesprächspartner für schwierige Entscheidungen.",
     situation:
       "Als Unternehmer tragen Sie die letzte Verantwortung allein. Ich bin der diskrete Sparring-Partner auf Augenhöhe, mit dem Sie strategische Optionen, Nachfolgefragen oder heikle Weichenstellungen offen durchdenken können.",
-    headline: "Ein Sparring-Partner, der die Verantwortung eines CEO aus eigener Erfahrung kennt.",
+    headline: "Ein Sparring-Partner, der die Verantwortung eines Unternehmensleiters aus eigener Erfahrung kennt.",
     body: "Als Unternehmerin oder Unternehmer können Sie nicht jede Frage mit Ihrem Team besprechen. Im vertraulichen Sparring übernehme ich die Rolle des kritischen und lösungsorientierten Fragestellers – im 1:1 oder im Verwaltungsrat und in der Geschäftsleitung. Ich denke mit Ihnen Optionen und Konsequenzen durch, bevor Sie entscheiden.",
     outcomes: [
       "Vertraulicher Austausch auf Augenhöhe",
@@ -179,11 +179,11 @@ export const services = [
 ] as const;
 
 export const about = {
-  title: "Thomas Giger – Verwaltungsrat, ehem. Unternehmensleiter und Sparring-Partner für KMU",
+  title: "Sparring-Partner für KMU – mit der Erfahrung eines Unternehmensleiters und Verwaltungsrats",
   intro:
-    "Während über 30 Jahren habe ich als Unternehmensleiter und im Verwaltungsrat Verantwortung getragen, davon 13 Jahre als CEO der Dipl. Ing. Fust AG. Heute stelle ich diese Erfahrung als unabhängiger Sparring-Partner Unternehmerinnen, Unternehmern und Geschäftsleitungen von KMU zur Verfügung.",
+    "Heute begleite ich KMU als unabhängiger Sparring-Partner. Die Grundlage dafür ist über 30 Jahre Verantwortung als Unternehmensleiter und im Verwaltungsrat, darunter 13 Jahre als CEO der Dipl. Ing. Fust AG – mit einem unternehmerischen Führungsverständnis, das ich in die Zusammenarbeit einbringe.",
   teaser:
-    "Ich kenne die Herausforderungen eines Unternehmensleiters aus eigener Erfahrung: Entscheidungen unter Unsicherheit, Veränderungen gegen Widerstände, Verantwortung für Mitarbeitende und Ergebnis. Genau diese Perspektive – mit unternehmerischem Führungsverständnis – bringe ich in die Zusammenarbeit ein.",
+    "Heute begleite ich KMU als Sparring-Partner. Die Grundlage ist die Erfahrung eines Unternehmensleiters und Verwaltungsrats: Entscheidungen unter Unsicherheit, Veränderungen gegen Widerstände, Verantwortung für Mitarbeitende und Ergebnis.",
   story: [
     {
       question: "Was ich als CEO gelernt habe",
