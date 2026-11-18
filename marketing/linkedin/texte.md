@@ -1,9 +1,16 @@
-# LinkedIn-Texte (Stand: Website-Neulaunch)
+# LinkedIn-Texte (Stand: Website live, Sie-Form)
 
-Alle Texte sind auf die aktuelle Website (Hero, Positionierung, Formate) abgestimmt. Kopieren mit Strg+C / Einfügen in LinkedIn – Absätze und Aufzählungen bleiben erhalten.
+Texte zur aktuellen Website: Sparring-Partner für KMU, Erfahrung als Unternehmensleiter und Verwaltungsrat, vier Formate, Standortbestimmung vor dem Gespräch.
 
-**Website (Vorschau):** https://seidenraupe.github.io/inspiroo-website/  
-**Website (Ziel-Domain):** https://www.inspiroo.ch (sobald die neue Seite dort live ist, Links in Profil und Posts darauf umstellen)
+Kopieren mit Strg+C / Einfügen in LinkedIn – Absätze und Aufzählungen bleiben erhalten.
+
+**Website:** https://www.inspiroo.ch  
+**Standortbestimmung (Direktlink):** https://www.inspiroo.ch/standortbestimmung/  
+**Kontakt:** https://www.inspiroo.ch/kontakt/
+
+**Anrede:** durchgehend Sie, wie auf der Website.
+
+**Reihenfolge der Handlungsaufforderung:** zuerst einordnen (Standortbestimmung), Gespräch nur wenn Inhaberin, Inhaber, Geschäftsleitung oder Verwaltungsrat eine konkrete Weiche vor sich hat. Kein offener Kennenlern-Call.
 
 ---
 
@@ -18,9 +25,9 @@ Alle Texte sind auf die aktuelle Website (Hero, Positionierung, Formate) abgesti
 | `linkedin-profil-banner-a.png` | Typografisch, Hero-Claim (Empfehlung) |
 | `linkedin-profil-banner-b.png` | Mit Foto «Arbeitsgespräch» |
 
-Format **1584 × 396 px** (2× exportiert). Das Profilfoto überdeckt unten links – dort steht bewusst nichts.
+Format **1584 × 396 px**. Das Profilfoto überdeckt unten links – dort steht bewusst nichts.
 
-**Text auf Banner A**
+**Text auf Banner A** (entspricht dem Hero der Website)
 
 - Eyebrow: *Strategisches Sparring · Nachfolge & Transformation · KMU-Governance*
 - Titel: *Sparring auf Augenhöhe. Aus eigener Führungserfahrung.*
@@ -32,20 +39,18 @@ Format **1584 × 396 px** (2× exportiert). Das Profilfoto überdeckt unten link
 - Titel: *Sparring auf Augenhöhe – für Unternehmer und Führungsgremien.*
 - Zeile: *Strategie · Entscheidungen · Umsetzung \| www.inspiroo.ch*
 
-Neu exportieren: HTML in diesem Ordner im Browser öffnen oder `npm run export:linkedin-banners` (falls vorhanden), PNGs überschreiben und in LinkedIn hochladen.
-
 ---
 
 ### Slogan / Headline (max. 220 Zeichen)
 
 ```text
-Sparring auf Augenhöhe für KMU | Ehem. CEO Dipl. Ing. Fust | Strategie, Nachfolge & Transformation | Verwaltungsrat · Gründer inspiroo, Winterthur
+Sparring-Partner für KMU | Unternehmensleiter und Verwaltungsrat | 13 Jahre CEO Dipl. Ing. Fust | inspiroo, Winterthur
 ```
 
 Kürzere Variante:
 
 ```text
-Sparring-Partner für Unternehmer und Führungsgremien | 13 Jahre CEO Fust | Strategie, Entscheidungen, Umsetzung | inspiroo.ch
+Sparring-Partner für KMU – mit der Erfahrung eines Unternehmensleiters und Verwaltungsrats | inspiroo.ch
 ```
 
 ---
@@ -53,39 +58,38 @@ Sparring-Partner für Unternehmer und Führungsgremien | 13 Jahre CEO Fust | Str
 ### Info (Infobereich) – zum Einfügen
 
 ```text
-Sparring auf Augenhöhe – aus über 30 Jahren Führungserfahrung.
+Sparring-Partner für KMU – mit der Erfahrung eines Unternehmensleiters und Verwaltungsrats.
 
-Ich begleite Unternehmerinnen, Unternehmer und Führungsgremien bei unternehmerischen Weichenstellungen und der strategischen Neuausrichtung – unabhängig, diskret und mit der Praxis aus Geschäftsleitung und Verwaltungsrat.
+Ich begleite Inhaberinnen, Inhaber, Geschäftsleitungen und Verwaltungsräte bei Weichenstellungen und der strategischen Neuausrichtung: unabhängig, diskret, aus der Praxis.
 
-Über 30 Jahre C-Level, davon 13 Jahre als CEO der Dipl. Ing. Fust AG, zuvor Geschäftsleitung Sony (Schweiz), Verwaltungsräte bei Service7000 und nettoshop. Ich habe IT-Landschaften erneuert, Online-Handel und Logistik ausgebaut und Firmen integriert – immer im laufenden Betrieb.
+Über 30 Jahre C-Level, davon 13 Jahre als CEO der Dipl. Ing. Fust AG, zuvor Geschäftsleitung Sony (Schweiz), Verwaltungsräte bei Service7000 und nettoshop. IT-Landschaften erneuert, Online-Handel und Logistik ausgebaut, Firmen integriert – immer im laufenden Betrieb.
 
 Was ich daraus mitbringe:
 
 → Entscheiden schlägt Perfektion. Fehler lassen sich korrigieren, Stillstand nicht.
 → Strategie entscheidet sich im Alltag – nicht auf Slides.
-→ An der Spitze steht man oft allein. Ein unabhängiger Sparring-Partner spart Nerven, Zeit und teure Umwege.
+→ An der Spitze steht man mit schwierigen Weichen oft allein. Ein unabhängiger Sparring-Partner spart Nerven, Zeit und teure Umwege.
 
-Digitale Transformation und KI betrachte ich mit der Brille der Geschäftsführung: Hebel, Grenzen und Wirtschaftlichkeit – in Mandaten erprobt, in der Beratung als klare Optionen aufbereitet, ohne Tech-Deutsch.
+Seit 2023 mit inspiroo. Keine 80-seitigen Berichte für die Schublade. Pragmatische Lösungen, von Macher zu Macher.
 
-Seit 2023 stelle ich diese Erfahrung mit inspiroo unabhängig zur Verfügung. Keine 80-seitigen Berichte für die Schublade – pragmatische Lösungen im Sparring von Macher zu Macher.
-
-Zusammenarbeit – Orientierung für Dauer und Tiefe, oft als Mischung:
+Vier Formen der Zusammenarbeit – Orientierung für Dauer und Tiefe, oft als Mischung:
 
 • Boxen-Stopp – Klarheit über die wirtschaftliche Situation und die nächsten Hebel
-• Co-Pilot – unabhängiges Sparring: Optionen durchdenken, bevor Du entscheidest
-• Navigator – Umsetzung im Alltag, inkl. digitaler Werkzeuge und KI
+• Co-Pilot – unabhängiges Sparring: Optionen durchdenken, bevor Sie entscheiden
+• Navigator – Umsetzung im Alltag, inklusive digitaler Werkzeuge und KI
 • Masterplan – strategische Neuausrichtung; wo Digitalisierung und KI das Geschäftsmodell verändern – und wo nicht
 
-Für inhabergeführte KMU, Familienunternehmen und Geschäftsleitungen in Wachstums- oder Veränderungsphasen.
+Am meisten Wirkung bei etablierten, inhabergeführten KMU und Familienunternehmen mit einer Organisation – in Wachstum oder Umbau. Junge Firmen begleite ich, wenn aus einer Idee ein tragfähiges Unternehmen werden soll.
 
-Was beschäftigt Dich aktuell in Deinem Unternehmen? Lass uns darüber sprechen – unverbindlich, persönlich in Winterthur oder per Video.
+Nicht mein Auftrag: IT-Projektleitung, Interim ohne Strategiefrage, oder ein Konzeptpapier ohne Umsetzungsverantwortung bei Ihnen.
 
-Oder zuerst einordnen: Standortbestimmung auf www.inspiroo.ch/#kurz-check
+Zuerst einordnen, in etwa zwei Minuten: www.inspiroo.ch/standortbestimmung/
+Ein Gespräch folgt, wenn das Ergebnis und Ihre konkrete Frage zusammenpassen.
 
 www.inspiroo.ch · thomas.giger@inspiroo.ch · +41 79 608 24 24
 ```
 
-*(Zeichenzahl Info: LinkedIn erlaubt begrenzte Länge – bei Kürzungswarnung den Block «Digitale Transformation…» oder die Aufzählung der vier Formate straffen.)*
+*(Bei Kürzungswarnung zuerst den Sony-/VR-Satz streichen, dann die vier Formate auf die Namen kürzen.)*
 
 ---
 
@@ -95,37 +99,41 @@ www.inspiroo.ch · thomas.giger@inspiroo.ch · +41 79 608 24 24
 **Unternehmen:** inspiroo gmbh · seit 2023 · Winterthur
 
 ```text
-Unabhängiger Sparring-Partner für KMU. Begleitung von Unternehmerinnen, Unternehmern und Führungsgremien bei Strategie, wichtigen Entscheidungen und Umsetzung. Mandate u. a. Home of Innovation (Verwaltungsratspräsidium, Strategie, Interims-Management), Webling, Raiffeisenbank Winterthur, Historischer Verein Winterthur / Museum Schaffen, Anbieter digitaler Gebäudelösungen, inhabergeführtes Handelsunternehmen in der Lebensmittelbranche; Dozententätigkeit ZHAW School of Management and Law.
+Unabhängiger Sparring-Partner für KMU. Begleitung von Inhaberinnen, Inhabern, Geschäftsleitungen und Verwaltungsräten bei Strategie, wichtigen Entscheidungen und Umsetzung. Mandate u. a. Home of Innovation (Verwaltungsratspräsidium, Strategie, Interims-Management), Webling, Raiffeisenbank Winterthur, Historischer Verein Winterthur / Museum Schaffen, Anbieter digitaler Gebäudelösungen, inhabergeführtes Handelsunternehmen in der Lebensmittelbranche; Dozententätigkeit ZHAW School of Management and Law.
 ```
 
 ---
 
 ### Im Fokus (Featured)
 
-LinkedIn liest beim Einfügen einer URL den SEO-Titel der Seite – den nach dem Hinzufügen **überschreiben**. Titel kurz halten (eine Zeile), Text 1–2 Sätze.
+LinkedIn setzt beim Einfügen einer URL den SEO-Titel. Den danach **überschreiben**.
+
+Reihenfolge: Beweis und Einordnung vor dem Gespräch.
 
 **1. Website** → https://www.inspiroo.ch  
-- **Titel:** Sparring auf Augenhöhe  
-- **Text:** Aus eigener Führungserfahrung. Für Unternehmer und Führungsgremien, wenn viel auf dem Spiel steht – und der Weg nicht eindeutig ist.
+- **Titel:** Sparring-Partner für KMU  
+- **Text:** Mit der Erfahrung eines Unternehmensleiters und Verwaltungsrats. Wenn viel auf dem Spiel steht und der Weg nicht eindeutig ist.
 
-**2. Referenzen** → https://www.inspiroo.ch/referenzen  
-- **Titel:** Resultate aus der Praxis  
-- **Text:** Stimmen von Mandantinnen und Mandanten, ausgewählte Mandate und Meilensteine aus 13 Jahren als CEO – im Sparring wie in der eigenen Führung.
-
-**3. Erstgespräch** → https://www.inspiroo.ch/kontakt  
-- **Titel:** Unverbindliches Erstgespräch  
-- **Text:** 30 Minuten, vertraulich, ohne Auftragszwang. Persönlich in Winterthur oder per Video – danach ist klar, ob und wie ich unterstützen kann.
-
-**4. Standortbestimmung** → https://www.inspiroo.ch/#kurz-check  
+**2. Standortbestimmung** → https://www.inspiroo.ch/standortbestimmung/  
 - **Titel:** Wo steht Ihr KMU?  
-- **Text:** Kurze Standortbestimmung: vier Fragen, ein Vorschlag für die passende Intensität – Boxen-Stopp, Co-Pilot, Navigator oder Masterplan. Ohne Anmeldung.
+- **Text:** Kurzer Check, etwa zwei Minuten. Vorschlag für die passende Intensität: Boxen-Stopp, Co-Pilot, Navigator oder Masterplan. Ohne Anmeldung.
+
+**3. Referenzen** → https://www.inspiroo.ch/referenzen/  
+- **Titel:** Resultate aus der Praxis  
+- **Text:** Stimmen von Mandantinnen und Mandanten, ausgewählte Mandate und Meilensteine aus 13 Jahren als CEO.
+
+**4. Kontakt** → https://www.inspiroo.ch/kontakt/  
+- **Titel:** Gespräch, wenn die Frage konkret ist  
+- **Text:** 30 Minuten, vertraulich, ohne Auftragszwang. Sinnvoll, nachdem die Standortbestimmung eine Richtung gezeigt hat – persönlich in Winterthur oder per Video.
 
 ---
 
 ### Website-Link im Profil
 
-- **Linktext:** Erstgespräch vereinbaren  
-- **URL:** https://www.inspiroo.ch/kontakt
+Nicht auf das Formular zeigen. Wer nur stöbert, soll sich zuerst einordnen.
+
+- **Linktext:** Wo steht Ihr KMU?  
+- **URL:** https://www.inspiroo.ch/standortbestimmung/
 
 ---
 
@@ -135,7 +143,7 @@ LinkedIn liest beim Einfügen einer URL den SEO-Titel der Seite – den nach dem
 
 ### Titelbild
 
-- Datei: `linkedin-firmen-banner.png` · Format **1128 × 191 px** (2× exportiert)
+- Datei: `linkedin-firmen-banner.png` · Format **1128 × 191 px**
 
 **Text auf Firmen-Banner**
 
@@ -147,40 +155,39 @@ LinkedIn liest beim Einfügen einer URL den SEO-Titel der Seite – den nach dem
 
 ### Im Fokus (Featured) – Unternehmensseite
 
-Wie beim Personenprofil: URL einfügen, dann **Titel und Text überschreiben** (nicht den SEO-Titel stehen lassen). Die Schaltfläche «Website besuchen» bleibt separat → `/kontakt`.
+URL einfügen, dann Titel und Text überschreiben.
 
 **1. Website** → https://www.inspiroo.ch  
-- **Titel:** Sparring auf Augenhöhe  
-- **Text:** Unabhängige Begleitung für KMU – mit über 30 Jahren Erfahrung in Geschäftsleitung und Verwaltungsrat. Winterthur.
+- **Titel:** Sparring-Partner für KMU  
+- **Text:** Unabhängige Begleitung – mit der Erfahrung eines Unternehmensleiters und Verwaltungsrats. Winterthur.
 
-**2. Zusammenarbeit** → https://www.inspiroo.ch/zusammenarbeit  
-- **Titel:** Vier Formate, eine Haltung  
-- **Text:** Boxen-Stopp, Co-Pilot, Navigator, Masterplan: Orientierung für Dauer und Tiefe – oft als Mischung, immer auf Augenhöhe.
-
-**3. Referenzen** → https://www.inspiroo.ch/referenzen  
-- **Titel:** Resultate aus der Praxis  
-- **Text:** Ausgewählte Mandate und Kundenstimmen: Strategie, Innovation, Sparring und Lehre – plus Führungserfahrung als CEO von Dipl. Ing. Fust.
-
-**4. Standortbestimmung** → https://www.inspiroo.ch/#kurz-check  
+**2. Standortbestimmung** → https://www.inspiroo.ch/standortbestimmung/  
 - **Titel:** Wo steht Ihr KMU?  
-- **Text:** In wenigen Fragen zur passenden Intensität. Unverbindlich, ohne Anmeldung – danach Erstgespräch, wenn es passt.
+- **Text:** In wenigen Fragen zur passenden Intensität. Unverbindlich, ohne Anmeldung.
 
-Nach dem Relaunch-Post: diesen Beitrag **anheften** (erscheint dann ebenfalls unter «Im Fokus»). Den persönlichen Launch-Post von Thomas nicht hier duplizieren.
+**3. Zusammenarbeit** → https://www.inspiroo.ch/zusammenarbeit/  
+- **Titel:** Vier Formen, eine Haltung  
+- **Text:** Boxen-Stopp, Co-Pilot, Navigator, Masterplan. Orientierung für Dauer und Tiefe – oft als Mischung.
 
-Reihenfolge: Website zuerst, dann Formate, dann Beweis (Referenzen), dann Einstieg ohne Gesprächszwang (Standortbestimmung).
+**4. Referenzen** → https://www.inspiroo.ch/referenzen/  
+- **Titel:** Resultate aus der Praxis  
+- **Text:** Mandate und Kundenstimmen: Strategie, Innovation, Sparring und Lehre – plus 13 Jahre als CEO der Dipl. Ing. Fust AG.
+
+**Schaltfläche «Website besuchen»:** https://www.inspiroo.ch/standortbestimmung/  
+(Nicht auf `/kontakt` legen. Das Gespräch bleibt der zweite Schritt.)
 
 ---
 
 ### Slogan (max. 120 Zeichen)
 
 ```text
-Sparring auf Augenhöhe für KMU – mit über 30 Jahren Erfahrung in Geschäftsleitung und Verwaltungsrat.
+Sparring-Partner für KMU – mit der Erfahrung eines Unternehmensleiters und Verwaltungsrats.
 ```
 
-Alternative (kürzer):
+Alternative:
 
 ```text
-Strategisches Sparring für KMU – aus eigener C-Level-Praxis.
+Sparring für KMU. Aus der Praxis von Geschäftsleitung und Verwaltungsrat.
 ```
 
 ---
@@ -188,22 +195,22 @@ Strategisches Sparring für KMU – aus eigener C-Level-Praxis.
 ### Übersicht – zum Einfügen
 
 ```text
-inspiroo – Sparring auf Augenhöhe.
+inspiroo – Sparring-Partner für KMU.
 
-Für Unternehmerinnen, Unternehmer und Führungsgremien, die ihr KMU strategisch weiterentwickeln wollen – mit jemandem, der selbst Verantwortung in Geschäftsleitung und Verwaltungsrat getragen hat.
+Für Inhaberinnen, Inhaber, Geschäftsleitungen und Verwaltungsräte, die ihr Unternehmen weiterentwickeln – mit jemandem, der selbst als Unternehmensleiter und im Verwaltungsrat Verantwortung getragen hat.
 
-Thomas Giger, Gründer und Inhaber: über 30 Jahre C-Level, davon 13 Jahre CEO der Dipl. Ing. Fust AG. Heute unabhängige Begleitung bei:
+Thomas Giger, Gründer: über 30 Jahre C-Level, davon 13 Jahre CEO der Dipl. Ing. Fust AG. Unabhängige Begleitung bei:
 
-• Wachstum und Profitabilität verbessern
-• Strategie überprüfen und neu ausrichten
-• Schwierige Führungsentscheidungen treffen
-• Digitale Transformation vorantreiben
-• Organisation und Führung weiterentwickeln
+• Wachstum und Profitabilität
+• Strategie prüfen und neu ausrichten
+• schwierigen Führungsentscheidungen
+• digitaler Transformation, wo sie das Geschäft verändert
+• Organisation und Führung
 
-Im Kern immer dasselbe: unternehmerische Erfahrung, unabhängiger Blick, vertrauensvolles und ehrliches Gegenüber – ohne Verkauf von Software oder Standardmethodik.
+Immer dasselbe: unternehmerische Erfahrung, unabhängiger Blick, ehrliches Gegenüber. Kein Verkauf von Software oder Standardmethodik.
 
-Standortbestimmung: www.inspiroo.ch/#kurz-check
-Unverbindliches Erstgespräch: www.inspiroo.ch/kontakt
+Zuerst einordnen: www.inspiroo.ch/standortbestimmung/
+Gespräch, wenn die Frage konkret ist: www.inspiroo.ch/kontakt/
 ```
 
 ---
@@ -216,8 +223,8 @@ Unverbindliches Erstgespräch: www.inspiroo.ch/kontakt
 | **Branche** | Unternehmensberatung |
 | **Grösse** | 1 Mitarbeitende/r |
 | **Hauptsitz** | Seidenstrasse 47, 8400 Winterthur |
-| **Spezialgebiete** | Unternehmensberatung KMU, Sparring CEO, Strategieberatung, Unternehmensentwicklung, Verwaltungsrat, Digitale Transformation, Nachfolge, Transformation, Führung, Winterthur |
-| **Schaltfläche** | Website besuchen → https://www.inspiroo.ch/kontakt |
+| **Spezialgebiete** | Unternehmensberatung KMU, Sparring Geschäftsleitung, Strategieberatung, Unternehmensentwicklung, Verwaltungsrat, Digitale Transformation, Nachfolge, Führung, Winterthur |
+| **Schaltfläche** | Website besuchen → https://www.inspiroo.ch/standortbestimmung/ |
 
 ---
 
@@ -226,55 +233,36 @@ Unverbindliches Erstgespräch: www.inspiroo.ch/kontakt
 **Launch Website**
 
 ```text
-Neue Website, klarer Auftrag: Sparring auf Augenhöhe für KMU – aus über 30 Jahren Führungserfahrung.
+Neue Website, klarer Auftrag: Sparring-Partner für KMU – mit der Erfahrung eines Unternehmensleiters und Verwaltungsrats.
 
-Strategie, Nachfolge, Transformation, schwierige Entscheidungen: unabhängig, pragmatisch, umsetzungsnah.
+Strategie, Nachfolge, Transformation, schwierige Entscheidungen. Unabhängig und umsetzungsnah.
 
-Standortbestimmung: www.inspiroo.ch/#kurz-check
-www.inspiroo.ch/kontakt – unverbindliches Erstgespräch, Winterthur oder Video.
+Zuerst einordnen: www.inspiroo.ch/standortbestimmung/
 ```
 
-**Erstgespräch**
+**Erstgespräch – nur einsetzen, wenn der Beitrag die Zielgruppe schon eingegrenzt hat**
 
 ```text
-Wenn viel auf dem Spiel steht und der Weg nicht eindeutig ist, lohnt ein unverbindliches Erstgespräch: 30 Minuten, vertraulich, ohne Auftragszwang.
+Ein Gespräch lohnt sich, wenn Sie die Verantwortung tragen und eine konkrete Weiche ansteht: 30 Minuten, vertraulich, ohne Auftragszwang.
 
-Zuerst einordnen: www.inspiroo.ch/#kurz-check
-Oder direkt: www.inspiroo.ch/kontakt
+Vorher die Einordnung: www.inspiroo.ch/standortbestimmung/
+Danach, mit dem Ergebnis und einem Satz zu Ihrer Frage: www.inspiroo.ch/kontakt/
 ```
 
 ### Unternehmensseite – einmaliger Relaunch-Post
 
 **Timing:** 1–2 Tage nach dem persönlichen Launch-Post (Post 1 in `relaunch-serie.md`), nicht am selben Tag.
 
-**Text (als inspiroo gmbh posten):**
-
 ```text
-Neue Website, klarer Auftrag: Sparring auf Augenhöhe für KMU – aus über 30 Jahren Erfahrung in Geschäftsleitung und Verwaltungsrat.
+Neue Website, klarer Auftrag: Sparring-Partner für KMU – mit der Erfahrung eines Unternehmensleiters und Verwaltungsrats.
 
-Strategie, Nachfolge, Transformation und schwierige Führungsentscheidungen: unabhängig, pragmatisch, umsetzungsnah. Geführt von Thomas Giger, Gründer und Inhaber.
+Strategie, Nachfolge, Transformation und schwierige Führungsentscheidungen. Unabhängig und umsetzungsnah. Geführt von Thomas Giger.
 
-Entdecken: www.inspiroo.ch
-Standortbestimmung: www.inspiroo.ch/#kurz-check
-Erstgespräch vereinbaren: www.inspiroo.ch/kontakt
+Für Inhaberinnen, Inhaber, Geschäftsleitungen und Verwaltungsräte etablierter KMU.
 
-Gründer Thomas Giger auf LinkedIn: https://www.linkedin.com/in/thomas-giger/
+Zuerst einordnen: www.inspiroo.ch/standortbestimmung/
+
+Thomas Giger: https://www.linkedin.com/in/thomas-giger/
 ```
 
-**Optionaler erster Kommentar (von Thomas persönlich):** Kurz den persönlichen Launch-Post verlinken, falls bereits live.
-
-**Bild für den Post:** `linkedin-firmen-relaunch-post.png` (1200×627 px, Foto «Sparring am Whiteboard» + Claim). Quelle/Vorlage: `firmen-relaunch-post.html` (wie bei den Bannern neu exportierbar).
-
-**Titelbild der Firma** (oben am Profil): weiter `linkedin-firmen-banner.png` – nicht mit dem Post-Bild verwechseln.
-
----
-
-## Export der Banner-PNGs
-
-1. `profil-banner-a.html`, `profil-banner-b.html`, `firmen-banner.html`, `firmen-relaunch-post.html` im Browser öffnen (Datei muss `banner.css` und ggf. Bilder unter `public/images/` finden).
-2. Viewport exakt auf Banner-Masse setzen und Screenshot speichern als:
-   - `linkedin-profil-banner-a.png` (1584×396)
-   - `linkedin-profil-banner-b.png` (1584×396)
-   - `linkedin-firmen-banner.png` (1128×191)
-   - `linkedin-firmen-relaunch-post.png` (1200×627)
-3. In LinkedIn unter Profil bzw. Unternehmensseite «Titelbild ändern» hochladen.
+**Bild:** `linkedin-firmen-relaunch-post.png` (1200×627). Titelbild der Firma bleibt `linkedin-firmen-banner.png`.

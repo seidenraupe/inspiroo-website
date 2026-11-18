@@ -1,69 +1,78 @@
 # LinkedIn-Serie: Begleitung Website-Relaunch
 
-Zielreihenfolge: **Anfragen → qualifizierte Gespräche → Reichweite → Follower.**  
-Follower allein sind kein KPI – sie sind ein Nebenprodukt von nützlichen Beiträgen und sichtbarer Expertise.
+Ziel: **wenige passende Gespräche**, nicht viele offene 30-Minuten-Calls.
+
+Standortbestimmung filtert. Das Gespräch ist der zweite Schritt – für Inhaberinnen, Inhaber, Geschäftsleitung oder Verwaltungsrat mit einer konkreten Weiche (Ertrag, Nachfolge, Neuausrichtung, stockende Umsetzung).
+
+Wer nur «mal austauschen», ein IT-Projekt oder ein Konzeptpapier sucht, bekommt den Link zur Standortbestimmung, keinen Termin.
+
+## Regeln für jeden Post
+
+1. **Eine** Handlungsaufforderung. Standard: https://www.inspiroo.ch/standortbestimmung/
+2. Link auf `/kontakt` nur, wenn der Text die Zielgruppe schon ausschliesst und eine konkrete Frage verlangt.
+3. Anrede **Sie**. Fragen im Beitrag dienen dem Kommentar, nicht als Einladung zum Call.
+4. Kein «Schreiben Sie mir Sparring», kein «schauen Sie vorbei und sagen Sie mir, was fehlt».
+5. Tonalität wie die Website: direkt, Ich-Form, Augenhöhe. Sie ersetzt das Duzen, nicht die Kürze.
 
 ## Empfohlene Frequenz
 
 | Phase | Dauer | Rhythmus | Warum |
 | --- | --- | --- | --- |
-| **Launch** | Woche 1–3 | **2 Beiträge pro Woche** (Di + Do, 7:30–9:00 oder 12:00–13:00 CET) | Relaunch sichtbar machen, ohne Feed zu fluten |
-| **Verdichtung** | Woche 4–6 | **1 Beitrag pro Woche** | Tiefe statt Lärm; jeder Post ein klares Thema |
-| **Rhythmus** | ab Woche 7 | **1 Beitrag alle 10–14 Tage** + **3–5 echte Kommentare pro Woche** bei passenden Fremd-Posts | Nachhaltig für Ein-Personen-Marke |
+| **Launch** | Woche 1–3 | **2 Beiträge pro Woche** (Di + Do, 7:30–9:00 oder 12:00–13:00) | Relaunch sichtbar, ohne den Feed zu fluten |
+| **Verdichtung** | Woche 4–6 | **1 Beitrag pro Woche** | Ein Thema, eine passende Lesergruppe |
+| **Rhythmus** | ab Woche 7 | **1 Beitrag alle 10–14 Tage** + **3–5 echte Kommentare pro Woche** | Nachhaltig für eine Ein-Personen-Marke |
 
-**Zusätzlich (wichtiger als Posting-Frequenz):**
+**Antworten:** innerhalb von 60 Minuten. In Kommentaren nachfragen, nicht sofort einen Termin anbieten.  
+**Fremd-Kommentare:** 2–3 pro Woche bei Inhabern, Geschäftsleitung, Verwaltungsrat.  
+**Profil vor Post 1:** Banner, Headline, Info, Featured – siehe `texte.md`. Der Profil-Link zeigt auf die Standortbestimmung, nicht auf das Kontaktformular.
 
-- Innerhalb von **60 Minuten** auf jeden Kommentar unter eigenen Posts antworten (Frage zurückstellen → Dialog).
-- Pro Woche **2–3** substanzielle Kommentare bei Inhabern/GL/VR in der Zielgruppe (kein «Toll!»).
-- Profil **vor Post 1** aktualisieren: Banner, Headline, Info, Featured (3 Links), CTA «Erstgespräch vereinbaren» → siehe `texte.md`.
-
-**Was wenig bringt:** Täglich posten, reine Link-Posts ohne Kontext, Motivationssprüche, Hashtag-Wände (#10+), KI-Bait ohne eigene Erfahrung.
+**Wenig Wirkung:** tägliches Posten, nackte Links, Motivationssprüche, Hashtag-Wände, Tool-Listen zu KI.
 
 ---
 
-## Roter Faden der Serie (10 Posts)
+## Roter Faden (10 Posts)
 
-Jeder Post: **1 These → 1 Mini-Beispiel/Erfahrung → 1 CTA** (meist Erstgespräch, Standortbestimmung oder Website).  
-Links: bis `www.inspiroo.ch` live ist GitHub-Pages-Vorschau oder `/kontakt` bzw. `/#kurz-check` auf der jeweiligen Domain.
+Jeder Post: **1 These → 1 Erfahrung → 1 nächster Schritt.**
 
-| # | Woche | Typ | Ziel |
-| --- | --- | --- | --- |
-| 1 | 1 Di | Launch | Aufmerksamkeit, Profil-Klicks |
-| 2 | 1 Do | Positionierung | Qualifizierung Zielgruppe |
-| 3 | 2 Di | Pain Point | Identifikation Inhaber/GL |
-| 4 | 2 Do | Social Proof | Vertrauen (freigegebenes Zitat) |
-| 5 | 3 Di | Methode | Boxen-Stopp / Klarheit |
-| 6 | 3 Do | Story CEO | Differenzierung vs. Berater |
-| 7 | 4 | Kontrast | KI auf GL-Ebene |
-| 8 | 5 | Case (anonym/teaser) | Kompetenz ohne Tech-Detail |
-| 9 | 6 | CTA-fokussiert | **Anfragen** |
-| 10 | 8 | Recap + Einladung | Nachzieher, DMs |
+| # | Woche | Typ | Wen der Post anspricht | Nächster Schritt |
+| --- | --- | --- | --- | --- |
+| 1 | 1 Di | Launch | Menschen, die die Positionierung prüfen | Website, dann Standortbestimmung |
+| 2 | 1 Do | Für wen / für wen nicht | Inhaber und GL etablierter KMU | Standortbestimmung |
+| 3 | 2 Di | Strategie im Alltag | GL, deren Beschlüsse liegen bleiben | Standortbestimmung |
+| 4 | 2 Do | Stimme | Wer Beweis vor Anspruch will | Referenzen, kein Call |
+| 5 | 3 Di | Boxen-Stopp | Ertrag unklar, Zeit knapp | Standortbestimmung |
+| 6 | 3 Do | Allein an der Spitze | Inhaber/GL mit einer Entscheidung | Gespräch nur mit einem Satz zur Frage |
+| 7 | 4 | KI auf GL-Ebene | Wer über Hebel entscheidet, nicht über Tools | Standortbestimmung |
+| 8 | 5 | Fall, Verein/Museum | Digitalvorhaben, das die Leitung tragen muss | Referenzen |
+| 9 | 6 | Kapazität | Wenige, die schon wissen, dass es passt | Standortbestimmung, dann Kontakt mit Ergebnis |
+| 10 | 8 | Recap | Wer die Serie verpasst hat | Standortbestimmung |
 
 ---
 
 ## Post 1 – Launch (Woche 1, Dienstag)
 
-**Hook (erste Zeile, sichtbar vor «…mehr»):**  
+**Hook:**  
 *Drei Schubladen-Strategien haben mir in 30 Jahren C-Level mehr Mühe bereitet als jede Krise.*
 
 **Text:**
 
-Deshalb ist meine Website neu – und klarer:
+Deshalb ist die Website neu – und enger gefasst:
 
-→ Sparring auf Augenhöhe für KMU  
+→ Sparring-Partner für KMU  
+→ mit der Erfahrung eines Unternehmensleiters und Verwaltungsrats  
 → Strategie, Nachfolge, Transformation, schwierige Führungsentscheidungen  
-→ Nicht Folien, sondern das, was im Alltag zählt
+→ was im Alltag zählt, nicht das Folienset
 
-Über 30 Jahre Geschäftsleitung und Verwaltungsrat, 13 Jahre CEO bei Dipl. Ing. Fust – heute unabhängig mit inspiroo in Winterthur.
+13 Jahre CEO der Dipl. Ing. Fust AG, davor und daneben Geschäftsleitung und Verwaltungsrat. Seit 2023 unabhängig mit inspiroo in Winterthur.
 
-Was sich geändert hat: weniger Angebots-Katalog, mehr ehrliche Einordnung, wann ich nutzen kann – und wann nicht.
+Was sich geändert hat: weniger Katalog, mehr ehrliche Einordnung – wann ich nützlich bin und wann nicht.
 
-Schau rein und sag mir, was fehlt oder trifft: **[Link Website]**
+www.inspiroo.ch
 
-Zuerst einordnen: Standortbestimmung → **[Link /#kurz-check]**  
-Oder direkt: unverbindliches Erstgespräch (30 Min., vertraulich) → **[Link /kontakt]**
+Wenn Sie wissen wollen, welche Intensität zu Ihrer Lage passt:  
+www.inspiroo.ch/standortbestimmung/
 
-**Interaktion:** Frage am Ende: *«Was reisst Dich aktuell mehr: Strategie, Organisation oder Digitales?»*
+**Frage (nur für Kommentare):** *Was beschäftigt Ihre Geschäftsleitung gerade mehr: Ertrag, Umsetzung oder die nächste strategische Weiche?*
 
 ---
 
@@ -75,207 +84,194 @@ Oder direkt: unverbindliches Erstgespräch (30 Min., vertraulich) → **[Link /k
 
 Am meisten Wirkung habe ich in KMU, die …
 
-• eine Grösse und Organisation haben (kein Zwei-Personen-Startup ohne Struktur)  
-• von Inhaber, Familie oder GL getragen werden  
-• gerade wachsen, umbauen oder die Strategie neu sortieren  
+• schon eine Organisation haben, nicht nur eine Idee  
+• von Inhaberin, Inhaber, Familie oder Geschäftsleitung getragen werden  
+• wachsen, umbauen oder die Strategie neu sortieren müssen  
 
-Weniger mein Terrain: reine IT-Projektleitung, Interim ohne Strategiebezug, oder wenn nur ein externes Konzeptpapier gesucht wird.
+Junge Firmen: ja, wenn aus der Idee ein tragfähiges Unternehmen werden soll. Nein, wenn ein Pitch, eine IT-Umsetzung oder ein Konzept ohne eigene Umsetzungsverantwortung gesucht wird.
 
-Wenn Du jemanden suchst, der **selbst im Sattel gesessen** hat und mit Dir **Macher zu Macher** spricht: Website / Kontakt in der Bio.
+Wenn Sie jemanden suchen, der selbst Personal, Ergebnis und Verwaltungsrat verantwortet hat: zuerst einordnen.
 
-**CTA:** Featured-Link «Für wen ich arbeite» – keine Hard-Sell-URL im Fliesstext nötig. Optional: Standortbestimmung → **[Link /#kurz-check]**
+www.inspiroo.ch/standortbestimmung/
+
+**Kein Kontakt-Link in diesem Post.**
 
 ---
 
-## Post 3 – Pain Point (Woche 2, Dienstag)
+## Post 3 – Strategie im Alltag (Woche 2, Dienstag)
 
 **Hook:** *Strategie scheitert selten am Papier. Sie scheitert am Montagmorgen.*
 
 **Text:**
 
-Ich habe erlebt: Boards und GL verabschieden klare Prioritäten – und vier Wochen später arbeitet die Organisation wie zuvor.
+Boards und Geschäftsleitungen verabschieden klare Prioritäten. Vier Wochen später arbeitet die Organisation wie zuvor.
 
-Typische Ursachen:
+Was ich dabei wiederholt sehe:
 
 1. Zu viele gleichwertige Ziele  
-2. Kennzahlen, die nicht steuern, sondern beruhigen  
-3. Niemand, der beim Inhaber ehrlich nachfragt: *Was lasst ihr bewusst liegen?*
+2. Kennzahlen, die beruhigen, statt zu steuern  
+3. Niemand, der bei der Inhaberin oder dem Inhaber nachfragt: *Was lassen Sie bewusst liegen?*
 
-Genau dort setze ich an: Boxen-Stopp, Co-Pilot, Navigator oder Masterplan – je nachdem, was Du brauchst, oft als Mischung.
+Dort setze ich an. Boxen-Stopp, Co-Pilot, Navigator oder Masterplan – je nach Lage, oft gemischt.
 
-Welche Intensität passt? Standortbestimmung → **[Link /#kurz-check]**
+Welche Intensität passt?  
+www.inspiroo.ch/standortbestimmung/
 
-**Frage:** *Woran merkst Du, dass Deine Strategie im Alltag verpufft?* (1 Satz reicht)
+**Frage:** *Woran merken Sie, dass Ihre Strategie im Alltag verpufft?*
 
 ---
 
-## Post 4 – Social Proof (Woche 2, Donnerstag)
+## Post 4 – Stimme (Woche 2, Donnerstag)
 
-**Hook:** *«Schnörkellos» – so hat mich ein Bank-VRP einmal beschrieben.*
+**Hook:** *«Schnörkellos» – so hat mich ein Bank-Verwaltungsratspräsident beschrieben.*
 
-**Text (Zitat freigegeben, Gregor Knoblauch / Raiffeisenbank Winterthur):**
+**Text** (Zitat Gregor Knoblauch, Raiffeisenbank Winterthur, freigegeben, nicht umschreiben):
 
 «Die Zusammenarbeit mit Thomas war inspirierend, unkompliziert und auf unsere Bedürfnisse als Bank abgestimmt … Die Zusammenarbeit war ‹schnörkellos› und praxisorientiert.»
 
-Für mich ist das Kompliment: **Pragmatismus schlägt Berater-Theater.**
+Für mich heisst das: Pragmatismus vor Berater-Theater. Unabhängig, auf Augenhöhe, ohne Druck auf den nächsten Auftrag.
 
-Ähnlich höre ich es von KMU: unabhängig, auf Augenhöhe, ohne Folgeauftrags-Druck.
+Weitere Stimmen und Mandate:  
+www.inspiroo.ch/referenzen/
 
-Mehr Stimmen auf der Website → **[Link /referenzen]**
-
-**Hinweis:** Zitat nicht bearbeiten. Optional zweiter Post später mit Webling-Zitat (getrennte Woche).
+**Kein Gesprächs-Link.** Wer danach schreibt «können wir telefonieren?», zuerst nach der konkreten Frage fragen.
 
 ---
 
 ## Post 5 – Boxen-Stopp (Woche 3, Dienstag)
 
-**Hook:** *Bevor wir über Wachstum reden: Wo verdient ihr wirklich Geld – und wo verliert ihr es?*
+**Hook:** *Bevor wir über Wachstum reden: Wo verdient Ihr Unternehmen Geld – und wo verliert es welches?*
 
 **Text:**
 
-«Boxen-Stopp» heisst bei mir keine Show mit 40 Charts.
+Boxen-Stopp ist keine Show mit 40 Charts.
 
-Es heisst: gemeinsam die wirtschaftliche Realität sortieren, die **2–3 Hebel** identifizieren, die sich **in 90 Tagen** bewegen lassen – und alles andere bewusst parken.
+Gemeinsam die wirtschaftliche Realität sortieren. Die zwei oder drei Hebel benennen, die sich in 90 Tagen bewegen lassen. Den Rest bewusst parken.
 
-Für Inhaber und GL, die unter Zeitdruck Klarheit wollen, nicht noch ein Strategieprojekt.
+Für Inhaberinnen, Inhaber und Geschäftsleitungen, die unter Zeitdruck Klarheit brauchen – nicht ein weiteres Strategieprojekt.
 
-Format & Ablauf auf **[Link /zusammenarbeit]**  
-Oder zuerst einordnen: Standortbestimmung → **[Link /#kurz-check]**
+Zuerst einordnen:  
+www.inspiroo.ch/standortbestimmung/
+
+Das Format im Detail: www.inspiroo.ch/zusammenarbeit/#boxen-stopp
 
 ---
 
-## Post 6 – CEO-Story (Woche 3, Donnerstag)
+## Post 6 – Allein an der Spitze (Woche 3, Donnerstag)
 
-**Hook:** *Als CEO trägst Du Verantwortung – und oft niemanden, der Dir ohne Agenda zuhört.*
+**Hook:** *Als Unternehmensleiter tragen Sie die Verantwortung – und oft hat niemand ohne eigene Agenda Zeit zuzuhören.*
 
 **Text:**
 
-13 Jahre CEO Fust, davor Sony Schweiz, dazu VR-Rollen: Ich kenne die Nächte, in denen die Optionen im Kopf kreisen.
+13 Jahre CEO der Dipl. Ing. Fust AG, davor Sony Schweiz, dazu Verwaltungsratsmandate. Ich kenne die Nächte, in denen die Optionen kreisen und das Team nicht der richtige Ort für die Frage ist.
 
-Deshalb inspiroo: **unabhängiges Sparring** – kein Softwarevertrieb, keine Methodik von der Stange.
+Deshalb inspiroo: unabhängiges Sparring. Kein Softwarevertrieb, keine Methode von der Stange.
 
-Was Du bekommst: Erfahrung aus Handel, Service, Digitalisierung, Integration – und die Bereitschaft, auch Unbequemes auszusprechen.
+Sie bekommen Erfahrung aus Handel, Service, Digitalisierung und Integration – und die Bereitschaft, Unbequemes auszusprechen.
 
-Wenn das gerade passt: **[Link /kontakt]** – 30 Minuten, unverbindlich.
+Ein Gespräch ist sinnvoll, wenn eine konkrete Entscheidung ansteht, die Sie nicht intern klären können. Schreiben Sie diese Entscheidung in einem Satz. Dann sage ich Ihnen, ob 30 Minuten lohnen.
+
+www.inspiroo.ch/kontakt/
+
+**Nicht** «wenn das gerade passt, buchen Sie». Ohne den einen Satz kein Termin.
 
 ---
 
-## Post 7 – KI (Woche 4)
+## Post 7 – KI auf Geschäftsleitungsebene (Woche 4)
 
 **Hook:** *KI in der Geschäftsleitung: weniger Demo, mehr Entscheidungsreife.*
 
 **Text:**
 
-Ich bewerte Tools nicht als Selbstzweck, sondern mit der Brille von GL und Verwaltungsrat:
+Ich bewerte Werkzeuge nicht als Selbstzweck. Die Frage auf Geschäftsleitungs- und Verwaltungsratsebene ist eine andere:
 
-• Welcher Hebel?  
-• Welches Risiko / welche Abhängigkeit?  
-• Was lohnt sich unter Budget- und Zeitdruck?
+• Welcher Hebel im Geschäft?  
+• Welches Risiko, welche Abhängigkeit?  
+• Was trägt sich bei Ihrem Budget und Ihrer Zeit?
 
-In Mandaten erprobt – in der Beratung als klare Optionen, ohne Tech-Deutsch.
+In Mandaten erprobt. In der Beratung als Optionen, ohne Fachchinesisch.
 
-**Kein** Programmierer-Post. **Kein** Tool-Namen-Stapel. **Kein** «agentische KI».
+Wenn bei Ihnen die Geschäftsleitung diese Frage trägt – und nicht die Tool-Auswahl:  
+www.inspiroo.ch/standortbestimmung/
+
+**Nicht posten:** Tool-Namen, «agentische KI», Programmierung.
 
 ---
 
-## Post 8 – Fallstudie-Teaser (Woche 5)
+## Post 8 – Fall (Woche 5)
 
-**Hook:** *Museum ja – Berater-Sprech nein.*
+**Hook:** *Ein Museum digitalisieren, ohne ein IT-Grossprojekt daraus zu machen.*
 
 **Text:**
 
-Ein Verein mit Museumsbetrieb wollte Prozesse verschlanken und digital sichtbar werden – **ohne** schweres IT-Grossprojekt.
+Ein Verein mit Museumsbetrieb wollte Abläufe verschlanken und digital sichtbar werden. Ohne neue Systemlandschaft.
 
-Ergebnis: schlankere Abläufe, moderne Website, weniger manuelle Arbeit – mit modernen KI-gestützten Workflows schlank und kosteneffizient umgesetzt.
+Entstanden sind schlankere Prozesse, eine moderne Website und weniger Handarbeit – mit KI-gestützten Workflows, bewusst klein gehalten.
 
-Details (inkl. Grenzen des Vorgehens) → Fallstudie auf **[Link /referenzen]**
+Grenzen inklusive, auf der Website:  
+www.inspiroo.ch/referenzen/
 
-**Frage:** *Hast Du ein Digitalvorhaben, das aus dem Ruder droht?*
+**Frage:** *Liegt bei Ihnen ein Digitalvorhaben, das die Geschäftsleitung selbst tragen muss – und das kein IT-Projekt mehr ist?*
+
+Wer mit «wir brauchen eine App» antwortet: auf die Referenzen verweisen, nicht einen Call anbieten.
 
 ---
 
-## Post 9 – Anfrage-Post (Woche 6)
+## Post 9 – Kapazität (Woche 6)
 
-**Hook:** *Ich habe im November noch Kapazität für **zwei** neue Sparring-Mandate.*
+**Hook:** *Wenige Mandate parallel. Lieber eine klare Absage als ein höfliches Kennenlerngespräch.*
 
 **Text:**
 
-Nicht gross, nicht endlos – aber mit Tiefe:
+Ich arbeite mit wenigen Unternehmen gleichzeitig.
 
-→ Strategische Weiche oder Nachfolge-Thema  
-→ GL/Inhaber, die einen **ehrlichen** Gegenüber suchen  
-→ Winterthur, Ostschweiz, Schweizweit (Video)
+Passend, wenn Sie die Verantwortung tragen und in den nächsten Monaten eine Weiche stellen: Ertrag, Nachfolge, Neuausrichtung oder eine Umsetzung, die im Alltag liegen bleibt.
 
-Erstgespräch: 30 Minuten, vertraulich, ohne Verpflichtung.
+Zuerst die Standortbestimmung:  
+www.inspiroo.ch/standortbestimmung/
 
-Zuerst einordnen: Standortbestimmung → **[Link /#kurz-check]**  
-**DM mit «Sparring»** oder **[Link /kontakt]**
+Ein Gespräch vereinbare ich, wenn das Ergebnis und Ihre Frage zusammenpassen. Im Formular oder in der Nachricht: das Ergebnis und ein Satz zur Entscheidung.
 
-*(Kapazitätsangabe nur posten, wenn wirklich zutreffend – sonst Formulierung «begrenzte Kapazität» oder streichen.)*
+www.inspiroo.ch/kontakt/
+
+*(«Zwei freie Plätze im November» nur schreiben, wenn es stimmt. Sonst bei «wenige Mandate» bleiben.)*
 
 ---
 
-## Post 10 – Recap (Woche 8)
+## Post 10 – Rückblick (Woche 8)
 
-**Hook:** *Was die neue Website über meine Arbeit sagt – in einem Satz.*
+**Hook:** *Was die Website über die Arbeit sagt – in einem Satz.*
 
 **Text:**
 
-Sparring auf Augenhöhe aus über 30 Jahren C-Level – für Unternehmer und Führungsgremien, wenn viel auf dem Spiel steht und der Weg nicht eindeutig ist.
+Sparring-Partner für KMU, mit der Erfahrung eines Unternehmensleiters und Verwaltungsrats – wenn viel auf dem Spiel steht und der Weg nicht eindeutig ist.
 
-Danke für eure Rückmeldungen zum Relaunch. Wer den Einstieg verpasst hat:
+Danke für Ihre Rückmeldungen zum Relaunch.
 
-**[Link Website]** · **[Link /#kurz-check]** · **[Link /kontakt]**
+Wer den Einstieg sucht, startet bei der Einordnung, nicht beim Kalender:  
+www.inspiroo.ch/standortbestimmung/
 
-Ich freue mich über DMs mit konkreter Fragestellung – je spezifischer, desto besser kann ich vorab einordnen.
+Schreiben Sie mir, wenn die Standortbestimmung eine Richtung gezeigt hat und Sie die konkrete Frage in einem Satz fassen können. Dann lässt sich sagen, ob ich der Richtige bin.
 
 ---
 
-## Messung (einfach, monatlich)
+## Messung (monatlich)
 
-| Metrik | Wo | Ziel Relaunch-Quartal |
+| Metrik | Wo | Ziel |
 | --- | --- | --- |
-| **Erstgespräch-Anfragen** | E-Mail, DM, Formular | **≥ 3 qualifizierte** |
-| Profilbesuche | LinkedIn Analytics | Trend +30 % vs. Vorquartal |
-| Post-Impressionen | Top-3 Posts | Identifizieren, was resonziert |
-| Kommentar-Tiefe | Eigene Posts | >5 echte Dialoge pro Launch-Post |
-| Follower | Profil | Nice-to-have |
+| **Gespräche mit konkreter Weiche** | Formular, E-Mail, Nachricht | Qualität vor Anzahl; Absagen ohne Termin zählen als Erfolg |
+| **Standortbestimmungen** | GA4 `standortcheck_result` | Steigt, ohne dass die Gesprächszahl gleich mitsteigt |
+| **Unpassende Anfragen** | eigene Notiz (IT-Auftrag, Pitch, «mal kennenlernen») | Sinkt |
+| Profilbesuche | LinkedIn | Nebenkennzahl |
+| Kommentar-Tiefe | eigene Posts | Echte Nachfragen, keine Emoji-Reihen |
+
+Eine Anfrage ohne Satz zur Entscheidung und ohne Bezug zur Standortbestimmung wird mit dem Link beantwortet, nicht mit einem Termin.
 
 ---
 
-## Wiederverwendung
+## Checkliste vor dem ersten Post
 
-- Aus **Post 5 + Prinzipien** eine **Karussell-PDF** (5 Karten: Unabhängig · Unternehmerisch · …) – späterer Post, gleicher Kanal.  
-- **Posts 4, 8** nach 6 Monaten mit anderem Hook erneut (Social Proof hält).  
-- Website-Launch auf **Unternehmensseite** inspiroo spiegeln (1x, nicht identischer Text).
-
----
-
-## Unternehmensseite – Relaunch-Post (einmalig)
-
-**1–2 Tage nach persönlichem Post 1**, sachlicher Ton, kein Link-Duplikat der ganzen Serie.
-
-**Visual:** `linkedin-firmen-relaunch-post.png` (1200×627) anhängen.
-
-```text
-Neue Website, klarer Auftrag: Sparring auf Augenhöhe für KMU – aus über 30 Jahren Erfahrung in Geschäftsleitung und Verwaltungsrat.
-
-Strategie, Nachfolge, Transformation und schwierige Führungsentscheidungen: unabhängig, pragmatisch, umsetzungsnah. Geführt von Thomas Giger, Gründer und Inhaber.
-
-Entdecken: www.inspiroo.ch
-Standortbestimmung: www.inspiroo.ch/#kurz-check
-Erstgespräch vereinbaren: www.inspiroo.ch/kontakt
-
-Gründer Thomas Giger auf LinkedIn: https://www.linkedin.com/in/thomas-giger/
-```
-
----
-
-## Checkliste vor Serie
-
-- [ ] Banner + Headline + Info (`texte.md`)
-- [ ] Featured Person: Website, Referenzen, Kontakt, Standortbestimmung
-- [ ] Featured Firma: Website, Zusammenarbeit, Referenzen, Standortbestimmung (`texte.md`)
-- [ ] Erstgespräch-Link in Profil
-- [ ] Post 1 am Tag X **festhalten** (pin optional, max. 7 Tage sinnvoll)
-- [ ] Kalender-Einträge für Di/Do 8:00 mit fertigem Text (dieses Dokument)
+- [ ] Headline, Info, Featured und Profil-Link aus `texte.md` (Sie, Standortbestimmung zuerst)
+- [ ] Firmen-Schaltfläche auf `/standortbestimmung/`, nicht auf `/kontakt`
+- [ ] Post 1 fertig im Entwurf, ohne zweiten Call-to-Action
+- [ ] Kalender für Di/Do, Text aus diesem Dokument
