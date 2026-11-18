@@ -135,10 +135,10 @@ export default function PrivacyPage() {
           <p>
             Für ein unverbindliches Erstgespräch können Sie über unsere Website
             einen externen Buchungsdienst nutzen (Cal.com, Cal.com, Inc., USA).
-            Beim Anklicken von «Termin direkt wählen» bzw. «Kalender öffnen» auf
-            der Kontaktseite werden Sie auf {site.bookingUrl} weitergeleitet. Dort reservieren
-            Sie den Termin auf den Servern von Cal.com — nicht mehr nur auf
-            unserer Website.
+            Auf der Kontaktseite ist der Kalender eingebettet; die Buchung läuft
+            in einem Rahmen (iframe) von Cal.com. Alternativ können Sie die
+            Buchungsseite direkt unter {site.bookingUrl} öffnen. In beiden Fällen
+            reservieren Sie den Termin auf den Servern von Cal.com.
           </p>
           <p>
             Im Buchungsprozess verarbeitet Cal.com die von Ihnen angegebenen

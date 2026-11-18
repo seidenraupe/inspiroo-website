@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { CalendarCheck, Mail, Phone } from "lucide-react";
 
+import { CalBooking } from "@/components/cal-booking";
 import { ContactForm } from "@/components/contact-form";
 import { ContentImage } from "@/components/content-image";
+import { bookingCalLink } from "@/lib/cal";
 import { firstCall, process } from "@/lib/content";
 import { gaTrackAttrs } from "@/lib/ga-track";
 import { bookingHref, bookingLinkExternal, site } from "@/lib/site";
@@ -59,8 +61,8 @@ export default function ContactPage() {
           </a>
           {site.bookingUrl ? (
             <a
-              href={bookingHref}
-              {...(bookingLinkExternal
+              href={bookingCalLink ? "#termin" : bookingHref}
+              {...(!bookingCalLink && bookingLinkExternal
                 ? { target: "_blank", rel: "noopener noreferrer" }
                 : {})}
               className="group flex flex-col rounded-lg border border-ink/15 bg-white p-7 transition-colors hover:border-ink/40"
@@ -73,7 +75,7 @@ export default function ContactPage() {
                 persönlich in Winterthur oder per Video.
               </p>
               <span className="mt-6 font-semibold text-navy underline decoration-navy/30 underline-offset-4">
-                Kalender öffnen
+                Zum Kalender
               </span>
             </a>
           ) : (
@@ -106,6 +108,36 @@ export default function ContactPage() {
           </a>
         </div>
       </section>
+
+      {bookingCalLink ? (
+        <section id="termin" className="scroll-mt-32 border-t border-ink/10 bg-sand">
+          <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-20">
+            <h2 className="text-3xl">Termin direkt wählen</h2>
+            <p className="measure mt-3 text-base text-ink/65">
+              Unverbindlich 30 Minuten – persönlich in Winterthur oder per Video.
+              Der Kalender ist Teil dieser Website und erscheint in denselben Farben.
+            </p>
+            <div className="mt-8 overflow-hidden rounded-lg border border-ink/10 bg-white">
+              <CalBooking calLink={bookingCalLink} />
+            </div>
+            <p className="mt-4 text-sm text-ink/50">
+              Kalender nicht sichtbar?{" "}
+              <a
+                href={site.bookingUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-brand hover:underline"
+                {...gaTrackAttrs("contact_channel", {
+                  channel: "booking",
+                  placement: "kontakt_embed_fallback",
+                })}
+              >
+                Buchungsseite auf cal.com öffnen
+              </a>
+            </p>
+          </div>
+        </section>
+      ) : null}
 
       <section className="border-t border-ink/10 bg-white">
         <div className="mx-auto grid max-w-6xl gap-16 px-5 py-20 sm:px-8 sm:py-24 lg:grid-cols-[1.1fr_0.9fr]">

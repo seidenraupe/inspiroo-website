@@ -72,6 +72,7 @@ export const bookingHref =
   site.bookingUrl ??
   `mailto:${site.email}?subject=${firstCallSubject}&body=${firstCallBody}`;
 
+/** Externe Buchungs-URL (Cal.com) – auf /kontakt führt der CTA zum eingebetteten Kalender. */
 export const bookingLinkExternal = Boolean(site.bookingUrl);
 
 /** Inhaltsseiten – Erstgespräch/Kontakt nur über den Header-CTA oder Footer. */

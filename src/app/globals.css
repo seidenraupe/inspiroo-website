@@ -105,6 +105,7 @@
   }
   html {
     @apply font-sans scroll-smooth;
+    color-scheme: light;
     scroll-padding-top: var(--scroll-anchor-offset);
   }
   body {

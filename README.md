@@ -29,7 +29,7 @@ Die Entwicklungsumgebung läuft auf [http://127.0.0.1:4327](http://127.0.0.1:432
 - Texte: `src/lib/content.ts`
 - Referenzen und Fallstudien: `src/lib/references.ts`
 - Kontaktdaten, Terminplaner-URL und Entwurfshinweise: `src/lib/site.ts`
-  - `bookingUrl`: optionaler Kalender (Cal.com …), nur auf `/kontakt` unter «Termin direkt wählen». Alle anderen Erstgespräch-CTAs führen nach `/kontakt` (Formular). Ohne URL: Termin per vorbereiteter E-Mail auf der Kontaktseite.
+  - `bookingUrl`: optionaler Kalender (Cal.com …). Auf `/kontakt` unter «Termin direkt wählen» als eingebetteter Kalender (Farben der Website, Deploy mit dem Rest der Seite). Alle anderen Erstgespräch-CTAs führen nach `/kontakt` (Formular). Ohne URL: Termin per vorbereiteter E-Mail auf der Kontaktseite.
   - `showDraftHints`: blendet die violetten Hinweise auf Platzhalter (Testimonials, Fallstudien-Ergebnisse, Mandate) ein. Vor dem Livegang auf `false` setzen.
 - Bilder: `public/images/` (KI-generierte Business-Fotografie, WebP). Das Porträt liegt unter `public/thomas-giger.jpg`.
 
