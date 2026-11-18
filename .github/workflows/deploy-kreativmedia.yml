@@ -1,19 +1,21 @@
-# Produktion www.inspiroo.ch: Build + SFTP-Upload nach KreativMedia.
-# Secrets: FTP_HOST, FTP_USER, FTP_PASSWORD, FTP_REMOTE_DIR; optional GA/Search Console wie Pages.
+# Produktion www.inspiroo.ch: Build + FTPS/SFTP-Upload (wie hvw-website: push auf main).
+# Secrets: FTP_HOST, FTP_USER, FTP_PASSWORD, FTP_REMOTE_DIR; optional FTP_PORT=21, GA/Search Console.
 name: Deploy KreativMedia (production)
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
     inputs:
       skip_verify:
-        description: SFTP-Test überspringen (nur wenn Verify separat grün war)
+        description: SFTP-Test überspringen (nur bei manuellem Start)
         required: false
         type: boolean
         default: false
 
 concurrency:
   group: kreativmedia-production
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 permissions:
   contents: read
@@ -42,7 +44,9 @@ jobs:
         run: bash scripts/ci-kreativmedia-env.sh
 
       - name: SFTP-Verbindung prüfen
-        if: ${{ inputs.skip_verify != true }}
+        if: >-
+          github.event_name == 'workflow_dispatch' &&
+          inputs.skip_verify != true
         run: npm run test:kreativmedia
 
       - name: Produktions-Build (out/, kein GitHub-Pfad)

@@ -55,69 +55,18 @@ Der statische Export liegt in `out/` und wird bei jedem Push auf `main` nach Git
 
 Ohne gesetzte Variablen bleibt die Website ohne Tracking-Code (Datenschutztext beschreibt den Fall «sofern aktiviert»).
 
-## Live auf KreativMedia (ohne Cloudflare)
+## Live auf KreativMedia (GitHub-first, wie `hvw-website`)
 
-### Via GitHub (empfohlen ab Cursor)
+**Push auf `main`** startet Vorschau (Pages) und Live (KreativMedia) per Actions — wie bei [hvw-website `deploy.yml`](https://github.com/seidenraupe/hvw-website/blob/main/.github/workflows/deploy.yml).
 
-1. Änderungen auf **`github/main`** pushen (Vorschau läuft automatisch über GitHub Pages).
-2. Unter [Actions](https://github.com/seidenraupe/inspiroo-website/actions) → **«Deploy KreativMedia (production)»** → **Run workflow**.
-3. Optional: GitHub-Environment **`production`** anlegen (*Settings → Environments*) und Freigabe durch Sie verlangen, damit Live nicht versehentlich ausgelöst wird.
+1. Cloud-Agent am Repo **[seidenraupe/inspiroo-website](https://github.com/seidenraupe/inspiroo-website)** starten (GitHub App mit Schreibzugriff).
+2. `git push origin main` (Agent oder lokal).
 
-**Secrets** (*Settings → Secrets and variables → Actions*): `FTP_HOST`, `FTP_USER`, `FTP_PASSWORD`, `FTP_REMOTE_DIR` (Plesk Document Root). Optional wie bei Pages: `NEXT_PUBLIC_GA_MEASUREMENT_ID`, `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION`.
+**Secrets:** `FTP_HOST`, `FTP_USER`, `FTP_PASSWORD`, `FTP_REMOTE_DIR`; optional `FTP_PORT` = `21`, GA/Search Console. Optional Environment **`production`** mit Freigabe.
 
-**Voraussetzung:** Workflow **«Verify KreativMedia SFTP»** von GitHub aus grün (testet Verbindung; üblicherweise **FTPS Port 21**).
+Verify/Debug manuell: Workflows **Verify KreativMedia SFTP** / **Deploy KreativMedia (production)**.
 
-Workflows: `deploy-kreativmedia.yml` (Build + Upload), `verify-kreativmedia-sftp.yml` (nur Test). CI setzt `KREATIVMEDIA_PROTOCOL=ftps` (Plesk-Standard).
-
-### Drei Kopien synchron halten
-
-| Kopie | Rolle |
-|-------|--------|
-| **Cursor Origin** `inspiroo-web` | Kanonischer Stand nach **Cloud-Agent**-Arbeit |
-| **GitHub** `seidenraupe/inspiroo-website` | Pages + Actions (Deploy) |
-| **Lokal** (Windows) | Brücke: Origin → GitHub, `npm run deploy:kreativmedia` |
-
-### Warum der Agent nicht direkt nach GitHub pusht
-
-Der Cloud-Agent committet nach **Cursor Origin** (`origin.cursor.com`).  
-`git push` nach **GitHub** aus der VM nutzt ein **eingeschränktes Token** (Lesen oft ok, **Schreiben** fehlgeschlagen).  
-Ihr **Fine-grained PAT** in Cursor gilt für **Desktop/Git Credential Manager**, nicht automatisch für die Remote-VM.
-
-**Praktisch:** einmal nach Agent-Arbeit lokal (oder in Cursor Desktop mit GitHub als Remote) **Origin holen → GitHub pushen**.
-
-### Sync Origin → GitHub (Windows, einmalig einrichten)
-
-Im Projektordner (PowerShell), PAT mit **Contents: Read and write** + **Workflows: Read and write**:
-
-```powershell
-git remote add cursor https://origin.cursor.com/git/thomas-giger/inspiroo-web.git
-# falls schon vorhanden: git remote set-url cursor https://origin.cursor.com/git/thomas-giger/inspiroo-web.git
-git remote -v
-# origin soll auf github.com/seidenraupe/inspiroo-website zeigen
-```
-
-**Nach jeder Agent-Session** (oder vor Deploy auf KreativMedia):
-
-```powershell
-git fetch cursor
-git checkout main
-git pull origin main
-git merge cursor/main
-# Konflikte in IDE lösen, dann:
-git push origin main
-```
-
-Kurz-Check:
-
-```powershell
-git log -1 --oneline
-git ls-remote cursor main
-git ls-remote origin main
-```
-
-Die beiden SHA am Ende sollten **gleich** sein. Danach: [Actions → Deploy KreativMedia](https://github.com/seidenraupe/inspiroo-website/actions/workflows/deploy-kreativmedia.yml).
-
-**Optional GitHub-Secret** `FTP_PORT` = `21` (FTPS; zusätzlich zu `FTP_HOST`, `FTP_USER`, …). CI setzt `KREATIVMEDIA_PROTOCOL=ftps` über `scripts/ci-kreativmedia-env.sh`.
+**Umstellung von Origin `inspiroo-web`:** [docs/SETUP-GITHUB-FIRST.md](docs/SETUP-GITHUB-FIRST.md).
 
 ### Lokal (wie andrezuraikat)
 
