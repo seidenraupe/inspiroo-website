@@ -11,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/zusammenarbeit",
     "/referenzen",
     "/kontakt",
+    "/standortbestimmung",
     "/impressum",
     "/datenschutz",
   ];

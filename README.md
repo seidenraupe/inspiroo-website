@@ -22,6 +22,7 @@ Die Entwicklungsumgebung läuft auf [http://127.0.0.1:4327](http://127.0.0.1:432
 - `/referenzen` – Fallstudien, Kundenstimmen, filterbarer Mandatskatalog, Führungserfahrung als CEO
 - `/ueber-mich` – Persönliche Geschichte, Arbeitsweise, Werdegang
 - `/kontakt` – Erstgespräch, Telefon, Nachricht
+- `/standortbestimmung` – Direktlink zum KMU-Check auf der Startseite (`/#kurz-check`)
 - `/impressum` und `/datenschutz`
 
 ## Inhalte pflegen
