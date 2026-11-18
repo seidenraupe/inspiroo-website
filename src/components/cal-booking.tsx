@@ -94,12 +94,29 @@ export function CalBooking({ calLink }: CalBookingProps) {
     });
     api("ui", calEmbedUi);
 
+    const fitHeight = (height: number) => {
+      if (height < 1) return;
+      el.style.height = `${height}px`;
+      el.style.minHeight = "0";
+      const frame = el.querySelector("iframe");
+      if (frame instanceof HTMLElement) {
+        frame.style.height = `${height}px`;
+        frame.style.minHeight = "0";
+      }
+    };
+
+    const onDimension = (event: { detail?: { data?: { iframeHeight?: number } } }) => {
+      const height = event.detail?.data?.iframeHeight;
+      if (typeof height === "number") fitHeight(height);
+    };
     const onBooked = () => {
       trackEvent("booking_success", { method: "cal_embed", placement: "kontakt" });
     };
+    api("on", { action: "__dimensionChanged", callback: onDimension });
     api("on", { action: "bookingSuccessfulV2", callback: onBooked });
 
     return () => {
+      api("off", { action: "__dimensionChanged", callback: onDimension });
       api("off", { action: "bookingSuccessfulV2", callback: onBooked });
       el.replaceChildren();
     };
@@ -108,7 +125,7 @@ export function CalBooking({ calLink }: CalBookingProps) {
   return (
     <div
       ref={containerRef}
-      className="min-h-[40rem] w-full overflow-auto"
+      className="cal-booking w-full overflow-hidden [&_cal-inline]:!h-auto [&_cal-inline]:!min-h-0 [&_.cal-inline-container]:min-h-0"
       data-cal-namespace={bookingEmbedNamespace}
     />
   );

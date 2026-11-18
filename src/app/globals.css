@@ -146,6 +146,14 @@
   max-width: 40rem;
 }
 
+/* Cal.com-Embed: nicht auf eine fixe Mindesthöhe aufblasen */
+.cal-booking,
+.cal-booking .cal-inline-container,
+.cal-booking cal-inline {
+  min-height: 0 !important;
+  height: auto;
+}
+
 .hairline {
   border-color: color-mix(in srgb, var(--ink) 12%, transparent);
 }
