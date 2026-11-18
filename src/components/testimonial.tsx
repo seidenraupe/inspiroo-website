@@ -1,7 +1,7 @@
 import { ContentImage } from "@/components/content-image";
 import { DraftHint } from "@/components/draft-hint";
 import { site } from "@/lib/site";
-import type { ClientVoice } from "@/lib/testimonials";
+import { isTestimonialApproved, type ClientVoice } from "@/lib/testimonials";
 import { cn } from "@/lib/utils";
 
 type TestimonialProps = {
@@ -11,7 +11,7 @@ type TestimonialProps = {
 };
 
 export function Testimonial({ voice, variant = "card", className }: TestimonialProps) {
-  const pending = voice.quote === null;
+  const pending = !isTestimonialApproved(voice);
   if (pending && !site.showDraftHints) return null;
 
   const text = voice.quote ?? voice.sample;

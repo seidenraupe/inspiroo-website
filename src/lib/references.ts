@@ -274,7 +274,6 @@ export const caseStudies: CaseStudy[] = [
       "Überarbeitung der Website mit Integration eines automatischen Tisch-Reservationssystems sowie Aufbau eines Reputations-Managements mit aktivem Einholen von Google-Rezensionen.",
     result:
       "Gäste reservieren rund um die Uhr selbst online, das Team wird am Telefon entlastet, und laufend neue Google-Rezensionen stärken die Sichtbarkeit des Restaurants.",
-    draft: true,
   },
   {
     id: "museum-schaffen",
