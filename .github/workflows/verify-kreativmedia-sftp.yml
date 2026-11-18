@@ -1,4 +1,4 @@
-# SFTP-Verbindung prüfen (kein Upload). Secrets in GitHub: FTP_HOST, FTP_USER, FTP_PASSWORD, FTP_REMOTE_DIR
+# SFTP-Verbindung prüfen (kein Upload). Secrets: FTP_HOST, FTP_USER, FTP_PASSWORD, FTP_REMOTE_DIR
 name: Verify KreativMedia SFTP
 
 on:
