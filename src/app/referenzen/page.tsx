@@ -4,8 +4,8 @@ import { CtaBand } from "@/components/cta-band";
 import { ReferenceCatalog } from "@/components/reference-catalog";
 import { ReferenceCatalogAnalytics } from "@/components/reference-catalog-analytics";
 import { SectionHeading } from "@/components/section-heading";
+import { LeadershipExperienceList } from "@/components/leadership-experience-list";
 import { ReferenceTestimonials } from "@/components/reference-testimonials";
-import { leadershipProjects } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Referenzen",
@@ -54,14 +54,7 @@ export default function ReferencesPage() {
             title="Veränderungen, die ich als CEO verantwortet habe"
             body="Aus 13 Jahren als CEO der Dipl. Ing. Fust AG und Verwaltungsratsmandaten in Handel und Service. Diese Erfahrung fliesst heute in jedes Mandat ein."
           />
-          <div className="border-t border-ink/10">
-            {leadershipProjects.map((project) => (
-              <article key={project.title} className="border-b border-ink/10 py-6">
-                <h3 className="text-lg font-semibold text-ink">{project.title}</h3>
-                <p className="mt-3 text-base leading-relaxed text-ink/75">{project.body}</p>
-              </article>
-            ))}
-          </div>
+          <LeadershipExperienceList />
         </div>
       </section>
 
