@@ -52,7 +52,7 @@ export const calEmbedUi = {
       "cal-border-booker": "transparent",
       "cal-border-booker-width": "0px",
       radius: "0.5rem",
-      spacing: "3px",
+      spacing: "6px",
     },
     dark: {
       "cal-brand": "#24497a",

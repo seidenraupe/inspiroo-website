@@ -116,7 +116,7 @@ export default function ContactPage() {
             <p className="measure mt-3 text-base text-ink/65">
               Unverbindlich 30 Minuten – persönlich in Winterthur oder per Video.
             </p>
-            <div className="mt-8 overflow-hidden rounded-lg border border-ink/10 bg-white">
+            <div className="mt-8 overflow-hidden rounded-lg border border-ink/10 bg-white p-3 sm:p-5">
               <CalBooking calLink={bookingCalLink} />
             </div>
             <p className="mt-4 text-sm text-ink/50">

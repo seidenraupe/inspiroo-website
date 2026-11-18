@@ -96,11 +96,12 @@ export function CalBooking({ calLink }: CalBookingProps) {
 
     const fitHeight = (height: number) => {
       if (height < 1) return;
-      el.style.height = `${height}px`;
+      const fitted = height + 48;
+      el.style.height = `${fitted}px`;
       el.style.minHeight = "0";
       const frame = el.querySelector("iframe");
       if (frame instanceof HTMLElement) {
-        frame.style.height = `${height}px`;
+        frame.style.height = `${fitted}px`;
         frame.style.minHeight = "0";
       }
     };
