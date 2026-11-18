@@ -30,7 +30,7 @@ export function ReferenceCatalog() {
       <style href="reference-catalog-filter" precedence="default">{`${filterStyles}
 .reference-catalog label:has(:focus-visible){outline:2px solid var(--ring);outline-offset:3px}`}</style>
       <div
-        className="flex gap-5 overflow-x-auto border-b border-ink/10"
+        className="flex flex-wrap gap-x-5 gap-y-1 border-b border-ink/10 sm:overflow-visible max-sm:-mx-4 max-sm:overflow-x-auto max-sm:overflow-y-hidden max-sm:px-4 max-sm:[scrollbar-width:none] max-sm:[&::-webkit-scrollbar]:hidden"
         role="radiogroup"
         aria-label="Referenzen filtern"
       >
