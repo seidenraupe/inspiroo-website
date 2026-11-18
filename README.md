@@ -65,9 +65,9 @@ Ohne gesetzte Variablen bleibt die Website ohne Tracking-Code (Datenschutztext b
 
 **Secrets** (*Settings → Secrets and variables → Actions*): `FTP_HOST`, `FTP_USER`, `FTP_PASSWORD`, `FTP_REMOTE_DIR` (Plesk Document Root). Optional wie bei Pages: `NEXT_PUBLIC_GA_MEASUREMENT_ID`, `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION`.
 
-**Voraussetzung:** Workflow **«Verify KreativMedia SFTP»** muss von GitHub-Runnern aus grün sein (SFTP Port **2121** beim Hoster erreichbar). Sonst Self-hosted Runner oder KreativMedia-Support kontaktieren.
+**Voraussetzung:** Workflow **«Verify KreativMedia SFTP»** von GitHub aus grün (testet Verbindung; üblicherweise **FTPS Port 21**).
 
-Workflows: `deploy-kreativmedia.yml` (Build + Upload), `verify-kreativmedia-sftp.yml` (nur Test). CI schreibt `.env` aus den `FTP_*`-Secrets (`KREATIVMEDIA_PROTOCOL=auto`).
+Workflows: `deploy-kreativmedia.yml` (Build + Upload), `verify-kreativmedia-sftp.yml` (nur Test). CI setzt `KREATIVMEDIA_PROTOCOL=ftps` (Plesk-Standard).
 
 ### Drei Kopien synchron halten
 

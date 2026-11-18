@@ -9,6 +9,19 @@ function protocol(env) {
   return "auto";
 }
 
+/** SFTP-Port 2121 oft von CI/Cloud blockiert — dann FTPS 21 nutzen. */
+function shouldFallbackFromSftp(message) {
+  const m = message.toLowerCase();
+  return (
+    m.includes("authentication methods failed") ||
+    m.includes("establishing sftp session") ||
+    m.includes("exit code 1") ||
+    m.includes("connection lost before handshake") ||
+    m.includes("before handshake") ||
+    m.includes("getconnection:")
+  );
+}
+
 async function testSftp(env, port, remotePath) {
   const client = new SftpClient();
   try {
@@ -98,10 +111,7 @@ export async function testKreativmediaConnection(env) {
   } catch (sftpError) {
     const message =
       sftpError instanceof Error ? sftpError.message : String(sftpError);
-    const shouldFallback =
-      message.includes("authentication methods failed") ||
-      message.includes("establishing SFTP session") ||
-      message.includes("exit code 1");
+    const shouldFallback = shouldFallbackFromSftp(message);
     if (!shouldFallback) throw sftpError;
     try {
       const result = await testFtps(env, ftpsPort, remotePath);
@@ -179,10 +189,7 @@ export async function deployOutDirToKreativmedia(env, localDir) {
   } catch (sftpError) {
     const message =
       sftpError instanceof Error ? sftpError.message : String(sftpError);
-    const shouldFallback =
-      message.includes("authentication methods failed") ||
-      message.includes("establishing SFTP session") ||
-      message.includes("exit code 1");
+    const shouldFallback = shouldFallbackFromSftp(message);
     if (!shouldFallback) throw sftpError;
     return { ...(await uploadFtps()), fallbackFromSftp: message };
   }
