@@ -52,7 +52,7 @@ export const site = {
   founder: {
     name: "Thomas Giger",
     role: "Gründer und Inhaber",
-    headline: "Verwaltungsrat, ehem. CEO und Sparring-Partner für KMU",
+    headline: "Verwaltungsrat, ehem. Unternehmensleiter und Sparring-Partner für KMU",
     linkedin: "https://www.linkedin.com/in/thomas-giger/",
   },
 } as const;

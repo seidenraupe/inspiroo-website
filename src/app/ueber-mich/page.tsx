@@ -7,9 +7,9 @@ import { about, experienceFacts } from "@/lib/content";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Thomas Giger – Verwaltungsrat, ehem. CEO und Sparring-Partner für KMU",
+  title: "Thomas Giger – Verwaltungsrat, ehem. Unternehmensleiter und Sparring-Partner für KMU",
   description:
-    "Über 30 Jahre in Geschäftsleitung und Verwaltungsrat, 13 Jahre CEO der Dipl. Ing. Fust AG: Thomas Giger begleitet heute KMU als unabhängiger Sparring-Partner aus Winterthur.",
+    "Über 30 Jahre als Unternehmensleiter und im Verwaltungsrat, 13 Jahre CEO der Dipl. Ing. Fust AG: Thomas Giger begleitet heute KMU als unabhängiger Sparring-Partner aus Winterthur.",
 };
 
 export default function AboutPage() {
