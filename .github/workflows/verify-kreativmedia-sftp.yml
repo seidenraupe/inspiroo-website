@@ -12,15 +12,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: npm
-      - run: npm ci
-      - name: Test SFTP connection and remote directory (no upload)
+      - name: Install lftp
+        run: sudo apt-get update -qq && sudo apt-get install -y lftp
+      - name: Test SFTP connection and remote directory
         env:
           FTP_HOST: ${{ secrets.FTP_HOST }}
           FTP_USER: ${{ secrets.FTP_USER }}
           FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
           FTP_REMOTE_DIR: ${{ secrets.FTP_REMOTE_DIR }}
-        run: bash scripts/verify-kreativmedia-ftp.sh
+        run: ./scripts/verify-kreativmedia-ftp.sh
