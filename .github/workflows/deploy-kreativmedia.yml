@@ -42,7 +42,7 @@ jobs:
         run: |
           cat > .env <<EOF
           KREATIVMEDIA_SFTP_HOST=${FTP_HOST}
-          KREATIVMEDIA_SFTP_PORT=${{ env.FTP_PORT || 2121 }}
+          KREATIVMEDIA_SFTP_PORT=${{ env.FTP_PORT || 21 }}
           KREATIVMEDIA_SFTP_USER=${FTP_USER}
           KREATIVMEDIA_SFTP_PASSWORD=${FTP_PASSWORD}
           KREATIVMEDIA_REMOTE_PATH=${FTP_REMOTE_DIR}
