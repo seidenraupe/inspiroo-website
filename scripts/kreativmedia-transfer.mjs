@@ -3,6 +3,22 @@ import SftpClient from "ssh2-sftp-client";
 
 import { requireKreativmediaEnv } from "./kreativmedia-env.mjs";
 
+/** Plesk liefert oft private PASV-IPs → 425 beim Upload; Control-Host erzwingen. */
+const FTPS_CLIENT_OPTIONS = { allowSeparateTransferHost: false };
+
+function isFtpsDataChannelError(message) {
+  const m = message.toLowerCase();
+  return (
+    m.includes("425") ||
+    m.includes("426") ||
+    m.includes("data connection") ||
+    m.includes("operation not permitted") ||
+    m.includes("permission denied") ||
+    m.includes("econnreset") ||
+    m.includes("etimedout")
+  );
+}
+
 function protocol(env) {
   const raw = (env.KREATIVMEDIA_PROTOCOL || "auto").toLowerCase();
   if (raw === "sftp" || raw === "ftps") return raw;
@@ -48,7 +64,7 @@ async function testSftp(env, port, remotePath) {
 }
 
 async function testFtps(env, port, remotePath, attempt = 1) {
-  const client = new FtpClient(25_000);
+  const client = new FtpClient(25_000, FTPS_CLIENT_OPTIONS);
   try {
     await client.access({
       host: env.KREATIVMEDIA_SFTP_HOST,
@@ -82,7 +98,7 @@ async function testFtps(env, port, remotePath, attempt = 1) {
     };
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
-    if (attempt < 3 && message.includes("ECONNRESET")) {
+    if (attempt < 3 && isFtpsDataChannelError(message)) {
       await new Promise((r) => setTimeout(r, 1500 * attempt));
       return testFtps(env, port, remotePath, attempt + 1);
     }
@@ -129,8 +145,8 @@ export async function deployOutDirToKreativmedia(env, localDir) {
   const ftpsPort = Number(env.KREATIVMEDIA_FTPS_PORT || 21);
   const chosen = protocol(env);
 
-  async function uploadFtps() {
-    const client = new FtpClient(60_000);
+  async function uploadFtps(attempt = 1) {
+    const client = new FtpClient(120_000, FTPS_CLIENT_OPTIONS);
     try {
       await client.access({
         host: env.KREATIVMEDIA_SFTP_HOST,
@@ -151,6 +167,13 @@ export async function deployOutDirToKreativmedia(env, localDir) {
         port: ftpsPort,
         remotePath,
       };
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error);
+      if (attempt < 3 && isFtpsDataChannelError(message)) {
+        await new Promise((r) => setTimeout(r, 2000 * attempt));
+        return uploadFtps(attempt + 1);
+      }
+      throw error;
     } finally {
       client.close();
     }
@@ -181,7 +204,27 @@ export async function deployOutDirToKreativmedia(env, localDir) {
     }
   }
 
-  if (chosen === "ftps") return uploadFtps();
+  async function uploadWithFtpsThenSftp() {
+    try {
+      return await uploadFtps();
+    } catch (ftpsError) {
+      const ftpsMessage =
+        ftpsError instanceof Error ? ftpsError.message : String(ftpsError);
+      if (!isFtpsDataChannelError(ftpsMessage)) throw ftpsError;
+      try {
+        return {
+          ...(await uploadSftp()),
+          fallbackFromFtps: ftpsMessage,
+        };
+      } catch (sftpError) {
+        const sftpMessage =
+          sftpError instanceof Error ? sftpError.message : String(sftpError);
+        throw new Error(`FTPS: ${ftpsMessage} | SFTP: ${sftpMessage}`);
+      }
+    }
+  }
+
+  if (chosen === "ftps") return uploadWithFtpsThenSftp();
   if (chosen === "sftp") return uploadSftp();
 
   try {

@@ -129,7 +129,7 @@ Die beiden SHA am Ende sollten **gleich** sein. Danach: [Actions → Deploy Krea
 
 **Einrichtung:** `.env.example` → `.env` kopieren, `KREATIVMEDIA_*` aus Plesk eintragen (Port standard **2121**, Ziel = Dokumentenstamm `www.inspiroo.ch`). `.env` steht in `.gitignore`.
 
-**Technik:** npm-Paket `ssh2-sftp-client`, rekursiver Upload mit `useFastput` (gesamtes `out/`, kein Delta). Skripte: `scripts/test-kreativmedia-sftp.mjs`, `scripts/deploy-kreativmedia.mjs`.
+**Technik:** FTPS (Plesk Port 21, PASV mit Control-Host) oder Fallback **SFTP 2121** beim Upload, falls CI `425 data connection` meldet. Skripte: `scripts/test-kreativmedia-sftp.mjs`, `scripts/deploy-kreativmedia.mjs`.
 
 **Nach dem Upload in Plesk:**
 
