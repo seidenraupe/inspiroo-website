@@ -90,7 +90,7 @@ export const process = {
 export const servicesIntro = {
   kicker: "Wie ich Sie unterstützen kann",
   title: "Gleiche Erfahrung – unterschiedliche Intensität",
-  body: "Die vier Formate sind keine Standardprodukte, sondern eine Orientierung für Dauer und Tiefe der Zusammenarbeit. Was Sie bekommen, ist immer dasselbe: meine Erfahrung als Unternehmer, einen unabhängigen Blick und ein ehrliches Gegenüber. Im Erstgespräch kläre ich mit Ihnen, was Ihre Situation braucht – oft ist es eine Mischung der vier Formate. Bei Bedarf ziehe ich spezialisierte Partner aus meinem Netzwerk bei.",
+  body: "Die vier Formate sind keine Standardprodukte, sondern eine Orientierung für Dauer und Tiefe der Zusammenarbeit. Was Sie bekommen, ist immer dasselbe: meine Erfahrung aus Geschäftsleitung und Verwaltungsrat, einen unabhängigen Blick und ein ehrliches Gegenüber. Im Erstgespräch kläre ich mit Ihnen, was Ihre Situation braucht – oft ist es eine Mischung der vier Formate. Bei Bedarf ziehe ich spezialisierte Partner aus meinem Netzwerk bei.",
 };
 
 export const services = [
@@ -179,7 +179,7 @@ export const services = [
 ] as const;
 
 export const about = {
-  title: "Thomas Giger – Unternehmer, Verwaltungsrat und Sparring-Partner für KMU",
+  title: "Thomas Giger – Verwaltungsrat, ehem. CEO und Sparring-Partner für KMU",
   intro:
     "Während über 30 Jahren habe ich in Geschäftsleitung und Verwaltungsrat Verantwortung getragen, davon 13 Jahre als CEO der Dipl. Ing. Fust AG. Heute stelle ich diese Erfahrung als unabhängiger Sparring-Partner Unternehmerinnen, Unternehmern und Geschäftsleitungen von KMU zur Verfügung.",
   teaser:
