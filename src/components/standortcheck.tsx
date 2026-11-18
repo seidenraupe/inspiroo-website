@@ -211,7 +211,7 @@ export function Standortcheck() {
                   format: evaluation.primary.key,
                 })}
               >
-                15 Min. unverbindlich besprechen
+                Unverbindlich Kontakt aufnehmen
               </Link>
               <Link
                 href={`/zusammenarbeit/#${evaluation.primary.key}`}
