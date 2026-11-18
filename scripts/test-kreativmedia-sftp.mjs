@@ -9,6 +9,7 @@ try {
   requireKreativmediaEnv(env);
   const result = await testKreativmediaConnection(env);
   console.log(JSON.stringify({ ok: true, ...result }));
+  process.exit(0);
 } catch (error) {
   console.error(
     JSON.stringify({
