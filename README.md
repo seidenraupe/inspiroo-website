@@ -57,7 +57,19 @@ Ohne gesetzte Variablen bleibt die Website ohne Tracking-Code (Datenschutztext b
 
 ## Live auf KreativMedia (ohne Cloudflare)
 
-Gleicher Ablauf wie bei [andrezuraikat](https://github.com/seidenraupe/andrezuraikat): **lokal bauen, SFTP mit `.env`, kein Auto-Deploy von GitHub auf Produktion.**
+### Via GitHub (empfohlen ab Cursor)
+
+1. Änderungen auf **`github/main`** pushen (Vorschau läuft automatisch über GitHub Pages).
+2. Unter [Actions](https://github.com/seidenraupe/inspiroo-website/actions) → **«Deploy KreativMedia (production)»** → **Run workflow**.
+3. Optional: GitHub-Environment **`production`** anlegen (*Settings → Environments*) und Freigabe durch Sie verlangen, damit Live nicht versehentlich ausgelöst wird.
+
+**Secrets** (*Settings → Secrets and variables → Actions*): `FTP_HOST`, `FTP_USER`, `FTP_PASSWORD`, `FTP_REMOTE_DIR` (Plesk Document Root). Optional wie bei Pages: `NEXT_PUBLIC_GA_MEASUREMENT_ID`, `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION`.
+
+**Voraussetzung:** Workflow **«Verify KreativMedia SFTP»** muss von GitHub-Runnern aus grün sein (SFTP Port **2121** beim Hoster erreichbar). Sonst Self-hosted Runner oder KreativMedia-Support kontaktieren.
+
+Workflows: `deploy-kreativmedia.yml` (Build + Upload), `verify-kreativmedia-sftp.yml` (nur Test). CI schreibt `.env` über `scripts/ci-kreativmedia-env.sh` (`KREATIVMEDIA_PROTOCOL=sftp`).
+
+### Lokal (wie andrezuraikat)
 
 | Schritt | Befehl |
 |--------|--------|
@@ -68,8 +80,6 @@ Gleicher Ablauf wie bei [andrezuraikat](https://github.com/seidenraupe/andrezura
 **Einrichtung:** `.env.example` → `.env` kopieren, `KREATIVMEDIA_*` aus Plesk eintragen (Port standard **2121**, Ziel = Dokumentenstamm `www.inspiroo.ch`). `.env` steht in `.gitignore`.
 
 **Technik:** npm-Paket `ssh2-sftp-client`, rekursiver Upload mit `useFastput` (gesamtes `out/`, kein Delta). Skripte: `scripts/test-kreativmedia-sftp.mjs`, `scripts/deploy-kreativmedia.mjs`.
-
-**Optional GitHub Actions:** Workflow «Verify KreativMedia SFTP» nutzt dieselben Werte als Secrets `FTP_HOST`, `FTP_USER`, `FTP_PASSWORD`, `FTP_REMOTE_DIR` (Map auf `KREATIVMEDIA_*` im CI-Skript).
 
 **Nach dem Upload in Plesk:**
 
