@@ -12,6 +12,11 @@ on:
         required: false
         type: boolean
         default: false
+      promote_to_docroot:
+        description: Dateien aus inspiroo.ch/… ins FTP-Dokumentenstamm verschieben (einmalig nach Pfad-Fix)
+        required: false
+        type: boolean
+        default: true
 
 concurrency:
   group: kreativmedia-production
@@ -48,6 +53,12 @@ jobs:
           github.event_name == 'workflow_dispatch' &&
           inputs.skip_verify != true
         run: npm run test:kreativmedia
+
+      - name: FTP-Inhalt ins Dokumentenstamm verschieben (falls verschachtelt)
+        if: >-
+          github.event_name != 'workflow_dispatch' ||
+          inputs.promote_to_docroot == true
+        run: npm run promote:kreativmedia
 
       - name: Produktions-Build (out/, kein GitHub-Pfad)
         run: npm run build:production

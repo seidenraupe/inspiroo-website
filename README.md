@@ -76,7 +76,9 @@ Verify/Debug manuell: Workflows **Verify KreativMedia SFTP** / **Deploy KreativM
 | Verbindung testen (kein Upload) | `npm run test:kreativmedia` |
 | Live setzen | `npm run deploy:kreativmedia` (= Build + Upload von `out/`) |
 
-**Einrichtung:** `.env.example` → `.env` kopieren, `KREATIVMEDIA_*` aus Plesk eintragen (Port standard **2121**, Ziel = Dokumentenstamm `www.inspiroo.ch`). `.env` steht in `.gitignore`.
+**Einrichtung:** `.env.example` → `.env` kopieren, `KREATIVMEDIA_*` aus Plesk eintragen (Port standard **2121**). GitHub-Secret **`FTP_REMOTE_DIR`** = **`/`** (nicht `/inspiroo.ch`, sonst landet `out/` in `inspiroo.ch/inspiroo.ch/`). `.env` steht in `.gitignore`.
+
+Einmalig verschachtelte Dateien höher: `npm run promote:kreativmedia` (oder Workflow **Deploy KreativMedia** mit «promote_to_docroot»).
 
 **Technik:** FTPS (Plesk Port 21, PASV mit Control-Host) oder Fallback **SFTP 2121** beim Upload, falls CI `425 data connection` meldet. Skripte: `scripts/test-kreativmedia-sftp.mjs`, `scripts/deploy-kreativmedia.mjs`.
 

@@ -10,6 +10,7 @@
     "start": "next start --hostname 127.0.0.1 --port 4327",
     "lint": "eslint",
     "test:kreativmedia": "node scripts/test-kreativmedia-sftp.mjs",
+    "promote:kreativmedia": "node scripts/kreativmedia-promote-root.mjs",
     "deploy:kreativmedia": "npm run build:production && node scripts/deploy-kreativmedia.mjs"
   },
   "dependencies": {

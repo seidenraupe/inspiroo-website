@@ -27,11 +27,20 @@ export const kreativmediaRequired = [
   "KREATIVMEDIA_REMOTE_PATH",
 ];
 
+/** Plesk-FTP liegt oft schon im Dokumentenstamm — /inspiroo.ch erzeugt inspiroo.ch/inspiroo.ch. */
+export function normalizeKreativmediaRemotePath(raw) {
+  const trimmed = (raw || "/").trim().replace(/\/+$/, "") || "/";
+  if (trimmed === "/inspiroo.ch" || trimmed === "inspiroo.ch") {
+    return "/";
+  }
+  return trimmed;
+}
+
 export function requireKreativmediaEnv(env) {
   for (const key of kreativmediaRequired) {
     if (!env[key]) throw new Error(`Variable ${key} ist leer.`);
   }
   const port = Number(env.KREATIVMEDIA_SFTP_PORT || 2121);
-  const remotePath = env.KREATIVMEDIA_REMOTE_PATH.replace(/\/+$/, "") || "/";
+  const remotePath = normalizeKreativmediaRemotePath(env.KREATIVMEDIA_REMOTE_PATH);
   return { port, remotePath };
 }

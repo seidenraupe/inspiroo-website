@@ -10,13 +10,19 @@ for key in FTP_HOST FTP_USER FTP_PASSWORD FTP_REMOTE_DIR; do
   fi
 done
 
+# Plesk: Domain-FTP startet oft im httpdocs — /inspiroo.ch legt Unterordner an
+normalized_remote="${FTP_REMOTE_DIR}"
+if [[ "${FTP_REMOTE_DIR}" == "/inspiroo.ch" || "${FTP_REMOTE_DIR}" == "inspiroo.ch" ]]; then
+  normalized_remote="/"
+fi
+
 cat > .env <<EOF
 KREATIVMEDIA_SFTP_HOST=${FTP_HOST}
 KREATIVMEDIA_SFTP_PORT=${KREATIVMEDIA_SFTP_PORT:-2121}
 KREATIVMEDIA_FTPS_PORT=${FTP_PORT:-${KREATIVMEDIA_FTPS_PORT:-21}}
 KREATIVMEDIA_SFTP_USER=${FTP_USER}
 KREATIVMEDIA_SFTP_PASSWORD=${FTP_PASSWORD}
-KREATIVMEDIA_REMOTE_PATH=${FTP_REMOTE_DIR}
+KREATIVMEDIA_REMOTE_PATH=${normalized_remote}
 KREATIVMEDIA_PROTOCOL=${KREATIVMEDIA_PROTOCOL:-ftps}
 EOF
 
