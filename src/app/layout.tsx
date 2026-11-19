@@ -104,9 +104,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <SiteHeader />
-        <HashScroll />
         <main className="flex-1">{children}</main>
         <SiteFooter />
+        <HashScroll />
         {site.gaMeasurementId ? (
           <Suspense fallback={null}>
             <SiteAnalytics gaId={site.gaMeasurementId} />
