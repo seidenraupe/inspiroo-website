@@ -52,27 +52,25 @@ Jeder Post: **1 These → 1 Erfahrung → 1 nächster Schritt.**
 ## Post 1 – Launch (Woche 1, Dienstag)
 
 **Hook:**  
-*Drei Schubladen-Strategien haben mir in 30 Jahren C-Level mehr Mühe bereitet als jede Krise.*
+*Meine Arbeitsweise hat sich nicht geändert – meine Website schon.*
 
 **Text:**
 
-Deshalb ist die Website neu – und enger gefasst:
+In den letzten Wochen habe ich inspiroo.ch komplett überarbeitet. Nicht, weil ich heute anders arbeite als bisher, sondern weil die alte Seite noch zu sehr nach klassischem Berater-Katalog klang.
 
-→ Sparring-Partner für KMU  
-→ mit der Erfahrung eines Unternehmensleiters und Verwaltungsrats  
-→ Strategie, Nachfolge, Transformation, schwierige Führungsentscheidungen  
-→ was im Alltag zählt, nicht das Folienset
+In der Praxis läuft unsere Zusammenarbeit längst anders:
+→ Sparring auf Augenhöhe statt Folien-Schlachten
+→ Konkrete Weichenstellungen bei Strategie, Nachfolge, Organisation und Digitalem
+→ Ehrliche Einordnung, wo ich Mehrwert stiften kann – und wo nicht
 
-13 Jahre CEO der Dipl. Ing. Fust AG, davor und daneben Geschäftsleitung und Verwaltungsrat. Seit 2023 unabhängig mit inspiroo in Winterthur.
+Genau das bildet die neue Seite jetzt ab – inklusive Kundenstimmen aus aktuellen Mandaten und einer 2-Minuten-Standortbestimmung für KMU.
 
-Was sich geändert hat: weniger Katalog, mehr ehrliche Einordnung – wann ich nützlich bin und wann nicht.
+Schauen Sie gern rein und sagen Sie mir, was Sie davon halten:
+https://www.inspiroo.ch/#kurz-check
 
-www.inspiroo.ch
+Was treibt Sie aktuell mehr um: Strategie, Organisation oder Digitales?
 
-Wenn Sie wissen wollen, welche Intensität zu Ihrer Lage passt:  
-www.inspiroo.ch/standortbestimmung/
-
-**Frage (nur für Kommentare):** *Was beschäftigt Ihre Geschäftsleitung gerade mehr: Ertrag, Umsetzung oder die nächste strategische Weiche?*
+`#KMU #Unternehmensführung #Strategie #Sparring #Winterthur`
 
 ---
 
