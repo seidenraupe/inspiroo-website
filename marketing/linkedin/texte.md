@@ -8,6 +8,20 @@ Kopieren mit Strg+C / Einfügen in LinkedIn – Absätze und Aufzählungen bleib
 **Standortbestimmung (Direktlink):** https://www.inspiroo.ch/standortbestimmung/  
 **Kontakt:** https://www.inspiroo.ch/kontakt/
 
+**LinkedIn-Kurzlinks (UTM, für Posts):**
+
+| Kurzlink | Ziel |
+| --- | --- |
+| https://www.inspiroo.ch/check | Standortcheck auf der Startseite (`#kurz-check`) |
+| https://www.inspiroo.ch/gespraech | Kontaktseite |
+
+Beispiel im Post:
+
+```text
+Zuerst einordnen – Standortbestimmung: https://www.inspiroo.ch/check
+Oder direkt – unverbindliches Erstgespräch (30 Min., vertraulich): https://www.inspiroo.ch/gespraech
+```
+
 **Anrede:** durchgehend Sie, wie auf der Website.
 
 **Reihenfolge der Handlungsaufforderung:** zuerst einordnen (Standortbestimmung), Gespräch nur wenn Inhaberin, Inhaber, Geschäftsleitung oder Verwaltungsrat eine konkrete Weiche vor sich hat. Kein offener Kennenlern-Call.
