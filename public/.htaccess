@@ -10,8 +10,8 @@
   RewriteRule ^projekte/?$ /referenzen/ [R=301,L,NC]
 
   # LinkedIn-Kurzlinks (Apache; Fallback: /check/ und /gespraech/ als HTML-Redirect)
-  RewriteRule ^check/?$ /?utm_source=linkedin&utm_medium=social_organic&utm_campaign=website_relaunch_2024&utm_content=post_01_check#kurz-check [R=302,L,NE]
-  RewriteRule ^gespraech/?$ /kontakt/?utm_source=linkedin&utm_medium=social_organic&utm_campaign=website_relaunch_2024&utm_content=post_01_kontakt [R=302,L,NE,QSA]
+  RewriteRule ^check/?$ /?utm_source=linkedin&utm_medium=social_organic&utm_campaign=website_relaunch_2026&utm_content=post_01_check#kurz-check [R=302,L,NE]
+  RewriteRule ^gespraech/?$ /kontakt/?utm_source=linkedin&utm_medium=social_organic&utm_campaign=website_relaunch_2026&utm_content=post_01_kontakt [R=302,L,NE,QSA]
 </IfModule>
 
 # Fallback, falls mod_rewrite UTF-8-Pfade anders behandelt (URL-kodiertes «ü»)

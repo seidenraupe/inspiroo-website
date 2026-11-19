@@ -3,7 +3,7 @@ import { withBase } from "@/lib/paths";
 const linkedinOrganic = {
   utm_source: "linkedin",
   utm_medium: "social_organic",
-  utm_campaign: "website_relaunch_2024",
+  utm_campaign: "website_relaunch_2026",
 } as const;
 
 /** Ziel für https://www.inspiroo.ch/check → Standortcheck mit Kampagnen-UTMs. */
