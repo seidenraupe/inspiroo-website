@@ -82,6 +82,19 @@ export default function ImpressumPage() {
           Urheberrechtsträgers im Voraus einzuholen.
         </p>
       </section>
+
+      <section className="mt-10 space-y-3 leading-relaxed text-ink/80">
+        <h2 className="font-heading text-2xl">Ein Wort zur Entstehung</h2>
+        <p>
+          Diese Website – inklusive LinkedIn-Marketing – entstand in intensiver
+          Zusammenarbeit mit den modernsten KI-Tools von Cursor, Claude,
+          Antigravity und Gemini. Sie besteht zu 90&nbsp;% aus HTML-Code; die
+          restlichen 10&nbsp;% sind Stilgefühl, Kaffee und das gelegentliche
+          «genau so habe ich das gemeint». Wer behauptet, das sei von Hand in
+          Notepad getippt worden, lügt. Wer behauptet, die KI habe alles allein
+          gemacht, ebenfalls.
+        </p>
+      </section>
     </article>
   );
 }
